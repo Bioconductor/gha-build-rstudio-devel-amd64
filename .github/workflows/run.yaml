@@ -137,7 +137,7 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     
       - name: Free root space
@@ -154,6 +154,7 @@ jobs:
 
       - name: Get Current Job Log URL
         uses: Tiryoh/gha-jobid-action@v0
+        continue-on-error: true
         id: jobs
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
