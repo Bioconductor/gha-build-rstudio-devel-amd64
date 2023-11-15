@@ -137,8 +137,13 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
+    
+      - name: Free root space
+        uses: almahmoud/free-root-space@main
+        with:
+          verbose: true
 
       - uses: actions/checkout@v3
 
