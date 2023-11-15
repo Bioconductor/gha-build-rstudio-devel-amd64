@@ -1,0 +1,198 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cyanoFilter'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'cyanoFilter'
+also installing the dependencies ‘hms’, ‘magic’, ‘lpSolve’, ‘linprog’, ‘RcppProgress’, ‘igraph’, ‘cowplot’, ‘GoFKernel’, ‘forcats’, ‘progress’, ‘reshape’, ‘geometry’, ‘reshape2’, ‘cytometree’, ‘GGally’, ‘mrfDepth’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hms_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 98350 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/magic_1.6-1.tar.gz'
+Content type 'binary/octet-stream' length 400654 bytes (391 KB)
+==================================================
+downloaded 391 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lpSolve_5.6.19.tar.gz'
+Content type 'binary/octet-stream' length 372825 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/linprog_0.9-4.tar.gz'
+Content type 'binary/octet-stream' length 63058 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 19762 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1376564 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GoFKernel_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 59819 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progress_1.2.2.tar.gz'
+Content type 'binary/octet-stream' length 83560 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 167463 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/geometry_0.4.7.tar.gz'
+Content type 'binary/octet-stream' length 905588 bytes (884 KB)
+==================================================
+downloaded 884 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cytometree_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 2540229 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GGally_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 1632475 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mrfDepth_1.0.15.tar.gz'
+Content type 'binary/octet-stream' length 2209211 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/cyanoFilter_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 2631250 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+* installing *binary* package ‘hms’ ...
+* ‘hms’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hms’ as ‘hms_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hms)
+* installing *binary* package ‘magic’ ...
+* ‘magic’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magic’ as ‘magic_1.6-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magic)
+* installing *binary* package ‘lpSolve’ ...
+* ‘lpSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lpSolve’ as ‘lpSolve_5.6.19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lpSolve)
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘GoFKernel’ ...
+* ‘GoFKernel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GoFKernel’ as ‘GoFKernel_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GoFKernel)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘reshape’ ...
+* ‘reshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘linprog’ ...
+* ‘linprog’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘linprog’ as ‘linprog_0.9-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (linprog)
+* installing *binary* package ‘progress’ ...
+* ‘progress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progress’ as ‘progress_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progress)
+* installing *binary* package ‘cytometree’ ...
+* ‘cytometree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cytometree’ as ‘cytometree_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cytometree)
+* installing *binary* package ‘geometry’ ...
+* ‘geometry’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geometry’ as ‘geometry_0.4.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geometry)
+* installing *binary* package ‘GGally’ ...
+* ‘GGally’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GGally’ as ‘GGally_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GGally)
+* installing *binary* package ‘mrfDepth’ ...
+* ‘mrfDepth’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mrfDepth’ as ‘mrfDepth_1.0.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mrfDepth)
+* installing *source* package ‘cyanoFilter’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cyanoFilter’ as ‘cyanoFilter_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cyanoFilter)
+
+The downloaded source packages are in
+	‘/tmp/RtmpkwnOL1/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m32.085s
+user	0m13.692s
+sys	0m4.068s
