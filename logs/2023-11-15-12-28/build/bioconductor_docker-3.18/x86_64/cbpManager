@@ -1,0 +1,106 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cbpManager'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'cbpManager'
+also installing the dependencies ‘pander’, ‘shinydashboard’, ‘rapportools’, ‘shinyBS’, ‘shinycssloaders’, ‘rintrojs’, ‘markdown’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pander_0.6.5.tar.gz'
+Content type 'binary/octet-stream' length 913323 bytes (891 KB)
+==================================================
+downloaded 891 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 321929 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rapportools_1.1.tar.gz'
+Content type 'binary/octet-stream' length 125280 bytes (122 KB)
+==================================================
+downloaded 122 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyBS_0.61.1.tar.gz'
+Content type 'binary/octet-stream' length 103235 bytes (100 KB)
+==================================================
+downloaded 100 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinycssloaders_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 134206 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rintrojs_0.3.3.tar.gz'
+Content type 'binary/octet-stream' length 54385 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/markdown_1.11.tar.gz'
+Content type 'binary/octet-stream' length 198263 bytes (193 KB)
+==================================================
+downloaded 193 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/cbpManager_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 4762621 bytes (4.5 MB)
+==================================================
+downloaded 4.5 MB
+
+* installing *binary* package ‘pander’ ...
+* ‘pander’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pander’ as ‘pander_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pander)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘shinyBS’ ...
+* ‘shinyBS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyBS’ as ‘shinyBS_0.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyBS)
+* installing *binary* package ‘shinycssloaders’ ...
+* ‘shinycssloaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinycssloaders’ as ‘shinycssloaders_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinycssloaders)
+* installing *binary* package ‘rintrojs’ ...
+* ‘rintrojs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rintrojs’ as ‘rintrojs_0.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rintrojs)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘rapportools’ ...
+* ‘rapportools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rapportools’ as ‘rapportools_1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rapportools)
+* installing *source* package ‘cbpManager’ ...
+** using non-staged installation via StagedInstall field
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* creating tarball
+packaged installation of ‘cbpManager’ as ‘cbpManager_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cbpManager)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp4wPdno/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m15.551s
+user	0m9.964s
+sys	0m2.649s
