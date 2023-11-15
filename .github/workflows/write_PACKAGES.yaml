@@ -1,0 +1,126 @@
+name: Create PACKAGES file for the R repository
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - lists/write_PACKAGES
+jobs:
+  writepkgs:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Free root space
+        uses: almahmoud/free-root-space@main
+        with:
+          verbose: true
+
+      - uses: actions/checkout@v3
+
+      - name: Free space check
+        run: |
+          echo "Free space:"
+          df -h
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+          persist-credentials: true
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+
+      - name: Start a local k8s cluster
+        uses: jupyterhub/action-k3s-helm@v3
+        with:
+          k3s-channel: latest
+          metrics-enabled: false
+          traefik-enabled: false
+
+      - name: Verify function of k8s, kubectl, and helm
+        run: |
+          kubectl version
+          helm version
+          
+          git clone --depth=1 https://github.com/kubernetes-sigs/sig-storage-local-static-provisioner.git
+          
+          cat << "EOF" > local.yaml
+          classes:
+          - name: local-storage
+            hostDir: /mnt/disks
+            volumeMode: Block
+            storageClass: true
+          EOF
+          
+          kubectl create ns rclone
+          helm install -n rclone static ./sig-storage-local-static-provisioner/helm/provisioner -f local.yaml
+  
+          helm repo add wunderio https://storage.googleapis.com/charts.wdr.io
+          echo "$RCLONE_VALS" > rclone-vals.yaml
+          sed -i "s#HOLDERPATH#gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib#g" rclone-vals.yaml
+          helm upgrade --install --create-namespace -n rclone rclone wunderio/csi-rclone -f rclone-vals.yaml --wait
+          kubectl -n rclone apply -f .github/scripts/k8s/k8s-resources.yaml
+          while [[ $(kubectl get pods -n rclone package-file --no-headers -o custom-columns=":status.phase") != "Running" ]]; do
+             
+            kubectl get events -n rclone > events.log
+            awk '{$1=""}1' events.log > newevents.log
+            if [ ! -f "oldevents.log" ]; then cat events.log && cp newevents.log oldevents.log; fi
+            # If different, cat new events
+            cmp --silent oldevents.log newevents.log || cat events.log
+            cp newevents.log oldevents.log
+            
+            kubectl logs -n rclone package-file -c copy-packages > copy.log || true
+            if [ -f "copy.log" ]; then
+              if [ ! -f "oldcopy.log" ]; then cat copy.log && cp copy.log oldcopy.log; fi
+              grep -A 99999999999 "$(tail -n 1 oldcopy.log)" copy.log || true
+              cp copy.log oldcopy.log
+            fi
+            kubectl logs -n rclone package-file -c sleep || true
+            sleep 10
+          done
+          mkdir -p /tmp
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.gz /tmp/PACKAGES.gz
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES.rds /tmp/PACKAGES.rds
+          kubectl cp -c sleep -n rclone package-file:/mnt/results/PACKAGES /tmp/PACKAGES
+        env:
+          RCLONE_VALS: ${{secrets.RCLONE_VALS}}
+
+      - name: Install rclone & add rclone conf file
+        uses: nick-fields/retry@v2
+        env:
+            RCLONE_CONF: ${{secrets.RCLONE_CONF}}
+        with:
+          timeout_minutes: 20
+          max_attempts: 10
+          shell: bash
+          command: |
+            set -xe
+            sudo -v ; curl https://rclone.org/install.sh | sudo bash || true
+            echo "$RCLONE_CONF" > ~/.rclone.conf
+            if ! command -v rclone &> /dev/null
+            then
+                echo "rclone could not be found"
+                exit 1;
+            fi
+
+      - name: Add write_packages log
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 50
+          shell: bash
+          command: |
+            set -x
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git pull origin main || git reset --hard origin/main
+            cp /tmp/PACKAGES* logs/$(cat runstarttime)/
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add logs
+            git commit -m "Add PACKAGES files"
+            git push
+
+      - run: |
+          rclone copyto /tmp/PACKAGES js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib/PACKAGES -vvvvv
+          rclone copyto /tmp/PACKAGES.gz js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib/PACKAGES.gz -vvvvv
+          rclone copyto /tmp/PACKAGES.rds js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib/PACKAGES.rds -vvvvv

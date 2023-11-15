@@ -1,0 +1,180 @@
+name: Copy to container-binaries bucket
+on:
+  workflow_dispatch: {}
+  push:
+    paths:
+      - logs/*/PACKAGES
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Free root space
+        uses: almahmoud/free-root-space@main
+        with:
+          verbose: true
+          remove-aws-cli: false
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+          persist-credentials: true
+
+      - id: variables
+        continue-on-error: true
+        run: |
+          if [ ! -f "runstarttime" ]; then exit 1; fi
+          if [ ! -f "logs/$(cat runstarttime)/PACKAGES" ]; then exit 1; fi
+          echo containername=$(cat containername) >> $GITHUB_OUTPUT
+          echo platform=$(cat PLATFORM.bioc) >> $GITHUB_OUTPUT
+          echo testcontainer=$(cat ROOT_CONTAINER.bioc | sed "s#:#:test-#g") >> $GITHUB_OUTPUT
+          echo biocver=$(cat bioc_build/bioc | sed 's/ /./g') >> $GITHUB_OUTPUT
+          
+          mkdir -p /tmp/image
+
+          # Pick 5 random built packages to test installing
+          grep -irl "tar.gz$" | awk -F'/' '{print $NF}' > /tmp/alltars
+          grep -Pzo "(?s)\s*\"\N*\":\s*\[" biocdeps.json | awk -F'"' '{print $2}' | grep -v '^$' > /tmp/allbioc
+          comm -12 <(sort /tmp/alltars) <(sort /tmp/allbioc) > /tmp/builtbioc
+          shuf -n 5 /tmp/builtbioc > randompkgs
+          cat << EOF > test.Dockerfile
+          FROM $(cat CONTAINER_BASE_IMAGE.bioc)
+          COPY randompkgs /tmp/randompkgs
+          COPY containername /tmp/containername
+          COPY runstarttime /tmp/runstarttime
+          COPY arch /tmp/arch
+          RUN mkdir -p library && cat /tmp/randompkgs | xargs -i bash -c "Rscript -e \"p <- .libPaths(); p <- c('$(pwd)/library', p); .libPaths(p); BiocManager::install('{}', site_repository = 'https://js2.jetstream-cloud.org:8001/swift/v1/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/')\""
+          EOF
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: arm64
+        if: contains(steps.variables.outputs.platform, 'arm64') && steps.variables.outcome=='success'
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          platforms: ${{ steps.variables.outputs.platform }}
+        if: steps.variables.outcome=='success'
+
+      - name: Login to GHCR
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+        if: steps.variables.outcome=='success'
+
+      - name: Test libraries in buildx emulator
+        id: dockerbuild
+        uses: docker/build-push-action@v3
+        with:
+          file: test.Dockerfile
+          push: false
+          load: false
+          outputs: type=tar,dest=/tmp/image/bioc_test.tar
+          context: .
+          tags: ${{ steps.variables.outputs.testcontainer }}
+          platforms: ${{ steps.variables.outputs.platform }}
+        if: steps.variables.outcome=='success'
+
+      - name: Install rclone & add rclone conf file
+        uses: nick-fields/retry@v2
+        env:
+            RCLONE_CONF: ${{secrets.RCLONE_CONF}}
+        with:
+          timeout_minutes: 20
+          max_attempts: 10
+          shell: bash
+          command: |
+            set -xe
+            sudo -v ; curl https://rclone.org/install.sh | sudo bash || true
+            echo "$RCLONE_CONF" > ~/.rclone.conf
+            if ! command -v rclone &> /dev/null
+            then
+                echo "rclone could not be found"
+                exit 1;
+            fi
+
+      - name: Use AWS CLI to copy
+        id: s3copy
+        shell: bash
+        run: |
+          set -x
+          mkdir -p ~/.aws
+          echo "$S3_CREDS" > ~/.aws/credentials
+          SRCBUCK="s3://gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib"
+          DSTBUCK="s3://${{steps.variables.outputs.biocver}}/container-binaries/$(cat containername)/$(cat arch)/binaries/src/contrib"
+
+          purge_all () {
+              PURGEDIR="$1"
+              ( rclone purge $PURGEDIR -vvvvv 2>&1 | tee /tmp/purge ) || true
+              while grep -q "Deleted" /tmp/purge; do ( rclone purge $PURGEDIR -vvvvv 2>&1 | tee /tmp/purge ) || true; done
+          }
+          
+          export -f purge_all
+
+          # Purge libraries
+          purge_all js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries
+          
+          
+          # Purge all but latest 3 run binaries
+          ls -d logs/*/ | sort -n | sed "s#logs#js2:/gha-build/$(cat containername)/$(cat arch)#" | head -n -3 > /tmp/purgelist
+          cat /tmp/purgelist
+          cat /tmp/purgelist | xargs -i -r bash -c 'purge_all {}'
+          
+          (aws --endpoint-url https://js2.jetstream-cloud.org:8001 s3 sync --delete $SRCBUCK $DSTBUCK --exclude "PACKAGES*" 2>&1 | tee /tmp/synclog ) || true
+          
+          countsrc=$(aws --endpoint-url https://js2.jetstream-cloud.org:8001 s3 ls "$SRCBUCK/" | grep tar.gz | sort | uniq | wc -l)
+          aws --endpoint-url https://js2.jetstream-cloud.org:8001 s3 ls "$DSTBUCK/" | grep tar.gz | sort | uniq > /tmp/buildls
+          countdst=$(cat /tmp/buildls | wc -l)
+
+          if [ $countsrc -eq $countdst ]; then echo "All $countdst binaries copied"; else exit 1; fi 
+          
+          cat /tmp/buildls | grep -o "[\.A-Za-z0-9_-]\+.tar.gz" | sort | uniq > /tmp/cycletars
+          (cat /tmp/synclog | grep -o "[\.A-Za-z0-9_-]\+.tar.gz" | sort | uniq > /tmp/newtars) || true
+
+          if [ ! -f "/tmp/newtars" ]; then 
+            echo newcount="0" >> $GITHUB_OUTPUT
+          else
+            echo newcount=$(cat /tmp/newtars | wc -l) >> $GITHUB_OUTPUT
+          fi
+          echo cyclecount=$(cat /tmp/cycletars | wc -l) >> $GITHUB_OUTPUT
+        env:
+          S3_CREDS: ${{ secrets.S3_CREDS }}
+          AWS_EC2_METADATA_DISABLED: "true"
+        if: steps.variables.outcome=='success'
+
+      - name: Notify slack channel with summary of binaries copied to GCS
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: '${{secrets.SLACK_CHANNEL_ID}}'
+          slack-message: |
+            Cycle has ended for ${{steps.variables.outputs.containername}}.
+            New binaries copied: ${{ steps.s3copy.outputs.newcount }}
+            Total cycle binaries: ${{ steps.s3copy.outputs.cyclecount }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+        if: env.SLACK_BOT_TOKEN != null && env.SLACK_CHANNEL_ID != null
+        continue-on-error: true
+
+      - name: Copy old run
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 50
+          shell: bash
+          command: |
+            set -x
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git pull origin main || git reset --hard origin/main
+            STARTTIME="$(cat runstarttime)" || true
+            LOGDIR="logs/$STARTTIME" || true
+            echo "${{steps.variables.outputs.biocver}}/container-binaries/$(cat containername)/$(cat arch)/binaries/src/contrib" > "$LOGDIR/js2copied"
+
+            git config user.email "action@github.com"
+            git config user.name "GitHub Action"
+            git add .
+            git commit -m "Trigger copy to gcs $STARTTIME"
+            git push
