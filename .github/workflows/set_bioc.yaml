@@ -29,7 +29,7 @@ jobs:
             git checkout template/main -- .github
             cat PLATFORM.bioc > platform
             sanitizedplatform=$(cat platform | sed "s/[^[:alnum:]]/-/g")
-            echo "ghcr.io/${{ github.repository }}:$sanitizedplatform" | tr [:upper:] [:lower:] > ROOT_CONTAINER.bioc
+            echo "ghcr.io/${GITHUB_REPOSITORY,,}:$sanitizedplatform" | tr [:upper:] [:lower:] > ROOT_CONTAINER.bioc
             ls | grep ".bioc$" | awk -F'.bioc' '{print $1}' | xargs -i bash -c 'grep -irl "&bioc.{}" .github/ | xargs --no-run-if-empty sed -i "s#&bioc.{}#$(cat {}.bioc)#g" '
             echo "$(TZ=EST date '+%Y-%m-%d-%H-%M')" > last_bioc_set
             git config --global --add safe.directory "$GITHUB_WORKSPACE"

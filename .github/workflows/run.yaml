@@ -231,7 +231,7 @@ jobs:
       - name: Set container image name
         id: meta
         run: |
-          echo image="ghcr.io/${{ github.repository }}:${{ matrix.pkg }}-${{steps.versions.outputs.sanitizedplatform}}" >> $GITHUB_OUTPUT
+          echo image="ghcr.io/${GITHUB_REPOSITORY,,}:${{ matrix.pkg }}-${{steps.versions.outputs.sanitizedplatform}}" >> $GITHUB_OUTPUT
           echo base="$(cat CONTAINER_BASE_IMAGE.bioc)" >> $GITHUB_OUTPUT
           echo workspace="$(echo $GITHUB_WORKSPACE)" >> $GITHUB_OUTPUT
           mkdir -p "$GITHUB_WORKSPACE/tmp/image"
