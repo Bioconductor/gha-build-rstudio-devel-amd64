@@ -36,6 +36,7 @@ jobs:
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git config user.name github-actions
             git config user.email github-actions@github.com
+            git pull origin main || git reset --hard origin/main
             bash .github/scripts/list_tobuild.sh
 
       - name: Output list of up to 90 packages to build
