@@ -1,0 +1,71 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''vtpnet'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'vtpnet'
+also installing the dependencies ‘splitstackshape’, ‘MotifDb’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/splitstackshape_1.4.8.tar.gz'
+Content type 'binary/octet-stream' length 119272 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MotifDb_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 3383061 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/vtpnet_0.42.0.tar.gz'
+Content type 'application/x-gzip' length 21090816 bytes (20.1 MB)
+==================================================
+downloaded 20.1 MB
+
+* installing *binary* package ‘splitstackshape’ ...
+* ‘splitstackshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘splitstackshape’ as ‘splitstackshape_1.4.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (splitstackshape)
+* installing *source* package ‘vtpnet’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘vtpnet’ as ‘vtpnet_0.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vtpnet)
+* installing *source* package ‘MotifDb’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package can be loaded from final location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MotifDb’ as ‘MotifDb_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MotifDb)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdjHLkO/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m6.524s
+user	0m58.335s
+sys	0m4.808s
