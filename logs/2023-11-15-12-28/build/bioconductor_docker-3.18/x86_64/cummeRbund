@@ -1,0 +1,74 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cummeRbund'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'cummeRbund'
+also installing the dependencies ‘reshape2’, ‘fastcluster’, ‘NMFN’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fastcluster_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 184037 bytes (179 KB)
+==================================================
+downloaded 179 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/NMFN_2.0.1.tar.gz'
+Content type 'binary/octet-stream' length 29016 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/cummeRbund_2.44.0.tar.gz'
+Content type 'application/x-gzip' length 2446150 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘fastcluster’ ...
+* ‘fastcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *binary* package ‘NMFN’ ...
+* ‘NMFN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NMFN’ as ‘NMFN_2.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NMFN)
+* installing *source* package ‘cummeRbund’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cummeRbund’ as ‘cummeRbund_2.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cummeRbund)
+
+The downloaded source packages are in
+	‘/tmp/RtmpHlf1V9/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m44.397s
+user	0m39.147s
+sys	0m3.364s
+* installing *binary* package ‘NMFN’ ...
+* ‘NMFN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NMFN’ as ‘NMFN_2.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NMFN)
