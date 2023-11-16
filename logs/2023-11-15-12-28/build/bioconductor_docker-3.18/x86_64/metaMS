@@ -1,0 +1,56 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''metaMS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'metaMS'
+also installing the dependency ‘metaMSdata’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/metaMSdata_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 127803473 bytes (121.9 MB)
+==================================================
+downloaded 121.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/metaMS_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 3721079 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+* installing *source* package ‘metaMSdata’ ...
+** using staged installation
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metaMSdata’ as ‘metaMSdata_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metaMSdata)
+* installing *source* package ‘metaMS’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metaMS’ as ‘metaMS_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metaMS)
+
+The downloaded source packages are in
+	‘/tmp/RtmphUaZik/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	4m55.540s
+user	4m50.147s
+sys	0m4.333s
