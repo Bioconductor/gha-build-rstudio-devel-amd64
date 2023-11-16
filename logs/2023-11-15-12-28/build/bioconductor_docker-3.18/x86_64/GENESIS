@@ -1,0 +1,176 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GENESIS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'GENESIS'
+also installing the dependencies ‘mitools’, ‘reshape’, ‘CompQuadForm’, ‘COMPoissonReg’, ‘poibin’, ‘SPAtest’, ‘survey’, ‘GGally’, ‘TxDb.Hsapiens.UCSC.hg19.knownGene’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mitools_2.4.tar.gz'
+Content type 'binary/octet-stream' length 269450 bytes (263 KB)
+==================================================
+downloaded 263 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 167463 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/CompQuadForm_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 41446 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/COMPoissonReg_0.8.0.tar.gz'
+Content type 'binary/octet-stream' length 610566 bytes (596 KB)
+==================================================
+downloaded 596 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/poibin_1.5.tar.gz'
+Content type 'binary/octet-stream' length 27531 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SPAtest_3.1.2.tar.gz'
+Content type 'binary/octet-stream' length 117944 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/survey_4.2-1.tar.gz'
+Content type 'binary/octet-stream' length 3196157 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GGally_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 1632475 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 18669702 bytes (17.8 MB)
+==================================================
+downloaded 17.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GENESIS_2.32.0.tar.gz'
+Content type 'application/x-gzip' length 3843671 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+* installing *binary* package ‘mitools’ ...
+* ‘mitools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitools’ as ‘mitools_2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitools)
+* installing *binary* package ‘reshape’ ...
+* ‘reshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *binary* package ‘CompQuadForm’ ...
+* ‘CompQuadForm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘CompQuadForm’ as ‘CompQuadForm_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CompQuadForm)
+* installing *binary* package ‘COMPoissonReg’ ...
+* ‘COMPoissonReg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘COMPoissonReg’ as ‘COMPoissonReg_0.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (COMPoissonReg)
+* installing *binary* package ‘poibin’ ...
+* ‘poibin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘poibin’ as ‘poibin_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (poibin)
+* installing *binary* package ‘SPAtest’ ...
+* ‘SPAtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SPAtest’ as ‘SPAtest_3.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SPAtest)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.knownGene)
+* installing *source* package ‘GENESIS’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fht.c -o fht.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GENESIS.so fht.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GENESIS/00new/GENESIS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GENESIS’ as ‘GENESIS_2.32.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GENESIS)
+* installing *binary* package ‘survey’ ...
+* ‘survey’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘survey’ as ‘survey_4.2-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (survey)
+* installing *binary* package ‘GGally’ ...
+* ‘GGally’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GGally’ as ‘GGally_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GGally)
+
+The downloaded source packages are in
+	‘/tmp/RtmpI0qodx/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m3.135s
+user	0m54.118s
+sys	0m5.150s
+* installing *binary* package ‘COMPoissonReg’ ...
+* ‘COMPoissonReg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘COMPoissonReg’ as ‘COMPoissonReg_0.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (COMPoissonReg)
+* installing *source* package ‘GWASdata’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+Warning in utils::tar(filepath, curPkg, compression = "gzip", compression_level = 9L,  :
+  storing paths of more than 100 bytes is not portable:
+  ‘GWASdata/extdata/affy_raw_data/GIGAS_g_GAINmixHapMapAffy2_GenomeWideEx_6_A03_31250.BIRDSEED.ALLELE_SUMMARY.TXT’
+Warning in utils::tar(filepath, curPkg, compression = "gzip", compression_level = 9L,  :
+  storing paths of more than 100 bytes is not portable:
+  ‘GWASdata/extdata/affy_raw_data/GIGAS_g_GAINmixHapMapAffy2_GenomeWideEx_6_A05_31282.BIRDSEED.ALLELE_SUMMARY.TXT’
+Warning in utils::tar(filepath, curPkg, compression = "gzip", compression_level = 9L,  :
+  storing paths of more than 100 bytes is not portable:
+  ‘GWASdata/extdata/affy_raw_data/GIGAS_g_GAINmixHapMapAffy2_GenomeWideEx_6_B02_31236.BIRDSEED.ALLELE_SUMMARY.TXT’
+packaged installation of ‘GWASdata’ as ‘GWASdata_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GWASdata)
+* installing *binary* package ‘SPAtest’ ...
+* ‘SPAtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SPAtest’ as ‘SPAtest_3.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SPAtest)
