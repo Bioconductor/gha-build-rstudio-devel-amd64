@@ -1,0 +1,193 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''arrayMvout'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'arrayMvout'
+also installing the dependencies ‘MAQCsubset’, ‘mvoutData’, ‘hgu133atagcdf’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/MAQCsubset_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 67944772 bytes (64.8 MB)
+==================================================
+downloaded 64.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/mvoutData_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 14874308 bytes (14.2 MB)
+==================================================
+downloaded 14.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133atagcdf_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1733707 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/arrayMvout_1.60.0.tar.gz'
+Content type 'application/x-gzip' length 596265 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+* installing *source* package ‘MAQCsubset’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MAQCsubset’ as ‘MAQCsubset_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MAQCsubset)
+* installing *source* package ‘mvoutData’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mvoutData’ as ‘mvoutData_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvoutData)
+* installing *source* package ‘hgu133atagcdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu133atagcdf’ as ‘hgu133atagcdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu133atagcdf)
+* installing *source* package ‘arrayMvout’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘arrayMvout’ as ‘arrayMvout_1.60.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arrayMvout)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp8DCs5A/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m48.494s
+user	1m36.543s
+sys	0m8.664s
+* installing *source* package ‘hgu133atagcdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133atagcdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133atagcdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu133atagcdf’ as ‘hgu133atagcdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu133atagcdf)
+* installing *source* package ‘lumiBarnes’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumiBarnes’ as ‘lumiBarnes_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumiBarnes)
+* installing *source* package ‘codelink’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘codelink’ as ‘codelink_1.70.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (codelink)
+* installing *source* package ‘MAQCsubset’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MAQCsubset’ as ‘MAQCsubset_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MAQCsubset)
+* installing *source* package ‘mvoutData’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mvoutData’ as ‘mvoutData_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvoutData)
