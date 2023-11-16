@@ -76,7 +76,7 @@ jobs:
         run: |
           # PAT will trigger a push workflow, GITHUB_TOKEN won't
           # Trigger a new workflow if tobuild is not empty
-          if [ -s /tmp/newtobuild ]; then TOK=${{secrets.PAT}}; elif [ -s /tmp/write_PACKAGES ]; then TOK=${{secrets.PAT}}; else TOK=${{secrets.GITHUB_TOKEN}}; fi
+          [ -s /tmp/newtobuild ] || [ -s /tmp/write_PACKAGES ] && TOK=${{secrets.PAT}} || git diff --quiet HEAD .github/workflows/run.yaml && TOK=${{secrets.GITHUB_TOKEN}} || TOK=${{secrets.PAT}}
           echo tok=$(echo "$TOK") >> $GITHUB_OUTPUT
 
       - name: Checkout with new token
