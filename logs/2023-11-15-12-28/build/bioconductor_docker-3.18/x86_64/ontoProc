@@ -1,0 +1,209 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ontoProc'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ontoProc'
+also installing the dependencies ‘sparseMatrixStats’, ‘paintmap’, ‘DelayedMatrixStats’, ‘ontologyIndex’, ‘ontologyPlot’, ‘org.Hs.eg.db’, ‘org.Mm.eg.db’, ‘SingleCellExperiment’, ‘celldex’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sparseMatrixStats_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 703089 bytes (686 KB)
+==================================================
+downloaded 686 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/paintmap_1.0.tar.gz'
+Content type 'binary/octet-stream' length 21541 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DelayedMatrixStats_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 271120 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ontologyIndex_2.11.tar.gz'
+Content type 'binary/octet-stream' length 1598637 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ontologyPlot_1.6.tar.gz'
+Content type 'binary/octet-stream' length 72654 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Hs.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 97922403 bytes (93.4 MB)
+==================================================
+downloaded 93.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Mm.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 80888723 bytes (77.1 MB)
+==================================================
+downloaded 77.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/SingleCellExperiment_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 985002 bytes (961 KB)
+==================================================
+downloaded 961 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/celldex_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 403218 bytes (393 KB)
+==================================================
+downloaded 393 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ontoProc_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 9919139 bytes (9.5 MB)
+==================================================
+downloaded 9.5 MB
+
+* installing *source* package ‘sparseMatrixStats’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SparseMatrixView.cpp -o SparseMatrixView.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c methods.cpp -o methods.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c row_methods.cpp -o row_methods.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sparseMatrixStats.so RcppExports.o SparseMatrixView.o methods.o row_methods.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sparseMatrixStats/00new/sparseMatrixStats/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sparseMatrixStats’ as ‘sparseMatrixStats_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sparseMatrixStats)
+* installing *binary* package ‘paintmap’ ...
+* ‘paintmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘paintmap’ as ‘paintmap_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (paintmap)
+* installing *binary* package ‘ontologyIndex’ ...
+* ‘ontologyIndex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ontologyIndex’ as ‘ontologyIndex_2.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontologyIndex)
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘SingleCellExperiment’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SingleCellExperiment’ as ‘SingleCellExperiment_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SingleCellExperiment)
+* installing *source* package ‘DelayedMatrixStats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DelayedMatrixStats’ as ‘DelayedMatrixStats_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DelayedMatrixStats)
+* installing *source* package ‘ontologyPlot’ ...
+** package ‘ontologyPlot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ontologyPlot’ as ‘ontologyPlot_1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontologyPlot)
+* installing *source* package ‘celldex’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘celldex’ as ‘celldex_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (celldex)
+* installing *source* package ‘ontoProc’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ontoProc’ as ‘ontoProc_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontoProc)
+
+The downloaded source packages are in
+	‘/tmp/RtmpiMfLGF/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	8m9.117s
+user	7m55.378s
+sys	0m14.630s
