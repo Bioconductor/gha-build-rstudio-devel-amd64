@@ -1,0 +1,70 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''sitadela'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'sitadela'
+also installing the dependencies ‘BSgenome’, ‘RMySQL’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BSgenome_1.70.1.tar.gz'
+Content type 'application/x-gzip' length 5909240 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RMySQL_0.10.26.tar.gz'
+Content type 'binary/octet-stream' length 286612 bytes (279 KB)
+==================================================
+downloaded 279 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sitadela_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 496626 bytes (484 KB)
+==================================================
+downloaded 484 KB
+
+* installing *source* package ‘BSgenome’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome’ as ‘BSgenome_1.70.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome)
+* installing *binary* package ‘RMySQL’ ...
+* ‘RMySQL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RMySQL’ as ‘RMySQL_0.10.26_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RMySQL)
+* installing *source* package ‘sitadela’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+sitadela database created at /root/.local/share/R/sitadela directory
+** testing if installed package can be loaded from final location
+sitadela database found at /root/.local/share/R/sitadela directory
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sitadela’ as ‘sitadela_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sitadela)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpj3jvLC/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m57.898s
+user	0m52.852s
+sys	0m4.427s
