@@ -42,6 +42,7 @@ if [ ! -s tobuild.txt ]; then
       else
             if [ -f "logs/$(cat runstarttime)/retries_counter" ]; then
                 rm logs/$(cat runstarttime)/retries_counter
+                rm -rf logs/$(cat runstarttime)/retries || true
                 git add logs/$(cat runstarttime)
             fi
             git add lists
