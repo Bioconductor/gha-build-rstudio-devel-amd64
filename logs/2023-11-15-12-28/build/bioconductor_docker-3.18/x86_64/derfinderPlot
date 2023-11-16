@@ -1,0 +1,36 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''derfinderPlot'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'derfinderPlot'
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/derfinderPlot_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 2273476 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+* installing *source* package ‘derfinderPlot’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘derfinderPlot’ as ‘derfinderPlot_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (derfinderPlot)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9COY2N/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m40.113s
+user	0m35.019s
+sys	0m2.926s
