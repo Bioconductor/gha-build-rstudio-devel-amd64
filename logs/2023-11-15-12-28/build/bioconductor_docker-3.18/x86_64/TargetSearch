@@ -1,0 +1,152 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TargetSearch'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TargetSearch'
+also installing the dependencies ‘bookdown’, ‘ncdf4’, ‘assertthat’, ‘TargetSearchData’, ‘BiocStyle’, ‘tinytest’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bookdown_0.36.tar.gz'
+Content type 'binary/octet-stream' length 1089749 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ncdf4_1.21.tar.gz'
+Content type 'binary/octet-stream' length 278369 bytes (271 KB)
+==================================================
+downloaded 271 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/TargetSearchData_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 31312749 bytes (29.9 MB)
+==================================================
+downloaded 29.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 787685 bytes (769 KB)
+==================================================
+downloaded 769 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tinytest_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 691773 bytes (675 KB)
+==================================================
+downloaded 675 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TargetSearch_2.4.1.tar.gz'
+Content type 'application/x-gzip' length 727300 bytes (710 KB)
+==================================================
+downloaded 710 KB
+
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘ncdf4’ ...
+* ‘ncdf4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ncdf4’ as ‘ncdf4_1.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ncdf4)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *source* package ‘TargetSearchData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TargetSearchData’ as ‘TargetSearchData_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TargetSearchData)
+* installing *binary* package ‘tinytest’ ...
+* ‘tinytest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tinytest’ as ‘tinytest_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tinytest)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *source* package ‘TargetSearch’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rinit.c -o Rinit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c baseline.c -o baseline.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detection.c -o detection.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file.c -o file.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find.c -o find.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c get_line.c -o get_line.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hpf.c -o hpf.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrix.c -o matrix.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ncdf.c -o ncdf.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c peak.c -o peak.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c spectrum.c -o spectrum.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c strutils.c -o strutils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o TargetSearch.so Rinit.o baseline.o detection.o file.o find.o get_line.o hpf.o matrix.o ncdf.o peak.o spectrum.o strutils.o utils.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-TargetSearch/00new/TargetSearch/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TargetSearch’ as ‘TargetSearch_2.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TargetSearch)
+
+The downloaded source packages are in
+	‘/tmp/RtmpmrkK0G/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m37.923s
+user	0m29.287s
+sys	0m3.783s
+* installing *source* package ‘TargetSearchData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TargetSearchData’ as ‘TargetSearchData_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TargetSearchData)
