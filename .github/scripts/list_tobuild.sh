@@ -26,7 +26,7 @@ if [ ! -s tobuild.txt ]; then
                 if [ -s /tmp/resetpkgs ]; then
                     mkdir -p logs/$(cat runstarttime)/retries
                     if [ $counter -gt 6 ]; then
-                        sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+                        echo 'switch' > lists/self-hosted
                     fi
                     cat /tmp/resetpkgs | xargs -i bash -c 'pkgcounter=0; retrypath="logs/$(cat runstarttime)/retries/{}"; if [ -f "$retrypath" ]; then pkgcounter=$(<$retrypath); fi; pkgcounter=$((pkgcounter+1)); mkdir -p $(dirname $retrypath); echo $pkgcounter > "$retrypath"; if [ $pkgcounter -lt 3 ]; then rm {} && rm logs/$(cat runstarttime)/retries_counter || true; fi'
                     git add lists
