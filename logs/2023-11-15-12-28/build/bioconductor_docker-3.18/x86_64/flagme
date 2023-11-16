@@ -1,0 +1,65 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''flagme'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'flagme'
+also installing the dependency ‘gcspikelite’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/gcspikelite_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 22680339 bytes (21.6 MB)
+==================================================
+downloaded 21.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/flagme_1.58.0.tar.gz'
+Content type 'application/x-gzip' length 430110 bytes (420 KB)
+==================================================
+downloaded 420 KB
+
+* installing *source* package ‘gcspikelite’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gcspikelite’ as ‘gcspikelite_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gcspikelite)
+* installing *source* package ‘flagme’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dp.c -o dp.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pearson.c -o pearson.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o flagme.so dp.o init.o pearson.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-flagme/00new/flagme/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flagme’ as ‘flagme_1.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flagme)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp7phLgL/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m15.897s
+user	1m10.012s
+sys	0m3.719s
