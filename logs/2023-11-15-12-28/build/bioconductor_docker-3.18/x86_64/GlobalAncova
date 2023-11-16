@@ -1,0 +1,77 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GlobalAncova'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'GlobalAncova'
+also installing the dependencies ‘corpcor’, ‘dendextend’, ‘VGAM’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 113406 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dendextend_1.17.1.tar.gz'
+Content type 'binary/octet-stream' length 3897806 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-9.tar.gz'
+Content type 'binary/octet-stream' length 7442768 bytes (7.1 MB)
+==================================================
+downloaded 7.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GlobalAncova_4.20.0.tar.gz'
+Content type 'application/x-gzip' length 980866 bytes (957 KB)
+==================================================
+downloaded 957 KB
+
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘dendextend’ ...
+* ‘dendextend’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.17.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *source* package ‘GlobalAncova’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GlobalAncova.c -o GlobalAncova.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ludcmp.c -o ludcmp.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrix.c -o matrix.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GlobalAncova.so GlobalAncova.o ludcmp.o matrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GlobalAncova/00new/GlobalAncova/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GlobalAncova’ as ‘GlobalAncova_4.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalAncova)
+
+The downloaded source packages are in
+	‘/tmp/RtmpuvXG8Q/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m23.922s
+user	0m19.628s
+sys	0m2.465s
