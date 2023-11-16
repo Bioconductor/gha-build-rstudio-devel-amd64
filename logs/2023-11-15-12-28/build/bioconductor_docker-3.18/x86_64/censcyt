@@ -1,0 +1,178 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''censcyt'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'censcyt'
+also installing the dependencies ‘ucminf’, ‘ordinal’, ‘pan’, ‘jomo’, ‘haven’, ‘coda’, ‘forcats’, ‘furrr’, ‘glmnet’, ‘mitml’, ‘broom.mixed’, ‘dirmult’, ‘fitdistrplus’, ‘mice’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ucminf_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 34002 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ordinal_2022.11-16.tar.gz'
+Content type 'binary/octet-stream' length 1256636 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pan_1.9.tar.gz'
+Content type 'binary/octet-stream' length 942315 bytes (920 KB)
+==================================================
+downloaded 920 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jomo_2.7-6.tar.gz'
+Content type 'binary/octet-stream' length 2072592 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/haven_2.5.3.tar.gz'
+Content type 'binary/octet-stream' length 376385 bytes (367 KB)
+==================================================
+downloaded 367 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/coda_0.19-4.tar.gz'
+Content type 'binary/octet-stream' length 320307 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/furrr_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 1017574 bytes (993 KB)
+==================================================
+downloaded 993 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mitml_0.4-5.tar.gz'
+Content type 'binary/octet-stream' length 525203 bytes (512 KB)
+==================================================
+downloaded 512 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/broom.mixed_0.2.9.4.tar.gz'
+Content type 'binary/octet-stream' length 4144080 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dirmult_0.1.3-5.tar.gz'
+Content type 'binary/octet-stream' length 72837 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fitdistrplus_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 1969744 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mice_3.16.0.tar.gz'
+Content type 'binary/octet-stream' length 1569977 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/censcyt_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 479347 bytes (468 KB)
+==================================================
+downloaded 468 KB
+
+* installing *binary* package ‘ucminf’ ...
+* ‘ucminf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ucminf’ as ‘ucminf_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ucminf)
+* installing *binary* package ‘pan’ ...
+* ‘pan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pan’ as ‘pan_1.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pan)
+* installing *binary* package ‘coda’ ...
+* ‘coda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘furrr’ ...
+* ‘furrr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘furrr’ as ‘furrr_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (furrr)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *binary* package ‘dirmult’ ...
+* ‘dirmult’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dirmult’ as ‘dirmult_0.1.3-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dirmult)
+* installing *binary* package ‘fitdistrplus’ ...
+* ‘fitdistrplus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fitdistrplus’ as ‘fitdistrplus_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fitdistrplus)
+* installing *binary* package ‘ordinal’ ...
+* ‘ordinal’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ordinal’ as ‘ordinal_2022.11-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ordinal)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *binary* package ‘broom.mixed’ ...
+* ‘broom.mixed’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom.mixed’ as ‘broom.mixed_0.2.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom.mixed)
+* installing *binary* package ‘jomo’ ...
+* ‘jomo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jomo’ as ‘jomo_2.7-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jomo)
+* installing *binary* package ‘mitml’ ...
+* ‘mitml’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitml’ as ‘mitml_0.4-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitml)
+* installing *binary* package ‘mice’ ...
+* ‘mice’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mice’ as ‘mice_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mice)
+* installing *source* package ‘censcyt’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘censcyt’ as ‘censcyt_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (censcyt)
+
+The downloaded source packages are in
+	‘/tmp/RtmpzIPSer/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m38.202s
+user	0m26.903s
+sys	0m4.431s
