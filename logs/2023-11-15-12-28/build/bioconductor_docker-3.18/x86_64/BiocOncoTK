@@ -1,0 +1,308 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BiocOncoTK'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'BiocOncoTK'
+also installing the dependencies ‘assertthat’, ‘gargle’, ‘rapidjsonr’, ‘ontologyIndex’, ‘paintmap’, ‘GO.db’, ‘bigrquery’, ‘curatedTCGAData’, ‘ontoProc’, ‘ontologyPlot’, ‘pogos’, ‘restfulSE’, ‘TxDb.Hsapiens.UCSC.hg18.knownGene’, ‘FDb.InfiniumMethylation.hg19’, ‘EnsDb.Hsapiens.v75’, ‘rhdf5client’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 759843 bytes (742 KB)
+==================================================
+downloaded 742 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rapidjsonr_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 129189 bytes (126 KB)
+==================================================
+downloaded 126 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ontologyIndex_2.11.tar.gz'
+Content type 'binary/octet-stream' length 1598637 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/paintmap_1.0.tar.gz'
+Content type 'binary/octet-stream' length 21541 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 29013599 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bigrquery_1.4.2.tar.gz'
+Content type 'binary/octet-stream' length 520336 bytes (508 KB)
+==================================================
+downloaded 508 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTCGAData_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 424783 bytes (414 KB)
+==================================================
+downloaded 414 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ontoProc_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 9919139 bytes (9.5 MB)
+==================================================
+downloaded 9.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ontologyPlot_1.6.tar.gz'
+Content type 'binary/octet-stream' length 72654 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/pogos_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 2390121 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/restfulSE_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 165879 bytes (161 KB)
+==================================================
+downloaded 161 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 16032792 bytes (15.3 MB)
+==================================================
+downloaded 15.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.InfiniumMethylation.hg19_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 38996322 bytes (37.2 MB)
+==================================================
+downloaded 37.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Hsapiens.v75_2.99.0.tar.gz'
+Content type 'application/x-gzip' length 79029669 bytes (75.4 MB)
+==================================================
+downloaded 75.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5client_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 543791 bytes (531 KB)
+==================================================
+downloaded 531 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocOncoTK_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 10043183 bytes (9.6 MB)
+==================================================
+downloaded 9.6 MB
+
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘gargle’ ...
+* ‘gargle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gargle’ as ‘gargle_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gargle)
+* installing *binary* package ‘rapidjsonr’ ...
+* ‘rapidjsonr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rapidjsonr’ as ‘rapidjsonr_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rapidjsonr)
+* installing *binary* package ‘ontologyIndex’ ...
+* ‘ontologyIndex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ontologyIndex’ as ‘ontologyIndex_2.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontologyIndex)
+* installing *binary* package ‘paintmap’ ...
+* ‘paintmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘paintmap’ as ‘paintmap_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (paintmap)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *source* package ‘curatedTCGAData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘curatedTCGAData’ as ‘curatedTCGAData_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (curatedTCGAData)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg18.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg18.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg18.knownGene)
+* installing *source* package ‘FDb.InfiniumMethylation.hg19’ ...
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FDb.InfiniumMethylation.hg19’ as ‘FDb.InfiniumMethylation.hg19_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FDb.InfiniumMethylation.hg19)
+* installing *source* package ‘EnsDb.Hsapiens.v75’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EnsDb.Hsapiens.v75’ as ‘EnsDb.Hsapiens.v75_2.99.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EnsDb.Hsapiens.v75)
+* installing *source* package ‘rhdf5client’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extract.c -o extract.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o rhdf5client.so extract.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-rhdf5client/00new/rhdf5client/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rhdf5client’ as ‘rhdf5client_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rhdf5client)
+* installing *binary* package ‘bigrquery’ ...
+* ‘bigrquery’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bigrquery’ as ‘bigrquery_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bigrquery)
+* installing *source* package ‘ontologyPlot’ ...
+** package ‘ontologyPlot’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ontologyPlot’ as ‘ontologyPlot_1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontologyPlot)
+* installing *source* package ‘ontoProc’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ontoProc’ as ‘ontoProc_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontoProc)
+* installing *source* package ‘restfulSE’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘restfulSE’ as ‘restfulSE_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (restfulSE)
+* installing *source* package ‘BiocOncoTK’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocOncoTK’ as ‘BiocOncoTK_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocOncoTK)
+* installing *source* package ‘pogos’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pogos’ as ‘pogos_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pogos)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp6eukjy/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	6m15.612s
+user	5m49.508s
+sys	0m22.105s
