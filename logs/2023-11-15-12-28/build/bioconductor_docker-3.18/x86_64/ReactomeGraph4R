@@ -1,0 +1,148 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ReactomeGraph4R'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ReactomeGraph4R'
+also installing the dependencies ‘generics’, ‘dplyr’, ‘attempt’, ‘igraph’, ‘tidyr’, ‘tidyselect’, ‘neo4r’, ‘getPass’, ‘networkD3’, ‘visNetwork’, ‘wesanderson’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/generics_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 76238 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1461655 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/attempt_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 106924 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyr_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1188040 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyselect_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 219931 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/neo4r_0.1.1.tar.gz'
+Content type 'binary/octet-stream' length 268831 bytes (262 KB)
+==================================================
+downloaded 262 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/getPass_0.2-2.tar.gz'
+Content type 'binary/octet-stream' length 228919 bytes (223 KB)
+==================================================
+downloaded 223 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/networkD3_0.4.tar.gz'
+Content type 'binary/octet-stream' length 188445 bytes (184 KB)
+==================================================
+downloaded 184 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 4643028 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/wesanderson_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 18097 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ReactomeGraph4R_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 965013 bytes (942 KB)
+==================================================
+downloaded 942 KB
+
+* installing *binary* package ‘generics’ ...
+* ‘generics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘generics’ as ‘generics_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (generics)
+* installing *binary* package ‘attempt’ ...
+* ‘attempt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘attempt’ as ‘attempt_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (attempt)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘tidyselect’ ...
+* ‘tidyselect’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyselect’ as ‘tidyselect_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyselect)
+* installing *binary* package ‘getPass’ ...
+* ‘getPass’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘getPass’ as ‘getPass_0.2-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (getPass)
+* installing *binary* package ‘visNetwork’ ...
+* ‘visNetwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘visNetwork’ as ‘visNetwork_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (visNetwork)
+* installing *binary* package ‘wesanderson’ ...
+* ‘wesanderson’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wesanderson’ as ‘wesanderson_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wesanderson)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *binary* package ‘networkD3’ ...
+* ‘networkD3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘networkD3’ as ‘networkD3_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (networkD3)
+* installing *binary* package ‘tidyr’ ...
+* ‘tidyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyr’ as ‘tidyr_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyr)
+* installing *binary* package ‘neo4r’ ...
+* ‘neo4r’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘neo4r’ as ‘neo4r_0.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (neo4r)
+* installing *source* package ‘ReactomeGraph4R’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ReactomeGraph4R’ as ‘ReactomeGraph4R_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ReactomeGraph4R)
+
+The downloaded source packages are in
+	‘/tmp/RtmpuPYcYz/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m23.053s
+user	0m9.982s
+sys	0m3.066s
