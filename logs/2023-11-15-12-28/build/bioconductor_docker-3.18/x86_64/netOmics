@@ -1,0 +1,454 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''netOmics'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'netOmics'
+also installing the dependencies ‘RcppEigen’, ‘rematch’, ‘data.table’, ‘RSpectra’, ‘zoo’, ‘backports’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘ids’, ‘timechange’, ‘selectr’, ‘plotly’, ‘crosstalk’, ‘gridExtra’, ‘ellipse’, ‘corpcor’, ‘reshape2’, ‘rARPACK’, ‘ggrepel’, ‘lmtest’, ‘broom’, ‘conflicted’, ‘dtplyr’, ‘forcats’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘lubridate’, ‘modelr’, ‘readxl’, ‘reprex’, ‘rvest’, ‘rex’, ‘gprofiler2’, ‘mixOmics’, ‘timeOmics’, ‘tidyverse’, ‘covr’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 1528720 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 15948 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/data.table_1.14.8.tar.gz'
+Content type 'binary/octet-stream' length 2126876 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RSpectra_0.16-1.tar.gz'
+Content type 'binary/octet-stream' length 494062 bytes (482 KB)
+==================================================
+downloaded 482 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1015488 bytes (991 KB)
+==================================================
+downloaded 991 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/backports_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 95020 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 759843 bytes (742 KB)
+==================================================
+downloaded 742 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/uuid_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 45580 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 100739 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ids_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 120179 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/timechange_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 169260 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'binary/octet-stream' length 488354 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/crosstalk_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 403467 bytes (394 KB)
+==================================================
+downloaded 394 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106992 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ellipse_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 216899 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 113406 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rARPACK_0.11-0.tar.gz'
+Content type 'binary/octet-stream' length 27676 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lmtest_0.9-40.tar.gz'
+Content type 'binary/octet-stream' length 398739 bytes (389 KB)
+==================================================
+downloaded 389 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/broom_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1851908 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/conflicted_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 54788 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dtplyr_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 352454 bytes (344 KB)
+==================================================
+downloaded 344 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/googledrive_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1888433 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/googlesheets4_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 504943 bytes (493 KB)
+==================================================
+downloaded 493 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/haven_2.5.3.tar.gz'
+Content type 'binary/octet-stream' length 376385 bytes (367 KB)
+==================================================
+downloaded 367 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 980234 bytes (957 KB)
+==================================================
+downloaded 957 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/modelr_0.1.11.tar.gz'
+Content type 'binary/octet-stream' length 199911 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 862022 bytes (841 KB)
+==================================================
+downloaded 841 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reprex_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 495155 bytes (483 KB)
+==================================================
+downloaded 483 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rvest_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 210026 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 124178 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gprofiler2_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 1513214 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/mixOmics_6.26.0.tar.gz'
+Content type 'application/x-gzip' length 18901703 bytes (18.0 MB)
+==================================================
+downloaded 18.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/timeOmics_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 3978619 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyverse_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 425182 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 325424 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/netOmics_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 2195914 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘data.table’ ...
+* ‘data.table’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘data.table’ as ‘data.table_1.14.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (data.table)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *binary* package ‘backports’ ...
+* ‘backports’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘backports’ as ‘backports_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (backports)
+* installing *binary* package ‘gargle’ ...
+* ‘gargle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gargle’ as ‘gargle_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gargle)
+* installing *binary* package ‘uuid’ ...
+* ‘uuid’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uuid’ as ‘uuid_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uuid)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘selectr’ ...
+* ‘selectr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘selectr’ as ‘selectr_0.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (selectr)
+* installing *binary* package ‘crosstalk’ ...
+* ‘crosstalk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crosstalk’ as ‘crosstalk_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crosstalk)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘ellipse’ ...
+* ‘ellipse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ellipse’ as ‘ellipse_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ellipse)
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘conflicted’ ...
+* ‘conflicted’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘conflicted’ as ‘conflicted_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (conflicted)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘reprex’ ...
+* ‘reprex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reprex’ as ‘reprex_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reprex)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘RSpectra’ ...
+* ‘RSpectra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSpectra’ as ‘RSpectra_0.16-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSpectra)
+* installing *binary* package ‘cellranger’ ...
+* ‘cellranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cellranger’ as ‘cellranger_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cellranger)
+* installing *binary* package ‘ids’ ...
+* ‘ids’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ids’ as ‘ids_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ids)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *binary* package ‘lmtest’ ...
+* ‘lmtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmtest’ as ‘lmtest_0.9-40_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmtest)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘dtplyr’ ...
+* ‘dtplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dtplyr’ as ‘dtplyr_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dtplyr)
+* installing *binary* package ‘googledrive’ ...
+* ‘googledrive’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googledrive’ as ‘googledrive_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googledrive)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *binary* package ‘rvest’ ...
+* ‘rvest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvest’ as ‘rvest_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvest)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘rARPACK’ ...
+* ‘rARPACK’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rARPACK’ as ‘rARPACK_0.11-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rARPACK)
+* installing *binary* package ‘googlesheets4’ ...
+* ‘googlesheets4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googlesheets4’ as ‘googlesheets4_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googlesheets4)
+* installing *binary* package ‘modelr’ ...
+* ‘modelr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modelr’ as ‘modelr_0.1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modelr)
+* installing *binary* package ‘readxl’ ...
+* ‘readxl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readxl’ as ‘readxl_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readxl)
+* installing *binary* package ‘gprofiler2’ ...
+* ‘gprofiler2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gprofiler2’ as ‘gprofiler2_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gprofiler2)
+* installing *source* package ‘mixOmics’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mixOmics’ as ‘mixOmics_6.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mixOmics)
+* installing *binary* package ‘tidyverse’ ...
+* ‘tidyverse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyverse’ as ‘tidyverse_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyverse)
+* installing *source* package ‘netOmics’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘netOmics’ as ‘netOmics_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (netOmics)
+* installing *source* package ‘timeOmics’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Note: wrong number of arguments to '*' 
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘timeOmics’ as ‘timeOmics_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timeOmics)
+
+The downloaded source packages are in
+	‘/tmp/RtmpbChsgA/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m16.755s
+user	0m56.197s
+sys	0m10.427s
