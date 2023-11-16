@@ -1,0 +1,85 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''VariantFiltering'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'VariantFiltering'
+also installing the dependencies ‘shinythemes’, ‘shinyTree’, ‘BSgenome.Hsapiens.1000genomes.hs37d5’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinythemes_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 963506 bytes (940 KB)
+==================================================
+downloaded 940 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyTree_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 603759 bytes (589 KB)
+==================================================
+downloaded 589 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1.tar.gz'
+Content type 'application/x-gzip' length 687514862 bytes (655.7 MB)
+==================================================
+downloaded 655.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/VariantFiltering_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 3753221 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *binary* package ‘shinythemes’ ...
+* ‘shinythemes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinythemes’ as ‘shinythemes_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinythemes)
+* installing *binary* package ‘shinyTree’ ...
+* ‘shinyTree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyTree’ as ‘shinyTree_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyTree)
+* installing *source* package ‘BSgenome.Hsapiens.1000genomes.hs37d5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.1000genomes.hs37d5’ as ‘BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.1000genomes.hs37d5)
+* installing *source* package ‘VariantFiltering’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_VariantFiltering.c -o R_init_VariantFiltering.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c methods-WeightMatrix.c -o methods-WeightMatrix.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o VariantFiltering.so Biostrings_stubs.o R_init_VariantFiltering.o methods-WeightMatrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-VariantFiltering/00new/VariantFiltering/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VariantFiltering’ as ‘VariantFiltering_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VariantFiltering)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2gLUDs/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	2m32.352s
+user	2m8.660s
+sys	0m10.535s
