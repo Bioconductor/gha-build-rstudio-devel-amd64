@@ -1,0 +1,284 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''rTRM'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'rTRM'
+also installing the dependencies ‘data.table’, ‘gtools’, ‘splitstackshape’, ‘seqLogo’, ‘gdata’, ‘evd’, ‘BSgenome’, ‘BSgenome.Mmusculus.UCSC.mm8’, ‘igraph’, ‘MotifDb’, ‘PWMEnrich’, ‘BSgenome.Mmusculus.UCSC.mm8.masked’, ‘org.Mm.eg.db’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/data.table_1.14.8.tar.gz'
+Content type 'binary/octet-stream' length 2126876 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/splitstackshape_1.4.8.tar.gz'
+Content type 'binary/octet-stream' length 119272 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz'
+Content type 'application/x-gzip' length 919574 bytes (898 KB)
+==================================================
+downloaded 898 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gdata_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 494292 bytes (482 KB)
+==================================================
+downloaded 482 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/evd_2.3-6.1.tar.gz'
+Content type 'binary/octet-stream' length 1788351 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BSgenome_1.70.1.tar.gz'
+Content type 'application/x-gzip' length 5909240 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm8_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 609699050 bytes (581.5 MB)
+==================================================
+downloaded 581.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MotifDb_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 3383061 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/PWMEnrich_4.38.0.tar.gz'
+Content type 'application/x-gzip' length 1647178 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm8.masked_1.3.99.tar.gz'
+Content type 'application/x-gzip' length 22497726 bytes (21.5 MB)
+==================================================
+downloaded 21.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Mm.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 80888723 bytes (77.1 MB)
+==================================================
+downloaded 77.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/rTRM_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 3759697 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *binary* package ‘data.table’ ...
+* ‘data.table’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘data.table’ as ‘data.table_1.14.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (data.table)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *source* package ‘seqLogo’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seqLogo’ as ‘seqLogo_1.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqLogo)
+* installing *binary* package ‘evd’ ...
+* ‘evd’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘evd’ as ‘evd_2.3-6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (evd)
+* installing *source* package ‘BSgenome’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome’ as ‘BSgenome_1.70.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *binary* package ‘splitstackshape’ ...
+* ‘splitstackshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘splitstackshape’ as ‘splitstackshape_1.4.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (splitstackshape)
+* installing *binary* package ‘gdata’ ...
+* ‘gdata’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gdata’ as ‘gdata_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdata)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm8’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm8’ as ‘BSgenome.Mmusculus.UCSC.mm8_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm8)
+* installing *source* package ‘rTRM’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+This graph was created by an old(er) igraph version.
+  Call upgrade_graph() on it to use with the current igraph version
+  For now we convert it on the fly...
+This graph was created by an old(er) igraph version.
+  Call upgrade_graph() on it to use with the current igraph version
+  For now we convert it on the fly...
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rTRM’ as ‘rTRM_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rTRM)
+* installing *source* package ‘MotifDb’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package can be loaded from final location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MotifDb’ as ‘MotifDb_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MotifDb)
+* installing *source* package ‘PWMEnrich’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘PWMEnrich’ as ‘PWMEnrich_4.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PWMEnrich)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm8.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm8.masked’ as ‘BSgenome.Mmusculus.UCSC.mm8.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm8.masked)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYg8KRc/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	6m19.590s
+user	5m50.454s
+sys	0m19.103s
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm8’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm8’ as ‘BSgenome.Mmusculus.UCSC.mm8_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm8)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm8.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm8.masked’ as ‘BSgenome.Mmusculus.UCSC.mm8.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm8.masked)
