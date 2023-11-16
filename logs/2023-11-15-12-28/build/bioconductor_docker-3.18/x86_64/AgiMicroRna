@@ -1,0 +1,91 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''AgiMicroRna'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'AgiMicroRna'
+also installing the dependencies ‘marray’, ‘gdata’, ‘codelink’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/marray_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 5056102 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gdata_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 494292 bytes (482 KB)
+==================================================
+downloaded 482 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/codelink_1.70.0.tar.gz'
+Content type 'application/x-gzip' length 3332975 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/AgiMicroRna_2.52.0.tar.gz'
+Content type 'application/x-gzip' length 3106920 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *source* package ‘marray’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘marray’ as ‘marray_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (marray)
+* installing *binary* package ‘gdata’ ...
+* ‘gdata’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gdata’ as ‘gdata_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdata)
+* installing *source* package ‘codelink’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘codelink’ as ‘codelink_1.70.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (codelink)
+* installing *source* package ‘AgiMicroRna’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AgiMicroRna’ as ‘AgiMicroRna_2.52.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AgiMicroRna)
+
+The downloaded source packages are in
+	‘/tmp/RtmptQAli8/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m6.314s
+user	0m58.985s
+sys	0m5.702s
