@@ -1,0 +1,562 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''oligo'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'oligo'
+also installing the dependencies ‘tidyr’, ‘tidyselect’, ‘generics’, ‘hms’, ‘dbplyr’, ‘dplyr’, ‘filelock’, ‘bookdown’, ‘progress’, ‘BiocFileCache’, ‘hapmap100kxba’, ‘pd.hg.u95av2’, ‘pd.huex.1.0.st.v2’, ‘pd.hg18.60mer.expr’, ‘pd.hugene.1.0.st.v1’, ‘maqcExpression4plex’, ‘genefilter’, ‘oligoData’, ‘BiocStyle’, ‘biomaRt’, ‘ACME’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyr_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1188040 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyselect_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 219931 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/generics_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 76238 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hms_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 98350 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dbplyr_2.4.0.tar.gz'
+Content type 'binary/octet-stream' length 1195636 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1461655 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/filelock_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 21806 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bookdown_0.36.tar.gz'
+Content type 'binary/octet-stream' length 1089749 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progress_1.2.2.tar.gz'
+Content type 'binary/octet-stream' length 83560 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocFileCache_2.10.1.tar.gz'
+Content type 'application/x-gzip' length 299441 bytes (292 KB)
+==================================================
+downloaded 292 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmap100kxba_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 40880238 bytes (39.0 MB)
+==================================================
+downloaded 39.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u95av2_3.12.0.tar.gz'
+Content type 'application/x-gzip' length 7721826 bytes (7.4 MB)
+==================================================
+downloaded 7.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.huex.1.0.st.v2_3.14.1.tar.gz'
+Content type 'application/x-gzip' length 314073786 bytes (299.5 MB)
+==================================================
+downloaded 299.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg18.60mer.expr_3.12.0.tar.gz'
+Content type 'application/x-gzip' length 3134958 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hugene.1.0.st.v1_3.14.1.tar.gz'
+Content type 'application/x-gzip' length 82353509 bytes (78.5 MB)
+==================================================
+downloaded 78.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/maqcExpression4plex_1.46.0.tar.gz'
+Content type 'application/x-gzip' length 6897871 bytes (6.6 MB)
+==================================================
+downloaded 6.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz'
+Content type 'application/x-gzip' length 993568 bytes (970 KB)
+==================================================
+downloaded 970 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/oligoData_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 420107207 bytes (400.6 MB)
+==================================================
+downloaded 400.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 787685 bytes (769 KB)
+==================================================
+downloaded 769 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/biomaRt_2.58.0.tar.gz'
+Content type 'application/x-gzip' length 669172 bytes (653 KB)
+==================================================
+downloaded 653 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ACME_2.58.0.tar.gz'
+Content type 'application/x-gzip' length 10270360 bytes (9.8 MB)
+==================================================
+downloaded 9.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/oligo_1.66.0.tar.gz'
+Content type 'application/x-gzip' length 28421227 bytes (27.1 MB)
+==================================================
+downloaded 27.1 MB
+
+* installing *binary* package ‘tidyselect’ ...
+* ‘tidyselect’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyselect’ as ‘tidyselect_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyselect)
+* installing *binary* package ‘generics’ ...
+* ‘generics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘generics’ as ‘generics_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (generics)
+* installing *binary* package ‘hms’ ...
+* ‘hms’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hms’ as ‘hms_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hms)
+* installing *binary* package ‘filelock’ ...
+* ‘filelock’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘filelock’ as ‘filelock_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (filelock)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *source* package ‘hapmap100kxba’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hapmap100kxba’ as ‘hapmap100kxba_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hapmap100kxba)
+* installing *source* package ‘maqcExpression4plex’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘maqcExpression4plex’ as ‘maqcExpression4plex_1.46.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maqcExpression4plex)
+* installing *source* package ‘genefilter’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c half_range_mode.cpp -o half_range_mode.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nd.c -o nd.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pAUC.c -o pAUC.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rowPAUCs.c -o rowPAUCs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rowttests.c -o rowttests.o
+gfortran  -fpic  -g -O2  -c ttest.f -o ttest.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o genefilter.so half_range_mode.o init.o nd.o pAUC.o rowPAUCs.o rowttests.o ttest.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-genefilter/00new/genefilter/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘genefilter’ as ‘genefilter_1.84.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (genefilter)
+* installing *source* package ‘ACME’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c windowChisq.c -o windowChisq.o
+windowChisq.c:86:20: warning: initialization of ‘void * (*)(void)’ from incompatible pointer type ‘struct SEXPREC * (*)(struct SEXPREC *, struct SEXPREC *, struct SEXPREC *, struct SEXPREC *, struct SEXPREC *)’ [-Wincompatible-pointer-types]
+   86 |     {"windowChisq",&windowChisq,5},
+      |                    ^
+windowChisq.c:86:20: note: (near initialization for ‘callMethods[0].fun’)
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ACME.so windowChisq.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ACME/00new/ACME/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ACME’ as ‘ACME_2.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ACME)
+* installing *source* package ‘oligo’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c DABG.c -o DABG.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ParserGzXYS.c -o ParserGzXYS.o
+ParserGzXYS.c: In function ‘gzcountLines’:
+ParserGzXYS.c:18:17: warning: passing argument 1 of ‘gzeof’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |   while (!gzeof(file)){
+      |                 ^~~~
+      |                 |
+      |                 struct gzFile_s **
+In file included from /usr/include/zlib.h:34,
+                 from ParserGzXYS.c:4:
+/usr/include/zlib.h:1595:27: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1595 | ZEXTERN int ZEXPORT gzeof OF((gzFile file));
+      |                           ^~
+ParserGzXYS.c:19:12: warning: passing argument 1 of ‘gzgets’ from incompatible pointer type [-Wincompatible-pointer-types]
+   19 |     gzgets(file, buffer, 1000);
+      |            ^~~~
+      |            |
+      |            struct gzFile_s **
+In file included from /usr/include/zlib.h:34,
+                 from ParserGzXYS.c:4:
+/usr/include/zlib.h:1492:31: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1492 | ZEXTERN char * ZEXPORT gzgets OF((gzFile file, char *buf, int len));
+      |                               ^~
+ParserGzXYS.c: In function ‘gzxys_header_field’:
+ParserGzXYS.c:46:6: warning: assignment to ‘struct gzFile_s **’ from incompatible pointer type ‘gzFile’ {aka ‘struct gzFile_s *’} [-Wincompatible-pointer-types]
+   46 |   fp = gzopen(currentFile, "rb");
+      |      ^
+ParserGzXYS.c:50:10: warning: passing argument 1 of ‘gzgets’ from incompatible pointer type [-Wincompatible-pointer-types]
+   50 |   gzgets(fp, buffer, LINEMAX);
+      |          ^~
+      |          |
+      |          struct gzFile_s **
+In file included from /usr/include/zlib.h:34,
+                 from ParserGzXYS.c:4:
+/usr/include/zlib.h:1492:31: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1492 | ZEXTERN char * ZEXPORT gzgets OF((gzFile file, char *buf, int len));
+      |                               ^~
+ParserGzXYS.c:51:11: warning: passing argument 1 of ‘gzclose’ from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |   gzclose(fp);
+      |           ^~
+      |           |
+      |           struct gzFile_s **
+In file included from /usr/include/zlib.h:34,
+                 from ParserGzXYS.c:4:
+/usr/include/zlib.h:1631:32: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1631 | ZEXTERN int ZEXPORT    gzclose OF((gzFile file));
+      |                                ^~
+ParserGzXYS.c: In function ‘R_read_gzxys_files’:
+ParserGzXYS.c:134:6: warning: assignment to ‘struct gzFile_s **’ from incompatible pointer type ‘gzFile’ {aka ‘struct gzFile_s *’} [-Wincompatible-pointer-types]
+  134 |   fp = gzopen(CHAR(STRING_ELT(filenames, 0)), "rb");
+      |      ^
+ParserGzXYS.c:138:11: warning: passing argument 1 of ‘gzclose’ from incompatible pointer type [-Wincompatible-pointer-types]
+  138 |   gzclose(fp);
+      |           ^~
+      |           |
+      |           struct gzFile_s **
+In file included from /usr/include/zlib.h:34,
+                 from ParserGzXYS.c:4:
+/usr/include/zlib.h:1631:32: note: expected ‘gzFile’ {aka ‘struct gzFile_s *’} but argument is of type ‘struct gzFile_s **’
+ 1631 | ZEXTERN int ZEXPORT    gzclose OF((gzFile file));
+      |                                ^~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ParserXYS.c -o ParserXYS.o
+ParserXYS.c: In function ‘xys_header_field’:
+ParserXYS.c:145:3: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  145 |   fgets(buffer, LINEMAX, fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+ParserXYS.c: In function ‘R_read_xys_header’:
+ParserXYS.c:320:3: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  320 |   fgets(buffer, LINEMAX, fp);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c baseProfile.c -o baseProfile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c basecontent.c -o basecontent.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c chipbackground.c -o chipbackground.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mas5calls.c -o mas5calls.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma2.c -o rma2.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma_common.c -o rma_common.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c trimmed.c -o trimmed.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o oligo.so DABG.o ParserGzXYS.o ParserXYS.o baseProfile.o basecontent.o chipbackground.o mas5calls.o rma2.o rma_common.o trimmed.o -lz -lgfortran -lm -lquadmath -llapack -lblas -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-oligo/00new/oligo/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Note: in method for ‘pm<-’ with signature
+‘object="TilingFeatureSet",subset="ANY",target="ANY",value="array"’:
+expanding the signature to include omitted arguments in definition:
+subset = "missing", target = "missing"
+Note: in method for ‘mm<-’ with signature
+‘object="TilingFeatureSet",subset="ANY",target="ANY",value="array"’:
+expanding the signature to include omitted arguments in definition:
+subset = "missing", target = "missing"
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘oligo’ as ‘oligo_1.66.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (oligo)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *binary* package ‘progress’ ...
+* ‘progress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progress’ as ‘progress_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progress)
+* installing *source* package ‘pd.hg.u95av2’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.hg.u95av2’ as ‘pd.hg.u95av2_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.hg.u95av2)
+* installing *source* package ‘pd.huex.1.0.st.v2’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.huex.1.0.st.v2’ as ‘pd.huex.1.0.st.v2_3.14.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.huex.1.0.st.v2)
+* installing *source* package ‘pd.hg18.60mer.expr’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.hg18.60mer.expr’ as ‘pd.hg18.60mer.expr_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.hg18.60mer.expr)
+* installing *source* package ‘pd.hugene.1.0.st.v1’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.hugene.1.0.st.v1’ as ‘pd.hugene.1.0.st.v1_3.14.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.hugene.1.0.st.v1)
+* installing *source* package ‘oligoData’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘oligoData’ as ‘oligoData_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (oligoData)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘tidyr’ ...
+* ‘tidyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyr’ as ‘tidyr_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyr)
+* installing *binary* package ‘dbplyr’ ...
+* ‘dbplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbplyr’ as ‘dbplyr_2.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbplyr)
+* installing *source* package ‘BiocFileCache’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocFileCache’ as ‘BiocFileCache_2.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocFileCache)
+* installing *source* package ‘biomaRt’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biomaRt’ as ‘biomaRt_2.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biomaRt)
+
+The downloaded source packages are in
+	‘/tmp/RtmpQIKFUN/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	8m38.773s
+user	8m9.942s
+sys	0m25.329s
+* installing *source* package ‘hapmap100kxba’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hapmap100kxba’ as ‘hapmap100kxba_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hapmap100kxba)
+* installing *source* package ‘pdInfoBuilder’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pdInfoBuilder.c -o pdInfoBuilder.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o pdInfoBuilder.so pdInfoBuilder.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-pdInfoBuilder/00new/pdInfoBuilder/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbGetQuery’ when loading ‘pdInfoBuilder’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbGetQuery’ when loading ‘pdInfoBuilder’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbGetQuery’ when loading ‘pdInfoBuilder’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pdInfoBuilder’ as ‘pdInfoBuilder_1.66.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pdInfoBuilder)
+* installing *source* package ‘maqcExpression4plex’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘maqcExpression4plex’ as ‘maqcExpression4plex_1.46.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maqcExpression4plex)
+* installing *source* package ‘pd.hg.u95av2’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.hg.u95av2’ as ‘pd.hg.u95av2_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.hg.u95av2)
+* installing *source* package ‘pd.hg18.60mer.expr’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.hg18.60mer.expr’ as ‘pd.hg18.60mer.expr_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.hg18.60mer.expr)
