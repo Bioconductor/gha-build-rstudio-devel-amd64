@@ -1,0 +1,120 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''affycoretools'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'affycoretools'
+also installing the dependencies ‘affydata’, ‘hgfocuscdf’, ‘rgl’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/affydata_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 12712861 bytes (12.1 MB)
+==================================================
+downloaded 12.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgfocuscdf_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 656785 bytes (641 KB)
+==================================================
+downloaded 641 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rgl_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 4799925 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/affycoretools_1.74.0.tar.gz'
+Content type 'application/x-gzip' length 6914315 bytes (6.6 MB)
+==================================================
+downloaded 6.6 MB
+
+* installing *source* package ‘affydata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+     Package    LibPath                                Item      
+[1,] "affydata" "/tmp/tmp/built/00LOCK-affydata/00new" "Dilution"
+     Title                        
+[1,] "AffyBatch instance Dilution"
+** testing if installed package can be loaded from final location
+     Package    LibPath          Item       Title                        
+[1,] "affydata" "/tmp/tmp/built" "Dilution" "AffyBatch instance Dilution"
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affydata’ as ‘affydata_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affydata)
+* installing *source* package ‘hgfocuscdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgfocuscdf’ as ‘hgfocuscdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgfocuscdf)
+* installing *binary* package ‘rgl’ ...
+* ‘rgl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rgl’ as ‘rgl_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rgl)
+* installing *source* package ‘affycoretools’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affycoretools’ as ‘affycoretools_1.74.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affycoretools)
+
+The downloaded source packages are in
+	‘/tmp/RtmplgpLRw/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m6.805s
+user	0m58.729s
+sys	0m5.543s
+* installing *source* package ‘hgfocuscdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgfocuscdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgfocuscdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgfocuscdf’ as ‘hgfocuscdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgfocuscdf)
