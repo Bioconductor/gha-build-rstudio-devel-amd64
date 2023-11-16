@@ -1,0 +1,136 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''multicrispr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'multicrispr'
+also installing the dependencies ‘assertive.base’, ‘assertive.files’, ‘assertive.numbers’, ‘assertive.reflection’, ‘assertive.sets’, ‘BSgenome.Hsapiens.UCSC.hg38’, ‘BSgenome.Scerevisiae.UCSC.sacCer1’, ‘magick’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertive.base_0.0-9.tar.gz'
+Content type 'binary/octet-stream' length 109959 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertive.files_0.0-2.tar.gz'
+Content type 'binary/octet-stream' length 66199 bytes (64 KB)
+==================================================
+downloaded 64 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertive.numbers_0.0-2.tar.gz'
+Content type 'binary/octet-stream' length 90964 bytes (88 KB)
+==================================================
+downloaded 88 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertive.reflection_0.0-5.tar.gz'
+Content type 'binary/octet-stream' length 119397 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertive.sets_0.0-3.tar.gz'
+Content type 'binary/octet-stream' length 18185 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz'
+Content type 'application/x-gzip' length 731245539 bytes (697.4 MB)
+==================================================
+downloaded 697.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 2967322 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/magick_2.8.1.tar.gz'
+Content type 'binary/octet-stream' length 5001824 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/multicrispr_1.12.3.tar.gz'
+Content type 'application/x-gzip' length 2528113 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *binary* package ‘assertive.base’ ...
+* ‘assertive.base’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertive.base’ as ‘assertive.base_0.0-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertive.base)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg38’ as ‘BSgenome.Hsapiens.UCSC.hg38_1.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg38)
+* installing *source* package ‘BSgenome.Scerevisiae.UCSC.sacCer1’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Scerevisiae.UCSC.sacCer1’ as ‘BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Scerevisiae.UCSC.sacCer1)
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘assertive.numbers’ ...
+* ‘assertive.numbers’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertive.numbers’ as ‘assertive.numbers_0.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertive.numbers)
+* installing *binary* package ‘assertive.reflection’ ...
+* ‘assertive.reflection’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertive.reflection’ as ‘assertive.reflection_0.0-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertive.reflection)
+* installing *binary* package ‘assertive.sets’ ...
+* ‘assertive.sets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertive.sets’ as ‘assertive.sets_0.0-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertive.sets)
+* installing *binary* package ‘assertive.files’ ...
+* ‘assertive.files’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertive.files’ as ‘assertive.files_0.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertive.files)
+* installing *source* package ‘multicrispr’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘multicrispr’ as ‘multicrispr_1.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multicrispr)
+
+The downloaded source packages are in
+	‘/tmp/Rtmppw6Ir4/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	2m30.219s
+user	2m14.708s
+sys	0m12.279s
