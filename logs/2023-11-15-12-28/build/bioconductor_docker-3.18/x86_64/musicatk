@@ -1,0 +1,972 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''musicatk'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'musicatk'
+also installing the dependencies ‘SparseM’, ‘MatrixModels’, ‘minqa’, ‘nloptr’, ‘carData’, ‘pbkrtest’, ‘quantreg’, ‘lme4’, ‘estimability’, ‘numDeriv’, ‘mvtnorm’, ‘sitmo’, ‘NLP’, ‘car’, ‘ellipse’, ‘emmeans’, ‘flashClust’, ‘leaps’, ‘multcompView’, ‘scatterplot3d’, ‘gargle’, ‘ids’, ‘timechange’, ‘vroom’, ‘tzdb’, ‘selectr’, ‘corrplot’, ‘renv’, ‘combinat’, ‘RcppProgress’, ‘RcppAnnoy’, ‘irlba’, ‘dqrng’, ‘modeltools’, ‘slam’, ‘tm’, ‘FactoMineR’, ‘poorman’, ‘broom’, ‘conflicted’, ‘dtplyr’, ‘forcats’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘lubridate’, ‘modelr’, ‘readr’, ‘reprex’, ‘rvest’, ‘ggsci’, ‘ggsignif’, ‘polynom’, ‘rstatix’, ‘downloader’, ‘TCGAbiolinksGUI.data’, ‘uuid’, ‘learnr’, ‘assertthat’, ‘rex’, ‘anytime’, ‘MCMCprecision’, ‘matrixTests’, ‘uwot’, ‘TxDb.Hsapiens.UCSC.hg38.knownGene’, ‘BSgenome.Hsapiens.UCSC.hg38’, ‘BSgenome.Mmusculus.UCSC.mm9’, ‘deconstructSigs’, ‘topicmodels’, ‘ggrepel’, ‘plotly’, ‘factoextra’, ‘philentropy’, ‘tidyverse’, ‘ggpubr’, ‘TCGAbiolinks’, ‘shinyBS’, ‘shinyalert’, ‘shinybusy’, ‘shinydashboard’, ‘shinyjs’, ‘shinyjqui’, ‘sortable’, ‘qpdf’, ‘covr’, ‘shinyWidgets’, ‘cowplot’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SparseM_1.81.tar.gz'
+Content type 'binary/octet-stream' length 1041744 bytes (1017 KB)
+==================================================
+downloaded 1017 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/MatrixModels_0.5-3.tar.gz'
+Content type 'binary/octet-stream' length 425280 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/minqa_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 118141 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nloptr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 710034 bytes (693 KB)
+==================================================
+downloaded 693 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/carData_3.0-5.tar.gz'
+Content type 'binary/octet-stream' length 1820730 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pbkrtest_0.5.2.tar.gz'
+Content type 'binary/octet-stream' length 186585 bytes (182 KB)
+==================================================
+downloaded 182 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/quantreg_5.97.tar.gz'
+Content type 'binary/octet-stream' length 1549528 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lme4_1.1-35.1.tar.gz'
+Content type 'binary/octet-stream' length 4235932 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/estimability_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 40535 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 113093 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 745162 bytes (727 KB)
+==================================================
+downloaded 727 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sitmo_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 169389 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/NLP_0.2-1.tar.gz'
+Content type 'binary/octet-stream' length 387316 bytes (378 KB)
+==================================================
+downloaded 378 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/car_3.1-2.tar.gz'
+Content type 'binary/octet-stream' length 1705983 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ellipse_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 216899 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/emmeans_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 2141144 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flashClust_1.01-2.tar.gz'
+Content type 'binary/octet-stream' length 20405 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/leaps_3.1.tar.gz'
+Content type 'binary/octet-stream' length 80486 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/multcompView_0.1-9.tar.gz'
+Content type 'binary/octet-stream' length 114558 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/scatterplot3d_0.3-44.tar.gz'
+Content type 'binary/octet-stream' length 348008 bytes (339 KB)
+==================================================
+downloaded 339 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 759843 bytes (742 KB)
+==================================================
+downloaded 742 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ids_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 120179 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/timechange_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 169260 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vroom_1.6.4.tar.gz'
+Content type 'binary/octet-stream' length 927156 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'binary/octet-stream' length 488354 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/corrplot_0.92.tar.gz'
+Content type 'binary/octet-stream' length 3842542 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/renv_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 2065257 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/combinat_0.0-8.tar.gz'
+Content type 'binary/octet-stream' length 40279 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 19762 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppAnnoy_0.0.21.tar.gz'
+Content type 'binary/octet-stream' length 264248 bytes (258 KB)
+==================================================
+downloaded 258 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/irlba_2.3.5.1.tar.gz'
+Content type 'binary/octet-stream' length 290619 bytes (283 KB)
+==================================================
+downloaded 283 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dqrng_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 166250 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 223742 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/slam_0.1-50.tar.gz'
+Content type 'binary/octet-stream' length 184464 bytes (180 KB)
+==================================================
+downloaded 180 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tm_0.7-11.tar.gz'
+Content type 'binary/octet-stream' length 617077 bytes (602 KB)
+==================================================
+downloaded 602 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/FactoMineR_2.9.tar.gz'
+Content type 'binary/octet-stream' length 3792137 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/poorman_0.2.7.tar.gz'
+Content type 'binary/octet-stream' length 385222 bytes (376 KB)
+==================================================
+downloaded 376 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/broom_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1851908 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/conflicted_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 54788 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dtplyr_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 352454 bytes (344 KB)
+==================================================
+downloaded 344 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/googledrive_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1888433 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/googlesheets4_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 504943 bytes (493 KB)
+==================================================
+downloaded 493 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/haven_2.5.3.tar.gz'
+Content type 'binary/octet-stream' length 376385 bytes (367 KB)
+==================================================
+downloaded 367 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 980234 bytes (957 KB)
+==================================================
+downloaded 957 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/modelr_0.1.11.tar.gz'
+Content type 'binary/octet-stream' length 199911 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readr_2.1.4.tar.gz'
+Content type 'binary/octet-stream' length 824320 bytes (805 KB)
+==================================================
+downloaded 805 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reprex_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 495155 bytes (483 KB)
+==================================================
+downloaded 483 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rvest_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 210026 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggsci_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 2434674 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggsignif_0.6.4.tar.gz'
+Content type 'binary/octet-stream' length 601431 bytes (587 KB)
+==================================================
+downloaded 587 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/polynom_1.4-1.tar.gz'
+Content type 'binary/octet-stream' length 404660 bytes (395 KB)
+==================================================
+downloaded 395 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rstatix_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 605258 bytes (591 KB)
+==================================================
+downloaded 591 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/downloader_0.4.tar.gz'
+Content type 'binary/octet-stream' length 21759 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAbiolinksGUI.data_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 22920723 bytes (21.9 MB)
+==================================================
+downloaded 21.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/uuid_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 45580 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/learnr_0.11.5.tar.gz'
+Content type 'binary/octet-stream' length 1648280 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 124178 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'binary/octet-stream' length 404834 bytes (395 KB)
+==================================================
+downloaded 395 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/MCMCprecision_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 610646 bytes (596 KB)
+==================================================
+downloaded 596 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/matrixTests_0.2.3.tar.gz'
+Content type 'binary/octet-stream' length 191477 bytes (186 KB)
+==================================================
+downloaded 186 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/uwot_0.1.16.tar.gz'
+Content type 'binary/octet-stream' length 682784 bytes (666 KB)
+==================================================
+downloaded 666 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.knownGene_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 47184613 bytes (45.0 MB)
+==================================================
+downloaded 45.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz'
+Content type 'application/x-gzip' length 731245539 bytes (697.4 MB)
+==================================================
+downloaded 697.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 621955864 bytes (593.1 MB)
+==================================================
+downloaded 593.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/deconstructSigs_1.8.0.tar.gz'
+Content type 'application/x-tar' length 211492 bytes (206 KB)
+==================================================
+downloaded 206 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/topicmodels_0.2-14.tar.gz'
+Content type 'binary/octet-stream' length 893126 bytes (872 KB)
+==================================================
+downloaded 872 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/factoextra_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 414443 bytes (404 KB)
+==================================================
+downloaded 404 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/philentropy_0.7.0.tar.gz'
+Content type 'binary/octet-stream' length 326062 bytes (318 KB)
+==================================================
+downloaded 318 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyverse_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 425182 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggpubr_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 2085480 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TCGAbiolinks_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 65638659 bytes (62.6 MB)
+==================================================
+downloaded 62.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyBS_0.61.1.tar.gz'
+Content type 'binary/octet-stream' length 103235 bytes (100 KB)
+==================================================
+downloaded 100 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyalert_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 455845 bytes (445 KB)
+==================================================
+downloaded 445 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinybusy_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 595470 bytes (581 KB)
+==================================================
+downloaded 581 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 321929 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1084640 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyjqui_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 644756 bytes (629 KB)
+==================================================
+downloaded 629 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sortable_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 464727 bytes (453 KB)
+==================================================
+downloaded 453 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/qpdf_1.3.2.tar.gz'
+Content type 'binary/octet-stream' length 539401 bytes (526 KB)
+==================================================
+downloaded 526 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 325424 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyWidgets_0.8.0.tar.gz'
+Content type 'binary/octet-stream' length 1225400 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1376564 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/musicatk_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 2974457 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+* installing *binary* package ‘SparseM’ ...
+* ‘SparseM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SparseM’ as ‘SparseM_1.81_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SparseM)
+* installing *binary* package ‘MatrixModels’ ...
+* ‘MatrixModels’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MatrixModels’ as ‘MatrixModels_0.5-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MatrixModels)
+* installing *binary* package ‘minqa’ ...
+* ‘minqa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minqa’ as ‘minqa_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minqa)
+* installing *binary* package ‘nloptr’ ...
+* ‘nloptr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nloptr’ as ‘nloptr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nloptr)
+* installing *binary* package ‘carData’ ...
+* ‘carData’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘carData’ as ‘carData_3.0-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (carData)
+* installing *binary* package ‘estimability’ ...
+* ‘estimability’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘estimability’ as ‘estimability_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (estimability)
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘sitmo’ ...
+* ‘sitmo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sitmo’ as ‘sitmo_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sitmo)
+* installing *binary* package ‘NLP’ ...
+* ‘NLP’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NLP’ as ‘NLP_0.2-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NLP)
+* installing *binary* package ‘ellipse’ ...
+* ‘ellipse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ellipse’ as ‘ellipse_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ellipse)
+* installing *binary* package ‘flashClust’ ...
+* ‘flashClust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flashClust’ as ‘flashClust_1.01-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flashClust)
+* installing *binary* package ‘leaps’ ...
+* ‘leaps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘leaps’ as ‘leaps_3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (leaps)
+* installing *binary* package ‘multcompView’ ...
+* ‘multcompView’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘multcompView’ as ‘multcompView_0.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multcompView)
+* installing *binary* package ‘scatterplot3d’ ...
+* ‘scatterplot3d’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterplot3d’ as ‘scatterplot3d_0.3-44_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterplot3d)
+* installing *binary* package ‘gargle’ ...
+* ‘gargle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gargle’ as ‘gargle_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gargle)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *binary* package ‘selectr’ ...
+* ‘selectr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘selectr’ as ‘selectr_0.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (selectr)
+* installing *binary* package ‘corrplot’ ...
+* ‘corrplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corrplot’ as ‘corrplot_0.92_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corrplot)
+* installing *binary* package ‘renv’ ...
+* ‘renv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘renv’ as ‘renv_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (renv)
+* installing *binary* package ‘combinat’ ...
+* ‘combinat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘combinat’ as ‘combinat_0.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (combinat)
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *binary* package ‘RcppAnnoy’ ...
+* ‘RcppAnnoy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppAnnoy’ as ‘RcppAnnoy_0.0.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppAnnoy)
+* installing *binary* package ‘irlba’ ...
+* ‘irlba’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘irlba’ as ‘irlba_2.3.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (irlba)
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘slam’ ...
+* ‘slam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘slam’ as ‘slam_0.1-50_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (slam)
+* installing *binary* package ‘poorman’ ...
+* ‘poorman’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘poorman’ as ‘poorman_0.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (poorman)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘conflicted’ ...
+* ‘conflicted’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘conflicted’ as ‘conflicted_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (conflicted)
+* installing *binary* package ‘dtplyr’ ...
+* ‘dtplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dtplyr’ as ‘dtplyr_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dtplyr)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘reprex’ ...
+* ‘reprex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reprex’ as ‘reprex_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reprex)
+* installing *binary* package ‘ggsci’ ...
+* ‘ggsci’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggsci’ as ‘ggsci_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggsci)
+* installing *binary* package ‘ggsignif’ ...
+* ‘ggsignif’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggsignif’ as ‘ggsignif_0.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggsignif)
+* installing *binary* package ‘polynom’ ...
+* ‘polynom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polynom’ as ‘polynom_1.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polynom)
+* installing *binary* package ‘downloader’ ...
+* ‘downloader’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘downloader’ as ‘downloader_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (downloader)
+* installing *source* package ‘TCGAbiolinksGUI.data’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TCGAbiolinksGUI.data’ as ‘TCGAbiolinksGUI.data_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TCGAbiolinksGUI.data)
+* installing *binary* package ‘uuid’ ...
+* ‘uuid’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uuid’ as ‘uuid_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uuid)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘anytime’ ...
+* ‘anytime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *binary* package ‘matrixTests’ ...
+* ‘matrixTests’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘matrixTests’ as ‘matrixTests_0.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (matrixTests)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg38.knownGene_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg38.knownGene)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg38’ as ‘BSgenome.Hsapiens.UCSC.hg38_1.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg38)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9’ as ‘BSgenome.Mmusculus.UCSC.mm9_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9)
+* installing *source* package ‘deconstructSigs’ ...
+** package ‘deconstructSigs’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘deconstructSigs’ as ‘deconstructSigs_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deconstructSigs)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *binary* package ‘shinyBS’ ...
+* ‘shinyBS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyBS’ as ‘shinyBS_0.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyBS)
+* installing *binary* package ‘shinybusy’ ...
+* ‘shinybusy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinybusy’ as ‘shinybusy_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinybusy)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘shinyjqui’ ...
+* ‘shinyjqui’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjqui’ as ‘shinyjqui_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjqui)
+* installing *binary* package ‘qpdf’ ...
+* ‘qpdf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qpdf’ as ‘qpdf_1.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qpdf)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘quantreg’ ...
+* ‘quantreg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quantreg’ as ‘quantreg_5.97_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quantreg)
+* installing *binary* package ‘lme4’ ...
+* ‘lme4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lme4’ as ‘lme4_1.1-35.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lme4)
+* installing *binary* package ‘emmeans’ ...
+* ‘emmeans’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emmeans’ as ‘emmeans_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emmeans)
+* installing *binary* package ‘ids’ ...
+* ‘ids’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ids’ as ‘ids_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ids)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘dqrng’ ...
+* ‘dqrng’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dqrng’ as ‘dqrng_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dqrng)
+* installing *binary* package ‘tm’ ...
+* ‘tm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tm’ as ‘tm_0.7-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tm)
+* installing *binary* package ‘googledrive’ ...
+* ‘googledrive’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googledrive’ as ‘googledrive_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googledrive)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *binary* package ‘modelr’ ...
+* ‘modelr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modelr’ as ‘modelr_0.1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modelr)
+* installing *binary* package ‘rvest’ ...
+* ‘rvest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvest’ as ‘rvest_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvest)
+* installing *binary* package ‘learnr’ ...
+* ‘learnr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘learnr’ as ‘learnr_0.11.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (learnr)
+* installing *binary* package ‘MCMCprecision’ ...
+* ‘MCMCprecision’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MCMCprecision’ as ‘MCMCprecision_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MCMCprecision)
+* installing *binary* package ‘philentropy’ ...
+* ‘philentropy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘philentropy’ as ‘philentropy_0.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (philentropy)
+* installing *binary* package ‘shinyalert’ ...
+* ‘shinyalert’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyalert’ as ‘shinyalert_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyalert)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘shinyWidgets’ ...
+* ‘shinyWidgets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *binary* package ‘pbkrtest’ ...
+* ‘pbkrtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbkrtest’ as ‘pbkrtest_0.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbkrtest)
+* installing *binary* package ‘googlesheets4’ ...
+* ‘googlesheets4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googlesheets4’ as ‘googlesheets4_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googlesheets4)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *binary* package ‘uwot’ ...
+* ‘uwot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uwot’ as ‘uwot_0.1.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uwot)
+* installing *binary* package ‘topicmodels’ ...
+* ‘topicmodels’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘topicmodels’ as ‘topicmodels_0.2-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (topicmodels)
+* installing *binary* package ‘sortable’ ...
+* ‘sortable’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sortable’ as ‘sortable_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sortable)
+* installing *binary* package ‘car’ ...
+* ‘car’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘car’ as ‘car_3.1-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (car)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *source* package ‘TCGAbiolinks’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TCGAbiolinks’ as ‘TCGAbiolinks_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TCGAbiolinks)
+* installing *binary* package ‘FactoMineR’ ...
+* ‘FactoMineR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘FactoMineR’ as ‘FactoMineR_2.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FactoMineR)
+* installing *binary* package ‘rstatix’ ...
+* ‘rstatix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstatix’ as ‘rstatix_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstatix)
+* installing *binary* package ‘tidyverse’ ...
+* ‘tidyverse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyverse’ as ‘tidyverse_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyverse)
+* installing *binary* package ‘ggpubr’ ...
+* ‘ggpubr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggpubr’ as ‘ggpubr_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggpubr)
+* installing *binary* package ‘factoextra’ ...
+* ‘factoextra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘factoextra’ as ‘factoextra_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (factoextra)
+* installing *source* package ‘musicatk’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘musicatk’ as ‘musicatk_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (musicatk)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0Yh2HC/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	6m13.878s
+user	5m15.640s
+sys	0m35.807s
