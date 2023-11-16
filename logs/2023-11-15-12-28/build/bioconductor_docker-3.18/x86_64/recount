@@ -1,0 +1,142 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''recount'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'recount'
+also installing the dependencies ‘DEFormats’, ‘knitrBootstrap’, ‘downloader’, ‘rentrez’, ‘EnsDb.Hsapiens.v79’, ‘regionReport’, ‘pheatmap’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DEFormats_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 231901 bytes (226 KB)
+==================================================
+downloaded 226 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/knitrBootstrap_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 1511961 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/downloader_0.4.tar.gz'
+Content type 'binary/octet-stream' length 21759 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rentrez_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 145638 bytes (142 KB)
+==================================================
+downloaded 142 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz'
+Content type 'application/x-gzip' length 76035973 bytes (72.5 MB)
+==================================================
+downloaded 72.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/regionReport_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 659390 bytes (643 KB)
+==================================================
+downloaded 643 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 76685 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/recount_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 7340571 bytes (7.0 MB)
+==================================================
+downloaded 7.0 MB
+
+* installing *source* package ‘DEFormats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘DGEList’ from ‘edgeR’ in package ‘DEFormats’
+    (from the saved implicit definition)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEFormats’ as ‘DEFormats_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEFormats)
+* installing *binary* package ‘knitrBootstrap’ ...
+* ‘knitrBootstrap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘knitrBootstrap’ as ‘knitrBootstrap_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (knitrBootstrap)
+* installing *binary* package ‘downloader’ ...
+* ‘downloader’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘downloader’ as ‘downloader_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (downloader)
+* installing *binary* package ‘rentrez’ ...
+* ‘rentrez’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rentrez’ as ‘rentrez_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rentrez)
+* installing *source* package ‘EnsDb.Hsapiens.v79’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EnsDb.Hsapiens.v79’ as ‘EnsDb.Hsapiens.v79_2.99.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EnsDb.Hsapiens.v79)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *source* package ‘regionReport’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘regionReport’ as ‘regionReport_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (regionReport)
+* installing *source* package ‘recount’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘recount’ as ‘recount_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (recount)
+
+The downloaded source packages are in
+	‘/tmp/RtmpwKWXyX/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	3m33.319s
+user	3m20.352s
+sys	0m10.814s
