@@ -1,0 +1,147 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''OrganismDbi'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'OrganismDbi'
+also installing the dependencies ‘GO.db’, ‘org.Rn.eg.db’, ‘TxDb.Rnorvegicus.UCSC.rn5.refGene’, ‘Homo.sapiens’, ‘Rattus.norvegicus’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 29013599 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Rn.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 58351359 bytes (55.6 MB)
+==================================================
+downloaded 55.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0.tar.gz'
+Content type 'application/x-gzip' length 7655075 bytes (7.3 MB)
+==================================================
+downloaded 7.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/Homo.sapiens_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1617 bytes
+==================================================
+downloaded 1617 bytes
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/Rattus.norvegicus_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1617 bytes
+==================================================
+downloaded 1617 bytes
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 396587 bytes (387 KB)
+==================================================
+downloaded 387 KB
+
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *source* package ‘org.Rn.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Rn.eg.db’ as ‘org.Rn.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Rn.eg.db)
+* installing *source* package ‘TxDb.Rnorvegicus.UCSC.rn5.refGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Rnorvegicus.UCSC.rn5.refGene’ as ‘TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Rnorvegicus.UCSC.rn5.refGene)
+* installing *source* package ‘OrganismDbi’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘OrganismDbi’ as ‘OrganismDbi_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OrganismDbi)
+* installing *source* package ‘Homo.sapiens’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Homo.sapiens’ as ‘Homo.sapiens_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Homo.sapiens)
+* installing *source* package ‘Rattus.norvegicus’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rattus.norvegicus’ as ‘Rattus.norvegicus_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rattus.norvegicus)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2tpynu/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	4m58.702s
+user	4m48.146s
+sys	0m11.624s
+* installing *source* package ‘Rattus.norvegicus’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rattus.norvegicus’ as ‘Rattus.norvegicus_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rattus.norvegicus)
