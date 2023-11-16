@@ -1,0 +1,123 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''macat'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'macat'
+also installing the dependencies ‘org.Hs.eg.db’, ‘hgu95av2.db’, ‘stjudem’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Hs.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 97922403 bytes (93.4 MB)
+==================================================
+downloaded 93.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2.db_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 529584 bytes (517 KB)
+==================================================
+downloaded 517 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/stjudem_1.42.0.tar.gz'
+Content type 'application/x-gzip' length 28928300 bytes (27.6 MB)
+==================================================
+downloaded 27.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/macat_1.76.0.tar.gz'
+Content type 'application/x-gzip' length 1021780 bytes (997 KB)
+==================================================
+downloaded 997 KB
+
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘stjudem’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: Package 'stjudem' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package can be loaded from final location
+Warning: Package 'stjudem' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘stjudem’ as ‘stjudem_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stjudem)
+* installing *source* package ‘macat’ ...
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: Package 'macat' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package can be loaded from final location
+Warning: Package 'macat' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘macat’ as ‘macat_1.76.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (macat)
+* installing *source* package ‘hgu95av2.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu95av2.db’ as ‘hgu95av2.db_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu95av2.db)
+
+The downloaded source packages are in
+	‘/tmp/RtmphCb0Iw/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	3m55.473s
+user	3m49.707s
+sys	0m6.238s
+* installing *source* package ‘stjudem’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: Package 'stjudem' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package can be loaded from final location
+Warning: Package 'stjudem' is deprecated and will be removed from Bioconductor
+  version 3.19
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘stjudem’ as ‘stjudem_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stjudem)
