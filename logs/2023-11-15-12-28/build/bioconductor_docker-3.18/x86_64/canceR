@@ -1,0 +1,108 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''canceR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'canceR'
+also installing the dependencies ‘GlobalOptions’, ‘shape’, ‘tkrplot’, ‘circlize’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 469679 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tkrplot_0.0-27.tar.gz'
+Content type 'binary/octet-stream' length 33509 bytes (32 KB)
+==================================================
+downloaded 32 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/circlize_0.4.15.tar.gz'
+Content type 'binary/octet-stream' length 3305679 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/canceR_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 32050173 bytes (30.6 MB)
+==================================================
+downloaded 30.6 MB
+
+* installing *binary* package ‘GlobalOptions’ ...
+* ‘GlobalOptions’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *source* package ‘tkrplot’ ...
+** package ‘tkrplot’ successfully unpacked and MD5 sums checked
+** using staged installation
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/include/tcl8.6 -I/usr/include/tcl8.6  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tcltkimg.c -o tcltkimg.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o tkrplot.so tcltkimg.o -L/usr/lib/x86_64-linux-gnu -ltcl8.6 -L/usr/lib/x86_64-linux-gnu -ltk8.6 -lX11 -lXss -lXext -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-tkrplot/00new/tkrplot/libs
+** R
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+Warning: loading Rplot failed
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+Warning: loading Rplot failed
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tkrplot’ as ‘tkrplot_0.0-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tkrplot)
+* installing *binary* package ‘circlize’ ...
+* ‘circlize’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *source* package ‘canceR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+Warning: loading Rplot failed
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+Warning: loading Rplot failed
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+Warning: loading Rplot failed
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘canceR’ as ‘canceR_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (canceR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpcUy3uL/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m37.284s
+user	0m29.114s
+sys	0m4.092s
