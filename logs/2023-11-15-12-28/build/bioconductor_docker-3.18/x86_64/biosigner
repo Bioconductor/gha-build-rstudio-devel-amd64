@@ -1,0 +1,236 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''biosigner'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'biosigner'
+also installing the dependencies ‘entropy’, ‘shape’, ‘sda’, ‘fdrtool’, ‘corpcor’, ‘proxy’, ‘pls’, ‘glmnet’, ‘st’, ‘e1071’, ‘randomForest’, ‘BioMark’, ‘hu6800.db’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/entropy_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 87961 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sda_1.3.8.tar.gz'
+Content type 'binary/octet-stream' length 4047595 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fdrtool_1.2.17.tar.gz'
+Content type 'binary/octet-stream' length 137713 bytes (134 KB)
+==================================================
+downloaded 134 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 113406 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 174072 bytes (169 KB)
+==================================================
+downloaded 169 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pls_2.8-2.tar.gz'
+Content type 'binary/octet-stream' length 1179502 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/st_1.2.7.tar.gz'
+Content type 'binary/octet-stream' length 585049 bytes (571 KB)
+==================================================
+downloaded 571 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/e1071_1.7-13.tar.gz'
+Content type 'binary/octet-stream' length 578232 bytes (564 KB)
+==================================================
+downloaded 564 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/randomForest_4.7-1.1.tar.gz'
+Content type 'binary/octet-stream' length 216340 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/BioMark_0.4.5.tar.gz'
+Content type 'binary/octet-stream' length 1015410 bytes (991 KB)
+==================================================
+downloaded 991 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hu6800.db_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 340321 bytes (332 KB)
+==================================================
+downloaded 332 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/biosigner_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 4434377 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *binary* package ‘entropy’ ...
+* ‘entropy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘entropy’ as ‘entropy_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (entropy)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘fdrtool’ ...
+* ‘fdrtool’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fdrtool’ as ‘fdrtool_1.2.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fdrtool)
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘pls’ ...
+* ‘pls’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pls’ as ‘pls_2.8-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pls)
+* installing *binary* package ‘randomForest’ ...
+* ‘randomForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomForest’ as ‘randomForest_4.7-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomForest)
+* installing *source* package ‘hu6800.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hu6800.db’ as ‘hu6800.db_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hu6800.db)
+* installing *binary* package ‘sda’ ...
+* ‘sda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sda’ as ‘sda_1.3.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sda)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘st’ ...
+* ‘st’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘st’ as ‘st_1.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (st)
+* installing *source* package ‘biosigner’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biosigner’ as ‘biosigner_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biosigner)
+* installing *binary* package ‘BioMark’ ...
+* ‘BioMark’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘BioMark’ as ‘BioMark_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BioMark)
+
+The downloaded source packages are in
+	‘/tmp/RtmpPotPMS/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	0m46.412s
+user	0m31.690s
+sys	0m5.128s
+* installing *binary* package ‘BioMark’ ...
+* ‘BioMark’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘BioMark’ as ‘BioMark_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BioMark)
+* installing *binary* package ‘crossval’ ...
+* ‘crossval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crossval’ as ‘crossval_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crossval)
+* installing *binary* package ‘sda’ ...
+* ‘sda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sda’ as ‘sda_1.3.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sda)
+* installing *binary* package ‘shinyFiles’ ...
+* ‘shinyFiles’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyFiles’ as ‘shinyFiles_0.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyFiles)
+* installing *binary* package ‘openxlsx’ ...
+* ‘openxlsx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *binary* package ‘GSA’ ...
+* ‘GSA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GSA’ as ‘GSA_1.03.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSA)
+* installing *binary* package ‘st’ ...
+* ‘st’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘st’ as ‘st_1.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (st)
+* installing *source* package ‘samr’ ...
+** package ‘samr’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gfortran  -fpic  -g -O2  -c rankcol.f -o rankcol.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c samr_init.c -o samr_init.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o samr.so rankcol.o samr_init.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-samr/00new/samr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘samr’ as ‘samr_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (samr)
