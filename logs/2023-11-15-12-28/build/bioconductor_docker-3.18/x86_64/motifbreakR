@@ -1,0 +1,75 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''motifbreakR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'motifbreakR'
+also installing the dependencies ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’, ‘BSgenome.Drerio.UCSC.danRer7’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz'
+Content type 'application/x-gzip' length 6048515545 bytes (5768.3 MB)
+======================================
+downloaded 4423.8 MB
+
+Error in download.file(url, destfile, method, mode = "wb", ...) : 
+  download from 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz' failed
+In addition: Warning messages:
+1: In download.file(url, destfile, method, mode = "wb", ...) :
+  downloaded length 0 != reported length 0
+2: In download.file(url, destfile, method, mode = "wb", ...) :
+  URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz': Timeout of 600 seconds was reached
+Warning in download.packages(pkgs, destdir = tmpd, available = available,  :
+  download of package ‘SNPlocs.Hsapiens.dbSNP155.GRCh37’ failed
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Drerio.UCSC.danRer7_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 330303588 bytes (315.0 MB)
+==================================================
+downloaded 315.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/motifbreakR_2.16.0.tar.gz'
+Content type 'application/x-gzip' length 2265182 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+* installing *source* package ‘BSgenome.Drerio.UCSC.danRer7’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Drerio.UCSC.danRer7’ as ‘BSgenome.Drerio.UCSC.danRer7_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Drerio.UCSC.danRer7)
+* installing *source* package ‘motifbreakR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package can be loaded from final location
+See system.file("LICENSE", package="MotifDb") for use restrictions.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘motifbreakR’ as ‘motifbreakR_2.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (motifbreakR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpt2lnnS/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	12m39.407s
+user	1m39.618s
+sys	0m24.889s
