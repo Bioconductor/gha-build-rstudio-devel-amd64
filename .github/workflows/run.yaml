@@ -85,6 +85,23 @@ jobs:
           token: ${{ steps.tokenlist.outputs.tok }}
           persist-credentials: true
 
+      - name: Switch to self-hosted
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 10
+          max_attempts: 50
+          shell: bash
+          command: |
+            set -x
+            if [ ! -s lists/self-hosted ]; then exit 0; fi
+            git config --global --add safe.directory "$GITHUB_WORKSPACE"
+            git pull origin main || git reset --hard origin/main
+            sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+            rm lists/self-hosted
+            git add .github/workflows/run.yaml
+            git commit -m "Switch to self-hosted"
+            git push
+
       - name: Add write_packages log
         uses: nick-fields/retry@v2
         with:
@@ -92,10 +109,12 @@ jobs:
           max_attempts: 50
           shell: bash
           command: |
-            if [ ! -s /tmp/write_PACKAGES ]; then exit 0; fi
             set -x
+            if [ ! -s /tmp/write_PACKAGES ]; then exit 0; fi
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
+            git commit -m "Switch to self-hosted"
+            git push
             cp /tmp/write_PACKAGES lists/write_PACKAGES
             git config user.name github-actions
             git config user.email github-actions@github.com
@@ -119,7 +138,6 @@ jobs:
             set -x
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
-            [ -s lists/self-hosted ] && sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml && rm lists/self-hosted
             cp /tmp/newtobuild tobuild.txt
             mkdir -p logs/$(cat runstarttime)/logs/dispatchlists
             mkdir -p lists
@@ -130,7 +148,6 @@ jobs:
             git add lists
             git add logs/$(cat runstarttime)
             git add tobuild.txt
-            git add .github/workflows/run.yaml
             git commit -m "Updating tobuild list"
             git push
 
