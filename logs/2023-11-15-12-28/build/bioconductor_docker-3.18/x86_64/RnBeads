@@ -1,0 +1,719 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''RnBeads'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'RnBeads'
+also installing the dependencies ‘dotCall64’, ‘forcats’, ‘mvtnorm’, ‘ExperimentHub’, ‘spam’, ‘maps’, ‘gtools’, ‘caTools’, ‘GSEABase’, ‘AnnotationForge’, ‘GGally’, ‘fastICA’, ‘JADE’, ‘ROC’, ‘findpython’, ‘shape’, ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’, ‘BiasedUrn’, ‘ruv’, ‘mhsmm’, ‘sesameData’, ‘wheatmap’, ‘ff’, ‘fields’, ‘gplots’, ‘Category’, ‘GOstats’, ‘RPMM’, ‘RnBeads.hg19’, ‘RnBeads.mm9’, ‘ggbio’, ‘isva’, ‘org.Rn.eg.db’, ‘qvalue’, ‘sva’, ‘wateRmelon’, ‘wordcloud’, ‘argparse’, ‘glmnet’, ‘missMethyl’, ‘shinyjs’, ‘plotrix’, ‘hexbin’, ‘MethylSeekR’, ‘sesame’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dotCall64_1.1-0.tar.gz'
+Content type 'binary/octet-stream' length 30494 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 745162 bytes (727 KB)
+==================================================
+downloaded 727 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHub_2.10.0.tar.gz'
+Content type 'application/x-gzip' length 497004 bytes (485 KB)
+==================================================
+downloaded 485 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/spam_2.10-0.tar.gz'
+Content type 'binary/octet-stream' length 2750524 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/maps_3.4.1.1.tar.gz'
+Content type 'binary/octet-stream' length 3096160 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 199662 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GSEABase_1.64.0.tar.gz'
+Content type 'application/x-gzip' length 299035 bytes (292 KB)
+==================================================
+downloaded 292 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 3993806 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GGally_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 1632475 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fastICA_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 41189 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/JADE_2.0-4.tar.gz'
+Content type 'binary/octet-stream' length 2290989 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ROC_1.78.0.tar.gz'
+Content type 'application/x-gzip' length 257072 bytes (251 KB)
+==================================================
+downloaded 251 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/findpython_1.0.8.tar.gz'
+Content type 'binary/octet-stream' length 20831 bytes (20 KB)
+==================================================
+downloaded 20 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylationEPICanno.ilm10b4.hg19_0.6.0.tar.gz'
+Content type 'application/x-gzip' length 158431882 bytes (151.1 MB)
+==================================================
+downloaded 151.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/BiasedUrn_2.0.11.tar.gz'
+Content type 'binary/octet-stream' length 285724 bytes (279 KB)
+==================================================
+downloaded 279 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ruv_0.9.7.1.tar.gz'
+Content type 'binary/octet-stream' length 279544 bytes (272 KB)
+==================================================
+downloaded 272 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mhsmm_0.4.21.tar.gz'
+Content type 'binary/octet-stream' length 492381 bytes (480 KB)
+==================================================
+downloaded 480 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/sesameData_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 1975798 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/wheatmap_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 1118849 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ff_4.0.9.tar.gz'
+Content type 'binary/octet-stream' length 1012568 bytes (988 KB)
+==================================================
+downloaded 988 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fields_15.2.tar.gz'
+Content type 'binary/octet-stream' length 4043335 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.tar.gz'
+Content type 'binary/octet-stream' length 594720 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/Category_2.68.0.tar.gz'
+Content type 'application/x-gzip' length 882665 bytes (861 KB)
+==================================================
+downloaded 861 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GOstats_2.68.0.tar.gz'
+Content type 'application/x-gzip' length 3046544 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RPMM_1.25.tar.gz'
+Content type 'binary/octet-stream' length 267682 bytes (261 KB)
+==================================================
+downloaded 261 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.hg19_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 104985258 bytes (100.1 MB)
+==================================================
+downloaded 100.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.mm9_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 98998334 bytes (94.4 MB)
+==================================================
+downloaded 94.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggbio_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 3251908 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/isva_1.9.tar.gz'
+Content type 'application/x-tar' length 298439 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Rn.eg.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 58351359 bytes (55.6 MB)
+==================================================
+downloaded 55.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/qvalue_2.34.0.tar.gz'
+Content type 'application/x-gzip' length 2767953 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sva_3.50.0.tar.gz'
+Content type 'application/x-gzip' length 452886 bytes (442 KB)
+==================================================
+downloaded 442 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/wateRmelon_2.8.0.tar.gz'
+Content type 'application/x-gzip' length 3416473 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/wordcloud_2.6.tar.gz'
+Content type 'binary/octet-stream' length 106344 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/argparse_2.2.2.tar.gz'
+Content type 'binary/octet-stream' length 153620 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/missMethyl_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 1426761 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1084640 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotrix_3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 1139190 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hexbin_1.28.3.tar.gz'
+Content type 'binary/octet-stream' length 1599705 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MethylSeekR_1.42.0.tar.gz'
+Content type 'application/x-gzip' length 1671881 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sesame_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 19503880 bytes (18.6 MB)
+==================================================
+downloaded 18.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/RnBeads_2.20.0.tar.gz'
+Content type 'application/x-gzip' length 7371854 bytes (7.0 MB)
+==================================================
+downloaded 7.0 MB
+
+* installing *binary* package ‘dotCall64’ ...
+* ‘dotCall64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dotCall64’ as ‘dotCall64_1.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dotCall64)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *source* package ‘ExperimentHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHub’ as ‘ExperimentHub_2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHub)
+* installing *binary* package ‘maps’ ...
+* ‘maps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘maps’ as ‘maps_3.4.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maps)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *source* package ‘GSEABase’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSEABase’ as ‘GSEABase_1.64.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSEABase)
+* installing *source* package ‘AnnotationForge’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AnnotationForge’ as ‘AnnotationForge_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AnnotationForge)
+* installing *binary* package ‘fastICA’ ...
+* ‘fastICA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastICA’ as ‘fastICA_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastICA)
+* installing *binary* package ‘JADE’ ...
+* ‘JADE’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘JADE’ as ‘JADE_2.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JADE)
+* installing *source* package ‘ROC’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ROC.cc -o ROC.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ROC.so ROC.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ROC/00new/ROC/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ROC’ as ‘ROC_1.78.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ROC)
+* installing *binary* package ‘findpython’ ...
+* ‘findpython’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘findpython’ as ‘findpython_1.0.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (findpython)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *source* package ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’ as ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IlluminaHumanMethylationEPICanno.ilm10b4.hg19)
+* installing *binary* package ‘BiasedUrn’ ...
+* ‘BiasedUrn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘BiasedUrn’ as ‘BiasedUrn_2.0.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiasedUrn)
+* installing *binary* package ‘ruv’ ...
+* ‘ruv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ruv’ as ‘ruv_0.9.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ruv)
+* installing *binary* package ‘wheatmap’ ...
+* ‘wheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wheatmap’ as ‘wheatmap_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wheatmap)
+* installing *binary* package ‘ff’ ...
+* ‘ff’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ff’ as ‘ff_4.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ff)
+* installing *binary* package ‘RPMM’ ...
+* ‘RPMM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RPMM’ as ‘RPMM_1.25_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RPMM)
+* installing *source* package ‘RnBeads.hg19’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RnBeads.hg19’ as ‘RnBeads.hg19_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RnBeads.hg19)
+* installing *source* package ‘RnBeads.mm9’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RnBeads.mm9’ as ‘RnBeads.mm9_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RnBeads.mm9)
+* installing *source* package ‘org.Rn.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Rn.eg.db’ as ‘org.Rn.eg.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Rn.eg.db)
+* installing *source* package ‘qvalue’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qvalue’ as ‘qvalue_2.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qvalue)
+* installing *source* package ‘sva’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sva.c -o sva.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sva.so sva.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sva/00new/sva/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sva’ as ‘sva_3.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sva)
+* installing *binary* package ‘wordcloud’ ...
+* ‘wordcloud’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wordcloud’ as ‘wordcloud_2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wordcloud)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘hexbin’ ...
+* ‘hexbin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hexbin’ as ‘hexbin_1.28.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hexbin)
+* installing *binary* package ‘spam’ ...
+* ‘spam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spam’ as ‘spam_2.10-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spam)
+* installing *binary* package ‘GGally’ ...
+* ‘GGally’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GGally’ as ‘GGally_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GGally)
+* installing *binary* package ‘mhsmm’ ...
+* ‘mhsmm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mhsmm’ as ‘mhsmm_0.4.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mhsmm)
+* installing *source* package ‘sesameData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sesameData’ as ‘sesameData_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sesameData)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘Category’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Category’ as ‘Category_2.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Category)
+* installing *source* package ‘isva’ ...
+** package ‘isva’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘isva’ as ‘isva_1.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (isva)
+* installing *source* package ‘wateRmelon’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+Creating a generic function from function ‘as.methylumi’ in package ‘wateRmelon’
+Creating a generic function from function ‘adjustedDasen’ in package ‘wateRmelon’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘wateRmelon’ as ‘wateRmelon_2.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wateRmelon)
+* installing *binary* package ‘argparse’ ...
+* ‘argparse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘argparse’ as ‘argparse_2.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (argparse)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *source* package ‘missMethyl’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘missMethyl’ as ‘missMethyl_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (missMethyl)
+* installing *binary* package ‘fields’ ...
+* ‘fields’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fields’ as ‘fields_15.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fields)
+* installing *source* package ‘GOstats’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GOstats’ as ‘GOstats_2.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GOstats)
+* installing *source* package ‘ggbio’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for 'rescale' in package 'ggbio'
+Creating a new generic function for 'xlim' in package 'ggbio'
+Creating a new generic function for 'geom_rect' in package 'ggbio'
+Creating a new generic function for 'geom_segment' in package 'ggbio'
+Creating a new generic function for 'geom_bar' in package 'ggbio'
+Creating a new generic function for 'stat_identity' in package 'ggbio'
+Creating a new generic function for 'stat_bin' in package 'ggbio'
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggbio’ as ‘ggbio_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggbio)
+* installing *source* package ‘MethylSeekR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MethylSeekR’ as ‘MethylSeekR_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MethylSeekR)
+* installing *source* package ‘sesame’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sesame’ as ‘sesame_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sesame)
+* installing *source* package ‘RnBeads’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RnBeads’ as ‘RnBeads_2.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RnBeads)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpi3tEaM/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	13m11.777s
+user	12m27.332s
+sys	0m42.392s
+* installing *source* package ‘RnBeads.mm9’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RnBeads.mm9’ as ‘RnBeads.mm9_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RnBeads.mm9)
