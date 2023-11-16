@@ -13,7 +13,7 @@ jobs:
     concurrency:
       group: dispatch
       cancel-in-progress: false
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, js2]
     outputs:
       matrix: ${{ steps.matrix.outputs.pkglist }}
     steps:
@@ -96,7 +96,7 @@ jobs:
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
             if [ ! -s lists/self-hosted ]; then exit 0; fi
-            sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+            sed -i 's/runs-on: [self-hosted, js2]/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
             rm lists/self-hosted
             git add .github/workflows/run.yaml
             git commit -m "Switch to self-hosted"
@@ -157,7 +157,7 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, js2]
     steps:
     
       - name: Free root space
