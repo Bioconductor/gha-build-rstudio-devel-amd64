@@ -1,0 +1,160 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''biscuiteer'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'biscuiteer'
+Warning: dependency ‘DSS’ is not available
+also installing the dependencies ‘rex’, ‘biscuiteerData’, ‘qualV’, ‘Mus.musculus’, ‘covr’, ‘scmeth’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 124178 bytes (121 KB)
+==================================================
+downloaded 121 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/biscuiteerData_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 192697 bytes (188 KB)
+==================================================
+downloaded 188 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/qualV_0.3-5.tar.gz'
+Content type 'binary/octet-stream' length 130317 bytes (127 KB)
+==================================================
+downloaded 127 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/Mus.musculus_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1618 bytes
+==================================================
+downloaded 1618 bytes
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 325424 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/scmeth_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 785718 bytes (767 KB)
+==================================================
+downloaded 767 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/biscuiteer_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 4992881 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *source* package ‘biscuiteerData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biscuiteerData’ as ‘biscuiteerData_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biscuiteerData)
+* installing *binary* package ‘qualV’ ...
+* ‘qualV’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qualV’ as ‘qualV_0.3-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qualV)
+* installing *source* package ‘Mus.musculus’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Mus.musculus’ as ‘Mus.musculus_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Mus.musculus)
+* installing *source* package ‘scmeth’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scmeth’ as ‘scmeth_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scmeth)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *source* package ‘biscuiteer’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘BiocParallel::bpstart’ by ‘QDNAseq::bpstart’ when loading ‘biscuiteer’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘BiocParallel::bpstart’ by ‘QDNAseq::bpstart’ when loading ‘biscuiteer’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘BiocParallel::bpstart’ by ‘QDNAseq::bpstart’ when loading ‘biscuiteer’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biscuiteer’ as ‘biscuiteer_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biscuiteer)
+
+The downloaded source packages are in
+	‘/tmp/RtmpxOJ4Yq/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	2m8.290s
+user	1m54.518s
+sys	0m9.679s
+* installing *source* package ‘QDNAseq.hg19’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘QDNAseq.hg19’ as ‘QDNAseq.hg19_1.32.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (QDNAseq.hg19)
+* installing *source* package ‘QDNAseq.mm10’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘QDNAseq.mm10’ as ‘QDNAseq.mm10_1.32.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (QDNAseq.mm10)
