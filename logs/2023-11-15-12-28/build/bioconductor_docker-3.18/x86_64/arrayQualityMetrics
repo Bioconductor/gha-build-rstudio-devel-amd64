@@ -1,0 +1,180 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''arrayQualityMetrics'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'arrayQualityMetrics'
+also installing the dependencies ‘deldir’, ‘RcppEigen’, ‘jpeg’, ‘interp’, ‘gridSVG’, ‘latticeExtra’, ‘setRNG’, ‘svglite’, ‘ALLMLL’, ‘CCl4’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/deldir_1.0-9.tar.gz'
+Content type 'binary/octet-stream' length 300806 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 1528720 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'binary/octet-stream' length 28790 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/interp_1.1-4.tar.gz'
+Content type 'binary/octet-stream' length 1518821 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridSVG_1.7-5.tar.gz'
+Content type 'binary/octet-stream' length 1426465 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/latticeExtra_0.6-30.tar.gz'
+Content type 'binary/octet-stream' length 2200551 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/setRNG_2022.4-1.tar.gz'
+Content type 'binary/octet-stream' length 54367 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 199530 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/ALLMLL_1.42.0.tar.gz'
+Content type 'application/x-gzip' length 26861575 bytes (25.6 MB)
+==================================================
+downloaded 25.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/CCl4_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 115690637 bytes (110.3 MB)
+==================================================
+downloaded 110.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/arrayQualityMetrics_3.58.0.tar.gz'
+Content type 'application/x-gzip' length 611900 bytes (597 KB)
+==================================================
+downloaded 597 KB
+
+* installing *binary* package ‘deldir’ ...
+* ‘deldir’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘deldir’ as ‘deldir_1.0-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deldir)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘jpeg’ ...
+* ‘jpeg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jpeg’ as ‘jpeg_0.1-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jpeg)
+* installing *binary* package ‘gridSVG’ ...
+* ‘gridSVG’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridSVG’ as ‘gridSVG_1.7-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridSVG)
+* installing *binary* package ‘setRNG’ ...
+* ‘setRNG’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘setRNG’ as ‘setRNG_2022.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (setRNG)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *source* package ‘ALLMLL’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ALLMLL’ as ‘ALLMLL_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ALLMLL)
+* installing *source* package ‘CCl4’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CCl4’ as ‘CCl4_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CCl4)
+* installing *binary* package ‘interp’ ...
+* ‘interp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘interp’ as ‘interp_1.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (interp)
+* installing *binary* package ‘latticeExtra’ ...
+* ‘latticeExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘latticeExtra’ as ‘latticeExtra_0.6-30_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (latticeExtra)
+* installing *source* package ‘arrayQualityMetrics’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘arrayQualityMetrics’ as ‘arrayQualityMetrics_3.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arrayQualityMetrics)
+
+The downloaded source packages are in
+	‘/tmp/RtmpLGPeBx/downloaded_packages’
+Old packages: 'evaluate', 'htmltools', 'httr2', 'knitr', 'lifecycle', 'rlang',
+  'rprojroot', 'stringi', 'stringr', 'waldo', 'withr', 'xfun', 'Matrix'
+
+real	1m20.062s
+user	1m6.248s
+sys	0m6.332s
+* installing *source* package ‘ALLMLL’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ALLMLL’ as ‘ALLMLL_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ALLMLL)
+* installing *source* package ‘CCl4’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CCl4’ as ‘CCl4_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CCl4)
