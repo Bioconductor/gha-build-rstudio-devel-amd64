@@ -1,0 +1,119 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''IHW'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'IHW'
+also installing the dependencies ‘generics’, ‘tidyselect’, ‘slam’, ‘fdrtool’, ‘dplyr’, ‘gridExtra’, ‘airway’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/generics_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 76238 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyselect_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 219931 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/slam_0.1-50.tar.gz'
+Content type 'binary/octet-stream' length 184464 bytes (180 KB)
+==================================================
+downloaded 180 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fdrtool_1.2.17.tar.gz'
+Content type 'binary/octet-stream' length 137713 bytes (134 KB)
+==================================================
+downloaded 134 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1461655 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106992 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/airway_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 24755612 bytes (23.6 MB)
+==================================================
+downloaded 23.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/IHW_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 3749395 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *binary* package ‘generics’ ...
+* ‘generics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘generics’ as ‘generics_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (generics)
+* installing *binary* package ‘tidyselect’ ...
+* ‘tidyselect’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyselect’ as ‘tidyselect_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyselect)
+* installing *binary* package ‘slam’ ...
+* ‘slam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘slam’ as ‘slam_0.1-50_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (slam)
+* installing *binary* package ‘fdrtool’ ...
+* ‘fdrtool’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fdrtool’ as ‘fdrtool_1.2.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fdrtool)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *source* package ‘airway’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘airway’ as ‘airway_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (airway)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *source* package ‘IHW’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘nrow’ from package ‘base’ in package ‘IHW’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IHW’ as ‘IHW_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IHW)
+
+The downloaded source packages are in
+	‘/tmp/RtmpIqRPwl/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m25.330s
+user	0m16.329s
+sys	0m3.370s
