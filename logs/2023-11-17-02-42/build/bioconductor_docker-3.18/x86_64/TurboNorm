@@ -1,0 +1,99 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TurboNorm'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TurboNorm'
+also installing the dependencies ‘affydata’, ‘hgu95av2cdf’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/affydata_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 12712861 bytes (12.1 MB)
+==================================================
+downloaded 12.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2cdf_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1331391 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TurboNorm_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 2119353 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+* installing *source* package ‘affydata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+     Package    LibPath                                Item      
+[1,] "affydata" "/tmp/tmp/built/00LOCK-affydata/00new" "Dilution"
+     Title                        
+[1,] "AffyBatch instance Dilution"
+** testing if installed package can be loaded from final location
+     Package    LibPath          Item       Title                        
+[1,] "affydata" "/tmp/tmp/built" "Dilution" "AffyBatch instance Dilution"
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affydata’ as ‘affydata_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affydata)
+* installing *source* package ‘hgu95av2cdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu95av2cdf’ as ‘hgu95av2cdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu95av2cdf)
+* installing *source* package ‘TurboNorm’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rinit.c -o Rinit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c binners.c -o binners.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o TurboNorm.so Rinit.o binners.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-TurboNorm/00new/TurboNorm/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TurboNorm’ as ‘TurboNorm_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TurboNorm)
+
+The downloaded source packages are in
+	‘/tmp/RtmpHDUXqZ/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m21.635s
+user	0m18.638s
+sys	0m3.121s
