@@ -1,0 +1,491 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''mia'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'mia'
+also installing the dependencies ‘inline’, ‘loo’, ‘QuickJSR’, ‘rstan’, ‘rstantools’, ‘StanHeaders’, ‘reshape2’, ‘permute’, ‘multtest’, ‘ShortRead’, ‘RcppParallel’, ‘densEstBayes’, ‘pixmap’, ‘sp’, ‘decontam’, ‘vegan’, ‘DirichletMultinomial’, ‘phyloseq’, ‘dada2’, ‘biomformat’, ‘reldist’, ‘ade4’, ‘microbiomeDataSets’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/inline_0.3.19.tar.gz'
+Content type 'binary/octet-stream' length 126897 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/loo_2.6.0.tar.gz'
+Content type 'binary/octet-stream' length 1923937 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/QuickJSR_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 2757744 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rstan_2.32.3.tar.gz'
+Content type 'binary/octet-stream' length 11740240 bytes (11.2 MB)
+==================================================
+downloaded 11.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rstantools_2.3.1.1.tar.gz'
+Content type 'binary/octet-stream' length 161885 bytes (158 KB)
+==================================================
+downloaded 158 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/StanHeaders_2.26.28.tar.gz'
+Content type 'binary/octet-stream' length 2671831 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/permute_0.9-7.tar.gz'
+Content type 'binary/octet-stream' length 219603 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/multtest_2.58.0.tar.gz'
+Content type 'application/x-gzip' length 1294473 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.60.0.tar.gz'
+Content type 'application/x-gzip' length 5222971 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880021 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/densEstBayes_1.0-2.2.tar.gz'
+Content type 'binary/octet-stream' length 2596705 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pixmap_0.4-12.tar.gz'
+Content type 'binary/octet-stream' length 207038 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sp_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 2091786 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/decontam_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 687906 bytes (671 KB)
+==================================================
+downloaded 671 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vegan_2.6-4.tar.gz'
+Content type 'binary/octet-stream' length 3097102 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DirichletMultinomial_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 438123 bytes (427 KB)
+==================================================
+downloaded 427 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/phyloseq_1.46.0.tar.gz'
+Content type 'application/x-gzip' length 5706217 bytes (5.4 MB)
+==================================================
+downloaded 5.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/dada2_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 2870193 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/biomformat_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 301154 bytes (294 KB)
+==================================================
+downloaded 294 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reldist_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 179805 bytes (175 KB)
+==================================================
+downloaded 175 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ade4_1.7-22.tar.gz'
+Content type 'binary/octet-stream' length 5400203 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/microbiomeDataSets_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 269043 bytes (262 KB)
+==================================================
+downloaded 262 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/mia_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 2252816 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *binary* package ‘inline’ ...
+* ‘inline’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘inline’ as ‘inline_0.3.19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (inline)
+* installing *binary* package ‘loo’ ...
+* ‘loo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘loo’ as ‘loo_2.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (loo)
+* installing *binary* package ‘QuickJSR’ ...
+* ‘QuickJSR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘QuickJSR’ as ‘QuickJSR_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (QuickJSR)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘permute’ ...
+* ‘permute’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘permute’ as ‘permute_0.9-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (permute)
+* installing *source* package ‘multtest’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rpack.c -o Rpack.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c VScount.c -o VScount.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c block_sampling_fixed.c -o block_sampling_fixed.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bootloop.c -o bootloop.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mt.c -o mt.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pairt_sampling.c -o pairt_sampling.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pairt_sampling_fixed.c -o pairt_sampling_fixed.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c random.c -o random.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sampling.c -o sampling.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sampling_fixed.c -o sampling_fixed.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c stat_func.c -o stat_func.o
+stat_func.c: In function ‘read_infile’:
+stat_func.c:703:3: warning: ignoring return value of ‘fscanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  703 |   fscanf(fh, "%s", pdata->name);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stat_func.c:705:5: warning: ignoring return value of ‘fscanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  705 |     fscanf(fh, "%d", pdata->L+j);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stat_func.c:710:5: warning: ignoring return value of ‘fscanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  710 |     fscanf(fh, "%s", pdata->id[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stat_func.c:714:7: warning: ignoring return value of ‘fscanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  714 |       fscanf(fh, "%lg",&ftemp);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DUSEDOUBLE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c stat_order.c -o stat_order.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o multtest.so Rpack.o VScount.o block_sampling_fixed.o bootloop.o mt.o pairt_sampling.o pairt_sampling_fixed.o random.o sampling.o sampling_fixed.o stat_func.o stat_order.o -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-multtest/00new/multtest/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘multtest’ as ‘multtest_2.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multtest)
+* installing *source* package ‘ShortRead’ ...
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for gzeof in -lz... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking size of unsigned long... 8
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_ShortRead.c -o R_init_ShortRead.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XVector_stubs.c -o XVector_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c alphabet.c -o alphabet.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c count.c -o count.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c io.c -o io.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c io_bowtie.c -o io_bowtie.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c io_soap.c -o io_soap.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBZ=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_UNSIGNED_LONG=8 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c readBfaToc.cc -o readBfaToc.o
+readBfaToc.cc: In function ‘SEXPREC* readBfaToc(SEXP)’:
+readBfaToc.cc:35:19: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   35 |       (void) fread( seq_name, sizeof(char), name_len, fp );
+      |              ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+readBfaToc.cc:36:19: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   36 |       (void) fread( &seq_ori_len, sizeof(int), 1, fp );
+      |              ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+readBfaToc.cc:37:19: warning: ignoring return value of ‘size_t fread(void*, size_t, size_t, FILE*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   37 |       (void) fread( &seq_len, sizeof(int), 1, fp );
+      |              ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DHAVE_LIBZ=1 -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DSIZEOF_UNSIGNED_LONG=8 -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read_maq_map.cc -o read_maq_map.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sampler.c -o sampler.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c trim.c -o trim.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.c -o util.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c xsnap.c -o xsnap.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ShortRead.so Biostrings_stubs.o IRanges_stubs.o R_init_ShortRead.o S4Vectors_stubs.o XVector_stubs.o alphabet.o count.o io.o io_bowtie.o io_soap.o readBfaToc.o read_maq_map.o sampler.o trim.o util.o xsnap.o -lz -fopenmp -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ShortRead/00new/ShortRead/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ShortRead’ as ‘ShortRead_1.60.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ShortRead)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *binary* package ‘pixmap’ ...
+* ‘pixmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pixmap’ as ‘pixmap_0.4-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pixmap)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *source* package ‘DirichletMultinomial’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_DirichletMultinomial.c -o R_init_DirichletMultinomial.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit.c -o dirichlet_fit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit_main.c -o dirichlet_fit_main.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DirichletMultinomial.so R_init_DirichletMultinomial.o dirichlet_fit.o dirichlet_fit_main.o -L/usr/lib/x86_64-linux-gnu -lgsl -lgslcblas -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DirichletMultinomial/00new/DirichletMultinomial/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DirichletMultinomial’ as ‘DirichletMultinomial_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DirichletMultinomial)
+* installing *source* package ‘biomformat’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘nrow’ from package ‘base’ in package ‘biomformat’
+Creating a generic function for ‘ncol’ from package ‘base’ in package ‘biomformat’
+Creating a generic function for ‘rownames’ from package ‘base’ in package ‘biomformat’
+Creating a generic function for ‘colnames’ from package ‘base’ in package ‘biomformat’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biomformat’ as ‘biomformat_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biomformat)
+* installing *source* package ‘microbiomeDataSets’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘microbiomeDataSets’ as ‘microbiomeDataSets_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (microbiomeDataSets)
+* installing *binary* package ‘rstantools’ ...
+* ‘rstantools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstantools’ as ‘rstantools_2.3.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstantools)
+* installing *binary* package ‘StanHeaders’ ...
+* ‘StanHeaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘StanHeaders’ as ‘StanHeaders_2.26.28_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (StanHeaders)
+* installing *source* package ‘decontam’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘decontam’ as ‘decontam_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (decontam)
+* installing *binary* package ‘vegan’ ...
+* ‘vegan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vegan’ as ‘vegan_2.6-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vegan)
+* installing *source* package ‘dada2’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rmain.cpp -o Rmain.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c chimera.cpp -o chimera.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cluster.cpp -o cluster.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c containers.cpp -o containers.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c error.cpp -o error.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c evaluate.cpp -o evaluate.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c filter.cpp -o filter.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kmers.cpp -o kmers.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c misc.cpp -o misc.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nwalign_endsfree.cpp -o nwalign_endsfree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nwalign_vectorized.cpp -o nwalign_vectorized.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pval.cpp -o pval.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c taxonomy.cpp -o taxonomy.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o dada2.so RcppExports.o Rmain.o chimera.o cluster.o containers.o error.o evaluate.o filter.o kmers.o misc.o nwalign_endsfree.o nwalign_vectorized.o pval.o taxonomy.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-dada2/00new/dada2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dada2’ as ‘dada2_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dada2)
+* installing *binary* package ‘ade4’ ...
+* ‘ade4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ade4’ as ‘ade4_1.7-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ade4)
+* installing *binary* package ‘rstan’ ...
+* ‘rstan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstan’ as ‘rstan_2.32.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstan)
+* installing *source* package ‘phyloseq’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘phyloseq’ as ‘phyloseq_1.46.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phyloseq)
+* installing *source* package ‘mia’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mia’ as ‘mia_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mia)
+* installing *binary* package ‘densEstBayes’ ...
+* ‘densEstBayes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘densEstBayes’ as ‘densEstBayes_1.0-2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (densEstBayes)
+* installing *binary* package ‘reldist’ ...
+* ‘reldist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reldist’ as ‘reldist_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reldist)
+
+The downloaded source packages are in
+	‘/tmp/RtmpWlL5Fc/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	3m57.638s
+user	3m33.059s
+sys	0m21.372s
+* installing *source* package ‘microbiomeDataSets’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘microbiomeDataSets’ as ‘microbiomeDataSets_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (microbiomeDataSets)
