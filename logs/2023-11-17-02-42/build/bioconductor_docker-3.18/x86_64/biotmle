@@ -1,0 +1,414 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''biotmle'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'biotmle'
+also installing the dependencies ‘gtools’, ‘caTools’, ‘SparseM’, ‘MatrixModels’, ‘listenv’, ‘parallelly’, ‘gplots’, ‘cubature’, ‘quadprog’, ‘quantreg’, ‘future’, ‘globals’, ‘minqa’, ‘nloptr’, ‘plotrix’, ‘ROCR’, ‘ggdendro’, ‘np’, ‘future.apply’, ‘lme4’, ‘coda’, ‘plotmo’, ‘TeachingDemos’, ‘nnls’, ‘gam’, ‘cvAUC’, ‘ggsci’, ‘superheat’, ‘assertthat’, ‘drtmle’, ‘arm’, ‘earth’, ‘ranger’, ‘SuperLearner’, ‘biotmleData’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 199662 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SparseM_1.81.tar.gz'
+Content type 'binary/octet-stream' length 1041744 bytes (1017 KB)
+==================================================
+downloaded 1017 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/MatrixModels_0.5-3.tar.gz'
+Content type 'binary/octet-stream' length 425280 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/listenv_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 105140 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/parallelly_1.36.0.tar.gz'
+Content type 'binary/octet-stream' length 348828 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.tar.gz'
+Content type 'binary/octet-stream' length 594720 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cubature_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2061094 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/quadprog_1.5-8.tar.gz'
+Content type 'binary/octet-stream' length 30243 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/quantreg_5.97.tar.gz'
+Content type 'binary/octet-stream' length 1549528 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future_1.33.0.tar.gz'
+Content type 'binary/octet-stream' length 642120 bytes (627 KB)
+==================================================
+downloaded 627 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/globals_0.16.2.tar.gz'
+Content type 'binary/octet-stream' length 104912 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/minqa_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 118141 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nloptr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 710034 bytes (693 KB)
+==================================================
+downloaded 693 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotrix_3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 1139190 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ROCR_1.0-11.tar.gz'
+Content type 'binary/octet-stream' length 464171 bytes (453 KB)
+==================================================
+downloaded 453 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggdendro_0.1.23.tar.gz'
+Content type 'binary/octet-stream' length 174138 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/np_0.60-17.tar.gz'
+Content type 'binary/octet-stream' length 2680063 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future.apply_1.11.0.tar.gz'
+Content type 'binary/octet-stream' length 153057 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lme4_1.1-35.1.tar.gz'
+Content type 'binary/octet-stream' length 4235932 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/coda_0.19-4.tar.gz'
+Content type 'binary/octet-stream' length 320307 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotmo_3.6.2.tar.gz'
+Content type 'binary/octet-stream' length 1554879 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/TeachingDemos_2.12.tar.gz'
+Content type 'binary/octet-stream' length 1230049 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nnls_1.5.tar.gz'
+Content type 'binary/octet-stream' length 36289 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gam_1.22-2.tar.gz'
+Content type 'binary/octet-stream' length 313622 bytes (306 KB)
+==================================================
+downloaded 306 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cvAUC_1.1.4.tar.gz'
+Content type 'binary/octet-stream' length 120852 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggsci_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 2434674 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/superheat_0.1.0.tar.gz'
+Content type 'binary/octet-stream' length 118355 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/drtmle_1.1.2.tar.gz'
+Content type 'binary/octet-stream' length 319786 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/arm_1.13-1.tar.gz'
+Content type 'binary/octet-stream' length 423636 bytes (413 KB)
+==================================================
+downloaded 413 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/earth_5.3.2.tar.gz'
+Content type 'binary/octet-stream' length 2083995 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ranger_0.16.0.tar.gz'
+Content type 'binary/octet-stream' length 418645 bytes (408 KB)
+==================================================
+downloaded 408 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SuperLearner_2.0-28.1.tar.gz'
+Content type 'binary/octet-stream' length 556466 bytes (543 KB)
+==================================================
+downloaded 543 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/biotmleData_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 32156995 bytes (30.7 MB)
+==================================================
+downloaded 30.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/biotmle_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 322376 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘SparseM’ ...
+* ‘SparseM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SparseM’ as ‘SparseM_1.81_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SparseM)
+* installing *binary* package ‘MatrixModels’ ...
+* ‘MatrixModels’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MatrixModels’ as ‘MatrixModels_0.5-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MatrixModels)
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *binary* package ‘cubature’ ...
+* ‘cubature’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cubature’ as ‘cubature_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cubature)
+* installing *binary* package ‘quadprog’ ...
+* ‘quadprog’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quadprog’ as ‘quadprog_1.5-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quadprog)
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘minqa’ ...
+* ‘minqa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minqa’ as ‘minqa_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minqa)
+* installing *binary* package ‘nloptr’ ...
+* ‘nloptr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nloptr’ as ‘nloptr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nloptr)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘ggdendro’ ...
+* ‘ggdendro’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggdendro’ as ‘ggdendro_0.1.23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggdendro)
+* installing *binary* package ‘coda’ ...
+* ‘coda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *binary* package ‘TeachingDemos’ ...
+* ‘TeachingDemos’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘TeachingDemos’ as ‘TeachingDemos_2.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TeachingDemos)
+* installing *binary* package ‘nnls’ ...
+* ‘nnls’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nnls’ as ‘nnls_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nnls)
+* installing *binary* package ‘gam’ ...
+* ‘gam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gam’ as ‘gam_1.22-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gam)
+* installing *binary* package ‘ggsci’ ...
+* ‘ggsci’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggsci’ as ‘ggsci_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggsci)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘ranger’ ...
+* ‘ranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ranger’ as ‘ranger_0.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ranger)
+* installing *source* package ‘biotmleData’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biotmleData’ as ‘biotmleData_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biotmleData)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *binary* package ‘quantreg’ ...
+* ‘quantreg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quantreg’ as ‘quantreg_5.97_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quantreg)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+* installing *binary* package ‘lme4’ ...
+* ‘lme4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lme4’ as ‘lme4_1.1-35.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lme4)
+* installing *binary* package ‘plotmo’ ...
+* ‘plotmo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotmo’ as ‘plotmo_3.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotmo)
+* installing *binary* package ‘superheat’ ...
+* ‘superheat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘superheat’ as ‘superheat_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (superheat)
+* installing *binary* package ‘ROCR’ ...
+* ‘ROCR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ROCR’ as ‘ROCR_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ROCR)
+* installing *binary* package ‘np’ ...
+* ‘np’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘np’ as ‘np_0.60-17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (np)
+* installing *binary* package ‘future.apply’ ...
+* ‘future.apply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future.apply’ as ‘future.apply_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future.apply)
+* installing *binary* package ‘arm’ ...
+* ‘arm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘arm’ as ‘arm_1.13-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arm)
+* installing *binary* package ‘earth’ ...
+* ‘earth’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘earth’ as ‘earth_5.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (earth)
+* installing *binary* package ‘cvAUC’ ...
+* ‘cvAUC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cvAUC’ as ‘cvAUC_1.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cvAUC)
+* installing *binary* package ‘SuperLearner’ ...
+* ‘SuperLearner’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SuperLearner’ as ‘SuperLearner_2.0-28.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SuperLearner)
+* installing *binary* package ‘drtmle’ ...
+* ‘drtmle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘drtmle’ as ‘drtmle_1.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (drtmle)
+* installing *source* package ‘biotmle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biotmle’ as ‘biotmle_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biotmle)
+
+The downloaded source packages are in
+	‘/tmp/RtmpUFY2Vk/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m15.975s
+user	0m46.894s
+sys	0m9.110s
+* installing *source* package ‘biotmleData’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biotmleData’ as ‘biotmleData_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biotmleData)
