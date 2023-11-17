@@ -1,0 +1,239 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''InPAS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'InPAS'
+also installing the dependencies ‘truncnorm’, ‘base64url’, ‘Rsolnp’, ‘globals’, ‘listenv’, ‘vroom’, ‘tzdb’, ‘plyr’, ‘batchtools’, ‘depmixS4’, ‘flock’, ‘future’, ‘future.apply’, ‘parallelly’, ‘readr’, ‘reshape2’, ‘EnsDb.Hsapiens.v86’, ‘EnsDb.Mmusculus.v79’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/truncnorm_1.0-9.tar.gz'
+Content type 'binary/octet-stream' length 21646 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/base64url_1.4.tar.gz'
+Content type 'binary/octet-stream' length 24171 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/Rsolnp_1.16.tar.gz'
+Content type 'binary/octet-stream' length 248931 bytes (243 KB)
+==================================================
+downloaded 243 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/globals_0.16.2.tar.gz'
+Content type 'binary/octet-stream' length 104912 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/listenv_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 105140 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vroom_1.6.4.tar.gz'
+Content type 'binary/octet-stream' length 927156 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plyr_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 821210 bytes (801 KB)
+==================================================
+downloaded 801 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/batchtools_0.9.17.tar.gz'
+Content type 'binary/octet-stream' length 1059186 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/depmixS4_1.5-0.tar.gz'
+Content type 'binary/octet-stream' length 717146 bytes (700 KB)
+==================================================
+downloaded 700 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flock_0.7.tar.gz'
+Content type 'binary/octet-stream' length 44513 bytes (43 KB)
+==================================================
+downloaded 43 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future_1.33.0.tar.gz'
+Content type 'binary/octet-stream' length 642120 bytes (627 KB)
+==================================================
+downloaded 627 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future.apply_1.11.0.tar.gz'
+Content type 'binary/octet-stream' length 153057 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/parallelly_1.36.0.tar.gz'
+Content type 'binary/octet-stream' length 348828 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readr_2.1.4.tar.gz'
+Content type 'binary/octet-stream' length 824320 bytes (805 KB)
+==================================================
+downloaded 805 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz'
+Content type 'application/x-gzip' length 78178992 bytes (74.6 MB)
+==================================================
+downloaded 74.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Mmusculus.v79_2.99.0.tar.gz'
+Content type 'application/x-gzip' length 46050579 bytes (43.9 MB)
+==================================================
+downloaded 43.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/InPAS_2.10.0.tar.gz'
+Content type 'application/x-gzip' length 1486500 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘truncnorm’ ...
+* ‘truncnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘truncnorm’ as ‘truncnorm_1.0-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (truncnorm)
+* installing *binary* package ‘base64url’ ...
+* ‘base64url’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘base64url’ as ‘base64url_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (base64url)
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *binary* package ‘plyr’ ...
+* ‘plyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plyr’ as ‘plyr_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plyr)
+* installing *binary* package ‘flock’ ...
+* ‘flock’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flock’ as ‘flock_0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flock)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *source* package ‘EnsDb.Hsapiens.v86’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EnsDb.Hsapiens.v86’ as ‘EnsDb.Hsapiens.v86_2.99.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EnsDb.Hsapiens.v86)
+* installing *source* package ‘EnsDb.Mmusculus.v79’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘EnsDb.Mmusculus.v79’ as ‘EnsDb.Mmusculus.v79_2.99.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (EnsDb.Mmusculus.v79)
+* installing *binary* package ‘Rsolnp’ ...
+* ‘Rsolnp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rsolnp’ as ‘Rsolnp_1.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsolnp)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘batchtools’ ...
+* ‘batchtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘batchtools’ as ‘batchtools_0.9.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (batchtools)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘depmixS4’ ...
+* ‘depmixS4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘depmixS4’ as ‘depmixS4_1.5-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (depmixS4)
+* installing *binary* package ‘future.apply’ ...
+* ‘future.apply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future.apply’ as ‘future.apply_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future.apply)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *source* package ‘InPAS’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘InPAS’ as ‘InPAS_2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (InPAS)
+
+The downloaded source packages are in
+	‘/tmp/RtmpPMwpwV/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	3m55.431s
+user	3m36.836s
+sys	0m11.986s
