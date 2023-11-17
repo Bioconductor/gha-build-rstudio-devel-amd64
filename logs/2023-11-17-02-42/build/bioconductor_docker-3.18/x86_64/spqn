@@ -1,0 +1,80 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''spqn'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'spqn'
+also installing the dependencies ‘ggridges’, ‘spqnData’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggridges_0.5.4.tar.gz'
+Content type 'binary/octet-stream' length 2236967 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/spqnData_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 10665289 bytes (10.2 MB)
+==================================================
+downloaded 10.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/spqn_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 2845067 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+* installing *binary* package ‘ggridges’ ...
+* ‘ggridges’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggridges’ as ‘ggridges_0.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggridges)
+* installing *source* package ‘spqnData’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spqnData’ as ‘spqnData_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spqnData)
+* installing *source* package ‘spqn’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spqn’ as ‘spqn_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spqn)
+
+The downloaded source packages are in
+	‘/tmp/RtmpJH3sfK/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m31.349s
+user	0m27.220s
+sys	0m3.093s
+* installing *source* package ‘spqnData’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘spqnData’ as ‘spqnData_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spqnData)
