@@ -1,0 +1,109 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''RESOLVE'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'RESOLVE'
+also installing the dependencies ‘shape’, ‘SnowballC’, ‘BSgenome.Hsapiens.1000genomes.hs37d5’, ‘glmnet’, ‘lsa’, ‘nnls’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SnowballC_0.7.1.tar.gz'
+Content type 'binary/octet-stream' length 372906 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1.tar.gz'
+Content type 'application/x-gzip' length 687514862 bytes (655.7 MB)
+==================================================
+downloaded 655.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lsa_0.73.3.tar.gz'
+Content type 'binary/octet-stream' length 201874 bytes (197 KB)
+==================================================
+downloaded 197 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nnls_1.5.tar.gz'
+Content type 'binary/octet-stream' length 36289 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/RESOLVE_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 747051 bytes (729 KB)
+==================================================
+downloaded 729 KB
+
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘SnowballC’ ...
+* ‘SnowballC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SnowballC’ as ‘SnowballC_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SnowballC)
+* installing *source* package ‘BSgenome.Hsapiens.1000genomes.hs37d5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.1000genomes.hs37d5’ as ‘BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.1000genomes.hs37d5)
+* installing *binary* package ‘nnls’ ...
+* ‘nnls’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nnls’ as ‘nnls_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nnls)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *binary* package ‘lsa’ ...
+* ‘lsa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lsa’ as ‘lsa_0.73.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lsa)
+* installing *source* package ‘RESOLVE’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RESOLVE’ as ‘RESOLVE_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RESOLVE)
+
+The downloaded source packages are in
+	‘/tmp/RtmpIdOLZE/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m2.798s
+user	1m47.763s
+sys	0m10.124s
