@@ -1,0 +1,69 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cBioPortalData'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'cBioPortalData'
+also installing the dependencies ‘rapiclient’, ‘AnVIL’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rapiclient_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 72465 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/AnVIL_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 1141789 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/cBioPortalData_2.14.0.tar.gz'
+Content type 'application/x-gzip' length 1034084 bytes (1009 KB)
+==================================================
+downloaded 1009 KB
+
+* installing *binary* package ‘rapiclient’ ...
+* ‘rapiclient’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rapiclient’ as ‘rapiclient_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rapiclient)
+* installing *source* package ‘AnVIL’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AnVIL’ as ‘AnVIL_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AnVIL)
+* installing *source* package ‘cBioPortalData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cBioPortalData’ as ‘cBioPortalData_2.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cBioPortalData)
+
+The downloaded source packages are in
+	‘/tmp/RtmpsegAwY/downloaded_packages’
+Old packages: 'Gviz', 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m38.289s
+user	0m33.751s
+sys	0m3.638s
