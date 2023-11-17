@@ -1,0 +1,189 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TFBSTools'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TFBSTools'
+also installing the dependencies ‘caTools’, ‘DirichletMultinomial’, ‘gtools’, ‘seqLogo’, ‘TFMPvalue’, ‘JASPAR2014’, ‘JASPAR2016’, ‘JASPAR2018’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 199662 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DirichletMultinomial_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 438123 bytes (427 KB)
+==================================================
+downloaded 427 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz'
+Content type 'application/x-gzip' length 919574 bytes (898 KB)
+==================================================
+downloaded 898 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/TFMPvalue_0.0.9.tar.gz'
+Content type 'binary/octet-stream' length 56784 bytes (55 KB)
+==================================================
+downloaded 55 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/JASPAR2014_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 44972574 bytes (42.9 MB)
+==================================================
+downloaded 42.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/JASPAR2016_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 9137933 bytes (8.7 MB)
+==================================================
+downloaded 8.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 14253704 bytes (13.6 MB)
+==================================================
+downloaded 13.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 587109 bytes (573 KB)
+==================================================
+downloaded 573 KB
+
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *source* package ‘DirichletMultinomial’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_DirichletMultinomial.c -o R_init_DirichletMultinomial.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit.c -o dirichlet_fit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit_main.c -o dirichlet_fit_main.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DirichletMultinomial.so R_init_DirichletMultinomial.o dirichlet_fit.o dirichlet_fit_main.o -L/usr/lib/x86_64-linux-gnu -lgsl -lgslcblas -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DirichletMultinomial/00new/DirichletMultinomial/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DirichletMultinomial’ as ‘DirichletMultinomial_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DirichletMultinomial)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *source* package ‘seqLogo’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seqLogo’ as ‘seqLogo_1.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqLogo)
+* installing *binary* package ‘TFMPvalue’ ...
+* ‘TFMPvalue’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘TFMPvalue’ as ‘TFMPvalue_0.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TFMPvalue)
+* installing *source* package ‘JASPAR2014’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘JASPAR2014’ as ‘JASPAR2014_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JASPAR2014)
+* installing *source* package ‘JASPAR2016’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘JASPAR2016’ as ‘JASPAR2016_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JASPAR2016)
+* installing *source* package ‘JASPAR2018’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘JASPAR2018’ as ‘JASPAR2018_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JASPAR2018)
+* installing *source* package ‘TFBSTools’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrixAlignerDynamic.c -o matrixAlignerDynamic.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_TFBSTools.c -o R_init_TFBSTools.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o TFBSTools.so matrixAlignerDynamic.o R_init_TFBSTools.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-TFBSTools/00new/TFBSTools/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘seqLogo’ in package ‘TFBSTools’
+Creating a generic function for ‘colSums’ from package ‘base’ in package ‘TFBSTools’
+Creating a generic function for ‘rowSums’ from package ‘base’ in package ‘TFBSTools’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TFBSTools’ as ‘TFBSTools_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TFBSTools)
+
+The downloaded source packages are in
+	‘/tmp/RtmphkZpCh/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m37.390s
+user	1m28.472s
+sys	0m8.157s
