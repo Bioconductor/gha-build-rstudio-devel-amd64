@@ -1,0 +1,913 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''miaSim'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'miaSim'
+also installing the dependencies ‘sitmo’, ‘RcppHNSW’, ‘ScaledMatrix’, ‘irlba’, ‘rsvd’, ‘beeswarm’, ‘vipor’, ‘FNN’, ‘RcppAnnoy’, ‘RcppProgress’, ‘dqrng’, ‘Cairo’, ‘tweenr’, ‘polyclip’, ‘coda’, ‘BiocBaseUtils’, ‘sparseMatrixStats’, ‘beachmat’, ‘BiocNeighbors’, ‘BiocSingular’, ‘ggbeeswarm’, ‘RcppML’, ‘uwot’, ‘pheatmap’, ‘ggrastr’, ‘ggforce’, ‘graphlayouts’, ‘pracma’, ‘forcats’, ‘reshape’, ‘statnet.common’, ‘permute’, ‘MultiAssayExperiment’, ‘decontam’, ‘DECIPHER’, ‘DelayedMatrixStats’, ‘scuttle’, ‘scater’, ‘DirichletMultinomial’, ‘bluster’, ‘ggraph’, ‘ggnewscale’, ‘tidygraph’, ‘ggrepel’, ‘poorman’, ‘deSolve’, ‘poweRlaw’, ‘GGally’, ‘igraph’, ‘network’, ‘reshape2’, ‘sna’, ‘vegan’, ‘mia’, ‘miaViz’, ‘colourvalues’, ‘philentropy’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sitmo_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 169389 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppHNSW_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 204244 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ScaledMatrix_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 313034 bytes (305 KB)
+==================================================
+downloaded 305 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/irlba_2.3.5.1.tar.gz'
+Content type 'binary/octet-stream' length 290619 bytes (283 KB)
+==================================================
+downloaded 283 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rsvd_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 3582950 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/beeswarm_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 77211 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vipor_0.4.5.tar.gz'
+Content type 'binary/octet-stream' length 4404117 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/FNN_1.1.3.2.tar.gz'
+Content type 'binary/octet-stream' length 125792 bytes (122 KB)
+==================================================
+downloaded 122 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppAnnoy_0.0.21.tar.gz'
+Content type 'binary/octet-stream' length 264248 bytes (258 KB)
+==================================================
+downloaded 258 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 19762 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dqrng_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 166250 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/Cairo_1.6-1.tar.gz'
+Content type 'binary/octet-stream' length 82471 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 435519 bytes (425 KB)
+==================================================
+downloaded 425 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 117721 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/coda_0.19-4.tar.gz'
+Content type 'binary/octet-stream' length 320307 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 227937 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sparseMatrixStats_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 703089 bytes (686 KB)
+==================================================
+downloaded 686 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/beachmat_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 511950 bytes (499 KB)
+==================================================
+downloaded 499 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocNeighbors_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 1039670 bytes (1015 KB)
+==================================================
+downloaded 1015 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocSingular_1.18.0.tar.gz'
+Content type 'application/x-gzip' length 616448 bytes (602 KB)
+==================================================
+downloaded 602 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggbeeswarm_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 1754648 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppML_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 195176 bytes (190 KB)
+==================================================
+downloaded 190 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/uwot_0.1.16.tar.gz'
+Content type 'binary/octet-stream' length 682784 bytes (666 KB)
+==================================================
+downloaded 666 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 76685 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrastr_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 2672611 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggforce_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 1830039 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/graphlayouts_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 3731437 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pracma_2.4.4.tar.gz'
+Content type 'binary/octet-stream' length 1727902 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 167463 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/statnet.common_4.9.0.tar.gz'
+Content type 'binary/octet-stream' length 262577 bytes (256 KB)
+==================================================
+downloaded 256 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/permute_0.9-7.tar.gz'
+Content type 'binary/octet-stream' length 219603 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MultiAssayExperiment_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 1180947 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/decontam_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 687906 bytes (671 KB)
+==================================================
+downloaded 671 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DECIPHER_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 18930005 bytes (18.1 MB)
+==================================================
+downloaded 18.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DelayedMatrixStats_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 271120 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/scuttle_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 1029515 bytes (1005 KB)
+==================================================
+downloaded 1005 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/scater_1.30.0.tar.gz'
+Content type 'application/x-gzip' length 4123523 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DirichletMultinomial_1.44.0.tar.gz'
+Content type 'application/x-gzip' length 438123 bytes (427 KB)
+==================================================
+downloaded 427 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/bluster_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 2995786 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggraph_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 3934821 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggnewscale_0.4.9.tar.gz'
+Content type 'binary/octet-stream' length 342562 bytes (334 KB)
+==================================================
+downloaded 334 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidygraph_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 497867 bytes (486 KB)
+==================================================
+downloaded 486 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/poorman_0.2.7.tar.gz'
+Content type 'binary/octet-stream' length 385222 bytes (376 KB)
+==================================================
+downloaded 376 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/deSolve_1.38.tar.gz'
+Content type 'binary/octet-stream' length 2300260 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/poweRlaw_0.70.6.tar.gz'
+Content type 'binary/octet-stream' length 3228450 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GGally_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 1632475 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/network_1.18.1.tar.gz'
+Content type 'binary/octet-stream' length 806410 bytes (787 KB)
+==================================================
+downloaded 787 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sna_2.7-1.tar.gz'
+Content type 'binary/octet-stream' length 1248165 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vegan_2.6-4.tar.gz'
+Content type 'binary/octet-stream' length 3097102 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/mia_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 2252816 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/miaViz_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 2650295 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/colourvalues_0.3.9.tar.gz'
+Content type 'binary/octet-stream' length 685668 bytes (669 KB)
+==================================================
+downloaded 669 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/philentropy_0.7.0.tar.gz'
+Content type 'binary/octet-stream' length 326062 bytes (318 KB)
+==================================================
+downloaded 318 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/miaSim_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 576418 bytes (562 KB)
+==================================================
+downloaded 562 KB
+
+* installing *binary* package ‘sitmo’ ...
+* ‘sitmo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sitmo’ as ‘sitmo_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sitmo)
+* installing *binary* package ‘RcppHNSW’ ...
+* ‘RcppHNSW’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppHNSW’ as ‘RcppHNSW_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppHNSW)
+* installing *source* package ‘ScaledMatrix’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ScaledMatrix’ as ‘ScaledMatrix_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ScaledMatrix)
+* installing *binary* package ‘irlba’ ...
+* ‘irlba’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘irlba’ as ‘irlba_2.3.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (irlba)
+* installing *binary* package ‘rsvd’ ...
+* ‘rsvd’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rsvd’ as ‘rsvd_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rsvd)
+* installing *binary* package ‘beeswarm’ ...
+* ‘beeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘beeswarm’ as ‘beeswarm_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beeswarm)
+* installing *binary* package ‘vipor’ ...
+* ‘vipor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vipor’ as ‘vipor_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vipor)
+* installing *binary* package ‘FNN’ ...
+* ‘FNN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘FNN’ as ‘FNN_1.1.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FNN)
+* installing *binary* package ‘RcppAnnoy’ ...
+* ‘RcppAnnoy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppAnnoy’ as ‘RcppAnnoy_0.0.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppAnnoy)
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *binary* package ‘Cairo’ ...
+* ‘Cairo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Cairo’ as ‘Cairo_1.6-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cairo)
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘coda’ ...
+* ‘coda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *source* package ‘BiocBaseUtils’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocBaseUtils’ as ‘BiocBaseUtils_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocBaseUtils)
+* installing *source* package ‘sparseMatrixStats’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SparseMatrixView.cpp -o SparseMatrixView.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c methods.cpp -o methods.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c row_methods.cpp -o row_methods.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sparseMatrixStats.so RcppExports.o SparseMatrixView.o methods.o row_methods.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sparseMatrixStats/00new/sparseMatrixStats/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sparseMatrixStats’ as ‘sparseMatrixStats_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sparseMatrixStats)
+* installing *source* package ‘beachmat’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++17
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c delayed_isometric_binary.cpp -o delayed_isometric_binary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c delayed_isometric_math.cpp -o delayed_isometric_math.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c delayed_isometric_unary.cpp -o delayed_isometric_unary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c delayed_other.cpp -o delayed_other.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dense_matrix.cpp -o dense_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fragment_sparse_rows.cpp -o fragment_sparse_rows.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sparse_matrix.cpp -o sparse_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tatami_utils.cpp -o tatami_utils.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c unknown_matrix.cpp -o unknown_matrix.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o beachmat.so RcppExports.o delayed_isometric_binary.o delayed_isometric_math.o delayed_isometric_unary.o delayed_other.o dense_matrix.o fragment_sparse_rows.o sparse_matrix.o tatami_utils.o unknown_matrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-beachmat/00new/beachmat/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘beachmat’ as ‘beachmat_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beachmat)
+* installing *binary* package ‘RcppML’ ...
+* ‘RcppML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppML’ as ‘RcppML_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppML)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘pracma’ ...
+* ‘pracma’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘reshape’ ...
+* ‘reshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *binary* package ‘permute’ ...
+* ‘permute’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘permute’ as ‘permute_0.9-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (permute)
+* installing *source* package ‘DECIPHER’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c AlignProfiles.c -o AlignProfiles.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c AssignIndels.c -o AssignIndels.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CalculateDeltaG.c -o CalculateDeltaG.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CalculateFISH.c -o CalculateFISH.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ChainSegments.c -o ChainSegments.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Cluster.c -o Cluster.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ClusterML.c -o ClusterML.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ClusterMP.c -o ClusterMP.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Compositions.c -o Compositions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Compression.c -o Compression.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ConsensusSequence.c -o ConsensusSequence.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c DesignProbes.c -o DesignProbes.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Diff.c -o Diff.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c DistanceMatrix.c -o DistanceMatrix.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c EnumerateSequence.c -o EnumerateSequence.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ExpandAmbiguities.c -o ExpandAmbiguities.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c FindFrameshifts.c -o FindFrameshifts.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GeneFinding.c -o GeneFinding.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GetPools.c -o GetPools.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Import.c -o Import.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c InformationContent.c -o InformationContent.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IntDist.c -o IntDist.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ManipulateXStringSet.c -o ManipulateXStringSet.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c MeltPolymer.c -o MeltPolymer.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c MovingAverage.c -o MovingAverage.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c NNLS.c -o NNLS.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Order.c -o Order.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c PairwiseAlignment.c -o PairwiseAlignment.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c PredictDBN.c -o PredictDBN.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c PredictHEC.c -o PredictHEC.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_decipher.c -o R_init_decipher.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c TerminalMismatch.c -o TerminalMismatch.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Translate.c -o Translate.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Utils.c -o Utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c VectorSums.c -o VectorSums.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XVector_stubs.c -o XVector_stubs.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DECIPHER.so AlignProfiles.o AssignIndels.o Biostrings_stubs.o CalculateDeltaG.o CalculateFISH.o ChainSegments.o Cluster.o ClusterML.o ClusterMP.o Compositions.o Compression.o ConsensusSequence.o DesignProbes.o Diff.o DistanceMatrix.o EnumerateSequence.o ExpandAmbiguities.o FindFrameshifts.o GeneFinding.o GetPools.o Import.o InformationContent.o IntDist.o ManipulateXStringSet.o MeltPolymer.o MovingAverage.o NNLS.o Order.o PairwiseAlignment.o PredictDBN.o PredictHEC.o R_init_decipher.o S4Vectors_stubs.o TerminalMismatch.o Translate.o Utils.o VectorSums.o XVector_stubs.o -fopenmp -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DECIPHER/00new/DECIPHER/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DECIPHER’ as ‘DECIPHER_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DECIPHER)
+* installing *source* package ‘DirichletMultinomial’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_DirichletMultinomial.c -o R_init_DirichletMultinomial.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit.c -o dirichlet_fit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit_main.c -o dirichlet_fit_main.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DirichletMultinomial.so R_init_DirichletMultinomial.o dirichlet_fit.o dirichlet_fit_main.o -L/usr/lib/x86_64-linux-gnu -lgsl -lgslcblas -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DirichletMultinomial/00new/DirichletMultinomial/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DirichletMultinomial’ as ‘DirichletMultinomial_1.44.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DirichletMultinomial)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘poorman’ ...
+* ‘poorman’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘poorman’ as ‘poorman_0.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (poorman)
+* installing *binary* package ‘deSolve’ ...
+* ‘deSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘deSolve’ as ‘deSolve_1.38_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deSolve)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘colourvalues’ ...
+* ‘colourvalues’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘colourvalues’ as ‘colourvalues_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (colourvalues)
+* installing *binary* package ‘dqrng’ ...
+* ‘dqrng’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dqrng’ as ‘dqrng_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dqrng)
+* installing *source* package ‘BiocNeighbors’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c annoy.cpp -o annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build_annoy.cpp -o build_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build_hnsw.cpp -o build_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build_vptree.cpp -o build_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c distances.cpp -o distances.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exhaustive.cpp -o exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_annoy.cpp -o find_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_exhaustive.cpp -o find_exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_hnsw.cpp -o find_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_kmknn.cpp -o find_kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_mutual_nns.cpp -o find_mutual_nns.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c find_vptree.cpp -o find_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hnsw.cpp -o hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kmknn.cpp -o kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c query_annoy.cpp -o query_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c query_exhaustive.cpp -o query_exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c query_hnsw.cpp -o query_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c query_kmknn.cpp -o query_kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c query_vptree.cpp -o query_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.cpp -o utils.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vptree.cpp -o vptree.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BiocNeighbors.so RcppExports.o annoy.o build_annoy.o build_hnsw.o build_vptree.o distances.o exhaustive.o find_annoy.o find_exhaustive.o find_hnsw.o find_kmknn.o find_mutual_nns.o find_vptree.o hnsw.o kmknn.o query_annoy.o query_exhaustive.o query_hnsw.o query_kmknn.o query_vptree.o utils.o vptree.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BiocNeighbors/00new/BiocNeighbors/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocNeighbors’ as ‘BiocNeighbors_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocNeighbors)
+* installing *source* package ‘BiocSingular’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++17
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c compute_scale.cpp -o compute_scale.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BiocSingular.so RcppExports.o compute_scale.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BiocSingular/00new/BiocSingular/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocSingular’ as ‘BiocSingular_1.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocSingular)
+* installing *binary* package ‘ggbeeswarm’ ...
+* ‘ggbeeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggbeeswarm’ as ‘ggbeeswarm_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggbeeswarm)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘graphlayouts’ ...
+* ‘graphlayouts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘graphlayouts’ as ‘graphlayouts_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphlayouts)
+* installing *binary* package ‘statnet.common’ ...
+* ‘statnet.common’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘statnet.common’ as ‘statnet.common_4.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (statnet.common)
+* installing *source* package ‘MultiAssayExperiment’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MultiAssayExperiment’ as ‘MultiAssayExperiment_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MultiAssayExperiment)
+* installing *source* package ‘decontam’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘decontam’ as ‘decontam_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (decontam)
+* installing *source* package ‘DelayedMatrixStats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DelayedMatrixStats’ as ‘DelayedMatrixStats_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DelayedMatrixStats)
+* installing *binary* package ‘tidygraph’ ...
+* ‘tidygraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidygraph’ as ‘tidygraph_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidygraph)
+* installing *binary* package ‘poweRlaw’ ...
+* ‘poweRlaw’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘poweRlaw’ as ‘poweRlaw_0.70.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (poweRlaw)
+* installing *binary* package ‘GGally’ ...
+* ‘GGally’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GGally’ as ‘GGally_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GGally)
+* installing *binary* package ‘vegan’ ...
+* ‘vegan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vegan’ as ‘vegan_2.6-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vegan)
+* installing *binary* package ‘philentropy’ ...
+* ‘philentropy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘philentropy’ as ‘philentropy_0.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (philentropy)
+* installing *binary* package ‘uwot’ ...
+* ‘uwot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uwot’ as ‘uwot_0.1.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uwot)
+* installing *binary* package ‘ggrastr’ ...
+* ‘ggrastr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrastr’ as ‘ggrastr_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrastr)
+* installing *source* package ‘scuttle’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cumulative_prop.cpp -o cumulative_prop.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c downsample_counts.cpp -o downsample_counts.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fit_linear_model.cpp -o fit_linear_model.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pool_size_factors.cpp -o pool_size_factors.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sparse_summarize.cpp -o sparse_summarize.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sum_counts.cpp -o sum_counts.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.cpp -o utils.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o scuttle.so RcppExports.o cumulative_prop.o downsample_counts.o fit_linear_model.o pool_size_factors.o sparse_summarize.o sum_counts.o utils.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-scuttle/00new/scuttle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scuttle’ as ‘scuttle_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scuttle)
+* installing *source* package ‘bluster’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build_snn.cpp -o build_snn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sum_neighbor_weights.cpp -o sum_neighbor_weights.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bluster.so RcppExports.o build_snn.o sum_neighbor_weights.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bluster/00new/bluster/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bluster’ as ‘bluster_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bluster)
+* installing *binary* package ‘ggraph’ ...
+* ‘ggraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggraph’ as ‘ggraph_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggraph)
+* installing *binary* package ‘network’ ...
+* ‘network’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘network’ as ‘network_1.18.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (network)
+* installing *source* package ‘miaSim’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘miaSim’ as ‘miaSim_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (miaSim)
+* installing *source* package ‘scater’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scater’ as ‘scater_1.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scater)
+* installing *binary* package ‘sna’ ...
+* ‘sna’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sna’ as ‘sna_2.7-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sna)
+* installing *source* package ‘mia’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mia’ as ‘mia_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mia)
+* installing *source* package ‘miaViz’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘miaViz’ as ‘miaViz_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (miaViz)
+
+The downloaded source packages are in
+	‘/tmp/RtmpNZUqfw/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	11m5.057s
+user	10m4.128s
+sys	0m50.388s
