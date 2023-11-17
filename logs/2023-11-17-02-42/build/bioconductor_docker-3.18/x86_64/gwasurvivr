@@ -1,0 +1,621 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''gwasurvivr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'gwasurvivr'
+also installing the dependencies ‘minqa’, ‘nloptr’, ‘ucminf’, ‘numDeriv’, ‘vroom’, ‘tzdb’, ‘iterators’, ‘lme4’, ‘ordinal’, ‘forcats’, ‘readr’, ‘foreach’, ‘shape’, ‘pan’, ‘jomo’, ‘haven’, ‘broom’, ‘glmnet’, ‘mitml’, ‘operator.tools’, ‘SparseM’, ‘MatrixModels’, ‘zoo’, ‘mice’, ‘formula.tools’, ‘quantreg’, ‘gdsfmt’, ‘GWASExactHW’, ‘DNAcopy’, ‘sandwich’, ‘lmtest’, ‘logistf’, ‘quantsmooth’, ‘GWASTools’, ‘SNPRelate’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/minqa_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 118141 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nloptr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 710034 bytes (693 KB)
+==================================================
+downloaded 693 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ucminf_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 34002 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 113093 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vroom_1.6.4.tar.gz'
+Content type 'binary/octet-stream' length 927156 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'binary/octet-stream' length 345411 bytes (337 KB)
+==================================================
+downloaded 337 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lme4_1.1-35.1.tar.gz'
+Content type 'binary/octet-stream' length 4235932 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ordinal_2022.11-16.tar.gz'
+Content type 'binary/octet-stream' length 1256636 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readr_2.1.4.tar.gz'
+Content type 'binary/octet-stream' length 824320 bytes (805 KB)
+==================================================
+downloaded 805 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 138028 bytes (134 KB)
+==================================================
+downloaded 134 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pan_1.9.tar.gz'
+Content type 'binary/octet-stream' length 942315 bytes (920 KB)
+==================================================
+downloaded 920 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jomo_2.7-6.tar.gz'
+Content type 'binary/octet-stream' length 2072592 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/haven_2.5.3.tar.gz'
+Content type 'binary/octet-stream' length 376385 bytes (367 KB)
+==================================================
+downloaded 367 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/broom_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1851908 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mitml_0.4-5.tar.gz'
+Content type 'binary/octet-stream' length 525203 bytes (512 KB)
+==================================================
+downloaded 512 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/operator.tools_1.6.3.tar.gz'
+Content type 'binary/octet-stream' length 51459 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SparseM_1.81.tar.gz'
+Content type 'binary/octet-stream' length 1041744 bytes (1017 KB)
+==================================================
+downloaded 1017 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/MatrixModels_0.5-3.tar.gz'
+Content type 'binary/octet-stream' length 425280 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1015488 bytes (991 KB)
+==================================================
+downloaded 991 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mice_3.16.0.tar.gz'
+Content type 'binary/octet-stream' length 1569977 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/formula.tools_1.7.1.tar.gz'
+Content type 'binary/octet-stream' length 86179 bytes (84 KB)
+==================================================
+downloaded 84 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/quantreg_5.97.tar.gz'
+Content type 'binary/octet-stream' length 1549528 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/gdsfmt_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 2931483 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GWASExactHW_1.01.tar.gz'
+Content type 'binary/octet-stream' length 13235 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DNAcopy_1.76.0.tar.gz'
+Content type 'application/x-gzip' length 296724 bytes (289 KB)
+==================================================
+downloaded 289 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sandwich_3.0-2.tar.gz'
+Content type 'binary/octet-stream' length 1456618 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lmtest_0.9-40.tar.gz'
+Content type 'binary/octet-stream' length 398739 bytes (389 KB)
+==================================================
+downloaded 389 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/logistf_1.26.0.tar.gz'
+Content type 'binary/octet-stream' length 262069 bytes (255 KB)
+==================================================
+downloaded 255 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/quantsmooth_1.68.0.tar.gz'
+Content type 'application/x-gzip' length 235650 bytes (230 KB)
+==================================================
+downloaded 230 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GWASTools_1.48.0.tar.gz'
+Content type 'application/x-gzip' length 1704970 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/SNPRelate_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 3190447 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/gwasurvivr_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 351330 bytes (343 KB)
+==================================================
+downloaded 343 KB
+
+* installing *binary* package ‘minqa’ ...
+* ‘minqa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minqa’ as ‘minqa_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minqa)
+* installing *binary* package ‘nloptr’ ...
+* ‘nloptr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nloptr’ as ‘nloptr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nloptr)
+* installing *binary* package ‘ucminf’ ...
+* ‘ucminf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ucminf’ as ‘ucminf_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ucminf)
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *binary* package ‘iterators’ ...
+* ‘iterators’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘pan’ ...
+* ‘pan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pan’ as ‘pan_1.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pan)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘operator.tools’ ...
+* ‘operator.tools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘operator.tools’ as ‘operator.tools_1.6.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (operator.tools)
+* installing *binary* package ‘SparseM’ ...
+* ‘SparseM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SparseM’ as ‘SparseM_1.81_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SparseM)
+* installing *binary* package ‘MatrixModels’ ...
+* ‘MatrixModels’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MatrixModels’ as ‘MatrixModels_0.5-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MatrixModels)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *source* package ‘gdsfmt’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_CoreArray.cpp -o R_CoreArray.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gdsfmt.cpp -o gdsfmt.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c digest.cpp -o digest.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/CoreArray.cpp -o CoreArray/CoreArray.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dAllocator.cpp -o CoreArray/dAllocator.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dAny.cpp -o CoreArray/dAny.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dBase.cpp -o CoreArray/dBase.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dBitGDS.cpp -o CoreArray/dBitGDS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dEndian.cpp -o CoreArray/dEndian.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dFile.cpp -o CoreArray/dFile.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dParallel.cpp -o CoreArray/dParallel.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dParallel_Ext.c -o CoreArray/dParallel_Ext.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dPlatform.cpp -o CoreArray/dPlatform.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dRealGDS.cpp -o CoreArray/dRealGDS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dSerial.cpp -o CoreArray/dSerial.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dStrGDS.cpp -o CoreArray/dStrGDS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dStream.cpp -o CoreArray/dStream.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dStruct.cpp -o CoreArray/dStruct.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dSparse.cpp -o CoreArray/dSparse.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CoreArray/dVLIntGDS.cpp -o CoreArray/dVLIntGDS.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/adler32.c -o ZLIB/adler32.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/compress.c -o ZLIB/compress.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/crc32.c -o ZLIB/crc32.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/deflate.c -o ZLIB/deflate.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/infback.c -o ZLIB/infback.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/inffast.c -o ZLIB/inffast.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/inflate.c -o ZLIB/inflate.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/inftrees.c -o ZLIB/inftrees.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/trees.c -o ZLIB/trees.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/uncompr.c -o ZLIB/uncompr.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c -g0 ZLIB/zutil.c -o ZLIB/zutil.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LZ4/lz4.c -o LZ4/lz4.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LZ4/lz4hc.c -o LZ4/lz4hc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LZ4/lz4frame.c -o LZ4/lz4frame.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LZ4/xxhash.c -o LZ4/xxhash.o
+cd XZ && tar -xzf xz-5.2.9.tar.gz
+cd XZ/xz-5.2.9 && \
+	./configure CC="gcc" CPP="gcc -E" CXX="g++ -std=gnu++17" CXXCPP="" --build="" \
+	--with-pic --enable-silent-rules --quiet --disable-xz --disable-shared > /dev/null
+cd XZ/xz-5.2.9/src/liblzma && make
+make[1]: Entering directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma'
+Making all in api
+make[2]: Entering directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma/api'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma/api'
+make[2]: Entering directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma'
+  CC       liblzma_la-tuklib_physmem.lo
+  CC       liblzma_la-tuklib_cpucores.lo
+  CC       liblzma_la-common.lo
+  CC       liblzma_la-block_util.lo
+  CC       liblzma_la-easy_preset.lo
+  CC       liblzma_la-filter_common.lo
+  CC       liblzma_la-hardware_physmem.lo
+  CC       liblzma_la-index.lo
+  CC       liblzma_la-stream_flags_common.lo
+  CC       liblzma_la-vli_size.lo
+  CC       liblzma_la-hardware_cputhreads.lo
+  CC       liblzma_la-alone_encoder.lo
+  CC       liblzma_la-block_buffer_encoder.lo
+  CC       liblzma_la-block_encoder.lo
+  CC       liblzma_la-block_header_encoder.lo
+  CC       liblzma_la-easy_buffer_encoder.lo
+  CC       liblzma_la-easy_encoder.lo
+  CC       liblzma_la-easy_encoder_memusage.lo
+  CC       liblzma_la-filter_buffer_encoder.lo
+  CC       liblzma_la-filter_encoder.lo
+  CC       liblzma_la-filter_flags_encoder.lo
+  CC       liblzma_la-index_encoder.lo
+  CC       liblzma_la-stream_buffer_encoder.lo
+  CC       liblzma_la-stream_encoder.lo
+  CC       liblzma_la-stream_flags_encoder.lo
+  CC       liblzma_la-vli_encoder.lo
+  CC       liblzma_la-outqueue.lo
+  CC       liblzma_la-stream_encoder_mt.lo
+  CC       liblzma_la-alone_decoder.lo
+  CC       liblzma_la-auto_decoder.lo
+  CC       liblzma_la-block_buffer_decoder.lo
+  CC       liblzma_la-block_decoder.lo
+  CC       liblzma_la-block_header_decoder.lo
+  CC       liblzma_la-easy_decoder_memusage.lo
+  CC       liblzma_la-filter_buffer_decoder.lo
+  CC       liblzma_la-filter_decoder.lo
+  CC       liblzma_la-filter_flags_decoder.lo
+  CC       liblzma_la-index_decoder.lo
+  CC       liblzma_la-index_hash.lo
+  CC       liblzma_la-stream_buffer_decoder.lo
+  CC       liblzma_la-stream_decoder.lo
+  CC       liblzma_la-stream_flags_decoder.lo
+  CC       liblzma_la-vli_decoder.lo
+  CC       liblzma_la-check.lo
+  CC       liblzma_la-crc32_table.lo
+  CC       liblzma_la-crc32_fast.lo
+  CC       liblzma_la-crc64_table.lo
+  CC       liblzma_la-crc64_fast.lo
+  CC       liblzma_la-sha256.lo
+  CC       liblzma_la-lz_encoder.lo
+  CC       liblzma_la-lz_encoder_mf.lo
+  CC       liblzma_la-lz_decoder.lo
+  CC       liblzma_la-lzma_encoder_presets.lo
+  CC       liblzma_la-lzma_encoder.lo
+  CC       liblzma_la-lzma_encoder_optimum_fast.lo
+  CC       liblzma_la-lzma_encoder_optimum_normal.lo
+  CC       liblzma_la-fastpos_table.lo
+  CC       liblzma_la-lzma_decoder.lo
+  CC       liblzma_la-lzma2_encoder.lo
+  CC       liblzma_la-lzma2_decoder.lo
+  CC       liblzma_la-price_table.lo
+  CC       liblzma_la-delta_common.lo
+  CC       liblzma_la-delta_encoder.lo
+  CC       liblzma_la-delta_decoder.lo
+  CC       liblzma_la-simple_coder.lo
+  CC       liblzma_la-simple_encoder.lo
+  CC       liblzma_la-simple_decoder.lo
+  CC       liblzma_la-x86.lo
+  CC       liblzma_la-powerpc.lo
+  CC       liblzma_la-ia64.lo
+  CC       liblzma_la-arm.lo
+  CC       liblzma_la-armthumb.lo
+  CC       liblzma_la-sparc.lo
+  CCLD     liblzma.la
+  PC       liblzma.pc
+make[2]: Leaving directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma'
+make[1]: Leaving directory '/tmp/RtmpnhSsQL/R.INSTALL1dd5d18c183/gdsfmt/src/XZ/xz-5.2.9/src/liblzma'
+cp XZ/xz-5.2.9/src/liblzma/.libs/liblzma.a  .
+rm -rf XZ/xz-5.2.9/dos
+rm -rf XZ/xz-5.2.9/po
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o gdsfmt.so R_CoreArray.o gdsfmt.o digest.o CoreArray/CoreArray.o CoreArray/dAllocator.o CoreArray/dAny.o CoreArray/dBase.o CoreArray/dBitGDS.o CoreArray/dEndian.o CoreArray/dFile.o CoreArray/dParallel.o CoreArray/dParallel_Ext.o CoreArray/dPlatform.o CoreArray/dRealGDS.o CoreArray/dSerial.o CoreArray/dStrGDS.o CoreArray/dStream.o CoreArray/dStruct.o CoreArray/dSparse.o CoreArray/dVLIntGDS.o ZLIB/adler32.o ZLIB/compress.o ZLIB/crc32.o ZLIB/deflate.o ZLIB/infback.o ZLIB/inffast.o ZLIB/inflate.o ZLIB/inftrees.o ZLIB/trees.o ZLIB/uncompr.o ZLIB/zutil.o LZ4/lz4.o LZ4/lz4hc.o LZ4/lz4frame.o LZ4/xxhash.o ./liblzma.a -lpthread -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-gdsfmt/00new/gdsfmt/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gdsfmt’ as ‘gdsfmt_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdsfmt)
+* installing *binary* package ‘GWASExactHW’ ...
+* ‘GWASExactHW’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GWASExactHW’ as ‘GWASExactHW_1.01_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GWASExactHW)
+* installing *source* package ‘DNAcopy’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gfortran  -fpic  -g -O2  -c cbsWtstats.f -o cbsWtstats.o
+gfortran  -fpic  -g -O2  -c cbststats.f -o cbststats.o
+gfortran  -fpic  -g -O2  -c changepoints-wtd.f -o changepoints-wtd.o
+gfortran  -fpic  -g -O2  -c changepoints.f -o changepoints.o
+gfortran  -fpic  -g -O2  -c esegment.f -o esegment.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c flchoose.c -o flchoose.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fphyper.c -o fphyper.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fpnorm.c -o fpnorm.o
+gfortran  -fpic  -g -O2  -c getbdry.f -o getbdry.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gfortran  -fpic  -g -O2  -c prune.f -o prune.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rshared.c -o rshared.o
+gfortran  -fpic  -g -O2  -c segmentp.f -o segmentp.o
+gfortran  -fpic  -g -O2  -c smoothCNA.f -o smoothCNA.o
+gfortran  -fpic  -g -O2  -c tailprobs.f -o tailprobs.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DNAcopy.so cbsWtstats.o cbststats.o changepoints-wtd.o changepoints.o esegment.o flchoose.o fphyper.o fpnorm.o getbdry.o init.o prune.o rshared.o segmentp.o smoothCNA.o tailprobs.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DNAcopy/00new/DNAcopy/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DNAcopy’ as ‘DNAcopy_1.76.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DNAcopy)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘lme4’ ...
+* ‘lme4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lme4’ as ‘lme4_1.1-35.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lme4)
+* installing *binary* package ‘ordinal’ ...
+* ‘ordinal’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ordinal’ as ‘ordinal_2022.11-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ordinal)
+* installing *binary* package ‘foreach’ ...
+* ‘foreach’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *binary* package ‘formula.tools’ ...
+* ‘formula.tools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘formula.tools’ as ‘formula.tools_1.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (formula.tools)
+* installing *binary* package ‘quantreg’ ...
+* ‘quantreg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quantreg’ as ‘quantreg_5.97_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quantreg)
+* installing *binary* package ‘sandwich’ ...
+* ‘sandwich’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sandwich’ as ‘sandwich_3.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sandwich)
+* installing *binary* package ‘lmtest’ ...
+* ‘lmtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmtest’ as ‘lmtest_0.9-40_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmtest)
+* installing *source* package ‘SNPRelate’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ConvToGDS.cpp -o ConvToGDS.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_SNPRelate.c -o R_SNPRelate.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SNPRelate.cpp -o SNPRelate.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ThreadPool.cpp -o ThreadPool.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dGenGWAS.cpp -o dGenGWAS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dVect.cpp -o dVect.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genBeta.cpp -o genBeta.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genEIGMIX.cpp -o genEIGMIX.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genFst.cpp -o genFst.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genHWE.cpp -o genHWE.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genIBD.cpp -o genIBD.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genIBS.cpp -o genIBS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genKING.cpp -o genKING.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genLD.cpp -o genLD.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genPCA.cpp -o genPCA.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c genSlideWin.cpp -o genSlideWin.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o SNPRelate.so ConvToGDS.o R_SNPRelate.o SNPRelate.o ThreadPool.o dGenGWAS.o dVect.o genBeta.o genEIGMIX.o genFst.o genHWE.o genIBD.o genIBS.o genKING.o genLD.o genPCA.o genSlideWin.o -lpthread -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-SNPRelate/00new/SNPRelate/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SNPRelate’ as ‘SNPRelate_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SNPRelate)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *binary* package ‘jomo’ ...
+* ‘jomo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jomo’ as ‘jomo_2.7-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jomo)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *source* package ‘quantsmooth’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘quantsmooth’ as ‘quantsmooth_1.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quantsmooth)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *binary* package ‘mitml’ ...
+* ‘mitml’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitml’ as ‘mitml_0.4-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitml)
+* installing *binary* package ‘mice’ ...
+* ‘mice’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mice’ as ‘mice_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mice)
+* installing *binary* package ‘logistf’ ...
+* ‘logistf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘logistf’ as ‘logistf_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (logistf)
+* installing *source* package ‘GWASTools’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GWASTools’ as ‘GWASTools_1.48.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GWASTools)
+* installing *source* package ‘gwasurvivr’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gwasurvivr’ as ‘gwasurvivr_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gwasurvivr)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp4xO9zG/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	4m16.182s
+user	3m36.904s
+sys	0m23.008s
