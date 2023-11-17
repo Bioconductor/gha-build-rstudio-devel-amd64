@@ -1,0 +1,146 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ASICS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ASICS'
+also installing the dependencies ‘RcppDE’, ‘shape’, ‘ptw’, ‘reshape2’, ‘glmnet’, ‘PepsNMR’, ‘ASICSdata’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppDE_0.1.7.tar.gz'
+Content type 'binary/octet-stream' length 314229 bytes (306 KB)
+==================================================
+downloaded 306 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ptw_1.9-16.tar.gz'
+Content type 'binary/octet-stream' length 4256863 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 1990971 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/PepsNMR_1.20.0.tar.gz'
+Content type 'application/x-gzip' length 1197824 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/ASICSdata_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 23117089 bytes (22.0 MB)
+==================================================
+downloaded 22.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ASICS_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 3361923 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+* installing *binary* package ‘RcppDE’ ...
+* ‘RcppDE’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppDE’ as ‘RcppDE_0.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppDE)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *source* package ‘ASICSdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ASICSdata’ as ‘ASICSdata_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ASICSdata)
+* installing *binary* package ‘ptw’ ...
+* ‘ptw’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ptw’ as ‘ptw_1.9-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ptw)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *source* package ‘PepsNMR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘PepsNMR’ as ‘PepsNMR_1.20.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PepsNMR)
+* installing *source* package ‘ASICS’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ASICS’ as ‘ASICS_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ASICS)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpa99EdG/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m49.289s
+user	0m41.970s
+sys	0m4.827s
+* installing *source* package ‘ASICSdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ASICSdata’ as ‘ASICSdata_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ASICSdata)
