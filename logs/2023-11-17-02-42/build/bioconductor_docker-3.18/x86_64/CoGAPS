@@ -1,0 +1,311 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CoGAPS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'CoGAPS'
+also installing the dependencies ‘globals’, ‘listenv’, ‘parallelly’, ‘dotCall64’, ‘gtools’, ‘caTools’, ‘cowplot’, ‘fastmatch’, ‘babelgene’, ‘sp’, ‘future’, ‘future.apply’, ‘progressr’, ‘spam’, ‘gplots’, ‘fgsea’, ‘forcats’, ‘msigdbr’, ‘SeuratObject’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/globals_0.16.2.tar.gz'
+Content type 'binary/octet-stream' length 104912 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/listenv_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 105140 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/parallelly_1.36.0.tar.gz'
+Content type 'binary/octet-stream' length 348828 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dotCall64_1.1-0.tar.gz'
+Content type 'binary/octet-stream' length 30494 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 199662 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1376564 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fastmatch_1.1-4.tar.gz'
+Content type 'binary/octet-stream' length 34502 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/babelgene_22.9.tar.gz'
+Content type 'binary/octet-stream' length 3651563 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sp_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 2091786 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future_1.33.0.tar.gz'
+Content type 'binary/octet-stream' length 642120 bytes (627 KB)
+==================================================
+downloaded 627 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future.apply_1.11.0.tar.gz'
+Content type 'binary/octet-stream' length 153057 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progressr_0.14.0.tar.gz'
+Content type 'binary/octet-stream' length 380423 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/spam_2.10-0.tar.gz'
+Content type 'binary/octet-stream' length 2750524 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.tar.gz'
+Content type 'binary/octet-stream' length 594720 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/fgsea_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 4953436 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421625 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/msigdbr_7.5.1.tar.gz'
+Content type 'binary/octet-stream' length 6148028 bytes (5.9 MB)
+==================================================
+downloaded 5.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SeuratObject_5.0.0.tar.gz'
+Content type 'binary/octet-stream' length 2045301 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/CoGAPS_3.22.0.tar.gz'
+Content type 'application/x-gzip' length 20944624 bytes (20.0 MB)
+==================================================
+downloaded 20.0 MB
+
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *binary* package ‘dotCall64’ ...
+* ‘dotCall64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dotCall64’ as ‘dotCall64_1.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dotCall64)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘fastmatch’ ...
+* ‘fastmatch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastmatch’ as ‘fastmatch_1.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastmatch)
+* installing *binary* package ‘babelgene’ ...
+* ‘babelgene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘babelgene’ as ‘babelgene_22.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (babelgene)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘progressr’ ...
+* ‘progressr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progressr’ as ‘progressr_0.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progressr)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+* installing *binary* package ‘spam’ ...
+* ‘spam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spam’ as ‘spam_2.10-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spam)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘fgsea’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ScoreCalculation.cpp -o ScoreCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ScoreRuler.cpp -o ScoreRuler.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c esCalculation.cpp -o esCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fastGSEA.cpp -o fastGSEA.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fgseaMultilevel.cpp -o fgseaMultilevel.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fgseaMultilevelSupplement.cpp -o fgseaMultilevelSupplement.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c geseca.cpp -o geseca.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.cpp -o util.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o fgsea.so RcppExports.o ScoreCalculation.o ScoreRuler.o esCalculation.o fastGSEA.o fgseaMultilevel.o fgseaMultilevelSupplement.o geseca.o util.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-fgsea/00new/fgsea/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fgsea’ as ‘fgsea_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fgsea)
+* installing *binary* package ‘msigdbr’ ...
+* ‘msigdbr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘msigdbr’ as ‘msigdbr_7.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msigdbr)
+* installing *binary* package ‘future.apply’ ...
+* ‘future.apply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future.apply’ as ‘future.apply_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future.apply)
+* installing *source* package ‘CoGAPS’ ...
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ -std=gnu++17 accepts -g... yes
+checking for g++ -std=gnu++17 option to enable C++11 features... none needed
+checking how to run the C++ preprocessor... g++ -std=gnu++17 -E
+checking whether the compiler supports GNU C++... (cached) yes
+checking whether g++ -std=gnu++17 accepts -g... (cached) yes
+checking for g++ -std=gnu++17 option to enable C++11 features... (cached) none needed
+./configure: line 3246: AX_COMPILER_VENDOR: command not found
+./configure: line 3247: AX_COMPILER_VERSION: command not found
+./configure: line 3259: AX_OPENMP: command not found
+building on  compiler version 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Cogaps.cpp -o Cogaps.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GapsParameters.cpp -o GapsParameters.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GapsResult.cpp -o GapsResult.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GapsRunner.cpp -o GapsRunner.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GapsStatistics.cpp -o GapsStatistics.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-runner.cpp -o test-runner.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atomic/Atom.cpp -o atomic/Atom.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atomic/ConcurrentAtom.cpp -o atomic/ConcurrentAtom.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atomic/AtomicDomain.cpp -o atomic/AtomicDomain.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atomic/ConcurrentAtomicDomain.cpp -o atomic/ConcurrentAtomicDomain.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atomic/ProposalQueue.cpp -o atomic/ProposalQueue.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/HashSets.cpp -o data_structures/HashSets.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/HybridMatrix.cpp -o data_structures/HybridMatrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/HybridVector.cpp -o data_structures/HybridVector.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/Matrix.cpp -o data_structures/Matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/SparseIterator.cpp -o data_structures/SparseIterator.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/SparseMatrix.cpp -o data_structures/SparseMatrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/SparseVector.cpp -o data_structures/SparseVector.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c data_structures/Vector.cpp -o data_structures/Vector.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file_parser/CharacterDelimitedParser.cpp -o file_parser/CharacterDelimitedParser.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file_parser/FileParser.cpp -o file_parser/FileParser.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file_parser/MatrixElement.cpp -o file_parser/MatrixElement.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c file_parser/MtxParser.cpp -o file_parser/MtxParser.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gibbs_sampler/AlphaParameters.cpp -o gibbs_sampler/AlphaParameters.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gibbs_sampler/DenseNormalModel.cpp -o gibbs_sampler/DenseNormalModel.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gibbs_sampler/SparseNormalModel.cpp -o gibbs_sampler/SparseNormalModel.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c math/Math.cpp -o math/Math.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c math/MatrixMath.cpp -o math/MatrixMath.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c math/Random.cpp -o math/Random.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DBOOST_MATH_PROMOTE_DOUBLE_POLICY=0 -DGAPS_DISABLE_CHECKPOINTS -D__GAPS_R_BUILD__ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c math/VectorMath.cpp -o math/VectorMath.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o CoGAPS.so Cogaps.o GapsParameters.o GapsResult.o GapsRunner.o GapsStatistics.o RcppExports.o test-runner.o atomic/Atom.o atomic/ConcurrentAtom.o atomic/AtomicDomain.o atomic/ConcurrentAtomicDomain.o atomic/ProposalQueue.o data_structures/HashSets.o data_structures/HybridMatrix.o data_structures/HybridVector.o data_structures/Matrix.o data_structures/SparseIterator.o data_structures/SparseMatrix.o data_structures/SparseVector.o data_structures/Vector.o file_parser/CharacterDelimitedParser.o file_parser/FileParser.o file_parser/MatrixElement.o file_parser/MtxParser.o gibbs_sampler/AlphaParameters.o gibbs_sampler/DenseNormalModel.o gibbs_sampler/SparseNormalModel.o math/Math.o math/MatrixMath.o math/Random.o math/VectorMath.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-CoGAPS/00new/CoGAPS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CoGAPS’ as ‘CoGAPS_3.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CoGAPS)
+* installing *binary* package ‘SeuratObject’ ...
+* ‘SeuratObject’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SeuratObject’ as ‘SeuratObject_5.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SeuratObject)
+
+The downloaded source packages are in
+	‘/tmp/RtmpNoF8Km/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m31.113s
+user	2m11.633s
+sys	0m14.431s
