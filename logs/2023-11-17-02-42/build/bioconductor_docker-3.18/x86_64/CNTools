@@ -1,0 +1,47 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CNTools'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'CNTools'
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/CNTools_1.58.0.tar.gz'
+Content type 'application/x-gzip' length 887941 bytes (867 KB)
+==================================================
+downloaded 867 KB
+
+* installing *source* package ‘CNTools’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c getratios.c -o getratios.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o CNTools.so getratios.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-CNTools/00new/CNTools/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘start’ in package ‘CNTools’
+Creating a new generic function for ‘end’ in package ‘CNTools’
+Creating a generic function for ‘genefilter’ from package ‘genefilter’ in package ‘CNTools’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CNTools’ as ‘CNTools_1.58.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CNTools)
+
+The downloaded source packages are in
+	‘/tmp/Rtmph1Dokb/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m16.212s
+user	0m13.452s
+sys	0m1.771s
