@@ -1,0 +1,187 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GWENA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'GWENA'
+also installing the dependencies ‘fastcluster’, ‘GO.db’, ‘plotly’, ‘RhpcBLASctl’, ‘WGCNA’, ‘dynamicTreeCut’, ‘gprofiler2’, ‘NetRep’, ‘igraph’, ‘rlist’, ‘prettydoc’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fastcluster_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 184037 bytes (179 KB)
+==================================================
+downloaded 179 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 29013599 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RhpcBLASctl_0.23-42.tar.gz'
+Content type 'binary/octet-stream' length 14247 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/WGCNA_1.72-1.tar.gz'
+Content type 'binary/octet-stream' length 1174340 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'binary/octet-stream' length 89708 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gprofiler2_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 1513214 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/NetRep_1.2.7.tar.gz'
+Content type 'binary/octet-stream' length 2020932 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rlist_0.4.6.2.tar.gz'
+Content type 'binary/octet-stream' length 243628 bytes (237 KB)
+==================================================
+downloaded 237 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/prettydoc_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 996197 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GWENA_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 4806093 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+* installing *binary* package ‘fastcluster’ ...
+* ‘fastcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *binary* package ‘RhpcBLASctl’ ...
+* ‘RhpcBLASctl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RhpcBLASctl’ as ‘RhpcBLASctl_0.23-42_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RhpcBLASctl)
+* installing *binary* package ‘dynamicTreeCut’ ...
+* ‘dynamicTreeCut’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘rlist’ ...
+* ‘rlist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rlist’ as ‘rlist_0.4.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rlist)
+* installing *binary* package ‘prettydoc’ ...
+* ‘prettydoc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prettydoc’ as ‘prettydoc_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prettydoc)
+* installing *source* package ‘WGCNA’ ...
+** package ‘WGCNA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions-utils.c -o corFunctions-utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions.c -o corFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c myMatrixMultiplication.c -o myMatrixMultiplication.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c networkFunctions.c -o networkFunctions.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c parallelQuantile.cc -o parallelQuantile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pivot.c -o pivot.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o WGCNA.so corFunctions-utils.o corFunctions.o myMatrixMultiplication.o networkFunctions.o parallelQuantile.o pivot.o -lpthread -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-WGCNA/00new/WGCNA/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘WGCNA’ as ‘WGCNA_1.72-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WGCNA)
+* installing *binary* package ‘gprofiler2’ ...
+* ‘gprofiler2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gprofiler2’ as ‘gprofiler2_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gprofiler2)
+* installing *binary* package ‘NetRep’ ...
+* ‘NetRep’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NetRep’ as ‘NetRep_1.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NetRep)
+* installing *source* package ‘GWENA’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+Warning: bad markup (extra space?) at compare_conditions.Rd:91:72
+Warning: bad markup (extra space?) at compare_conditions.Rd:96:77
+Warning: bad markup (extra space?) at compare_conditions.Rd:98:74
+Warning: bad markup (extra space?) at compare_conditions.Rd:100:69
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GWENA’ as ‘GWENA_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GWENA)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp28xklO/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m57.599s
+user	1m46.066s
+sys	0m7.440s
