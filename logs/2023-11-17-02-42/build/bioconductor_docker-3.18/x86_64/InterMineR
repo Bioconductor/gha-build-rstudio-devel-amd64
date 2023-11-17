@@ -1,0 +1,160 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''InterMineR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'InterMineR'
+also installing the dependencies ‘gsubfn’, ‘proto’, ‘chron’, ‘RJSONIO’, ‘sqldf’, ‘igraph’, ‘GO.db’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gsubfn_0.7.tar.gz'
+Content type 'binary/octet-stream' length 354700 bytes (346 KB)
+==================================================
+downloaded 346 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proto_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 469562 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/chron_2.3-61.tar.gz'
+Content type 'binary/octet-stream' length 186783 bytes (182 KB)
+==================================================
+downloaded 182 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RJSONIO_1.3-1.8.tar.gz'
+Content type 'binary/octet-stream' length 1117129 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sqldf_0.4-11.tar.gz'
+Content type 'binary/octet-stream' length 76457 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 29013599 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/InterMineR_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 5148636 bytes (4.9 MB)
+==================================================
+downloaded 4.9 MB
+
+* installing *binary* package ‘proto’ ...
+* ‘proto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *binary* package ‘chron’ ...
+* ‘chron’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘chron’ as ‘chron_2.3-61_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (chron)
+* installing *binary* package ‘RJSONIO’ ...
+* ‘RJSONIO’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RJSONIO’ as ‘RJSONIO_1.3-1.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RJSONIO)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘gsubfn’ ...
+* ‘gsubfn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gsubfn’ as ‘gsubfn_0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gsubfn)
+* installing *binary* package ‘sqldf’ ...
+* ‘sqldf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sqldf’ as ‘sqldf_0.4-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sqldf)
+* installing *source* package ‘InterMineR’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘intersect’ in package ‘InterMineR’
+Creating a new generic function for ‘union’ in package ‘InterMineR’
+Creating a new generic function for ‘subtract’ in package ‘InterMineR’
+** help
+Warning: ListManager-methods.Rd:41: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:42: unknown macro '\item'
+Warning: ListManager-methods.Rd:50: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:51: unknown macro '\item'
+Warning: ListManager-methods.Rd:59: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:60: unknown macro '\item'
+Warning: ListManager-methods.Rd:63: unknown macro '\item'
+Warning: ListManager-methods.Rd:66: unknown macro '\item'
+Warning: ListManager-methods.Rd:69: unknown macro '\item'
+Warning: ListManager-methods.Rd:72: unknown macro '\item'
+Warning: ListManager-methods.Rd:80: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:81: unknown macro '\item'
+Warning: ListManager-methods.Rd:84: unknown macro '\item'
+Warning: ListManager-methods.Rd:87: unknown macro '\item'
+Warning: ListManager-methods.Rd:90: unknown macro '\item'
+Warning: ListManager-methods.Rd:98: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:99: unknown macro '\item'
+Warning: ListManager-methods.Rd:102: unknown macro '\item'
+Warning: ListManager-methods.Rd:105: unknown macro '\item'
+Warning: ListManager-methods.Rd:108: unknown macro '\item'
+Warning: ListManager-methods.Rd:116: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:117: unknown macro '\item'
+Warning: ListManager-methods.Rd:120: unknown macro '\item'
+Warning: ListManager-methods.Rd:123: unknown macro '\item'
+Warning: ListManager-methods.Rd:126: unknown macro '\item'
+Warning: ListManager-methods.Rd:134: unexpected section header '\arguments'
+Warning: ListManager-methods.Rd:135: unknown macro '\item'
+Warning: ListManager-methods.Rd:138: unknown macro '\item'
+Warning: ListManager-methods.Rd:141: unknown macro '\item'
+Warning: ListManager-methods.Rd:144: unknown macro '\item'
+Warning: ListManager-methods.Rd:147: unknown macro '\item'
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: multiple methods tables found for ‘union’
+Warning: multiple methods tables found for ‘subtract’
+Warning: multiple methods tables found for ‘intersect’
+** testing if installed package can be loaded from final location
+Warning: multiple methods tables found for ‘union’
+Warning: multiple methods tables found for ‘subtract’
+Warning: multiple methods tables found for ‘intersect’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘InterMineR’ as ‘InterMineR_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (InterMineR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpHBc644/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m11.568s
+user	1m4.664s
+sys	0m4.536s
