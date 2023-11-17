@@ -1,0 +1,72 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''HelloRanges'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'HelloRanges'
+also installing the dependency ‘HelloRangesData’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/HelloRangesData_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 47956298 bytes (45.7 MB)
+==================================================
+downloaded 45.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/HelloRanges_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 974658 bytes (951 KB)
+==================================================
+downloaded 951 KB
+
+* installing *source* package ‘HelloRangesData’ ...
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘HelloRangesData’ 
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HelloRangesData’ as ‘HelloRangesData_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HelloRangesData)
+* installing *source* package ‘HelloRanges’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HelloRanges’ as ‘HelloRanges_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HelloRanges)
+
+The downloaded source packages are in
+	‘/tmp/RtmpcTBdqg/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m0.072s
+user	0m55.109s
+sys	0m4.071s
+* installing *source* package ‘HelloRangesData’ ...
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘HelloRangesData’ 
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HelloRangesData’ as ‘HelloRangesData_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HelloRangesData)
