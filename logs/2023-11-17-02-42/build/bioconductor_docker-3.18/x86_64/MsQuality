@@ -1,0 +1,100 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MsQuality'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'MsQuality'
+also installing the dependencies ‘V8’, ‘collections’, ‘jsonvalidate’, ‘ontologyIndex’, ‘R6P’, ‘rmzqc’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/V8_4.4.0.tar.gz'
+Content type 'binary/octet-stream' length 7973048 bytes (7.6 MB)
+==================================================
+downloaded 7.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/collections_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 67012 bytes (65 KB)
+==================================================
+downloaded 65 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jsonvalidate_1.3.2.tar.gz'
+Content type 'binary/octet-stream' length 128818 bytes (125 KB)
+==================================================
+downloaded 125 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ontologyIndex_2.11.tar.gz'
+Content type 'binary/octet-stream' length 1598637 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R6P_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 85608 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rmzqc_0.5.3.tar.gz'
+Content type 'binary/octet-stream' length 1443078 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MsQuality_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 4460920 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+* installing *binary* package ‘V8’ ...
+* ‘V8’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘V8’ as ‘V8_4.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (V8)
+* installing *binary* package ‘collections’ ...
+* ‘collections’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘collections’ as ‘collections_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (collections)
+* installing *binary* package ‘ontologyIndex’ ...
+* ‘ontologyIndex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ontologyIndex’ as ‘ontologyIndex_2.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ontologyIndex)
+* installing *binary* package ‘jsonvalidate’ ...
+* ‘jsonvalidate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jsonvalidate’ as ‘jsonvalidate_1.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jsonvalidate)
+* installing *binary* package ‘R6P’ ...
+* ‘R6P’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R6P’ as ‘R6P_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R6P)
+* installing *binary* package ‘rmzqc’ ...
+* ‘rmzqc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rmzqc’ as ‘rmzqc_0.5.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rmzqc)
+* installing *source* package ‘MsQuality’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MsQuality’ as ‘MsQuality_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MsQuality)
+
+The downloaded source packages are in
+	‘/tmp/RtmpDaCiJV/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m36.634s
+user	0m29.311s
+sys	0m3.249s
