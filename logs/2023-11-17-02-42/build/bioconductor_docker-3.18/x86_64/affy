@@ -1,0 +1,197 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''affy'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'affy'
+also installing the dependencies ‘DynDoc’, ‘tkWidgets’, ‘affydata’, ‘widgetTools’, ‘hgu95av2cdf’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DynDoc_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 11216 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/tkWidgets_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 338585 bytes (330 KB)
+==================================================
+downloaded 330 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/affydata_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 12712861 bytes (12.1 MB)
+==================================================
+downloaded 12.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/widgetTools_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 127837 bytes (124 KB)
+==================================================
+downloaded 124 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2cdf_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1331391 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/affy_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 1223480 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘DynDoc’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DynDoc’ as ‘DynDoc_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DynDoc)
+* installing *source* package ‘widgetTools’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘widgetTools’ as ‘widgetTools_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (widgetTools)
+* installing *source* package ‘hgu95av2cdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu95av2cdf’ as ‘hgu95av2cdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu95av2cdf)
+* installing *source* package ‘affy’ ...
+** using staged installation
+creating cache ./config.cache
+checking how to run the C preprocessor... gcc -E
+checking for main in -lz... yes
+checking for zlib.h... yes
+checking if zlib version >= 1.1.3... yes
+updating cache ./config.cache
+creating ./config.status
+creating src/Makevars
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DHAVE_ZLIB=1  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c chipbackground.c -o chipbackground.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DHAVE_ZLIB=1  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c getall_locations.c -o getall_locations.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DHAVE_ZLIB=1  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mas5calls.c -o mas5calls.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DHAVE_ZLIB=1  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma2.c -o rma2.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DHAVE_ZLIB=1  -I'/tmp/tmp/built/preprocessCore/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rma_common.c -o rma_common.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o affy.so chipbackground.o getall_locations.o mas5calls.o rma2.o rma_common.o -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-affy/00new/affy/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affy’ as ‘affy_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affy)
+* installing *source* package ‘tkWidgets’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tkWidgets’ as ‘tkWidgets_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tkWidgets)
+* installing *source* package ‘affydata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+     Package    LibPath                                Item      
+[1,] "affydata" "/tmp/tmp/built/00LOCK-affydata/00new" "Dilution"
+     Title                        
+[1,] "AffyBatch instance Dilution"
+** testing if installed package can be loaded from final location
+     Package    LibPath          Item       Title                        
+[1,] "affydata" "/tmp/tmp/built" "Dilution" "AffyBatch instance Dilution"
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affydata’ as ‘affydata_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affydata)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9cU1AC/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m31.888s
+user	0m27.371s
+sys	0m5.633s
+* installing *source* package ‘hgu95av2cdf’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu95av2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu95av2cdf’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu95av2cdf’ as ‘hgu95av2cdf_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu95av2cdf)
