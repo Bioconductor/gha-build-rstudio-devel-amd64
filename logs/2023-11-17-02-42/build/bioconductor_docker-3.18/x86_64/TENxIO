@@ -1,0 +1,169 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TENxIO'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TENxIO'
+also installing the dependencies ‘vroom’, ‘tzdb’, ‘R.oo’, ‘R.methodsS3’, ‘BiocBaseUtils’, ‘readr’, ‘R.utils’, ‘DropletTestFiles’, ‘RaggedExperiment’, ‘tinytest’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vroom_1.6.4.tar.gz'
+Content type 'binary/octet-stream' length 927156 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.oo_1.25.0.tar.gz'
+Content type 'binary/octet-stream' length 963511 bytes (940 KB)
+==================================================
+downloaded 940 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 80504 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 227937 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readr_2.1.4.tar.gz'
+Content type 'binary/octet-stream' length 824320 bytes (805 KB)
+==================================================
+downloaded 805 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.2.tar.gz'
+Content type 'binary/octet-stream' length 1401342 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/DropletTestFiles_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 232024 bytes (226 KB)
+==================================================
+downloaded 226 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/RaggedExperiment_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 701526 bytes (685 KB)
+==================================================
+downloaded 685 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tinytest_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 691773 bytes (675 KB)
+==================================================
+downloaded 675 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TENxIO_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 260452 bytes (254 KB)
+==================================================
+downloaded 254 KB
+
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *source* package ‘BiocBaseUtils’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocBaseUtils’ as ‘BiocBaseUtils_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocBaseUtils)
+* installing *source* package ‘DropletTestFiles’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DropletTestFiles’ as ‘DropletTestFiles_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DropletTestFiles)
+* installing *binary* package ‘tinytest’ ...
+* ‘tinytest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tinytest’ as ‘tinytest_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tinytest)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *source* package ‘RaggedExperiment’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RaggedExperiment’ as ‘RaggedExperiment_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RaggedExperiment)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *source* package ‘TENxIO’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TENxIO’ as ‘TENxIO_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TENxIO)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9UbFQv/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m55.124s
+user	0m46.243s
+sys	0m6.551s
