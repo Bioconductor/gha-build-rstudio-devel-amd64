@@ -1,0 +1,37 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MobilityTransformR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'MobilityTransformR'
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MobilityTransformR_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 403199 bytes (393 KB)
+==================================================
+downloaded 393 KB
+
+* installing *source* package ‘MobilityTransformR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MobilityTransformR’ as ‘MobilityTransformR_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MobilityTransformR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpOpg3MY/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m32.217s
+user	0m27.342s
+sys	0m2.141s
