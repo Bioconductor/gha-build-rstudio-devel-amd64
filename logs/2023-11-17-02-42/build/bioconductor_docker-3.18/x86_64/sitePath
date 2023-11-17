@@ -1,0 +1,162 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''sitePath'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'sitePath'
+also installing the dependencies ‘pixmap’, ‘sp’, ‘RcppArmadillo’, ‘ade4’, ‘segmented’, ‘bookdown’, ‘ggrepel’, ‘gridExtra’, ‘seqinr’, ‘BiocStyle’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pixmap_0.4-12.tar.gz'
+Content type 'binary/octet-stream' length 207038 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sp_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 2091786 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppArmadillo_0.12.6.6.0.tar.gz'
+Content type 'binary/octet-stream' length 1074747 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ade4_1.7-22.tar.gz'
+Content type 'binary/octet-stream' length 5400203 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/segmented_1.6-4.tar.gz'
+Content type 'binary/octet-stream' length 779678 bytes (761 KB)
+==================================================
+downloaded 761 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bookdown_0.36.tar.gz'
+Content type 'binary/octet-stream' length 1089749 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106992 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/seqinr_4.2-30.tar.gz'
+Content type 'binary/octet-stream' length 4129203 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 787685 bytes (769 KB)
+==================================================
+downloaded 769 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sitePath_1.18.0.tar.gz'
+Content type 'application/x-gzip' length 1200105 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+* installing *binary* package ‘pixmap’ ...
+* ‘pixmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pixmap’ as ‘pixmap_0.4-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pixmap)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘RcppArmadillo’ ...
+* ‘RcppArmadillo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppArmadillo’ as ‘RcppArmadillo_0.12.6.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppArmadillo)
+* installing *binary* package ‘segmented’ ...
+* ‘segmented’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘segmented’ as ‘segmented_1.6-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (segmented)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘ade4’ ...
+* ‘ade4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ade4’ as ‘ade4_1.7-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ade4)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘seqinr’ ...
+* ‘seqinr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘seqinr’ as ‘seqinr_4.2-30_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqinr)
+* installing *source* package ‘sitePath’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lumpyCluster.cpp -o lumpyCluster.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c minEntropy.cpp -o minEntropy.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c searchNode.cpp -o searchNode.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c searchTree.cpp -o searchTree.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c treemer.cpp -o treemer.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.cpp -o util.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sitePath.so RcppExports.o lumpyCluster.o minEntropy.o searchNode.o searchTree.o treemer.o util.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sitePath/00new/sitePath/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sitePath’ as ‘sitePath_1.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sitePath)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdYWXOw/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m43.927s
+user	0m35.991s
+sys	0m5.466s
