@@ -13,7 +13,7 @@ jobs:
     concurrency:
       group: dispatch
       cancel-in-progress: false
-    runs-on: [self-hosted, js2]
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix.outputs.pkglist }}
     steps:
@@ -76,7 +76,7 @@ jobs:
         run: |
           # PAT will trigger a push workflow, GITHUB_TOKEN won't
           # Trigger a new workflow if tobuild is not empty
-          [ -s /tmp/newtobuild ] || [ -s /tmp/write_PACKAGES ] || [ -s lists/self-hosted ] && TOK=${{secrets.PAT}} || TOK=${{secrets.PAT}}
+          [ -s /tmp/newtobuild ] || [ -s /tmp/write_PACKAGES ] || [ -s /tmp/self-hosted ] && TOK=${{secrets.PAT}} || TOK=${{secrets.PAT}}
           echo tok=$(echo "$TOK") >> $GITHUB_OUTPUT
 
       - name: Checkout with new token
@@ -95,9 +95,9 @@ jobs:
             set -x
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
-            if [ ! -s lists/self-hosted ]; then exit 0; fi
-            sed -i 's/runs-on: [self-hosted, js2]/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
-            rm lists/self-hosted
+            if [ ! -s /tmp/self-hosted ]; then exit 0; fi
+            sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+            cp /tmp/self-hosted lists/self-hosted
             git add .github/workflows/run.yaml
             git add lists
             git commit -m "Switch to self-hosted"
@@ -111,11 +111,9 @@ jobs:
           shell: bash
           command: |
             set -x
-            if [ ! -s /tmp/write_PACKAGES ]; then exit 0; fi
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
-            git commit -m "Switch to self-hosted"
-            git push
+            if [ ! -s /tmp/write_PACKAGES ]; then exit 0; fi
             cp /tmp/write_PACKAGES lists/write_PACKAGES
             git config user.name github-actions
             git config user.email github-actions@github.com
@@ -158,7 +156,7 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: [self-hosted, js2]
+    runs-on: ubuntu-latest
     steps:
     
       - name: Free root space
