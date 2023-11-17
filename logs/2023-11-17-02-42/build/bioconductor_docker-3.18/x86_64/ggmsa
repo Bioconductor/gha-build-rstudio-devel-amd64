@@ -1,0 +1,723 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ggmsa'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ggmsa'
+also installing the dependencies ‘colorspace’, ‘markdown’, ‘png’, ‘jpeg’, ‘farver’, ‘labeling’, ‘munsell’, ‘gridGraphics’, ‘extrafontdb’, ‘Rttf2pt1’, ‘lazyeval’, ‘crosstalk’, ‘data.table’, ‘rematch’, ‘hms’, ‘selectr’, ‘shades’, ‘gridtext’, ‘gtable’, ‘isoband’, ‘scales’, ‘tidyselect’, ‘ggfun’, ‘ggplotify’, ‘patchwork’, ‘proj4’, ‘ash’, ‘maps’, ‘extrafont’, ‘plotly’, ‘tweenr’, ‘polyclip’, ‘RcppEigen’, ‘generics’, ‘yulab.utils’, ‘tidytree’, ‘treeio’, ‘bookdown’, ‘cellranger’, ‘progress’, ‘rvest’, ‘viridisLite’, ‘webshot’, ‘svglite’, ‘ggfittext’, ‘ggplot2’, ‘tidyr’, ‘aplot’, ‘RColorBrewer’, ‘ggalt’, ‘ggforce’, ‘dplyr’, ‘seqmagick’, ‘statebins’, ‘ggtree’, ‘ggtreeExtra’, ‘ape’, ‘cowplot’, ‘BiocStyle’, ‘readxl’, ‘ggnewscale’, ‘kableExtra’, ‘gggenes’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/colorspace_2.1-0.tar.gz'
+Content type 'binary/octet-stream' length 2593417 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/markdown_1.11.tar.gz'
+Content type 'binary/octet-stream' length 198263 bytes (193 KB)
+==================================================
+downloaded 193 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/png_0.1-8.tar.gz'
+Content type 'binary/octet-stream' length 40025 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'binary/octet-stream' length 28790 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/farver_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1457375 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/labeling_0.4.3.tar.gz'
+Content type 'binary/octet-stream' length 60192 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/munsell_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 243612 bytes (237 KB)
+==================================================
+downloaded 237 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridGraphics_0.5-1.tar.gz'
+Content type 'binary/octet-stream' length 248728 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/extrafontdb_1.0.tar.gz'
+Content type 'binary/octet-stream' length 6885 bytes
+==================================================
+downloaded 6885 bytes
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/Rttf2pt1_1.3.12.tar.gz'
+Content type 'binary/octet-stream' length 273800 bytes (267 KB)
+==================================================
+downloaded 267 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 155230 bytes (151 KB)
+==================================================
+downloaded 151 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/crosstalk_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 403467 bytes (394 KB)
+==================================================
+downloaded 394 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/data.table_1.14.8.tar.gz'
+Content type 'binary/octet-stream' length 2126876 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 15948 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hms_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 98350 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'binary/octet-stream' length 488354 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shades_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 84565 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridtext_0.1.5.tar.gz'
+Content type 'binary/octet-stream' length 353536 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtable_0.3.4.tar.gz'
+Content type 'binary/octet-stream' length 215928 bytes (210 KB)
+==================================================
+downloaded 210 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/isoband_0.2.7.tar.gz'
+Content type 'binary/octet-stream' length 1642505 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/scales_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 606299 bytes (592 KB)
+==================================================
+downloaded 592 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyselect_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 219931 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggfun_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 196634 bytes (192 KB)
+==================================================
+downloaded 192 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggplotify_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 139888 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/patchwork_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 3262871 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proj4_1.0-13.tar.gz'
+Content type 'binary/octet-stream' length 25011 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ash_1.0-15.tar.gz'
+Content type 'binary/octet-stream' length 25188 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/maps_3.4.1.1.tar.gz'
+Content type 'binary/octet-stream' length 3096160 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/extrafont_0.19.tar.gz'
+Content type 'binary/octet-stream' length 54223 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 435519 bytes (425 KB)
+==================================================
+downloaded 425 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 117721 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 1528720 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/generics_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 76238 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/yulab.utils_0.1.0.tar.gz'
+Content type 'binary/octet-stream' length 62661 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidytree_0.4.5.tar.gz'
+Content type 'binary/octet-stream' length 340345 bytes (332 KB)
+==================================================
+downloaded 332 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/treeio_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 692839 bytes (676 KB)
+==================================================
+downloaded 676 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bookdown_0.36.tar.gz'
+Content type 'binary/octet-stream' length 1089749 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 100739 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progress_1.2.2.tar.gz'
+Content type 'binary/octet-stream' length 83560 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rvest_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 210026 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/viridisLite_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 1296750 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/webshot_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 205102 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 199530 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggfittext_0.10.1.tar.gz'
+Content type 'binary/octet-stream' length 837656 bytes (818 KB)
+==================================================
+downloaded 818 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggplot2_3.4.4.tar.gz'
+Content type 'binary/octet-stream' length 4289968 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyr_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1188040 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/aplot_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 63677 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RColorBrewer_1.1-3.tar.gz'
+Content type 'binary/octet-stream' length 53104 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggalt_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2356101 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggforce_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 1830039 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1461655 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/seqmagick_0.1.6.tar.gz'
+Content type 'binary/octet-stream' length 101883 bytes (99 KB)
+==================================================
+downloaded 99 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/statebins_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 925930 bytes (904 KB)
+==================================================
+downloaded 904 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggtree_3.10.0.tar.gz'
+Content type 'application/x-gzip' length 361792 bytes (353 KB)
+==================================================
+downloaded 353 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeExtra_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 527917 bytes (515 KB)
+==================================================
+downloaded 515 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ape_5.7-1.tar.gz'
+Content type 'binary/octet-stream' length 3068974 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1376564 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz'
+Content type 'application/x-gzip' length 787685 bytes (769 KB)
+==================================================
+downloaded 769 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 862022 bytes (841 KB)
+==================================================
+downloaded 841 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggnewscale_0.4.9.tar.gz'
+Content type 'binary/octet-stream' length 342562 bytes (334 KB)
+==================================================
+downloaded 334 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.3.4.tar.gz'
+Content type 'binary/octet-stream' length 1850499 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gggenes_0.5.1.tar.gz'
+Content type 'binary/octet-stream' length 1231712 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggmsa_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 3601458 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *binary* package ‘colorspace’ ...
+* ‘colorspace’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘colorspace’ as ‘colorspace_2.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (colorspace)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘png’ ...
+* ‘png’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘png’ as ‘png_0.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (png)
+* installing *binary* package ‘jpeg’ ...
+* ‘jpeg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jpeg’ as ‘jpeg_0.1-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jpeg)
+* installing *binary* package ‘farver’ ...
+* ‘farver’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘farver’ as ‘farver_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (farver)
+* installing *binary* package ‘labeling’ ...
+* ‘labeling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘labeling’ as ‘labeling_0.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (labeling)
+* installing *binary* package ‘gridGraphics’ ...
+* ‘gridGraphics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridGraphics’ as ‘gridGraphics_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridGraphics)
+* installing *binary* package ‘extrafontdb’ ...
+* ‘extrafontdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘extrafontdb’ as ‘extrafontdb_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (extrafontdb)
+* installing *binary* package ‘Rttf2pt1’ ...
+* ‘Rttf2pt1’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rttf2pt1’ as ‘Rttf2pt1_1.3.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rttf2pt1)
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘data.table’ ...
+* ‘data.table’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘data.table’ as ‘data.table_1.14.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (data.table)
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘hms’ ...
+* ‘hms’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hms’ as ‘hms_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hms)
+* installing *binary* package ‘selectr’ ...
+* ‘selectr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘selectr’ as ‘selectr_0.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (selectr)
+* installing *binary* package ‘shades’ ...
+* ‘shades’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shades’ as ‘shades_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shades)
+* installing *binary* package ‘gtable’ ...
+* ‘gtable’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtable’ as ‘gtable_0.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtable)
+* installing *binary* package ‘isoband’ ...
+* ‘isoband’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘isoband’ as ‘isoband_0.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (isoband)
+* installing *binary* package ‘tidyselect’ ...
+* ‘tidyselect’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyselect’ as ‘tidyselect_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyselect)
+* installing *binary* package ‘proj4’ ...
+* ‘proj4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proj4’ as ‘proj4_1.0-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proj4)
+* installing *binary* package ‘ash’ ...
+* ‘ash’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ash’ as ‘ash_1.0-15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ash)
+* installing *binary* package ‘maps’ ...
+* ‘maps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘maps’ as ‘maps_3.4.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maps)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘generics’ ...
+* ‘generics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘generics’ as ‘generics_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (generics)
+* installing *binary* package ‘yulab.utils’ ...
+* ‘yulab.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘yulab.utils’ as ‘yulab.utils_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yulab.utils)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘viridisLite’ ...
+* ‘viridisLite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘viridisLite’ as ‘viridisLite_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridisLite)
+* installing *binary* package ‘webshot’ ...
+* ‘webshot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘RColorBrewer’ ...
+* ‘RColorBrewer’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RColorBrewer’ as ‘RColorBrewer_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RColorBrewer)
+* installing *source* package ‘seqmagick’ ...
+** package ‘seqmagick’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seqmagick’ as ‘seqmagick_0.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqmagick)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.7-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *binary* package ‘munsell’ ...
+* ‘munsell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘munsell’ as ‘munsell_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (munsell)
+* installing *binary* package ‘crosstalk’ ...
+* ‘crosstalk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crosstalk’ as ‘crosstalk_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crosstalk)
+* installing *binary* package ‘gridtext’ ...
+* ‘gridtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridtext’ as ‘gridtext_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridtext)
+* installing *binary* package ‘extrafont’ ...
+* ‘extrafont’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘extrafont’ as ‘extrafont_0.19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (extrafont)
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘cellranger’ ...
+* ‘cellranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cellranger’ as ‘cellranger_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cellranger)
+* installing *binary* package ‘progress’ ...
+* ‘progress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progress’ as ‘progress_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progress)
+* installing *binary* package ‘rvest’ ...
+* ‘rvest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvest’ as ‘rvest_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvest)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘scales’ ...
+* ‘scales’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scales’ as ‘scales_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scales)
+* installing *binary* package ‘tidyr’ ...
+* ‘tidyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyr’ as ‘tidyr_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyr)
+* installing *binary* package ‘readxl’ ...
+* ‘readxl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readxl’ as ‘readxl_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readxl)
+* installing *binary* package ‘tidytree’ ...
+* ‘tidytree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidytree’ as ‘tidytree_0.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidytree)
+* installing *binary* package ‘ggplot2’ ...
+* ‘ggplot2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggplot2’ as ‘ggplot2_3.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplot2)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *binary* package ‘ggfun’ ...
+* ‘ggfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfun’ as ‘ggfun_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfun)
+* installing *binary* package ‘ggplotify’ ...
+* ‘ggplotify’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggplotify’ as ‘ggplotify_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplotify)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *source* package ‘treeio’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘treeio’ as ‘treeio_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (treeio)
+* installing *binary* package ‘ggfittext’ ...
+* ‘ggfittext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfittext’ as ‘ggfittext_0.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfittext)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘statebins’ ...
+* ‘statebins’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘statebins’ as ‘statebins_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (statebins)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘aplot’ ...
+* ‘aplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘aplot’ as ‘aplot_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aplot)
+* installing *binary* package ‘ggalt’ ...
+* ‘ggalt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggalt’ as ‘ggalt_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggalt)
+* installing *binary* package ‘gggenes’ ...
+* ‘gggenes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gggenes’ as ‘gggenes_0.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gggenes)
+* installing *source* package ‘ggtree’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtree’ as ‘ggtree_3.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtree)
+* installing *source* package ‘ggtreeExtra’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtreeExtra’ as ‘ggtreeExtra_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtreeExtra)
+* installing *source* package ‘ggmsa’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Note: wrong number of arguments to 'seq_len' 
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggmsa’ as ‘ggmsa_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggmsa)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp73NvtN/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m42.080s
+user	0m56.321s
+sys	0m15.646s
