@@ -1,0 +1,247 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''FRASER'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'FRASER'
+also installing the dependencies ‘sparseMatrixStats’, ‘R.oo’, ‘R.methodsS3’, ‘cowplot’, ‘DelayedMatrixStats’, ‘extraDistr’, ‘ggrepel’, ‘Rsubread’, ‘R.utils’, ‘VGAM’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/sparseMatrixStats_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 703089 bytes (686 KB)
+==================================================
+downloaded 686 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.oo_1.25.0.tar.gz'
+Content type 'binary/octet-stream' length 963511 bytes (940 KB)
+==================================================
+downloaded 940 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 80504 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1376564 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DelayedMatrixStats_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 271120 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/extraDistr_1.9.1.tar.gz'
+Content type 'binary/octet-stream' length 643398 bytes (628 KB)
+==================================================
+downloaded 628 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/Rsubread_2.16.0.tar.gz'
+Content type 'application/x-gzip' length 13452500 bytes (12.8 MB)
+==================================================
+downloaded 12.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.2.tar.gz'
+Content type 'binary/octet-stream' length 1401342 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-9.tar.gz'
+Content type 'binary/octet-stream' length 7442768 bytes (7.1 MB)
+==================================================
+downloaded 7.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/FRASER_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 2179394 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *source* package ‘sparseMatrixStats’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SparseMatrixView.cpp -o SparseMatrixView.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c methods.cpp -o methods.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c row_methods.cpp -o row_methods.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sparseMatrixStats.so RcppExports.o SparseMatrixView.o methods.o row_methods.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sparseMatrixStats/00new/sparseMatrixStats/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sparseMatrixStats’ as ‘sparseMatrixStats_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sparseMatrixStats)
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘extraDistr’ ...
+* ‘extraDistr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘extraDistr’ as ‘extraDistr_1.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (extraDistr)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *source* package ‘Rsubread’ ...
+** using staged installation
+@@@@@ The operating system is Linux.
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c HelperFunctions.c -o HelperFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMbase-index.c -o LRMbase-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMchro-event.c -o LRMchro-event.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMfile-io.c -o LRMfile-io.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMhashtable.c -o LRMhashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMhelper.c -o LRMhelper.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMseek-zlib.c -o LRMseek-zlib.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMsorted-hashtable.c -o LRMsorted-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_wrapper.c -o R_wrapper.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RsimReads.c -o RsimReads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SNPCalling.c -o SNPCalling.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c aligner.c -o aligner.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atgcContent.c -o atgcContent.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build-sam-index.c -o build-sam-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cell-counts.c -o cell-counts.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-bigtable.c -o core-bigtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-indel.c -o core-indel.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-interface-aligner.c -o core-interface-aligner.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-interface-subjunc.c -o core-interface-subjunc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-junction.c -o core-junction.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core.c -o core.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detection-calls.c -o detection-calls.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detectionCall.c -o detectionCall.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detectionCallAnnotation.c -o detectionCallAnnotation.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-algorithms.c -o exon-algorithms.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-align-indel.c -o exon-align-indel.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-align.c -o exon-align.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c flattenAnnotations.c -o flattenAnnotations.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fullscan.c -o fullscan.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fusion-align.c -o fusion-align.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gen_rand_reads.c -o gen_rand_reads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gene-algorithms.c -o gene-algorithms.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gene-value-index.c -o gene-value-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hashtable.c -o hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c index-builder.c -o index-builder.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c input-blc.c -o input-blc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c input-files.c -o input-files.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c interval_merge.c -o interval_merge.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c long-hashtable.c -o long-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c longread-mapping.c -o longread-mapping.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mergeVCF.c -o mergeVCF.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c processExons.c -o processExons.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c propmapped.c -o propmapped.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c qualityScores.c -o qualityScores.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read-repair.c -o read-repair.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c readSummary.c -o readSummary.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c removeDupReads.c -o removeDupReads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sam2bed.c -o sam2bed.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sambam-file.c -o sambam-file.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c seek-zlib.c -o seek-zlib.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sorted-hashtable.c -o sorted-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sublog.c -o sublog.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.16.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tx-unique.c -o tx-unique.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Rsubread.so HelperFunctions.o LRMbase-index.o LRMchro-event.o LRMfile-io.o LRMhashtable.o LRMhelper.o LRMseek-zlib.o LRMsorted-hashtable.o R_wrapper.o RsimReads.o SNPCalling.o aligner.o atgcContent.o build-sam-index.o cell-counts.o core-bigtable.o core-indel.o core-interface-aligner.o core-interface-subjunc.o core-junction.o core.o detection-calls.o detectionCall.o detectionCallAnnotation.o exon-algorithms.o exon-align-indel.o exon-align.o flattenAnnotations.o fullscan.o fusion-align.o gen_rand_reads.o gene-algorithms.o gene-value-index.o hashtable.o index-builder.o input-blc.o input-files.o interval_merge.o long-hashtable.o longread-mapping.o mergeVCF.o processExons.o propmapped.o qualityScores.o read-repair.o readSummary.o removeDupReads.o sam2bed.o sambam-file.o seek-zlib.o sorted-hashtable.o sublog.o tx-unique.o -lz -lpthread -DMAKE_FOR_EXON -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rsubread/00new/Rsubread/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rsubread’ as ‘Rsubread_2.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsubread)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *source* package ‘DelayedMatrixStats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DelayedMatrixStats’ as ‘DelayedMatrixStats_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DelayedMatrixStats)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *source* package ‘FRASER’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include   -fopenmp -DARMA_DONT_USE_OPENMP -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include   -fopenmp -DARMA_DONT_USE_OPENMP -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c loss_n_gradient_functions.cpp -o loss_n_gradient_functions.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o FRASER.so RcppExports.o loss_n_gradient_functions.o -fopenmp -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-FRASER/00new/FRASER/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FRASER’ as ‘FRASER_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FRASER)
+
+The downloaded source packages are in
+	‘/tmp/RtmpD3cZFm/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m12.219s
+user	1m58.478s
+sys	0m10.777s
