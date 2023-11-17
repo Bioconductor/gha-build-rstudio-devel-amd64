@@ -1,0 +1,882 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CyTOFpower'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'CyTOFpower'
+also installing the dependencies ‘listenv’, ‘parallelly’, ‘future’, ‘globals’, ‘future.apply’, ‘progressr’, ‘SQUAREM’, ‘diagram’, ‘lava’, ‘estimability’, ‘tzdb’, ‘prodlim’, ‘timechange’, ‘ellipse’, ‘emmeans’, ‘flashClust’, ‘leaps’, ‘multcompView’, ‘scatterplot3d’, ‘bigmemory.sri’, ‘uuid’, ‘proxy’, ‘clock’, ‘gower’, ‘hardhat’, ‘ipred’, ‘lubridate’, ‘timeDate’, ‘dendextend’, ‘FactoMineR’, ‘modeltools’, ‘bigmemory’, ‘e1071’, ‘ModelMetrics’, ‘pROC’, ‘recipes’, ‘factoextra’, ‘flexmix’, ‘mbest’, ‘strucchange’, ‘logging’, ‘caret’, ‘CytoGLMM’, ‘shinyFeedback’, ‘shinyjs’, ‘shinyMatrix’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/listenv_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 105140 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/parallelly_1.36.0.tar.gz'
+Content type 'binary/octet-stream' length 348828 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future_1.33.0.tar.gz'
+Content type 'binary/octet-stream' length 642120 bytes (627 KB)
+==================================================
+downloaded 627 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/globals_0.16.2.tar.gz'
+Content type 'binary/octet-stream' length 104912 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future.apply_1.11.0.tar.gz'
+Content type 'binary/octet-stream' length 153057 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progressr_0.14.0.tar.gz'
+Content type 'binary/octet-stream' length 380423 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/SQUAREM_2021.1.tar.gz'
+Content type 'binary/octet-stream' length 177454 bytes (173 KB)
+==================================================
+downloaded 173 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/diagram_1.6.5.tar.gz'
+Content type 'binary/octet-stream' length 676505 bytes (660 KB)
+==================================================
+downloaded 660 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lava_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 2557860 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/estimability_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 40535 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/prodlim_2023.08.28.tar.gz'
+Content type 'binary/octet-stream' length 410184 bytes (400 KB)
+==================================================
+downloaded 400 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/timechange_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 169260 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ellipse_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 216899 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/emmeans_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 2141144 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flashClust_1.01-2.tar.gz'
+Content type 'binary/octet-stream' length 20405 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/leaps_3.1.tar.gz'
+Content type 'binary/octet-stream' length 80486 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/multcompView_0.1-9.tar.gz'
+Content type 'binary/octet-stream' length 114558 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/scatterplot3d_0.3-44.tar.gz'
+Content type 'binary/octet-stream' length 348008 bytes (339 KB)
+==================================================
+downloaded 339 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bigmemory.sri_0.1.6.tar.gz'
+Content type 'binary/octet-stream' length 12763 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/uuid_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 45580 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 174072 bytes (169 KB)
+==================================================
+downloaded 169 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/clock_0.7.0.tar.gz'
+Content type 'binary/octet-stream' length 1850878 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gower_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 206177 bytes (201 KB)
+==================================================
+downloaded 201 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hardhat_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 822703 bytes (803 KB)
+==================================================
+downloaded 803 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ipred_0.9-14.tar.gz'
+Content type 'binary/octet-stream' length 380920 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 980234 bytes (957 KB)
+==================================================
+downloaded 957 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/timeDate_4022.108.tar.gz'
+Content type 'binary/octet-stream' length 1384283 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dendextend_1.17.1.tar.gz'
+Content type 'binary/octet-stream' length 3897806 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/FactoMineR_2.9.tar.gz'
+Content type 'binary/octet-stream' length 3792137 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 223742 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bigmemory_4.6.1.tar.gz'
+Content type 'binary/octet-stream' length 72638 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/e1071_1.7-13.tar.gz'
+Content type 'binary/octet-stream' length 578232 bytes (564 KB)
+==================================================
+downloaded 564 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ModelMetrics_1.2.2.2.tar.gz'
+Content type 'binary/octet-stream' length 144906 bytes (141 KB)
+==================================================
+downloaded 141 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pROC_1.18.5.tar.gz'
+Content type 'binary/octet-stream' length 829858 bytes (810 KB)
+==================================================
+downloaded 810 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/recipes_1.0.8.tar.gz'
+Content type 'binary/octet-stream' length 1532189 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/factoextra_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 414443 bytes (404 KB)
+==================================================
+downloaded 404 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flexmix_2.3-19.tar.gz'
+Content type 'binary/octet-stream' length 1719088 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mbest_0.6.tar.gz'
+Content type 'application/x-tar' length 152581 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/strucchange_1.5-3.tar.gz'
+Content type 'binary/octet-stream' length 938972 bytes (916 KB)
+==================================================
+downloaded 916 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/logging_0.10-108.tar.gz'
+Content type 'binary/octet-stream' length 167061 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caret_6.0-94.tar.gz'
+Content type 'binary/octet-stream' length 3574802 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/CytoGLMM_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 339742 bytes (331 KB)
+==================================================
+downloaded 331 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyFeedback_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 704409 bytes (687 KB)
+==================================================
+downloaded 687 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1084640 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyMatrix_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 142436 bytes (139 KB)
+==================================================
+downloaded 139 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/CyTOFpower_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 319639 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘progressr’ ...
+* ‘progressr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progressr’ as ‘progressr_0.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progressr)
+* installing *binary* package ‘SQUAREM’ ...
+* ‘SQUAREM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SQUAREM’ as ‘SQUAREM_2021.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SQUAREM)
+* installing *binary* package ‘diagram’ ...
+* ‘diagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diagram’ as ‘diagram_1.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diagram)
+* installing *binary* package ‘estimability’ ...
+* ‘estimability’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘estimability’ as ‘estimability_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (estimability)
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘ellipse’ ...
+* ‘ellipse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ellipse’ as ‘ellipse_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ellipse)
+* installing *binary* package ‘flashClust’ ...
+* ‘flashClust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flashClust’ as ‘flashClust_1.01-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flashClust)
+* installing *binary* package ‘leaps’ ...
+* ‘leaps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘leaps’ as ‘leaps_3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (leaps)
+* installing *binary* package ‘multcompView’ ...
+* ‘multcompView’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘multcompView’ as ‘multcompView_0.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multcompView)
+* installing *binary* package ‘scatterplot3d’ ...
+* ‘scatterplot3d’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterplot3d’ as ‘scatterplot3d_0.3-44_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterplot3d)
+* installing *binary* package ‘bigmemory.sri’ ...
+* ‘bigmemory.sri’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bigmemory.sri’ as ‘bigmemory.sri_0.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bigmemory.sri)
+* installing *binary* package ‘uuid’ ...
+* ‘uuid’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uuid’ as ‘uuid_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uuid)
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘gower’ ...
+* ‘gower’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gower’ as ‘gower_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gower)
+* installing *binary* package ‘hardhat’ ...
+* ‘hardhat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hardhat’ as ‘hardhat_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hardhat)
+* installing *binary* package ‘timeDate’ ...
+* ‘timeDate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timeDate’ as ‘timeDate_4022.108_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timeDate)
+* installing *binary* package ‘dendextend’ ...
+* ‘dendextend’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.17.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘ModelMetrics’ ...
+* ‘ModelMetrics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ModelMetrics’ as ‘ModelMetrics_1.2.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ModelMetrics)
+* installing *binary* package ‘pROC’ ...
+* ‘pROC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pROC’ as ‘pROC_1.18.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pROC)
+* installing *binary* package ‘strucchange’ ...
+* ‘strucchange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘strucchange’ as ‘strucchange_1.5-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (strucchange)
+* installing *binary* package ‘logging’ ...
+* ‘logging’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘logging’ as ‘logging_0.10-108_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (logging)
+* installing *binary* package ‘shinyFeedback’ ...
+* ‘shinyFeedback’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyFeedback’ as ‘shinyFeedback_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyFeedback)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘shinyMatrix’ ...
+* ‘shinyMatrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyMatrix’ as ‘shinyMatrix_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyMatrix)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+* installing *binary* package ‘emmeans’ ...
+* ‘emmeans’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emmeans’ as ‘emmeans_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emmeans)
+* installing *binary* package ‘clock’ ...
+* ‘clock’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clock’ as ‘clock_0.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clock)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *source* package ‘bigmemory’ ...
+** package ‘bigmemory’ successfully unpacked and MD5 sums checked
+** using staged installation
+  checking for Sun Studio compiler...
+no
+  checking for OS...
+Linux
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c BigMatrix.cpp -o BigMatrix.o
+In file included from /tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from BigMatrix.cpp:22:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from BigMatrix.cpp:11:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SharedCounter.cpp -o SharedCounter.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bigmemory.cpp -o bigmemory.o
+In file included from /tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from bigmemory.cpp:7:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /usr/include/c++/11/iomanip:43,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from bigmemory.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c deepcopy.cpp -o deepcopy.o
+In file included from /tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:17,
+                 from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/detail/shared_count.hpp:361:33: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  361 |     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+      |                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:250:65: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  250 | template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+      |                                                                 ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:507:31: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  507 |     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+      |                               ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:520:22: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  520 |     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+      |                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:603:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  603 |     shared_ptr & operator=( std::auto_ptr<Y> & r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:612:34: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  612 |     shared_ptr & operator=( std::auto_ptr<Y> && r )
+      |                                  ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+In file included from /tmp/tmp/built/BH/include/boost/shared_ptr.hpp:17,
+                 from ../inst/include/bigmemory/BigMatrix.h:10,
+                 from deepcopy.cpp:10:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp: In member function ‘boost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)’:
+/tmp/tmp/built/BH/include/boost/smart_ptr/shared_ptr.hpp:614:38: warning: ‘template<class> class std::auto_ptr’ is deprecated: use 'std::unique_ptr' instead [-Wdeprecated-declarations]
+  614 |         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+      |                                      ^~~~~~~~
+In file included from /usr/include/c++/11/bits/locale_conv.h:41,
+                 from /usr/include/c++/11/locale:43,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/detail/converter_lexical.hpp:54,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast/try_lexical_convert.hpp:44,
+                 from /tmp/tmp/built/BH/include/boost/lexical_cast.hpp:32,
+                 from deepcopy.cpp:6:
+/usr/include/c++/11/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -DLINUX -I'/tmp/tmp/built/BH/include' -I'/tmp/tmp/built/uuid/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.cpp -o util.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bigmemory.so BigMatrix.o RcppExports.o SharedCounter.o bigmemory.o deepcopy.o util.o -lrt -lm -luuid -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bigmemory/00new/bigmemory/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘ncol’ from package ‘base’ in package ‘bigmemory’
+Creating a generic function for ‘nrow’ from package ‘base’ in package ‘bigmemory’
+Creating a generic function for ‘typeof’ from package ‘base’ in package ‘bigmemory’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bigmemory’ as ‘bigmemory_4.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bigmemory)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘flexmix’ ...
+* ‘flexmix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexmix’ as ‘flexmix_2.3-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexmix)
+* installing *binary* package ‘future.apply’ ...
+* ‘future.apply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future.apply’ as ‘future.apply_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future.apply)
+* installing *binary* package ‘FactoMineR’ ...
+* ‘FactoMineR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘FactoMineR’ as ‘FactoMineR_2.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FactoMineR)
+* installing *source* package ‘mbest’ ...
+** package ‘mbest’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c group_subsets.c -o group_subsets.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o mbest.so group_subsets.o init.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-mbest/00new/mbest/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mbest’ as ‘mbest_0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mbest)
+* installing *binary* package ‘lava’ ...
+* ‘lava’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lava’ as ‘lava_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lava)
+* installing *binary* package ‘factoextra’ ...
+* ‘factoextra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘factoextra’ as ‘factoextra_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (factoextra)
+* installing *binary* package ‘prodlim’ ...
+* ‘prodlim’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prodlim’ as ‘prodlim_2023.08.28_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prodlim)
+* installing *binary* package ‘ipred’ ...
+* ‘ipred’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ipred’ as ‘ipred_0.9-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ipred)
+* installing *binary* package ‘recipes’ ...
+* ‘recipes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘recipes’ as ‘recipes_1.0.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (recipes)
+* installing *binary* package ‘caret’ ...
+* ‘caret’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caret’ as ‘caret_6.0-94_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caret)
+* installing *source* package ‘CytoGLMM’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CytoGLMM’ as ‘CytoGLMM_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CytoGLMM)
+* installing *source* package ‘CyTOFpower’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CyTOFpower’ as ‘CyTOFpower_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CyTOFpower)
+
+The downloaded source packages are in
+	‘/tmp/RtmpFQ9Fgx/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m28.426s
+user	1m4.966s
+sys	0m12.871s
