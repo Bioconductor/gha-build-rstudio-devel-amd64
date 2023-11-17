@@ -1,0 +1,137 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''INSPEcT'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'INSPEcT'
+also installing the dependencies ‘plyr’, ‘gtools’, ‘pROC’, ‘deSolve’, ‘rootSolve’, ‘gdata’, ‘plgem’, ‘TxDb.Mmusculus.UCSC.mm9.knownGene’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plyr_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 821210 bytes (801 KB)
+==================================================
+downloaded 801 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pROC_1.18.5.tar.gz'
+Content type 'binary/octet-stream' length 829858 bytes (810 KB)
+==================================================
+downloaded 810 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/deSolve_1.38.tar.gz'
+Content type 'binary/octet-stream' length 2300260 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rootSolve_1.8.2.4.tar.gz'
+Content type 'binary/octet-stream' length 678198 bytes (662 KB)
+==================================================
+downloaded 662 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gdata_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 494292 bytes (482 KB)
+==================================================
+downloaded 482 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/plgem_1.74.0.tar.gz'
+Content type 'application/x-gzip' length 940816 bytes (918 KB)
+==================================================
+downloaded 918 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 13520331 bytes (12.9 MB)
+==================================================
+downloaded 12.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/INSPEcT_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 8004287 bytes (7.6 MB)
+==================================================
+downloaded 7.6 MB
+
+* installing *binary* package ‘plyr’ ...
+* ‘plyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plyr’ as ‘plyr_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plyr)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘deSolve’ ...
+* ‘deSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘deSolve’ as ‘deSolve_1.38_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deSolve)
+* installing *binary* package ‘rootSolve’ ...
+* ‘rootSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rootSolve’ as ‘rootSolve_1.8.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rootSolve)
+* installing *source* package ‘plgem’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘plgem’ as ‘plgem_1.74.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plgem)
+* installing *source* package ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ as ‘TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Mmusculus.UCSC.mm9.knownGene)
+* installing *binary* package ‘pROC’ ...
+* ‘pROC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pROC’ as ‘pROC_1.18.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pROC)
+* installing *binary* package ‘gdata’ ...
+* ‘gdata’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gdata’ as ‘gdata_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdata)
+* installing *source* package ‘INSPEcT’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Error: object ‘read.xls’ is not exported by 'namespace:gdata'
+Execution halted
+ERROR: lazy loading failed for package ‘INSPEcT’
+* removing ‘/tmp/tmp/built/INSPEcT’
+
+The downloaded source packages are in
+	‘/tmp/RtmpJTy5Ed/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+Warning message:
+In install.packages(...) :
+  installation of package ‘INSPEcT’ had non-zero exit status
+
+real	0m53.949s
+user	0m45.026s
+sys	0m4.908s
