@@ -1,0 +1,146 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''IntEREst'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'IntEREst'
+also installing the dependencies ‘pixmap’, ‘sp’, ‘ade4’, ‘segmented’, ‘mvtnorm’, ‘seqLogo’, ‘seqinr’, ‘RMySQL’, ‘clinfun’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pixmap_0.4-12.tar.gz'
+Content type 'binary/octet-stream' length 207038 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sp_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 2091786 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ade4_1.7-22.tar.gz'
+Content type 'binary/octet-stream' length 5400203 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/segmented_1.6-4.tar.gz'
+Content type 'binary/octet-stream' length 779678 bytes (761 KB)
+==================================================
+downloaded 761 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 745162 bytes (727 KB)
+==================================================
+downloaded 727 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz'
+Content type 'application/x-gzip' length 919574 bytes (898 KB)
+==================================================
+downloaded 898 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/seqinr_4.2-30.tar.gz'
+Content type 'binary/octet-stream' length 4129203 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RMySQL_0.10.26.tar.gz'
+Content type 'binary/octet-stream' length 286612 bytes (279 KB)
+==================================================
+downloaded 279 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/clinfun_1.1.5.tar.gz'
+Content type 'binary/octet-stream' length 257612 bytes (251 KB)
+==================================================
+downloaded 251 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/IntEREst_1.26.0.tar.gz'
+Content type 'application/x-gzip' length 1463728 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘pixmap’ ...
+* ‘pixmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pixmap’ as ‘pixmap_0.4-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pixmap)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘segmented’ ...
+* ‘segmented’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘segmented’ as ‘segmented_1.6-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (segmented)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *source* package ‘seqLogo’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seqLogo’ as ‘seqLogo_1.68.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqLogo)
+* installing *binary* package ‘RMySQL’ ...
+* ‘RMySQL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RMySQL’ as ‘RMySQL_0.10.26_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RMySQL)
+* installing *binary* package ‘ade4’ ...
+* ‘ade4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ade4’ as ‘ade4_1.7-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ade4)
+* installing *binary* package ‘clinfun’ ...
+* ‘clinfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clinfun’ as ‘clinfun_1.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clinfun)
+* installing *binary* package ‘seqinr’ ...
+* ‘seqinr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘seqinr’ as ‘seqinr_4.2-30_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqinr)
+* installing *source* package ‘IntEREst’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IntEREst’ as ‘IntEREst_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IntEREst)
+
+The downloaded source packages are in
+	‘/tmp/RtmpEVi8c5/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m50.684s
+user	0m42.013s
+sys	0m5.003s
+* installing *binary* package ‘clinfun’ ...
+* ‘clinfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clinfun’ as ‘clinfun_1.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clinfun)
