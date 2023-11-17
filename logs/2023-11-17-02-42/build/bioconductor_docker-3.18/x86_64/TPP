@@ -1,0 +1,110 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TPP'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TPP'
+also installing the dependencies ‘proto’, ‘gridExtra’, ‘mefa’, ‘nls2’, ‘openxlsx’, ‘VennDiagram’, ‘VGAM’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proto_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 469562 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106992 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mefa_3.2-8.tar.gz'
+Content type 'binary/octet-stream' length 253587 bytes (247 KB)
+==================================================
+downloaded 247 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/nls2_0.3-3.tar.gz'
+Content type 'binary/octet-stream' length 66628 bytes (65 KB)
+==================================================
+downloaded 65 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/openxlsx_4.2.5.2.tar.gz'
+Content type 'binary/octet-stream' length 2016698 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/VennDiagram_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 248106 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-9.tar.gz'
+Content type 'binary/octet-stream' length 7442768 bytes (7.1 MB)
+==================================================
+downloaded 7.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TPP_3.30.0.tar.gz'
+Content type 'application/x-gzip' length 8838898 bytes (8.4 MB)
+==================================================
+downloaded 8.4 MB
+
+* installing *binary* package ‘proto’ ...
+* ‘proto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘mefa’ ...
+* ‘mefa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mefa’ as ‘mefa_3.2-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mefa)
+* installing *binary* package ‘openxlsx’ ...
+* ‘openxlsx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *binary* package ‘VennDiagram’ ...
+* ‘VennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VennDiagram’ as ‘VennDiagram_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VennDiagram)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *binary* package ‘nls2’ ...
+* ‘nls2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nls2’ as ‘nls2_0.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nls2)
+* installing *source* package ‘TPP’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TPP’ as ‘TPP_3.30.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TPP)
+
+The downloaded source packages are in
+	‘/tmp/RtmpS71e0w/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m20.929s
+user	0m13.828s
+sys	0m2.686s
