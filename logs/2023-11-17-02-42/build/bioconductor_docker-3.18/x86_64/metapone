@@ -1,0 +1,81 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''metapone'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'metapone'
+also installing the dependencies ‘maps’, ‘fields’, ‘markdown’, ‘fdrtool’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/maps_3.4.1.1.tar.gz'
+Content type 'binary/octet-stream' length 3096160 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fields_15.2.tar.gz'
+Content type 'binary/octet-stream' length 4043335 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/markdown_1.11.tar.gz'
+Content type 'binary/octet-stream' length 198263 bytes (193 KB)
+==================================================
+downloaded 193 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fdrtool_1.2.17.tar.gz'
+Content type 'binary/octet-stream' length 137713 bytes (134 KB)
+==================================================
+downloaded 134 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/metapone_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 3904223 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+* installing *binary* package ‘maps’ ...
+* ‘maps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘maps’ as ‘maps_3.4.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maps)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘fdrtool’ ...
+* ‘fdrtool’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fdrtool’ as ‘fdrtool_1.2.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fdrtool)
+* installing *binary* package ‘fields’ ...
+* ‘fields’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fields’ as ‘fields_15.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fields)
+* installing *source* package ‘metapone’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘ftable’ in package ‘metapone’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metapone’ as ‘metapone_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metapone)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp49HNSt/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m16.808s
+user	0m9.359s
+sys	0m2.143s
