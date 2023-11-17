@@ -1,0 +1,85 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GSReg'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'GSReg'
+also installing the dependency ‘GSBenchMark’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/GSBenchMark_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 43905151 bytes (41.9 MB)
+==================================================
+downloaded 41.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GSReg_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 477589 bytes (466 KB)
+==================================================
+downloaded 466 KB
+
+* installing *source* package ‘GSBenchMark’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSBenchMark’ as ‘GSBenchMark_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSBenchMark)
+* installing *source* package ‘GSReg’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kendallTauDistance.cc -o kendallTauDistance.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kendallTauDistanceFromTemp.cc -o kendallTauDistanceFromTemp.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kendallTauDistanceRestricted.cc -o kendallTauDistanceRestricted.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nij.cc -o nij.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vect2compC.cc -o vect2compC.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GSReg.so init.o kendallTauDistance.o kendallTauDistanceFromTemp.o kendallTauDistanceRestricted.o nij.o vect2compC.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GSReg/00new/GSReg/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSReg’ as ‘GSReg_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSReg)
+
+The downloaded source packages are in
+	‘/tmp/RtmpmnkxIO/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m38.954s
+user	0m32.342s
+sys	0m3.426s
+* installing *source* package ‘GSBenchMark’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSBenchMark’ as ‘GSBenchMark_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSBenchMark)
