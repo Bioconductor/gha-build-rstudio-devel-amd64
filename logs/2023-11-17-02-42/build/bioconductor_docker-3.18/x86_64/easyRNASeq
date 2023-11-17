@@ -1,0 +1,74 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''easyRNASeq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'easyRNASeq'
+also installing the dependencies ‘LSD’, ‘BSgenome.Dmelanogaster.UCSC.dm3’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/LSD_4.1-0.tar.gz'
+Content type 'binary/octet-stream' length 362272 bytes (353 KB)
+==================================================
+downloaded 353 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm3_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 38546795 bytes (36.8 MB)
+==================================================
+downloaded 36.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/easyRNASeq_2.38.0.tar.gz'
+Content type 'application/x-gzip' length 72839583 bytes (69.5 MB)
+==================================================
+downloaded 69.5 MB
+
+* installing *binary* package ‘LSD’ ...
+* ‘LSD’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘LSD’ as ‘LSD_4.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LSD)
+* installing *source* package ‘BSgenome.Dmelanogaster.UCSC.dm3’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Dmelanogaster.UCSC.dm3’ as ‘BSgenome.Dmelanogaster.UCSC.dm3_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Dmelanogaster.UCSC.dm3)
+* installing *source* package ‘easyRNASeq’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘BiocGenerics’ for request: ‘clusterApply’ when loading ‘easyRNASeq’
+Creating a generic function for ‘basename’ from package ‘base’ in package ‘easyRNASeq’
+Creating a generic function for ‘file.exists’ from package ‘base’ in package ‘easyRNASeq’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘BiocGenerics’ for request: ‘clusterApply’ when loading ‘easyRNASeq’
+** testing if installed package can be loaded from final location
+No methods found in package ‘BiocGenerics’ for request: ‘clusterApply’ when loading ‘easyRNASeq’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘easyRNASeq’ as ‘easyRNASeq_2.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (easyRNASeq)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGqFj1b/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m7.079s
+user	0m59.645s
+sys	0m5.029s
