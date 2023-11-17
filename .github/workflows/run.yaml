@@ -99,6 +99,7 @@ jobs:
             sed -i 's/runs-on: [self-hosted, js2]/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
             rm lists/self-hosted
             git add .github/workflows/run.yaml
+            git add lists
             git commit -m "Switch to self-hosted"
             git push
 
