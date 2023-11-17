@@ -1,0 +1,134 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''enrichplot'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'enrichplot'
+also installing the dependencies ‘triebeard’, ‘urltools’, ‘europepmc’, ‘ggupset’, ‘ggridges’, ‘ggstar’, ‘ggtreeExtra’, ‘tidydr’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/triebeard_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 189946 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/urltools_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 294076 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/europepmc_0.4.3.tar.gz'
+Content type 'binary/octet-stream' length 452745 bytes (442 KB)
+==================================================
+downloaded 442 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggupset_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 2045214 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggridges_0.5.4.tar.gz'
+Content type 'binary/octet-stream' length 2236967 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggstar_1.0.4.tar.gz'
+Content type 'binary/octet-stream' length 199696 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeExtra_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 527917 bytes (515 KB)
+==================================================
+downloaded 515 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidydr_0.0.5.tar.gz'
+Content type 'binary/octet-stream' length 144352 bytes (140 KB)
+==================================================
+downloaded 140 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/enrichplot_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 108617 bytes (106 KB)
+==================================================
+downloaded 106 KB
+
+* installing *binary* package ‘triebeard’ ...
+* ‘triebeard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘triebeard’ as ‘triebeard_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (triebeard)
+* installing *binary* package ‘ggupset’ ...
+* ‘ggupset’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggupset’ as ‘ggupset_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggupset)
+* installing *binary* package ‘ggridges’ ...
+* ‘ggridges’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggridges’ as ‘ggridges_0.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggridges)
+* installing *binary* package ‘ggstar’ ...
+* ‘ggstar’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggstar’ as ‘ggstar_1.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggstar)
+* installing *source* package ‘ggtreeExtra’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtreeExtra’ as ‘ggtreeExtra_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtreeExtra)
+* installing *binary* package ‘tidydr’ ...
+* ‘tidydr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidydr’ as ‘tidydr_0.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidydr)
+* installing *source* package ‘enrichplot’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘enrichplot’ as ‘enrichplot_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (enrichplot)
+* installing *binary* package ‘urltools’ ...
+* ‘urltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘urltools’ as ‘urltools_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (urltools)
+* installing *binary* package ‘europepmc’ ...
+* ‘europepmc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘europepmc’ as ‘europepmc_0.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (europepmc)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpzuc8Td/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m49.300s
+user	0m37.146s
+sys	0m5.867s
+* installing *binary* package ‘europepmc’ ...
+* ‘europepmc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘europepmc’ as ‘europepmc_0.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (europepmc)
