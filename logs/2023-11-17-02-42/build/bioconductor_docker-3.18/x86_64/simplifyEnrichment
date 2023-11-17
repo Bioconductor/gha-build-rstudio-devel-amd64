@@ -1,0 +1,689 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''simplifyEnrichment'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'simplifyEnrichment'
+also installing the dependencies ‘selectr’, ‘iterators’, ‘rvest’, ‘webshot’, ‘GenSA’, ‘polylabelr’, ‘rngtools’, ‘DEoptimR’, ‘foreach’, ‘doParallel’, ‘shape’, ‘NLP’, ‘RcppParallel’, ‘expm’, ‘babelgene’, ‘modeltools’, ‘kableExtra’, ‘svglite’, ‘clisymbols’, ‘skmeans’, ‘microbenchmark’, ‘impute’, ‘eulerr’, ‘doRNG’, ‘irlba’, ‘jpeg’, ‘flexmix’, ‘prabclus’, ‘diptest’, ‘robustbase’, ‘kernlab’, ‘ComplexHeatmap’, ‘circlize’, ‘GetoptLong’, ‘tm’, ‘slam’, ‘clue’, ‘proxyC’, ‘GlobalOptions’, ‘mclust’, ‘apcluster’, ‘MCL’, ‘dbscan’, ‘dynamicTreeCut’, ‘msigdbr’, ‘DO.db’, ‘flexclust’, ‘InteractiveComplexHeatmap’, ‘shinydashboard’, ‘cola’, ‘hu6800.db’, ‘genefilter’, ‘gridtext’, ‘fpc’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'binary/octet-stream' length 488354 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'binary/octet-stream' length 345411 bytes (337 KB)
+==================================================
+downloaded 337 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rvest_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 210026 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/webshot_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 205102 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GenSA_1.1.10.1.tar.gz'
+Content type 'binary/octet-stream' length 64134 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/polylabelr_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 68014 bytes (66 KB)
+==================================================
+downloaded 66 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rngtools_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 76598 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/DEoptimR_1.1-3.tar.gz'
+Content type 'binary/octet-stream' length 72163 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 138028 bytes (134 KB)
+==================================================
+downloaded 134 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'binary/octet-stream' length 187672 bytes (183 KB)
+==================================================
+downloaded 183 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/NLP_0.2-1.tar.gz'
+Content type 'binary/octet-stream' length 387316 bytes (378 KB)
+==================================================
+downloaded 378 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880021 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/expm_0.999-7.tar.gz'
+Content type 'binary/octet-stream' length 203737 bytes (198 KB)
+==================================================
+downloaded 198 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/babelgene_22.9.tar.gz'
+Content type 'binary/octet-stream' length 3651563 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 223742 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.3.4.tar.gz'
+Content type 'binary/octet-stream' length 1850499 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 199530 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/clisymbols_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 17827 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/skmeans_0.2-16.tar.gz'
+Content type 'binary/octet-stream' length 256785 bytes (250 KB)
+==================================================
+downloaded 250 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/microbenchmark_1.4.10.tar.gz'
+Content type 'binary/octet-stream' length 61014 bytes (59 KB)
+==================================================
+downloaded 59 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/impute_1.76.0.tar.gz'
+Content type 'application/x-gzip' length 641568 bytes (626 KB)
+==================================================
+downloaded 626 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/eulerr_7.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1699391 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/doRNG_1.8.6.tar.gz'
+Content type 'binary/octet-stream' length 302018 bytes (294 KB)
+==================================================
+downloaded 294 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/irlba_2.3.5.1.tar.gz'
+Content type 'binary/octet-stream' length 290619 bytes (283 KB)
+==================================================
+downloaded 283 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'binary/octet-stream' length 28790 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flexmix_2.3-19.tar.gz'
+Content type 'binary/octet-stream' length 1719088 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/prabclus_2.3-3.tar.gz'
+Content type 'binary/octet-stream' length 469885 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/diptest_0.76-0.tar.gz'
+Content type 'binary/octet-stream' length 183469 bytes (179 KB)
+==================================================
+downloaded 179 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/robustbase_0.99-0.tar.gz'
+Content type 'binary/octet-stream' length 3085090 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/kernlab_0.9-32.tar.gz'
+Content type 'binary/octet-stream' length 2215637 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ComplexHeatmap_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1455170 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/circlize_0.4.15.tar.gz'
+Content type 'binary/octet-stream' length 3305679 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GetoptLong_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1074527 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tm_0.7-11.tar.gz'
+Content type 'binary/octet-stream' length 617077 bytes (602 KB)
+==================================================
+downloaded 602 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/slam_0.1-50.tar.gz'
+Content type 'binary/octet-stream' length 184464 bytes (180 KB)
+==================================================
+downloaded 180 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/clue_0.3-65.tar.gz'
+Content type 'binary/octet-stream' length 991621 bytes (968 KB)
+==================================================
+downloaded 968 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proxyC_0.3.4.tar.gz'
+Content type 'binary/octet-stream' length 162570 bytes (158 KB)
+==================================================
+downloaded 158 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 469679 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mclust_6.0.1.tar.gz'
+Content type 'binary/octet-stream' length 4092851 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/apcluster_1.4.11.tar.gz'
+Content type 'binary/octet-stream' length 1547085 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/MCL_1.0.tar.gz'
+Content type 'binary/octet-stream' length 17365 bytes (16 KB)
+==================================================
+downloaded 16 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dbscan_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 2515551 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'binary/octet-stream' length 89708 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/msigdbr_7.5.1.tar.gz'
+Content type 'binary/octet-stream' length 6148028 bytes (5.9 MB)
+==================================================
+downloaded 5.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/DO.db_2.9.tar.gz'
+Content type 'application/x-gzip' length 1769978 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/flexclust_1.4-1.tar.gz'
+Content type 'binary/octet-stream' length 666568 bytes (650 KB)
+==================================================
+downloaded 650 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/InteractiveComplexHeatmap_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 948329 bytes (926 KB)
+==================================================
+downloaded 926 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 321929 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/cola_2.8.0.tar.gz'
+Content type 'application/x-gzip' length 3835287 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hu6800.db_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 340321 bytes (332 KB)
+==================================================
+downloaded 332 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz'
+Content type 'application/x-gzip' length 993568 bytes (970 KB)
+==================================================
+downloaded 970 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gridtext_0.1.5.tar.gz'
+Content type 'binary/octet-stream' length 353536 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/fpc_2.2-10.tar.gz'
+Content type 'binary/octet-stream' length 837320 bytes (817 KB)
+==================================================
+downloaded 817 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/simplifyEnrichment_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 6627766 bytes (6.3 MB)
+==================================================
+downloaded 6.3 MB
+
+* installing *binary* package ‘selectr’ ...
+* ‘selectr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘selectr’ as ‘selectr_0.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (selectr)
+* installing *binary* package ‘iterators’ ...
+* ‘iterators’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *binary* package ‘webshot’ ...
+* ‘webshot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *binary* package ‘GenSA’ ...
+* ‘GenSA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GenSA’ as ‘GenSA_1.1.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenSA)
+* installing *binary* package ‘polylabelr’ ...
+* ‘polylabelr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polylabelr’ as ‘polylabelr_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polylabelr)
+* installing *binary* package ‘rngtools’ ...
+* ‘rngtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rngtools’ as ‘rngtools_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rngtools)
+* installing *binary* package ‘DEoptimR’ ...
+* ‘DEoptimR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DEoptimR’ as ‘DEoptimR_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEoptimR)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘NLP’ ...
+* ‘NLP’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NLP’ as ‘NLP_0.2-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NLP)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *binary* package ‘expm’ ...
+* ‘expm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘expm’ as ‘expm_0.999-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (expm)
+* installing *binary* package ‘babelgene’ ...
+* ‘babelgene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘babelgene’ as ‘babelgene_22.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (babelgene)
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘clisymbols’ ...
+* ‘clisymbols’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clisymbols’ as ‘clisymbols_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clisymbols)
+* installing *binary* package ‘microbenchmark’ ...
+* ‘microbenchmark’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘microbenchmark’ as ‘microbenchmark_1.4.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (microbenchmark)
+* installing *source* package ‘impute’ ...
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gfortran  -fpic  -g -O2  -c knnimpute.f -o knnimpute.o
+knnimpute.f:99:72:
+
+   99 | 20                        pos(k1+1) = pos(k1)
+      |                                                                             1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 20 at (1)
+knnimpute.f:113:72:
+
+  113 | 35                        pos(k1+1) = pos(k1)
+      |                                                                             1
+Warning: Fortran 2018 deleted feature: DO termination statement which is not END DO or CONTINUE with label 35 at (1)
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o impute.so knnimpute.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-impute/00new/impute/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘impute’ as ‘impute_1.76.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (impute)
+* installing *binary* package ‘irlba’ ...
+* ‘irlba’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘irlba’ as ‘irlba_2.3.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (irlba)
+* installing *binary* package ‘jpeg’ ...
+* ‘jpeg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jpeg’ as ‘jpeg_0.1-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jpeg)
+* installing *binary* package ‘diptest’ ...
+* ‘diptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.76-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *binary* package ‘kernlab’ ...
+* ‘kernlab’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kernlab’ as ‘kernlab_0.9-32_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kernlab)
+* installing *binary* package ‘slam’ ...
+* ‘slam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘slam’ as ‘slam_0.1-50_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (slam)
+* installing *binary* package ‘clue’ ...
+* ‘clue’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clue’ as ‘clue_0.3-65_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clue)
+* installing *binary* package ‘GlobalOptions’ ...
+* ‘GlobalOptions’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *binary* package ‘apcluster’ ...
+* ‘apcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘apcluster’ as ‘apcluster_1.4.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (apcluster)
+* installing *binary* package ‘dbscan’ ...
+* ‘dbscan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbscan’ as ‘dbscan_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbscan)
+* installing *binary* package ‘dynamicTreeCut’ ...
+* ‘dynamicTreeCut’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *source* package ‘DO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DO.db’ as ‘DO.db_2.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DO.db)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *source* package ‘hu6800.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hu6800.db’ as ‘hu6800.db_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hu6800.db)
+* installing *source* package ‘genefilter’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c half_range_mode.cpp -o half_range_mode.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c nd.c -o nd.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pAUC.c -o pAUC.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rowPAUCs.c -o rowPAUCs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rowttests.c -o rowttests.o
+gfortran  -fpic  -g -O2  -c ttest.f -o ttest.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o genefilter.so half_range_mode.o init.o nd.o pAUC.o rowPAUCs.o rowttests.o ttest.o -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-genefilter/00new/genefilter/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘genefilter’ as ‘genefilter_1.84.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (genefilter)
+* installing *binary* package ‘rvest’ ...
+* ‘rvest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvest’ as ‘rvest_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvest)
+* installing *binary* package ‘foreach’ ...
+* ‘foreach’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *binary* package ‘skmeans’ ...
+* ‘skmeans’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘skmeans’ as ‘skmeans_0.2-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (skmeans)
+* installing *binary* package ‘eulerr’ ...
+* ‘eulerr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘eulerr’ as ‘eulerr_7.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (eulerr)
+* installing *binary* package ‘flexmix’ ...
+* ‘flexmix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexmix’ as ‘flexmix_2.3-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexmix)
+* installing *binary* package ‘prabclus’ ...
+* ‘prabclus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prabclus’ as ‘prabclus_2.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prabclus)
+* installing *binary* package ‘robustbase’ ...
+* ‘robustbase’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘robustbase’ as ‘robustbase_0.99-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (robustbase)
+* installing *binary* package ‘circlize’ ...
+* ‘circlize’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *binary* package ‘GetoptLong’ ...
+* ‘GetoptLong’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GetoptLong’ as ‘GetoptLong_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GetoptLong)
+* installing *binary* package ‘tm’ ...
+* ‘tm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tm’ as ‘tm_0.7-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tm)
+* installing *binary* package ‘proxyC’ ...
+* ‘proxyC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxyC’ as ‘proxyC_0.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxyC)
+* installing *binary* package ‘MCL’ ...
+* ‘MCL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MCL’ as ‘MCL_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MCL)
+* installing *binary* package ‘msigdbr’ ...
+* ‘msigdbr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘msigdbr’ as ‘msigdbr_7.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msigdbr)
+* installing *binary* package ‘flexclust’ ...
+* ‘flexclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexclust’ as ‘flexclust_1.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexclust)
+* installing *binary* package ‘gridtext’ ...
+* ‘gridtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridtext’ as ‘gridtext_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridtext)
+* installing *binary* package ‘doParallel’ ...
+* ‘doParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘doParallel’ as ‘doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doParallel)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *binary* package ‘doRNG’ ...
+* ‘doRNG’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘doRNG’ as ‘doRNG_1.8.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doRNG)
+* installing *binary* package ‘fpc’ ...
+* ‘fpc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fpc’ as ‘fpc_2.2-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fpc)
+* installing *source* package ‘ComplexHeatmap’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ComplexHeatmap’ as ‘ComplexHeatmap_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ComplexHeatmap)
+* installing *source* package ‘InteractiveComplexHeatmap’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘InteractiveComplexHeatmap’ as ‘InteractiveComplexHeatmap_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (InteractiveComplexHeatmap)
+* installing *source* package ‘cola’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atc.cpp -o atc.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cal_consensus_mat.cpp -o cal_consensus_mat.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pdist.cpp -o pdist.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o cola.so RcppExports.o atc.o cal_consensus_mat.o pdist.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-cola/00new/cola/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cola’ as ‘cola_2.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cola)
+* installing *source* package ‘simplifyEnrichment’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘simplifyEnrichment’ as ‘simplifyEnrichment_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (simplifyEnrichment)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpf6r8cD/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m21.244s
+user	1m53.329s
+sys	0m18.241s
