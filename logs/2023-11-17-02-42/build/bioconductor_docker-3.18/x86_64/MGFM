@@ -1,0 +1,60 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MGFM'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'MGFM'
+also installing the dependency ‘hgu133a.db’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133a.db_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 950927 bytes (928 KB)
+==================================================
+downloaded 928 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/MGFM_1.36.0.tar.gz'
+Content type 'application/x-gzip' length 3456821 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+* installing *source* package ‘hgu133a.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu133a.db’ as ‘hgu133a.db_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu133a.db)
+* installing *source* package ‘MGFM’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MGFM’ as ‘MGFM_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MGFM)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpxb3xGq/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m22.475s
+user	0m18.940s
+sys	0m2.665s
