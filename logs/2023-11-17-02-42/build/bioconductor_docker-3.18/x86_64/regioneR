@@ -1,0 +1,58 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''regioneR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'regioneR'
+also installing the dependency ‘BSgenome.Hsapiens.UCSC.hg19.masked’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19.masked_1.3.993.tar.gz'
+Content type 'application/x-gzip' length 22787874 bytes (21.7 MB)
+==================================================
+downloaded 21.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/regioneR_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 1920930 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg19.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg19.masked’ as ‘BSgenome.Hsapiens.UCSC.hg19.masked_1.3.993_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg19.masked)
+* installing *source* package ‘regioneR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘regioneR’ as ‘regioneR_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (regioneR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9ZbZwD/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m51.782s
+user	0m47.048s
+sys	0m4.150s
