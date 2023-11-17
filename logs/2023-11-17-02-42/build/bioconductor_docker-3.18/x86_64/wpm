@@ -1,0 +1,140 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''wpm'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'wpm'
+also installing the dependencies ‘attempt’, ‘here’, ‘anytime’, ‘config’, ‘golem’, ‘shinydashboard’, ‘shinyWidgets’, ‘shinycustomloader’, ‘logging’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/attempt_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 106924 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/here_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 52848 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'binary/octet-stream' length 404834 bytes (395 KB)
+==================================================
+downloaded 395 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/config_0.3.2.tar.gz'
+Content type 'binary/octet-stream' length 102048 bytes (99 KB)
+==================================================
+downloaded 99 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/golem_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 1140537 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 321929 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyWidgets_0.8.0.tar.gz'
+Content type 'binary/octet-stream' length 1225400 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinycustomloader_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 29829 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/logging_0.10-108.tar.gz'
+Content type 'binary/octet-stream' length 167061 bytes (163 KB)
+==================================================
+downloaded 163 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/wpm_1.12.0.tar.gz'
+Content type 'application/x-gzip' length 2517906 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *binary* package ‘attempt’ ...
+* ‘attempt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘attempt’ as ‘attempt_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (attempt)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘anytime’ ...
+* ‘anytime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *binary* package ‘config’ ...
+* ‘config’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘config’ as ‘config_0.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (config)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘shinycustomloader’ ...
+* ‘shinycustomloader’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinycustomloader’ as ‘shinycustomloader_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinycustomloader)
+* installing *binary* package ‘logging’ ...
+* ‘logging’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘logging’ as ‘logging_0.10-108_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (logging)
+* installing *binary* package ‘golem’ ...
+* ‘golem’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘golem’ as ‘golem_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (golem)
+* installing *binary* package ‘shinyWidgets’ ...
+* ‘shinyWidgets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *source* package ‘wpm’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+
+── This is the Well-Plate Maker package. ───────────────────────────────────────
+If you want to use the shiny application, then simply run: `wpm()`.If you want
+to see the Tutorial vignette and use WPM in command line, run:
+`browseVignettes('wpm')`.
+** testing if installed package can be loaded from final location
+
+── This is the Well-Plate Maker package. ───────────────────────────────────────
+If you want to use the shiny application, then simply run: `wpm()`.If you want
+to see the Tutorial vignette and use WPM in command line, run:
+`browseVignettes('wpm')`.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘wpm’ as ‘wpm_1.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wpm)
+
+The downloaded source packages are in
+	‘/tmp/RtmpslY23O/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m18.828s
+user	0m6.915s
+sys	0m2.629s
