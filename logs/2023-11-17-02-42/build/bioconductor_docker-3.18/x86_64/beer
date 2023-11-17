@@ -1,0 +1,90 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''beer'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'beer'
+also installing the dependencies ‘coda’, ‘hunspell’, ‘rjags’, ‘progressr’, ‘spelling’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/coda_0.19-4.tar.gz'
+Content type 'binary/octet-stream' length 320307 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hunspell_3.0.3.tar.gz'
+Content type 'binary/octet-stream' length 1173209 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rjags_4-14.tar.gz'
+Content type 'binary/octet-stream' length 132808 bytes (129 KB)
+==================================================
+downloaded 129 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progressr_0.14.0.tar.gz'
+Content type 'binary/octet-stream' length 380423 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/spelling_2.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53413 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/beer_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 560174 bytes (547 KB)
+==================================================
+downloaded 547 KB
+
+* installing *binary* package ‘coda’ ...
+* ‘coda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘progressr’ ...
+* ‘progressr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progressr’ as ‘progressr_0.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progressr)
+* installing *binary* package ‘rjags’ ...
+* ‘rjags’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rjags’ as ‘rjags_4-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rjags)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *source* package ‘beer’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘beer’ as ‘beer_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beer)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp4ItETE/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m29.310s
+user	0m22.508s
+sys	0m2.933s
