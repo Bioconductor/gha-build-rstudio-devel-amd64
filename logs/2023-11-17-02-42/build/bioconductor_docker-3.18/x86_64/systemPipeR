@@ -1,0 +1,163 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''systemPipeR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'systemPipeR'
+also installing the dependencies ‘selectr’, ‘rvest’, ‘webshot’, ‘svglite’, ‘base64url’, ‘systemPipeRdata’, ‘kableExtra’, ‘GO.db’, ‘batchtools’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/selectr_0.4-2.tar.gz'
+Content type 'binary/octet-stream' length 488354 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rvest_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 210026 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/webshot_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 205102 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 199530 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/base64url_1.4.tar.gz'
+Content type 'binary/octet-stream' length 24171 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/systemPipeRdata_2.6.0.tar.gz'
+Content type 'application/x-gzip' length 283914326 bytes (270.8 MB)
+==================================================
+downloaded 270.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.3.4.tar.gz'
+Content type 'binary/octet-stream' length 1850499 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/GO.db_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 29013599 bytes (27.7 MB)
+==================================================
+downloaded 27.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/batchtools_0.9.17.tar.gz'
+Content type 'binary/octet-stream' length 1059186 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeR_2.8.0.tar.gz'
+Content type 'application/x-gzip' length 7417929 bytes (7.1 MB)
+==================================================
+downloaded 7.1 MB
+
+* installing *binary* package ‘selectr’ ...
+* ‘selectr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘selectr’ as ‘selectr_0.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (selectr)
+* installing *binary* package ‘webshot’ ...
+* ‘webshot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘base64url’ ...
+* ‘base64url’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘base64url’ as ‘base64url_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (base64url)
+* installing *source* package ‘systemPipeRdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘systemPipeRdata’ as ‘systemPipeRdata_2.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (systemPipeRdata)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *source* package ‘systemPipeR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘systemPipeR’ as ‘systemPipeR_2.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (systemPipeR)
+* installing *binary* package ‘rvest’ ...
+* ‘rvest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvest’ as ‘rvest_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvest)
+* installing *binary* package ‘batchtools’ ...
+* ‘batchtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘batchtools’ as ‘batchtools_0.9.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (batchtools)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpgrpkli/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m3.070s
+user	1m52.801s
+sys	0m8.599s
+* installing *source* package ‘systemPipeRdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘systemPipeRdata’ as ‘systemPipeRdata_2.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (systemPipeRdata)
