@@ -1,0 +1,106 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''marray'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'marray'
+also installing the dependencies ‘widgetTools’, ‘DynDoc’, ‘tkWidgets’
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/widgetTools_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 127837 bytes (124 KB)
+==================================================
+downloaded 124 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/DynDoc_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 11216 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/tkWidgets_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 338585 bytes (330 KB)
+==================================================
+downloaded 330 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/marray_1.80.0.tar.gz'
+Content type 'application/x-gzip' length 5056102 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+* installing *source* package ‘widgetTools’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘widgetTools’ as ‘widgetTools_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (widgetTools)
+* installing *source* package ‘DynDoc’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DynDoc’ as ‘DynDoc_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DynDoc)
+* installing *source* package ‘marray’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘marray’ as ‘marray_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (marray)
+* installing *source* package ‘tkWidgets’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tkWidgets’ as ‘tkWidgets_1.80.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tkWidgets)
+
+The downloaded source packages are in
+	‘/tmp/RtmpHjP7B2/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m16.076s
+user	0m13.263s
+sys	0m3.600s
