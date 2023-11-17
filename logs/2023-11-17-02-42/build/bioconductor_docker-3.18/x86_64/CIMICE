@@ -1,0 +1,179 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CIMICE'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'CIMICE'
+also installing the dependencies ‘tweenr’, ‘RcppEigen’, ‘ggforce’, ‘ggrepel’, ‘graphlayouts’, ‘igraph’, ‘networkD3’, ‘visNetwork’, ‘ggcorrplot’, ‘ggraph’, ‘assertthat’, ‘tidygraph’, ‘expm’, ‘webshot’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 435519 bytes (425 KB)
+==================================================
+downloaded 425 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 1528720 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggforce_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 1830039 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/graphlayouts_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 3731437 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/networkD3_0.4.tar.gz'
+Content type 'binary/octet-stream' length 188445 bytes (184 KB)
+==================================================
+downloaded 184 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 4643028 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggcorrplot_0.1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 28525 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggraph_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 3934821 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidygraph_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 497867 bytes (486 KB)
+==================================================
+downloaded 486 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/expm_0.999-7.tar.gz'
+Content type 'binary/octet-stream' length 203737 bytes (198 KB)
+==================================================
+downloaded 198 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/webshot_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 205102 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/CIMICE_1.10.0.tar.gz'
+Content type 'application/x-gzip' length 1573390 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘visNetwork’ ...
+* ‘visNetwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘visNetwork’ as ‘visNetwork_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (visNetwork)
+* installing *binary* package ‘ggcorrplot’ ...
+* ‘ggcorrplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggcorrplot’ as ‘ggcorrplot_0.1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggcorrplot)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘expm’ ...
+* ‘expm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘expm’ as ‘expm_0.999-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (expm)
+* installing *binary* package ‘webshot’ ...
+* ‘webshot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘webshot’ as ‘webshot_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webshot)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘graphlayouts’ ...
+* ‘graphlayouts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘graphlayouts’ as ‘graphlayouts_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphlayouts)
+* installing *binary* package ‘networkD3’ ...
+* ‘networkD3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘networkD3’ as ‘networkD3_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (networkD3)
+* installing *binary* package ‘tidygraph’ ...
+* ‘tidygraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidygraph’ as ‘tidygraph_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidygraph)
+* installing *binary* package ‘ggraph’ ...
+* ‘ggraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggraph’ as ‘ggraph_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggraph)
+* installing *source* package ‘CIMICE’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CIMICE’ as ‘CIMICE_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CIMICE)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdLu10A/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m24.077s
+user	0m15.071s
+sys	0m3.909s
