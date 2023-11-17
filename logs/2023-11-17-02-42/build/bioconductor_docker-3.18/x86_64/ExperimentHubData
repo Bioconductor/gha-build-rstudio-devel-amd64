@@ -1,0 +1,41 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ExperimentHubData'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ExperimentHubData'
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHubData_1.28.0.tar.gz'
+Content type 'application/x-gzip' length 228284 bytes (222 KB)
+==================================================
+downloaded 222 KB
+
+* installing *source* package ‘ExperimentHubData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+[1] Creating log directory /root/.AnnotationHubData
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘ExperimentHubData’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘ExperimentHubData’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘ExperimentHubData’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHubData’ as ‘ExperimentHubData_1.28.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHubData)
+
+The downloaded source packages are in
+	‘/tmp/RtmproTReg/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m32.080s
+user	0m28.510s
+sys	0m2.418s
