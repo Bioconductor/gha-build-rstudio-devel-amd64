@@ -359,12 +359,8 @@ jobs:
         run: exit 1
         if: steps.pkgbuild.outcome=='failure'
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: "artifact-${{ matrix.pkg }}"
-          path: ${{steps.tar.outputs.name}}
-
       - name: Save size and time
+        id: preupload
         run: |
           PKG="${{ matrix.pkg }}"
           runstarttime=$(cat runstarttime)
@@ -386,6 +382,24 @@ jobs:
           mkdir -p /tmp/logs/$runstarttime/sysdeps/$containername/$arch/$PKG
           if [ -s "/tmp/${PKG}-sysdeps" ]; then cp /tmp/*-sysdeps /tmp/logs/$runstarttime/sysdeps/$containername/$arch/$PKG; fi
 
+          # Check if library is needed for future dependency
+          grep '":' packages.json | awk '{print $1}' |  sed 's/"//g' | sed 's/://g' > /tmp/leftpkgs
+          cat << "EOF" > /tmp/keeplist.sh
+          PKG="$1"
+          sed -n "/^    \"$PKG\"/,/^    \"/p" biocdeps.json | grep '^        "' | awk -F'"' '{print $2}' >> /tmp/allkeep
+          EOF
+          cat /tmp/leftpkgs | xargs -i bash /tmp/keeplist.sh {}
+          cat /tmp/allkeep | sort | uniq | sed 's/$/.tar.gz/' > /tmp/tarskeep
+          TARNAME=$(basename "${{steps.tar.outputs.name}}")
+          grep -q $TARNAME /tmp/tarskeep && KEEP="yes" || KEEP="no"
+          echo keep="$KEEP" >> $GITHUB_OUTPUT
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: "artifact-${{ matrix.pkg }}"
+          path: ${{steps.tar.outputs.name}}
+          if: steps.prebuild.outputs.keep=='yes'
+
       - name: Rclone push package
         uses: nick-fields/retry@v2
         with:
@@ -394,10 +408,11 @@ jobs:
           shell: bash
           command: |
             set -x
-            # Push binary
+            # Push binaries
             ls /tmp/tars/ | sed 's#/tmp/tars/##g' | xargs -i rclone copy /tmp/tars/{} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib/ -vvvvvv
-            # Push copy of library
-            rclone copy ${{steps.tar.outputs.name}} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/ -vvvvvv
+            
+            # Push copy of library if it's a dependency of a future package
+            [[ "${{steps.prebuild.outputs.keep}}" == "yes" ]] && rclone copy ${{steps.tar.outputs.name}} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/ -vvvvvv
 
       - name: Add info to summary
         run: |
