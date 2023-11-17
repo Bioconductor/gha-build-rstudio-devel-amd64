@@ -1,0 +1,163 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GSVA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'GSVA'
+also installing the dependencies ‘hgu95a.db’, ‘globals’, ‘listenv’, ‘parallelly’, ‘GSVAdata’, ‘shinydashboard’, ‘plotly’, ‘future’, ‘shinybusy’, ‘shinyjs’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95a.db_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 529593 bytes (517 KB)
+==================================================
+downloaded 517 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/globals_0.16.2.tar.gz'
+Content type 'binary/octet-stream' length 104912 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/listenv_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 105140 bytes (102 KB)
+==================================================
+downloaded 102 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/parallelly_1.36.0.tar.gz'
+Content type 'binary/octet-stream' length 348828 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/GSVAdata_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 13351238 bytes (12.7 MB)
+==================================================
+downloaded 12.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 321929 bytes (314 KB)
+==================================================
+downloaded 314 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/future_1.33.0.tar.gz'
+Content type 'binary/octet-stream' length 642120 bytes (627 KB)
+==================================================
+downloaded 627 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinybusy_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 595470 bytes (581 KB)
+==================================================
+downloaded 581 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1084640 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/GSVA_1.50.0.tar.gz'
+Content type 'application/x-gzip' length 2239026 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *source* package ‘hgu95a.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu95a.db’ as ‘hgu95a.db_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu95a.db)
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.36.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *binary* package ‘shinybusy’ ...
+* ‘shinybusy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinybusy’ as ‘shinybusy_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinybusy)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *source* package ‘GSVA’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c kernel_estimation.c -o kernel_estimation.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ks_test.c -o ks_test.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c register_cmethods.c -o register_cmethods.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GSVA.so kernel_estimation.o ks_test.o register_cmethods.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GSVA/00new/GSVA/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSVA’ as ‘GSVA_1.50.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSVA)
+* installing *source* package ‘GSVAdata’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GSVAdata’ as ‘GSVAdata_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GSVAdata)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+
+The downloaded source packages are in
+	‘/tmp/RtmpCF7NXy/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m55.144s
+user	0m44.826s
+sys	0m5.869s
