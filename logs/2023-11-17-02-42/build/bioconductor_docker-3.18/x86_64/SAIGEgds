@@ -1,0 +1,145 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SAIGEgds'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'SAIGEgds'
+also installing the dependencies ‘minqa’, ‘numDeriv’, ‘mitools’, ‘ggrepel’, ‘RcppParallel’, ‘CompQuadForm’, ‘survey’, ‘ggmanh’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/minqa_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 118141 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 113093 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mitools_2.4.tar.gz'
+Content type 'binary/octet-stream' length 269450 bytes (263 KB)
+==================================================
+downloaded 263 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.4.tar.gz'
+Content type 'binary/octet-stream' length 270949 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880021 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/CompQuadForm_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 41446 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/survey_4.2-1.tar.gz'
+Content type 'binary/octet-stream' length 3196157 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ggmanh_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 3407758 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/SAIGEgds_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 1976954 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+* installing *binary* package ‘minqa’ ...
+* ‘minqa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minqa’ as ‘minqa_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minqa)
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘mitools’ ...
+* ‘mitools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitools’ as ‘mitools_2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitools)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *binary* package ‘CompQuadForm’ ...
+* ‘CompQuadForm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘CompQuadForm’ as ‘CompQuadForm_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CompQuadForm)
+* installing *binary* package ‘survey’ ...
+* ‘survey’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘survey’ as ‘survey_4.2-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (survey)
+* installing *source* package ‘ggmanh’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘manhattan_plot’ with signature ‘"GRanges"’: no definition for class “GRanges”
+in method for ‘manhattan_data_preprocess’ with signature ‘"GRanges"’: no definition for class “GRanges”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggmanh’ as ‘ggmanh_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggmanh)
+* installing *source* package ‘SAIGEgds’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SPATest.cpp -o SPATest.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c saige_fitnull.cpp -o saige_fitnull.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c saige_main.cpp -o saige_main.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c saige_misc.cpp -o saige_misc.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vec_ext_avx2.cpp -o vec_ext_avx2.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vec_ext_avx512bw.cpp -o vec_ext_avx512bw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vec_ext_def.cpp -o vec_ext_def.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/RcppParallel/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vectorization.cpp -o vectorization.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o SAIGEgds.so SPATest.o saige_fitnull.o saige_main.o saige_misc.o vec_ext_avx2.o vec_ext_avx512bw.o vec_ext_def.o vectorization.o -lm -llapack -lblas -lgfortran -lm -lquadmath -lgcc -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-SAIGEgds/00new/SAIGEgds/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SAIGEgds’ as ‘SAIGEgds_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SAIGEgds)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp499Qfw/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m1.794s
+user	0m54.017s
+sys	0m6.001s
