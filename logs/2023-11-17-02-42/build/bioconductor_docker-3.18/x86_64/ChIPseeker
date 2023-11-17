@@ -1,0 +1,260 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ChIPseeker'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ChIPseeker'
+also installing the dependencies ‘proxy’, ‘e1071’, ‘wk’, ‘permute’, ‘classInt’, ‘s2’, ‘units’, ‘vegan’, ‘pheatmap’, ‘magick’, ‘sf’, ‘plotly’, ‘RVenn’, ‘graphite’, ‘plotrix’, ‘ggimage’, ‘ggVennDiagram’, ‘ReactomePA’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 174072 bytes (169 KB)
+==================================================
+downloaded 169 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/e1071_1.7-13.tar.gz'
+Content type 'binary/octet-stream' length 578232 bytes (564 KB)
+==================================================
+downloaded 564 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/wk_0.9.0.tar.gz'
+Content type 'binary/octet-stream' length 1720594 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/permute_0.9-7.tar.gz'
+Content type 'binary/octet-stream' length 219603 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/classInt_0.4-10.tar.gz'
+Content type 'binary/octet-stream' length 497588 bytes (485 KB)
+==================================================
+downloaded 485 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/s2_1.1.4.tar.gz'
+Content type 'binary/octet-stream' length 2167969 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/units_0.8-4.tar.gz'
+Content type 'binary/octet-stream' length 354978 bytes (346 KB)
+==================================================
+downloaded 346 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vegan_2.6-4.tar.gz'
+Content type 'binary/octet-stream' length 3097102 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 76685 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/magick_2.8.1.tar.gz'
+Content type 'binary/octet-stream' length 5001824 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sf_1.0-14.tar.gz'
+Content type 'binary/octet-stream' length 3518986 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.3.tar.gz'
+Content type 'binary/octet-stream' length 3196723 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RVenn_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 739527 bytes (722 KB)
+==================================================
+downloaded 722 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/graphite_1.48.0.tar.gz'
+Content type 'application/x-gzip' length 782528 bytes (764 KB)
+==================================================
+downloaded 764 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plotrix_3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 1139190 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggimage_0.3.3.tar.gz'
+Content type 'binary/octet-stream' length 151621 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/ggVennDiagram_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 3646526 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ReactomePA_1.46.0.tar.gz'
+Content type 'application/x-gzip' length 58723 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseeker_1.38.0.tar.gz'
+Content type 'application/x-gzip' length 7248885 bytes (6.9 MB)
+==================================================
+downloaded 6.9 MB
+
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘wk’ ...
+* ‘wk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wk’ as ‘wk_0.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wk)
+* installing *binary* package ‘permute’ ...
+* ‘permute’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘permute’ as ‘permute_0.9-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (permute)
+* installing *binary* package ‘units’ ...
+* ‘units’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘units’ as ‘units_0.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (units)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *source* package ‘graphite’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘graphite’ as ‘graphite_1.48.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphite)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘s2’ ...
+* ‘s2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘s2’ as ‘s2_1.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s2)
+* installing *binary* package ‘vegan’ ...
+* ‘vegan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vegan’ as ‘vegan_2.6-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vegan)
+* installing *binary* package ‘ggimage’ ...
+* ‘ggimage’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggimage’ as ‘ggimage_0.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggimage)
+* installing *source* package ‘ReactomePA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ReactomePA’ as ‘ReactomePA_1.46.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ReactomePA)
+* installing *source* package ‘ChIPseeker’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ChIPseeker’ as ‘ChIPseeker_1.38.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ChIPseeker)
+* installing *binary* package ‘classInt’ ...
+* ‘classInt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘classInt’ as ‘classInt_0.4-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (classInt)
+* installing *binary* package ‘RVenn’ ...
+* ‘RVenn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RVenn’ as ‘RVenn_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RVenn)
+* installing *binary* package ‘sf’ ...
+* ‘sf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sf’ as ‘sf_1.0-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sf)
+* installing *binary* package ‘ggVennDiagram’ ...
+* ‘ggVennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggVennDiagram’ as ‘ggVennDiagram_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggVennDiagram)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGHQLVA/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	1m54.323s
+user	1m28.762s
+sys	0m11.414s
+* installing *binary* package ‘admisc’ ...
+* ‘admisc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘admisc’ as ‘admisc_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (admisc)
+* installing *binary* package ‘ggVennDiagram’ ...
+* ‘ggVennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggVennDiagram’ as ‘ggVennDiagram_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggVennDiagram)
+* installing *binary* package ‘venn’ ...
+* ‘venn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘venn’ as ‘venn_1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (venn)
+* installing *binary* package ‘RVenn’ ...
+* ‘RVenn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RVenn’ as ‘RVenn_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RVenn)
