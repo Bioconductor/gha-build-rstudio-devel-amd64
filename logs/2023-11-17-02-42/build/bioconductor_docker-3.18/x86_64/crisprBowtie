@@ -1,0 +1,146 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''crisprBowtie'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'crisprBowtie'
+also installing the dependencies ‘vroom’, ‘tzdb’, ‘Rbowtie’, ‘readr’, ‘BSgenome.Hsapiens.UCSC.hg38’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/vroom_1.6.4.tar.gz'
+Content type 'binary/octet-stream' length 927156 bytes (905 KB)
+==================================================
+downloaded 905 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 640820 bytes (625 KB)
+==================================================
+downloaded 625 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/Rbowtie_1.42.0.tar.gz'
+Content type 'application/x-gzip' length 925351 bytes (903 KB)
+==================================================
+downloaded 903 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/readr_2.1.4.tar.gz'
+Content type 'binary/octet-stream' length 824320 bytes (805 KB)
+==================================================
+downloaded 805 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz'
+Content type 'application/x-gzip' length 731245539 bytes (697.4 MB)
+==================================================
+downloaded 697.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/crisprBowtie_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 326941 bytes (319 KB)
+==================================================
+downloaded 319 KB
+
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *source* package ‘Rbowtie’ ...
+** using staged installation
+** libs
+g++ -O3 -DCOMPILER_OPTIONS="\"-O3 -Wl,--hash-style=both -DPOPCNT_CAPABILITY -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  \"" -Wl,--hash-style=both -DPOPCNT_CAPABILITY -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g    \
+	-fno-strict-aliasing -DBOWTIE_VERSION="\"`cat VERSION`\"" -DBUILD_HOST="\"`hostname`\"" -DBUILD_TIME="\"2023-11-17T15:18:32\"" -DCOMPILER_VERSION="\"`g++ -v 2>&1 | tail -1`\"" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -DPREFETCH_LOCALITY=2 -DBOWTIE_MM -DBOWTIE_SHARED_MEM -DNDEBUG -Wall -Wno-unused-parameter -Wno-reorder \
+	 -I third_party -I third_party \
+	-o bowtie-build-s ebwt_build.cpp \
+	ccnt_lut.cpp ref_read.cpp alphabet.cpp shmem.cpp edit.cpp ebwt.cpp bt2_locks.cpp tinythread.cpp  bowtie_build_main.cpp \
+	-L/usr/local/lib  -lz -lpthread 
+g++ -O3 -DCOMPILER_OPTIONS="\"-O3 -Wl,--hash-style=both -DPOPCNT_CAPABILITY -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  \"" -Wl,--hash-style=both -DPOPCNT_CAPABILITY -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   \
+	-fno-strict-aliasing -DBOWTIE_VERSION="\"`cat VERSION`\"" -DBUILD_HOST="\"`hostname`\"" -DBUILD_TIME="\"2023-11-17T15:18:43\"" -DCOMPILER_VERSION="\"`g++ -v 2>&1 | tail -1`\"" -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_GNU_SOURCE  -DPREFETCH_LOCALITY=2 -DBOWTIE_MM -DBOWTIE_SHARED_MEM -DNDEBUG -Wall -Wno-unused-parameter -Wno-reorder \
+	 -I third_party -I third_party \
+	-o bowtie-align-s ebwt_search.cpp \
+	ccnt_lut.cpp ref_read.cpp alphabet.cpp shmem.cpp edit.cpp ebwt.cpp bt2_locks.cpp tinythread.cpp qual.cpp pat.cpp ebwt_search_util.cpp ref_aligner.cpp log.cpp hit_set.cpp sam.cpp hit.cpp bowtie_main.cpp \
+	-L/usr/local/lib  -lz -lpthread 
+mkdir -p ../inst
+cp bowtie-align-s ../inst/bowtie
+cp bowtie-build-s ../inst/bowtie-build
+cd SpliceMap; \
+make -f Makefile; \
+echo "MAKE of SpliceMap DONE"	
+make[1]: Entering directory '/tmp/RtmpDylhdA/R.INSTALLb8ee34998/Rbowtie/src/SpliceMap'
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -c SpliceMap_utils_QuasR.cpp
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -c params.cpp
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -c cfgfile.cpp
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o runSpliceMap_QuasR SpliceMap_utils_QuasR.o cfgfile.o runSpliceMap_QuasR.cpp params.o
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o sortsam sortsam.cpp SpliceMap_utils_QuasR.o params.o
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o amalgamateSAM amalgamateSAM.cpp SpliceMap_utils_QuasR.o params.o
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o getSpliceMapUnmapped getSpliceMapUnmapped.cpp
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o fuseReorder fuseReorder.cpp
+`"/usr/local/lib/R/bin/R" CMD config CXX` `"/usr/local/lib/R/bin/R" CMD config LDFLAGS` `"/usr/local/lib/R/bin/R" CMD config CXXFLAGS` -o SpliceMap main.cpp SpliceMap_utils_QuasR.o params.o cfgfile.o
+make[1]: Leaving directory '/tmp/RtmpDylhdA/R.INSTALLb8ee34998/Rbowtie/src/SpliceMap'
+MAKE of SpliceMap DONE
+mkdir -p ../inst
+cp SpliceMap/SpliceMap ../inst/SpliceMap
+cp SpliceMap/amalgamateSAM ../inst/amalgamateSAM
+cp SpliceMap/getSpliceMapUnmapped ../inst/getSpliceMapUnmapped
+cp SpliceMap/fuseReorder ../inst/fuseReorder
+cp SpliceMap/runSpliceMap_QuasR ../inst/runSpliceMap_QuasR
+cp SpliceMap/sortsam ../inst/sortsam
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rbowtie’ as ‘Rbowtie_1.42.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rbowtie)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg38’ as ‘BSgenome.Hsapiens.UCSC.hg38_1.4.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg38)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *source* package ‘crisprBowtie’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘crisprBowtie’ as ‘crisprBowtie_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crisprBowtie)
+
+The downloaded source packages are in
+	‘/tmp/RtmpsDQqf3/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	3m17.947s
+user	2m54.343s
+sys	0m15.835s
