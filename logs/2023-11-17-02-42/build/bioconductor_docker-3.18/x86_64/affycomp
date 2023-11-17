@@ -1,0 +1,69 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''affycomp'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'affycomp'
+also installing the dependency ‘affycompData’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/affycompData_1.40.0.tar.gz'
+Content type 'application/x-gzip' length 71942279 bytes (68.6 MB)
+==================================================
+downloaded 68.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/affycomp_1.78.0.tar.gz'
+Content type 'application/x-gzip' length 8254501 bytes (7.9 MB)
+==================================================
+downloaded 7.9 MB
+
+* installing *source* package ‘affycomp’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affycomp’ as ‘affycomp_1.78.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affycomp)
+* installing *source* package ‘affycompData’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affycompData’ as ‘affycompData_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affycompData)
+
+The downloaded source packages are in
+	‘/tmp/RtmpG85ZMA/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m16.352s
+user	0m10.731s
+sys	0m2.275s
+* installing *source* package ‘affycompData’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affycompData’ as ‘affycompData_1.40.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affycompData)
