@@ -1,0 +1,328 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''r3Cseq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'r3Cseq'
+also installing the dependencies ‘plyr’, ‘reshape2’, ‘gsubfn’, ‘proto’, ‘chron’, ‘BSgenome.Mmusculus.UCSC.mm9’, ‘BSgenome.Hsapiens.UCSC.hg18’, ‘BSgenome.Rnorvegicus.UCSC.rn5’, ‘VGAM’, ‘qvalue’, ‘sqldf’, ‘BSgenome.Mmusculus.UCSC.mm9.masked’, ‘BSgenome.Mmusculus.UCSC.mm10.masked’, ‘BSgenome.Hsapiens.UCSC.hg18.masked’, ‘BSgenome.Hsapiens.UCSC.hg19.masked’, ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/plyr_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 821210 bytes (801 KB)
+==================================================
+downloaded 801 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 115350 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gsubfn_0.7.tar.gz'
+Content type 'binary/octet-stream' length 354700 bytes (346 KB)
+==================================================
+downloaded 346 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/proto_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 469562 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/chron_2.3-61.tar.gz'
+Content type 'binary/octet-stream' length 186783 bytes (182 KB)
+==================================================
+downloaded 182 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 621955864 bytes (593.1 MB)
+==================================================
+downloaded 593.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz'
+Content type 'application/x-gzip' length 810802173 bytes (773.2 MB)
+==================================================
+downloaded 773.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn5_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 614635033 bytes (586.2 MB)
+==================================================
+downloaded 586.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-9.tar.gz'
+Content type 'binary/octet-stream' length 7442768 bytes (7.1 MB)
+==================================================
+downloaded 7.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/qvalue_2.34.0.tar.gz'
+Content type 'application/x-gzip' length 2767953 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sqldf_0.4-11.tar.gz'
+Content type 'binary/octet-stream' length 76457 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9.masked_1.3.99.tar.gz'
+Content type 'application/x-gzip' length 23175386 bytes (22.1 MB)
+==================================================
+downloaded 22.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10.masked_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 88806 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99.tar.gz'
+Content type 'application/x-gzip' length 20999488 bytes (20.0 MB)
+==================================================
+downloaded 20.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19.masked_1.3.993.tar.gz'
+Content type 'application/x-gzip' length 22787874 bytes (21.7 MB)
+==================================================
+downloaded 21.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99.tar.gz'
+Content type 'application/x-gzip' length 23631388 bytes (22.5 MB)
+==================================================
+downloaded 22.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/r3Cseq_1.48.0.tar.gz'
+Content type 'application/x-gzip' length 4359290 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *binary* package ‘plyr’ ...
+* ‘plyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plyr’ as ‘plyr_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plyr)
+* installing *binary* package ‘proto’ ...
+* ‘proto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *binary* package ‘chron’ ...
+* ‘chron’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘chron’ as ‘chron_2.3-61_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (chron)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9’ as ‘BSgenome.Mmusculus.UCSC.mm9_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18’ as ‘BSgenome.Hsapiens.UCSC.hg18_1.3.1000_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18)
+* installing *source* package ‘BSgenome.Rnorvegicus.UCSC.rn5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Rnorvegicus.UCSC.rn5’ as ‘BSgenome.Rnorvegicus.UCSC.rn5_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Rnorvegicus.UCSC.rn5)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm10.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm10.masked’ as ‘BSgenome.Mmusculus.UCSC.mm10.masked_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm10.masked)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg19.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg19.masked’ as ‘BSgenome.Hsapiens.UCSC.hg19.masked_1.3.993_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg19.masked)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘gsubfn’ ...
+* ‘gsubfn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gsubfn’ as ‘gsubfn_0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gsubfn)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9.masked’ as ‘BSgenome.Mmusculus.UCSC.mm9.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9.masked)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18.masked’ as ‘BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18.masked)
+* installing *source* package ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ as ‘BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Rnorvegicus.UCSC.rn5.masked)
+* installing *source* package ‘qvalue’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qvalue’ as ‘qvalue_2.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qvalue)
+* installing *binary* package ‘sqldf’ ...
+* ‘sqldf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sqldf’ as ‘sqldf_0.4-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sqldf)
+* installing *source* package ‘r3Cseq’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** testing if installed package can be loaded from final location
+No methods found in package ‘Biostrings’ for request: ‘DNAString’ when loading ‘r3Cseq’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘r3Cseq’ as ‘r3Cseq_1.48.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (r3Cseq)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpmb6770/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	6m52.724s
+user	6m14.815s
+sys	0m34.108s
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18.masked’ as ‘BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18.masked)
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9.masked’ as ‘BSgenome.Mmusculus.UCSC.mm9.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9.masked)
+* installing *source* package ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Rnorvegicus.UCSC.rn5.masked’ as ‘BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Rnorvegicus.UCSC.rn5.masked)
