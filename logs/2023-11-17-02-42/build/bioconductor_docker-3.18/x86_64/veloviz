@@ -1,0 +1,77 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''veloviz'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'veloviz'
+also installing the dependencies ‘RcppEigen’, ‘igraph’, ‘RSpectra’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 1528720 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/igraph_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 4875394 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RSpectra_0.16-1.tar.gz'
+Content type 'binary/octet-stream' length 494062 bytes (482 KB)
+==================================================
+downloaded 482 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/veloviz_1.8.0.tar.gz'
+Content type 'application/x-gzip' length 3718124 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘RSpectra’ ...
+* ‘RSpectra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSpectra’ as ‘RSpectra_0.16-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSpectra)
+* installing *source* package ‘veloviz’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c graphViz.cpp -o graphViz.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o veloviz.so RcppExports.o graphViz.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-veloviz/00new/veloviz/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘veloviz’ as ‘veloviz_1.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (veloviz)
+
+The downloaded source packages are in
+	‘/tmp/RtmpzKnnVo/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m17.837s
+user	0m14.353s
+sys	0m2.395s
