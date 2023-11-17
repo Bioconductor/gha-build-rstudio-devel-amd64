@@ -1,0 +1,91 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''VanillaICE'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'VanillaICE'
+also installing the dependencies ‘BSgenome.Hsapiens.UCSC.hg18’, ‘human610quadv1bCrlmm’
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz'
+Content type 'application/x-gzip' length 810802173 bytes (773.2 MB)
+==================================================
+downloaded 773.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/human610quadv1bCrlmm_1.0.3.tar.gz'
+Content type 'application/x-gzip' length 130324951 bytes (124.3 MB)
+==================================================
+downloaded 124.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/VanillaICE_1.64.0.tar.gz'
+Content type 'application/x-gzip' length 1880923 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg18’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg18’ as ‘BSgenome.Hsapiens.UCSC.hg18_1.3.1000_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg18)
+* installing *source* package ‘human610quadv1bCrlmm’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Welcome to human610quadv1bCrlmm version 1.0.3
+** testing if installed package can be loaded from final location
+Welcome to human610quadv1bCrlmm version 1.0.3
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘human610quadv1bCrlmm’ as ‘human610quadv1bCrlmm_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (human610quadv1bCrlmm)
+* installing *source* package ‘VanillaICE’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rinit.c -o rinit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c viterbi.c -o viterbi.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o VanillaICE.so rinit.o viterbi.o -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-VanillaICE/00new/VanillaICE/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+Creating a new generic function for ‘distance’ in package ‘VanillaICE’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VanillaICE’ as ‘VanillaICE_1.64.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VanillaICE)
+
+The downloaded source packages are in
+	‘/tmp/RtmpwTqodh/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	2m8.090s
+user	1m53.670s
+sys	0m11.344s
