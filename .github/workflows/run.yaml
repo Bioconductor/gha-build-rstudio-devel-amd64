@@ -412,7 +412,7 @@ jobs:
             ls /tmp/tars/ | sed 's#/tmp/tars/##g' | xargs -i rclone copy /tmp/tars/{} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/binaries/src/contrib/ -vvvvvv
             
             # Push copy of library if it's a dependency of a future package
-            [[ "${{steps.preupload.outputs.keep}}" == "yes" ]] && rclone copy ${{steps.tar.outputs.name}} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/ -vvvvvv
+            [[ "${{steps.preupload.outputs.keep}}" == "yes" ]] && rclone copy ${{steps.tar.outputs.name}} js2:/gha-build/$(cat containername)/$(cat arch)/$(cat runstarttime)/libraries/ -vvvvvv || true
 
       - name: Add info to summary
         run: |
