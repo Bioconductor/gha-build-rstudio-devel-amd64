@@ -1,0 +1,64 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TTMap'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'TTMap'
+also installing the dependencies ‘rgl’, ‘colorRamps’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rgl_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 4799925 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/colorRamps_2.3.1.tar.gz'
+Content type 'binary/octet-stream' length 27006 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/TTMap_1.24.0.tar.gz'
+Content type 'application/x-gzip' length 1688209 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+* installing *binary* package ‘rgl’ ...
+* ‘rgl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rgl’ as ‘rgl_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rgl)
+* installing *binary* package ‘colorRamps’ ...
+* ‘colorRamps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘colorRamps’ as ‘colorRamps_2.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (colorRamps)
+* installing *source* package ‘TTMap’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning messages:
+1: In rgl.init(initValue, onlyNULL) : RGL: unable to open X11 display
+2: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'. 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** testing if installed package can be loaded from final location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TTMap’ as ‘TTMap_1.24.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TTMap)
+
+The downloaded source packages are in
+	‘/tmp/RtmprjvOid/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m24.662s
+user	0m18.387s
+sys	0m2.259s
