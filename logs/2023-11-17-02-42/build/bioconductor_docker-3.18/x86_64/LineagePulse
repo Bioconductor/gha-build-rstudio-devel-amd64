@@ -1,0 +1,131 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''LineagePulse'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'LineagePulse'
+also installing the dependencies ‘GlobalOptions’, ‘shape’, ‘GetoptLong’, ‘gtools’, ‘caTools’, ‘circlize’, ‘ComplexHeatmap’, ‘gplots’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 469679 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.tar.gz'
+Content type 'binary/octet-stream' length 784187 bytes (765 KB)
+==================================================
+downloaded 765 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/GetoptLong_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1074527 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.4.tar.gz'
+Content type 'binary/octet-stream' length 353531 bytes (345 KB)
+==================================================
+downloaded 345 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 199662 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/circlize_0.4.15.tar.gz'
+Content type 'binary/octet-stream' length 3305679 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ComplexHeatmap_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1455170 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.tar.gz'
+Content type 'binary/octet-stream' length 594720 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/LineagePulse_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 407586 bytes (398 KB)
+==================================================
+downloaded 398 KB
+
+* installing *binary* package ‘GlobalOptions’ ...
+* ‘GlobalOptions’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘GetoptLong’ ...
+* ‘GetoptLong’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GetoptLong’ as ‘GetoptLong_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GetoptLong)
+* installing *binary* package ‘circlize’ ...
+* ‘circlize’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘ComplexHeatmap’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ComplexHeatmap’ as ‘ComplexHeatmap_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ComplexHeatmap)
+* installing *source* package ‘LineagePulse’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Note: possible error in 'evalLogLikGeneMM(vecCounts = vecCounts, ': unused arguments (matDispParam = matDispParam, matDropParam = matDropParam, matWeights = matWeights) 
+Note: possible error in 'evalLogLikGeneMM(vecCounts = vecCounts, ': unused arguments (matDispParam = do.call(cbind, lapply(seq_len(ncol(matWeights)), function(m) vecDispParam)), matDropParam = do.call(cbind, lapply(seq_len(ncol(matWeights)), function(m) vecPiParam)), matWeights = matWeights) 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LineagePulse’ as ‘LineagePulse_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LineagePulse)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0Nf0Cz/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m41.294s
+user	0m34.968s
+sys	0m4.329s
