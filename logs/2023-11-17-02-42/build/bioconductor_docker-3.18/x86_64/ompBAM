@@ -1,0 +1,49 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ompBAM'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'ompBAM'
+also installing the dependency ‘RcppProgress’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 19762 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ompBAM_1.6.0.tar.gz'
+Content type 'application/x-gzip' length 3294643 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *source* package ‘ompBAM’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ompBAM’ as ‘ompBAM_1.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ompBAM)
+
+The downloaded source packages are in
+	‘/tmp/RtmpR6CQJL/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m4.708s
+user	0m2.958s
+sys	0m1.300s
