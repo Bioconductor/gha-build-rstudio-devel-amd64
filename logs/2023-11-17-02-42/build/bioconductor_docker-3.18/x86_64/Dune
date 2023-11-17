@@ -1,0 +1,71 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Dune'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'Dune'
+also installing the dependencies ‘tweenr’, ‘gganimate’, ‘aricode’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 435519 bytes (425 KB)
+==================================================
+downloaded 425 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gganimate_1.0.8.tar.gz'
+Content type 'binary/octet-stream' length 1262312 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/aricode_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 88351 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/Dune_1.14.0.tar.gz'
+Content type 'application/x-gzip' length 2089104 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘aricode’ ...
+* ‘aricode’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘aricode’ as ‘aricode_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aricode)
+* installing *binary* package ‘gganimate’ ...
+* ‘gganimate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gganimate’ as ‘gganimate_1.0.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gganimate)
+* installing *source* package ‘Dune’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Dune’ as ‘Dune_1.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Dune)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpkvi55Q/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m22.206s
+user	0m17.792s
+sys	0m2.350s
