@@ -1,0 +1,169 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SQLDataFrame'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'SQLDataFrame'
+also installing the dependencies ‘hms’, ‘generics’, ‘tidyselect’, ‘tidyr’, ‘assertthat’, ‘gargle’, ‘progress’, ‘rapidjsonr’, ‘dplyr’, ‘dbplyr’, ‘lazyeval’, ‘RMySQL’, ‘bigrquery’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hms_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 98350 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/generics_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 76238 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyselect_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 219931 bytes (214 KB)
+==================================================
+downloaded 214 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/tidyr_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1188040 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 52457 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 759843 bytes (742 KB)
+==================================================
+downloaded 742 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/progress_1.2.2.tar.gz'
+Content type 'binary/octet-stream' length 83560 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/rapidjsonr_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 129189 bytes (126 KB)
+==================================================
+downloaded 126 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1461655 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/dbplyr_2.4.0.tar.gz'
+Content type 'binary/octet-stream' length 1195636 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 155230 bytes (151 KB)
+==================================================
+downloaded 151 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/RMySQL_0.10.26.tar.gz'
+Content type 'binary/octet-stream' length 286612 bytes (279 KB)
+==================================================
+downloaded 279 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/bigrquery_1.4.2.tar.gz'
+Content type 'binary/octet-stream' length 520336 bytes (508 KB)
+==================================================
+downloaded 508 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/SQLDataFrame_1.16.0.tar.gz'
+Content type 'application/x-gzip' length 652679 bytes (637 KB)
+==================================================
+downloaded 637 KB
+
+* installing *binary* package ‘hms’ ...
+* ‘hms’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hms’ as ‘hms_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hms)
+* installing *binary* package ‘generics’ ...
+* ‘generics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘generics’ as ‘generics_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (generics)
+* installing *binary* package ‘tidyselect’ ...
+* ‘tidyselect’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyselect’ as ‘tidyselect_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyselect)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘gargle’ ...
+* ‘gargle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gargle’ as ‘gargle_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gargle)
+* installing *binary* package ‘rapidjsonr’ ...
+* ‘rapidjsonr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rapidjsonr’ as ‘rapidjsonr_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rapidjsonr)
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘RMySQL’ ...
+* ‘RMySQL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RMySQL’ as ‘RMySQL_0.10.26_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RMySQL)
+* installing *binary* package ‘progress’ ...
+* ‘progress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progress’ as ‘progress_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progress)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *binary* package ‘tidyr’ ...
+* ‘tidyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyr’ as ‘tidyr_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyr)
+* installing *binary* package ‘bigrquery’ ...
+* ‘bigrquery’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bigrquery’ as ‘bigrquery_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bigrquery)
+* installing *binary* package ‘dbplyr’ ...
+* ‘dbplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbplyr’ as ‘dbplyr_2.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbplyr)
+* installing *source* package ‘SQLDataFrame’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SQLDataFrame’ as ‘SQLDataFrame_1.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SQLDataFrame)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpox779Q/downloaded_packages’
+Old packages: 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m18.598s
+user	0m11.930s
+sys	0m3.333s
