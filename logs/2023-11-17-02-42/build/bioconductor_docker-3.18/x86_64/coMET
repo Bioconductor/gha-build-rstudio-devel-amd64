@@ -1,0 +1,133 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''coMET'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://packagemanager.posit.co/cran/__linux__/jammy/latest
+Bioconductor version 3.18 (BiocManager 1.30.22), R 4.3.2 (2023-10-31)
+Installing package(s) 'coMET'
+also installing the dependencies ‘mnormt’, ‘sysfonts’, ‘showtextdb’, ‘psych’, ‘hash’, ‘corrplot’, ‘showtext’
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/mnormt_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 172518 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/sysfonts_0.8.8.tar.gz'
+Content type 'binary/octet-stream' length 1200289 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/showtextdb_3.0.tar.gz'
+Content type 'binary/octet-stream' length 2010230 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/psych_2.3.9.tar.gz'
+Content type 'binary/octet-stream' length 3942200 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/hash_2.2.6.3.tar.gz'
+Content type 'binary/octet-stream' length 188501 bytes (184 KB)
+==================================================
+downloaded 184 KB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/corrplot_0.92.tar.gz'
+Content type 'binary/octet-stream' length 3842542 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://packagemanager.posit.co/cran/__linux__/jammy/latest/src/contrib/showtext_0.9-6.tar.gz'
+Content type 'binary/octet-stream' length 277249 bytes (270 KB)
+==================================================
+downloaded 270 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/coMET_1.34.0.tar.gz'
+Content type 'application/x-gzip' length 22886561 bytes (21.8 MB)
+==================================================
+downloaded 21.8 MB
+
+* installing *binary* package ‘mnormt’ ...
+* ‘mnormt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mnormt’ as ‘mnormt_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mnormt)
+* installing *binary* package ‘sysfonts’ ...
+* ‘sysfonts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sysfonts’ as ‘sysfonts_0.8.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sysfonts)
+* installing *binary* package ‘hash’ ...
+* ‘hash’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hash’ as ‘hash_2.2.6.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hash)
+* installing *binary* package ‘corrplot’ ...
+* ‘corrplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corrplot’ as ‘corrplot_0.92_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corrplot)
+* installing *binary* package ‘showtextdb’ ...
+* ‘showtextdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtextdb’ as ‘showtextdb_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtextdb)
+* installing *binary* package ‘psych’ ...
+* ‘psych’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘psych’ as ‘psych_2.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (psych)
+* installing *binary* package ‘showtext’ ...
+* ‘showtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtext’ as ‘showtext_0.9-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtext)
+* installing *source* package ‘coMET’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import 'utils::findMatches' by 'S4Vectors::findMatches' when loading 'coMET'
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import 'utils::findMatches' by 'S4Vectors::findMatches' when loading 'coMET'
+** testing if installed package can be loaded from final location
+Warning: replacing previous import 'utils::findMatches' by 'S4Vectors::findMatches' when loading 'coMET'
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘coMET’ as ‘coMET_1.34.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coMET)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp3kZupD/downloaded_packages’
+Old packages: 'Gviz', 'BiocVersion', 'evaluate', 'htmltools', 'httr2', 'knitr',
+  'lifecycle', 'rlang', 'rprojroot', 'stringi', 'stringr', 'waldo', 'withr',
+  'xfun', 'Matrix'
+
+real	0m54.917s
+user	0m42.329s
+sys	0m4.314s
+* installing *binary* package ‘prettydoc’ ...
+* ‘prettydoc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prettydoc’ as ‘prettydoc_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prettydoc)
+* installing *binary* package ‘showtext’ ...
+* ‘showtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtext’ as ‘showtext_0.9-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtext)
+* installing *binary* package ‘showtextdb’ ...
+* ‘showtextdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtextdb’ as ‘showtextdb_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtextdb)
+* installing *binary* package ‘sysfonts’ ...
+* ‘sysfonts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sysfonts’ as ‘sysfonts_0.8.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sysfonts)
