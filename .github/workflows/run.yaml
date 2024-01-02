@@ -96,7 +96,9 @@ jobs:
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
             if [ ! -s /tmp/self-hosted ]; then exit 0; fi
+            grep -q 'waycarbon/github-action-container-cleanup' .github/workflows/run.yaml && exit 0 || true
             sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+            sed -i '/steps:/a \ \ \ \ \ \ - uses: waycarbon/github-action-container-cleanup@v1' .github/workflows/run.yaml
             cp /tmp/self-hosted lists/self-hosted
             git add .github/workflows/run.yaml
             git add lists
