@@ -13,7 +13,7 @@ jobs:
     concurrency:
       group: dispatch
       cancel-in-progress: false
-    runs-on: [self-hosted, js2]
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix.outputs.pkglist }}
     steps:
