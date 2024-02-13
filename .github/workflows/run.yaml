@@ -161,7 +161,7 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: [self-hosted, js2]
+    runs-on: ubuntu-latest
     steps:
       - uses: waycarbon/github-action-container-cleanup@v1
     
