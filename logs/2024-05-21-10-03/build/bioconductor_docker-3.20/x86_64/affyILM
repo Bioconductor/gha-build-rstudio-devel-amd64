@@ -1,0 +1,70 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''affyILM'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'affyILM'
+also installing the dependency ‘hgfocusprobe’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/hgfocusprobe_2.18.0.tar.gz'
+Content type 'application/x-gzip' length 1384188 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/affyILM_1.57.0.tar.gz'
+Content type 'application/x-gzip' length 123669 bytes (120 KB)
+==================================================
+downloaded 120 KB
+
+* installing *source* package ‘hgfocusprobe’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgfocusprobe’ as ‘hgfocusprobe_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgfocusprobe)
+* installing *source* package ‘affyILM’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘affyILM’ as ‘affyILM_1.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (affyILM)
+
+The downloaded source packages are in
+	‘/tmp/RtmpODfiKQ/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m20.939s
+user	0m17.077s
+sys	0m2.581s
+* installing *source* package ‘hgfocusprobe’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgfocusprobe’ as ‘hgfocusprobe_2.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgfocusprobe)
