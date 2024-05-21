@@ -1,0 +1,212 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rarr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'Rarr'
+also installing the dependencies ‘lazyeval’, ‘R.oo’, ‘R.methodsS3’, ‘paws.common’, ‘bookdown’, ‘rex’, ‘R.utils’, ‘paws.storage’, ‘BiocStyle’, ‘covr’, ‘tinytest’, ‘mockery’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 157817 bytes (154 KB)
+==================================================
+downloaded 154 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.oo_1.26.0.tar.gz'
+Content type 'binary/octet-stream' length 996069 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 82681 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/paws.common_0.7.3.tar.gz'
+Content type 'binary/octet-stream' length 524742 bytes (512 KB)
+==================================================
+downloaded 512 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bookdown_0.39.tar.gz'
+Content type 'binary/octet-stream' length 1091022 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.3.tar.gz'
+Content type 'binary/octet-stream' length 1441934 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/paws.storage_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 2820990 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocStyle_2.33.0.tar.gz'
+Content type 'application/x-gzip' length 786526 bytes (768 KB)
+==================================================
+downloaded 768 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tinytest_1.4.1.tar.gz'
+Content type 'binary/octet-stream' length 695692 bytes (679 KB)
+==================================================
+downloaded 679 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mockery_0.4.4.tar.gz'
+Content type 'binary/octet-stream' length 42115 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Rarr_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1439651 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *binary* package ‘paws.common’ ...
+* ‘paws.common’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘paws.common’ as ‘paws.common_0.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (paws.common)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.39_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘tinytest’ ...
+* ‘tinytest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tinytest’ as ‘tinytest_1.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tinytest)
+* installing *binary* package ‘mockery’ ...
+* ‘mockery’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mockery’ as ‘mockery_0.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mockery)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘paws.storage’ ...
+* ‘paws.storage’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘paws.storage’ as ‘paws.storage_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (paws.storage)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *source* package ‘Rarr’ ...
+** using staged installation
+NO_RLIB=
+R_CPPFLAGS=-I/usr/local/lib/R/include
+configure: is NOT Bioc build machine
+configure: configuring the Zstd filter...
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for zstd.h... yes
+checking for ZSTD_decompress in -lzstd... yes
+configure: Using system Zstd library
+configure: configuring the BLOSC filter...
+checking for blosc.h... yes
+checking for blosc_compress in -lblosc... yes
+configure: Using system BLOSC library
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating src/compression_tools/blosc/lib/blosc-1.20.1/Makefile
+config.status: creating src/compression_tools/blosc/Makefile
+config.status: creating src/compression_tools/blosc/lib/snappy-1.1.1/Makefile
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rarr.c -o Rarr.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bit64_conversion.c -o bit64_conversion.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c compress.c -o compress.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c decompress.c -o decompress.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c float16_conversion.c -o float16_conversion.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include  -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c type_conversion.c -o type_conversion.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Rarr.so Rarr.o bit64_conversion.o compress.o decompress.o float16_conversion.o type_conversion.o -lblosc -lzstd -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rarr/00new/Rarr/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rarr’ as ‘Rarr_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rarr)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdjRPw4/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m21.200s
+user	0m10.167s
+sys	0m4.381s
