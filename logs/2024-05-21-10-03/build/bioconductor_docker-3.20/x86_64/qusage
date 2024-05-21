@@ -1,0 +1,88 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''qusage'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'qusage'
+also installing the dependencies ‘estimability’, ‘numDeriv’, ‘mvtnorm’, ‘emmeans’, ‘fftw’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/estimability_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 49814 bytes (48 KB)
+==================================================
+downloaded 48 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 114329 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-4.tar.gz'
+Content type 'binary/octet-stream' length 747776 bytes (730 KB)
+==================================================
+downloaded 730 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/emmeans_1.10.2.tar.gz'
+Content type 'binary/octet-stream' length 2185809 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fftw_1.0-8.tar.gz'
+Content type 'binary/octet-stream' length 17971 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/qusage_2.39.0.tar.gz'
+Content type 'application/x-gzip' length 9932630 bytes (9.5 MB)
+==================================================
+downloaded 9.5 MB
+
+* installing *binary* package ‘estimability’ ...
+* ‘estimability’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘estimability’ as ‘estimability_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (estimability)
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘fftw’ ...
+* ‘fftw’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fftw’ as ‘fftw_1.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fftw)
+* installing *binary* package ‘emmeans’ ...
+* ‘emmeans’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emmeans’ as ‘emmeans_1.10.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emmeans)
+* installing *source* package ‘qusage’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qusage’ as ‘qusage_2.39.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qusage)
+
+The downloaded source packages are in
+	‘/tmp/RtmpNvu86s/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m12.755s
+user	0m6.627s
+sys	0m2.061s
