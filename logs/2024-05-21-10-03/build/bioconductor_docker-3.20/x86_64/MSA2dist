@@ -1,0 +1,129 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MSA2dist'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MSA2dist'
+also installing the dependencies ‘pixmap’, ‘sp’, ‘ade4’, ‘segmented’, ‘ape’, ‘seqinr’, ‘RcppThread’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pixmap_0.4-13.tar.gz'
+Content type 'binary/octet-stream' length 213530 bytes (208 KB)
+==================================================
+downloaded 208 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sp_2.1-4.tar.gz'
+Content type 'binary/octet-stream' length 2102073 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ade4_1.7-22.tar.gz'
+Content type 'binary/octet-stream' length 5429597 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/segmented_2.1-0.tar.gz'
+Content type 'binary/octet-stream' length 1362671 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ape_5.8.tar.gz'
+Content type 'binary/octet-stream' length 3102815 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/seqinr_4.2-36.tar.gz'
+Content type 'binary/octet-stream' length 4156905 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppThread_2.1.7.tar.gz'
+Content type 'binary/octet-stream' length 194242 bytes (189 KB)
+==================================================
+downloaded 189 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MSA2dist_1.9.0.tar.gz'
+Content type 'application/x-gzip' length 864014 bytes (843 KB)
+==================================================
+downloaded 843 KB
+
+* installing *binary* package ‘pixmap’ ...
+* ‘pixmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pixmap’ as ‘pixmap_0.4-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pixmap)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘segmented’ ...
+* ‘segmented’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘segmented’ as ‘segmented_2.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (segmented)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *binary* package ‘RcppThread’ ...
+* ‘RcppThread’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppThread’ as ‘RcppThread_2.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppThread)
+* installing *binary* package ‘ade4’ ...
+* ‘ade4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ade4’ as ‘ade4_1.7-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ade4)
+* installing *binary* package ‘seqinr’ ...
+* ‘seqinr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘seqinr’ as ‘seqinr_4.2-36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqinr)
+* installing *source* package ‘MSA2dist’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c GY94.cpp -o GY94.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c KaKs.cpp -o KaKs.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c LPB93.cpp -o LPB93.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c LWL85.cpp -o LWL85.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MSMA.cpp -o MSMA.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MYN.cpp -o MYN.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c NG86.cpp -o NG86.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c YN00.cpp -o YN00.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c base.cpp -o base.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_KaKs.cpp -o rcpp_KaKs.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_distSTRING.cpp -o rcpp_distSTRING.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_pairwiseDeletionAA.cpp -o rcpp_pairwiseDeletionAA.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppThread/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_pairwiseDeletionDNA.cpp -o rcpp_pairwiseDeletionDNA.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o MSA2dist.so GY94.o KaKs.o LPB93.o LWL85.o MSMA.o MYN.o NG86.o RcppExports.o YN00.o base.o rcpp_KaKs.o rcpp_distSTRING.o rcpp_pairwiseDeletionAA.o rcpp_pairwiseDeletionDNA.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-MSA2dist/00new/MSA2dist/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MSA2dist’ as ‘MSA2dist_1.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MSA2dist)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpc1Ltwb/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	1m24.156s
+user	1m11.793s
+sys	0m6.484s
