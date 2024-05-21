@@ -1,0 +1,65 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''RNAsense'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'RNAsense'
+also installing the dependency ‘NBPSeq’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/NBPSeq_0.3.1.tar.gz'
+Content type 'application/x-tar' length 208942 bytes (204 KB)
+==================================================
+downloaded 204 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/RNAsense_1.19.0.tar.gz'
+Content type 'application/x-gzip' length 906115 bytes (884 KB)
+==================================================
+downloaded 884 KB
+
+* installing *source* package ‘NBPSeq’ ...
+** package ‘NBPSeq’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lm.c -o lm.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o NBPSeq.so lm.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-NBPSeq/00new/NBPSeq/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NBPSeq’ as ‘NBPSeq_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NBPSeq)
+* installing *source* package ‘RNAsense’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RNAsense’ as ‘RNAsense_1.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RNAsense)
+
+The downloaded source packages are in
+	‘/tmp/RtmpZr4itt/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m22.279s
+user	0m18.055s
+sys	0m2.654s
