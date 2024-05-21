@@ -1,0 +1,67 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''QSutils'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'QSutils'
+also installing the dependencies ‘mnormt’, ‘ape’, ‘psych’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mnormt_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 175940 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ape_5.8.tar.gz'
+Content type 'binary/octet-stream' length 3102815 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/psych_2.4.3.tar.gz'
+Content type 'binary/octet-stream' length 3523302 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/QSutils_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 1349050 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+* installing *binary* package ‘mnormt’ ...
+* ‘mnormt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mnormt’ as ‘mnormt_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mnormt)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *binary* package ‘psych’ ...
+* ‘psych’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘psych’ as ‘psych_2.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (psych)
+* installing *source* package ‘QSutils’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘QSutils’ as ‘QSutils_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (QSutils)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGZUNkn/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m16.327s
+user	0m10.239s
+sys	0m2.004s
