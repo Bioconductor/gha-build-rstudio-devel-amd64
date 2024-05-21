@@ -1,0 +1,157 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''scry'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'scry'
+also installing the dependencies ‘gridExtra’, ‘rex’, ‘mclust’, ‘viridis’, ‘ggthemes’, ‘glmpca’, ‘covr’, ‘DuoClustering2018’, ‘markdown’, ‘TENxPBMCData’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mclust_6.1.1.tar.gz'
+Content type 'binary/octet-stream' length 4126597 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/viridis_0.6.5.tar.gz'
+Content type 'binary/octet-stream' length 3011836 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggthemes_5.1.0.tar.gz'
+Content type 'binary/octet-stream' length 454295 bytes (443 KB)
+==================================================
+downloaded 443 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/glmpca_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 230858 bytes (225 KB)
+==================================================
+downloaded 225 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/DuoClustering2018_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 2030277 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TENxPBMCData_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 306831 bytes (299 KB)
+==================================================
+downloaded 299 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/scry_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 4702253 bytes (4.5 MB)
+==================================================
+downloaded 4.5 MB
+
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *binary* package ‘ggthemes’ ...
+* ‘ggthemes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggthemes’ as ‘ggthemes_5.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggthemes)
+* installing *binary* package ‘glmpca’ ...
+* ‘glmpca’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmpca’ as ‘glmpca_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmpca)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘TENxPBMCData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TENxPBMCData’ as ‘TENxPBMCData_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TENxPBMCData)
+* installing *binary* package ‘viridis’ ...
+* ‘viridis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *source* package ‘scry’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scry’ as ‘scry_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scry)
+* installing *source* package ‘DuoClustering2018’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DuoClustering2018’ as ‘DuoClustering2018_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DuoClustering2018)
+
+The downloaded source packages are in
+	‘/tmp/RtmpLNByq9/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m58.655s
+user	0m46.330s
+sys	0m6.222s
