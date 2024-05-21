@@ -110,7 +110,7 @@ In file included from /usr/include/c++/11/cassert:44,
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -I"./gc-8.2.2/include" -I"./Muscle/" -I"./ClustalW/src" -I"./ClustalOmega/src" -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c SplitCharVector2List.cpp -o SplitCharVector2List.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -I"./gc-8.2.2/include" -I"./Muscle/" -I"./ClustalW/src" -I"./ClustalOmega/src" -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c SplitCharVector2Matrix.cpp -o SplitCharVector2Matrix.o
 make --file=msaMakefile --directory=gc-8.2.2
-make[1]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
+make[1]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
 ./configure --enable-cplusplus --enable-threads=pthreads --enable-shared=no --with-pic
 checking build system type... x86_64-pc-linux-gnu
 checking host system type... x86_64-pc-linux-gnu
@@ -244,8 +244,8 @@ config.status: executing depfiles commands
 config.status: executing libtool commands
 config.status: executing default commands
 make
-make[2]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
-make[3]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
+make[2]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
+make[3]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
 depbase=`echo allchblk.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
 /bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H   -I./include -I./include      -fexceptions -Wall -Wextra -Wpedantic -Wno-long-long -g -O2 -fno-strict-aliasing -Wno-frame-address  -MT allchblk.lo -MD -MP -MF $depbase.Tpo -c -o allchblk.lo allchblk.c &&\
 mv -f $depbase.Tpo $depbase.Plo
@@ -391,22 +391,22 @@ libtool: link: ar cru .libs/libcord.a  cord/libcord_la-cordbscs.o cord/libcord_l
 ar: `u' modifier ignored since `D' is the default (see `U')
 libtool: link: ranlib .libs/libcord.a
 libtool: link: ( cd ".libs" && rm -f "libcord.la" && ln -s "../libcord.la" "libcord.la" )
-make[3]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
-make[2]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
+make[3]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
+make[2]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
 cp .libs/libgc.a ../
 cp .libs/libgccpp.a ../ 
-make[1]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/gc-8.2.2'
+make[1]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/gc-8.2.2'
 ----------------------------------------
 ------------------ GC  -----------------
 ----------------------------------------
 --------- Compilation finished ---------
 ----------------------------------------
 make --file=msaMakefile --directory=Muscle
-make[1]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/Muscle'
+make[1]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/Muscle'
 export PKG_CXXFLAGS=" -I../gc-8.2.2/include"
 /usr/local/lib/R/bin/R CMD SHLIB -o libMuscle.so aligngivenpath.cpp aligngivenpathsw.cpp aligntwomsas.cpp aligntwoprofs.cpp aln.cpp alpha.cpp anchors.cpp bittraceback.cpp blosum62.cpp blosumla.cpp clust.cpp cluster.cpp clwwt.cpp color.cpp cons.cpp diaglist.cpp diffobjscore.cpp diffpaths.cpp difftrees.cpp difftreese.cpp distcalc.cpp distfunc.cpp distpwkimura.cpp domuscle.cpp dosp.cpp dpreglist.cpp drawtree.cpp edgelist.cpp enumopts.cpp enumtostr.cpp estring.cpp fasta.cpp fasta2.cpp fastclust.cpp fastdist.cpp fastdistjones.cpp fastdistkbit.cpp fastdistkmer.cpp fastdistmafft.cpp fastdistnuc.cpp fastscorepath2.cpp finddiags.cpp finddiagsn.cpp glbalign.cpp glbalign352.cpp glbaligndiag.cpp glbalignle.cpp glbalignsimple.cpp glbalignsp.cpp glbalignspn.cpp glbalignss.cpp glbalndimer.cpp globals.cpp globalslinux.cpp globalsosx.cpp globalsother.cpp globalswin32.cpp gonnet.cpp henikoffweight.cpp henikoffweightpb.cpp html.cpp hydro.cpp intmath.cpp local.cpp main.cpp makerootmsa.cpp makerootmsab.cpp maketree.cpp mhack.cpp mpam200.cpp msa.cpp msa2.cpp msadistkimura.cpp msf.cpp muscle.cpp muscleout.cpp nucmx.cpp nwdasimple.cpp nwdasimple2.cpp nwdasmall.cpp nwrec.cpp nwsmall.cpp objscore.cpp objscore2.cpp objscoreda.cpp onexception.cpp options.cpp outweights.cpp pam200mafft.cpp params.cpp phy.cpp phy2.cpp phy3.cpp phy4.cpp phyfromclust.cpp phyfromfile.cpp physeq.cpp phytofile.cpp posgap.cpp ppscore.cpp profdb.cpp profile.cpp profilefrommsa.cpp progalign.cpp progress.cpp progressivealign.cpp pwpath.cpp readmx.cpp realigndiffs.cpp realigndiffse.cpp refine.cpp refinehoriz.cpp refinesubfams.cpp refinetree.cpp refinetreee.cpp refinevert.cpp refinew.cpp savebest.cpp scoredist.cpp scoregaps.cpp scorehistory.cpp scorepp.cpp seq.cpp seqvect.cpp setblosumweights.cpp setgscweights.cpp setnewhandler.cpp spfast.cpp sptest.cpp stabilize.cpp subfam.cpp subfams.cpp sw.cpp termgaps.cpp textfile.cpp threewaywt.cpp tomhydro.cpp traceback.cpp tracebackopt.cpp tracebacksw.cpp treefrommsa.cpp typetostr.cpp upgma2.cpp usage.cpp validateids.cpp vtml2.cpp writescorefile.cpp RMuscle.cpp
 using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
-make[2]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/Muscle'
+make[2]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/Muscle'
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c aligngivenpath.cpp -o aligngivenpath.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c aligngivenpathsw.cpp -o aligngivenpathsw.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c aligntwomsas.cpp -o aligntwomsas.o
@@ -556,17 +556,17 @@ g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c writescorefile.cpp -o writescorefile.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RMuscle.cpp -o RMuscle.o
 g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o libMuscle.so aligngivenpath.o aligngivenpathsw.o aligntwomsas.o aligntwoprofs.o aln.o alpha.o anchors.o bittraceback.o blosum62.o blosumla.o clust.o cluster.o clwwt.o color.o cons.o diaglist.o diffobjscore.o diffpaths.o difftrees.o difftreese.o distcalc.o distfunc.o distpwkimura.o domuscle.o dosp.o dpreglist.o drawtree.o edgelist.o enumopts.o enumtostr.o estring.o fasta.o fasta2.o fastclust.o fastdist.o fastdistjones.o fastdistkbit.o fastdistkmer.o fastdistmafft.o fastdistnuc.o fastscorepath2.o finddiags.o finddiagsn.o glbalign.o glbalign352.o glbaligndiag.o glbalignle.o glbalignsimple.o glbalignsp.o glbalignspn.o glbalignss.o glbalndimer.o globals.o globalslinux.o globalsosx.o globalsother.o globalswin32.o gonnet.o henikoffweight.o henikoffweightpb.o html.o hydro.o intmath.o local.o main.o makerootmsa.o makerootmsab.o maketree.o mhack.o mpam200.o msa.o msa2.o msadistkimura.o msf.o muscle.o muscleout.o nucmx.o nwdasimple.o nwdasimple2.o nwdasmall.o nwrec.o nwsmall.o objscore.o objscore2.o objscoreda.o onexception.o options.o outweights.o pam200mafft.o params.o phy.o phy2.o phy3.o phy4.o phyfromclust.o phyfromfile.o physeq.o phytofile.o posgap.o ppscore.o profdb.o profile.o profilefrommsa.o progalign.o progress.o progressivealign.o pwpath.o readmx.o realigndiffs.o realigndiffse.o refine.o refinehoriz.o refinesubfams.o refinetree.o refinetreee.o refinevert.o refinew.o savebest.o scoredist.o scoregaps.o scorehistory.o scorepp.o seq.o seqvect.o setblosumweights.o setgscweights.o setnewhandler.o spfast.o sptest.o stabilize.o subfam.o subfams.o sw.o termgaps.o textfile.o threewaywt.o tomhydro.o traceback.o tracebackopt.o tracebacksw.o treefrommsa.o typetostr.o upgma2.o usage.o validateids.o vtml2.o writescorefile.o RMuscle.o -L/usr/local/lib/R/lib -lR
-make[2]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/Muscle'
+make[2]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/Muscle'
 ar rcs libMuscle.a aligngivenpath.o aligngivenpathsw.o aligntwomsas.o aligntwoprofs.o aln.o alpha.o anchors.o bittraceback.o blosum62.o blosumla.o clust.o cluster.o clwwt.o color.o cons.o diaglist.o diffobjscore.o diffpaths.o difftrees.o difftreese.o distcalc.o distfunc.o distpwkimura.o domuscle.o dosp.o dpreglist.o drawtree.o edgelist.o enumopts.o enumtostr.o estring.o fasta.o fasta2.o fastclust.o fastdist.o fastdistjones.o fastdistkbit.o fastdistkmer.o fastdistmafft.o fastdistnuc.o fastscorepath2.o finddiags.o finddiagsn.o glbalign.o glbalign352.o glbaligndiag.o glbalignle.o glbalignsimple.o glbalignsp.o glbalignspn.o glbalignss.o glbalndimer.o globals.o globalslinux.o globalsosx.o globalsother.o globalswin32.o gonnet.o henikoffweight.o henikoffweightpb.o html.o hydro.o intmath.o local.o main.o makerootmsa.o makerootmsab.o maketree.o mhack.o mpam200.o msa.o msa2.o msadistkimura.o msf.o muscle.o muscleout.o nucmx.o nwdasimple.o nwdasimple2.o nwdasmall.o nwrec.o nwsmall.o objscore.o objscore2.o objscoreda.o onexception.o options.o outweights.o pam200mafft.o params.o phy.o phy2.o phy3.o phy4.o phyfromclust.o phyfromfile.o physeq.o phytofile.o posgap.o ppscore.o profdb.o profile.o profilefrommsa.o progalign.o progress.o progressivealign.o pwpath.o readmx.o realigndiffs.o realigndiffse.o refine.o refinehoriz.o refinesubfams.o refinetree.o refinetreee.o refinevert.o refinew.o savebest.o scoredist.o scoregaps.o scorehistory.o scorepp.o seq.o seqvect.o setblosumweights.o setgscweights.o setnewhandler.o spfast.o sptest.o stabilize.o subfam.o subfams.o sw.o termgaps.o textfile.o threewaywt.o tomhydro.o traceback.o tracebackopt.o tracebacksw.o treefrommsa.o typetostr.o upgma2.o usage.o validateids.o vtml2.o writescorefile.o RMuscle.o
 cp libMuscle.a ../
-make[1]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/Muscle'
+make[1]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/Muscle'
 ----------------------------------------
 ---------------- MUSCLE ----------------
 ----------------------------------------
 --------- Compilation finished ---------
 ----------------------------------------
 make --file=msaMakefile --directory=ClustalW
-make[1]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW'
+make[1]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW'
 ./configure; \
 cd src; \
 export PKG_CXXFLAGS="-DHAVE_CONFIG_H -std=c++14  -I.  -Wno-deprecated -Wno-unused-result"; \
@@ -627,7 +627,7 @@ config.status: creating src/clustalw_version.h
 config.status: creating src/config.h
 config.status: executing depfiles commands
 using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
-make[2]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW/src'
+make[2]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW/src'
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -DHAVE_CONFIG_H -std=c++14  -I.  -Wno-deprecated -Wno-unused-result -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c pairwise/FullPairwiseAlign.cpp -o pairwise/FullPairwiseAlign.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -DHAVE_CONFIG_H -std=c++14  -I.  -Wno-deprecated -Wno-unused-result -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c pairwise/FastPairwiseAlign.cpp -o pairwise/FastPairwiseAlign.o
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -DHAVE_CONFIG_H -std=c++14  -I.  -Wno-deprecated -Wno-unused-result -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fileInput/MSFFileParser.cpp -o fileInput/MSFFileParser.o
@@ -681,16 +681,16 @@ g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site
 g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -DHAVE_CONFIG_H -std=c++14  -I.  -Wno-deprecated -Wno-unused-result -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RClustalW.cpp -o RClustalW.o
 g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o libClustalW.so pairwise/FullPairwiseAlign.o pairwise/FastPairwiseAlign.o fileInput/MSFFileParser.o fileInput/FileReader.o fileInput/PIRFileParser.o fileInput/RSFFileParser.o fileInput/GDEFileParser.o fileInput/InFileStream.o fileInput/ClustalFileParser.o fileInput/PearsonFileParser.o fileInput/FileParser.o fileInput/EMBLFileParser.o tree/UPGMA/RootedClusterTree.o tree/UPGMA/UPGMAAlgorithm.o tree/UPGMA/Node.o tree/UPGMA/RootedGuideTree.o tree/UPGMA/RootedTreeOutput.o tree/Tree.o tree/ClusterTree.o tree/TreeInterface.o tree/UnRootedClusterTree.o tree/ClusterTreeOutput.o tree/RandomGenerator.o tree/NJTree.o tree/AlignmentSteps.o interface/CommandLineParser.o substitutionMatrix/SubMatrix.o multipleAlign/Iteration.o multipleAlign/MSA.o multipleAlign/MyersMillerProfileAlign.o multipleAlign/ProfileStandard.o multipleAlign/ProfileWithSub.o multipleAlign/ProfileBase.o multipleAlign/LowScoreSegProfile.o general/OutputFile.o general/UserParameters.o general/Utility.o general/InvalidCombination.o general/DebugLog.o general/ClustalWResources.o general/VectorOutOfRange.o general/SymMatrix.o general/Stats.o Help.o alignment/Alignment.o alignment/AlignmentOutput.o alignment/ObjectiveScore.o alignment/Sequence.o Clustal.o RClustalWMain.o RClustalW.o -L/usr/local/lib/R/lib -lR
 /usr/bin/ld: multipleAlign/Iteration.o: in function `clustalw::Iteration::removeFirstIterate(clustalw::Alignment*)':
-/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW/src/multipleAlign/Iteration.cpp:231: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
-make[2]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW/src'
-make[1]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW'
+/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW/src/multipleAlign/Iteration.cpp:231: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+make[2]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW/src'
+make[1]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW'
 ----------------------------------------
 --------------- ClustalW ---------------
 ----------------------------------------
 --------- Compilation finished ---------
 ----------------------------------------
 make --file=msaMakefile --directory=ClustalOmega
-make[1]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega'
+make[1]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega'
 ./configure `/usr/local/lib/R/bin/Rscript -e "if (Sys.info()['sysname'] == 'Darwin') cat('--without-openmp')"`; \
 export PKG_LIBS=" "; \
 export PKG_CXXFLAGS="  `/usr/local/lib/R/bin/Rscript -e "if (Sys.info()['sysname'] == 'Darwin') cat('-DMATH_H_CLIB')"` -std=c++98 -fPIC -DHAVE_CONFIG_H -I. -DCLUSTALO -DCLUSTALO_NOFILE -DDEFAULT_FILTER=90 -I../../gc-8.2.2/include"; \
@@ -897,7 +897,7 @@ config.status: executing depfiles commands
 config.status: executing libtool commands
 using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
 using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
-make[2]: Entering directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega/src'
+make[2]: Entering directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega/src'
 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include     -fPIC -DHAVE_CONFIG_H -I. -DCLUSTALO -DCLUSTALO_NOFILE -DDEFAULT_FILTER=90 -I../../gc-8.2.2/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exceptions4c/e4c_lite.c -o exceptions4c/e4c_lite.o
 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include     -fPIC -DHAVE_CONFIG_H -I. -DCLUSTALO -DCLUSTALO_NOFILE -DDEFAULT_FILTER=90 -I../../gc-8.2.2/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c argtable2/argtable2.c -o argtable2/argtable2.o
 gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include     -fPIC -DHAVE_CONFIG_H -I. -DCLUSTALO -DCLUSTALO_NOFILE -DDEFAULT_FILTER=90 -I../../gc-8.2.2/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c argtable2/arg_end.c -o argtable2/arg_end.o
@@ -1277,9 +1277,9 @@ clustal-omega.c:152:49: warning: macro "__DATE__" might prevent reproducible bui
       |                                                 ^~~~~~~~
 g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o libClustalOmega.so exceptions4c/e4c_lite.o argtable2/argtable2.o argtable2/arg_end.o argtable2/arg_rem.o argtable2/arg_lit.o argtable2/arg_int.o argtable2/arg_dbl.o argtable2/arg_str.o argtable2/arg_file.o kmpp/KMeans.o kmpp/KmTree.o kmpp/KmUtils.o clustal/hhalign_wrapper.o clustal/ktuple_pair.o clustal/list.o clustal/log.o clustal/muscle_upgma.o clustal/muscle_tree.o clustal/mbed.o clustal/pair_dist.o clustal/progress.o clustal/seq.o clustal/symmatrix.o clustal/tree.o clustal/util.o clustal/weights.o squid/a2m.o squid/aligneval.o squid/alignio.o squid/clustal.o squid/cluster.o squid/dayhoff.o squid/eps.o squid/file.o squid/getopt.o squid/gki.o squid/gsi.o squid/gsi64.o squid/hsregex.o squid/iupac.o squid/msa.o squid/msf.o squid/phylip.o squid/revcomp.o squid/rk.o squid/selex.o squid/seqencode.o squid/shuffle.o squid/sqerror.o squid/sqio.o squid/squidcore.o squid/sre_ctype.o squid/sre_math.o squid/sre_random.o squid/sre_string.o squid/ssi.o squid/stack.o squid/stockholm.o squid/stopwatch.o squid/translate.o squid/types.o squid/vectorops.o squid/weight.o hhalign/hhalign.o RClustalOmega.o mymain.o clustal-omega.o -L/usr/local/lib/R/lib -lR
 /usr/bin/ld: clustal-omega.o: in function `AlnToHHMFile':
-/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega/src/clustal-omega.c:389: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
-make[2]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega/src'
-make[1]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega'
+/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega/src/clustal-omega.c:389: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+make[2]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega/src'
+make[1]: Leaving directory '/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega'
 ----------------------------------------
 ------------- ClustalOmega -------------
 ----------------------------------------
@@ -1287,9 +1287,9 @@ make[1]: Leaving directory '/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalO
 ----------------------------------------
 g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o msa.so R_init_msa.o SplitCharVector2List.o SplitCharVector2Matrix.o -Wl,--whole-archive ./libgc.a ./libClustalW.a ./libClustalOmega.a ./libMuscle.a -Wl,--no-whole-archive -lpthread -L/usr/local/lib/R/lib -lR
 /usr/bin/ld: ./libClustalW.a(Iteration.o): in function `clustalw::Iteration::removeFirstIterate(clustalw::Alignment*)':
-/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalW/src/multipleAlign/Iteration.cpp:231: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalW/src/multipleAlign/Iteration.cpp:231: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
 /usr/bin/ld: ./libClustalOmega.a(clustal-omega.o): in function `AlnToHHMFile':
-/tmp/Rtmp0YcdrT/R.INSTALLc72d026134/msa/src/ClustalOmega/src/clustal-omega.c:389: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+/tmp/RtmppcSXyZ/R.INSTALLc72563dc3a/msa/src/ClustalOmega/src/clustal-omega.c:389: warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
 installing to /tmp/tmp/built/00LOCK-msa/00new/msa/libs
 ** R
 ** inst
@@ -1322,9 +1322,9 @@ packaged installation of ‘seqinr’ as ‘seqinr_4.2-36_R_x86_64-pc-linux-gnu.
 * DONE (seqinr)
 
 The downloaded source packages are in
-	‘/tmp/RtmpJWwrsx/downloaded_packages’
+	‘/tmp/Rtmpd8Tq2n/downloaded_packages’
 Old packages: 'rmarkdown', 'KernSmooth'
 
-real	3m55.036s
-user	3m20.125s
-sys	0m26.732s
+real	3m54.176s
+user	3m18.225s
+sys	0m26.852s
