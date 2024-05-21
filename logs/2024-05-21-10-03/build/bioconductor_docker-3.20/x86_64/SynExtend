@@ -1,0 +1,87 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SynExtend'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SynExtend'
+also installing the dependency ‘markdown’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SynExtend_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 3604466 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘SynExtend’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CDend.c -o CDend.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c CShuffle.c -o CShuffle.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c HungarianAlgo.c -o HungarianAlgo.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c MoranI.c -o MoranI.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c NucleotideCounts.c -o NucleotideCounts.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c OnDiskLP.c -o OnDiskLP.o
+OnDiskLP.c: In function ‘R_LP_write_output’:
+OnDiskLP.c:1615:66: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 6 has type ‘uint_fast64_t’ {aka ‘long unsigned int’} [-Wformat=]
+ 1615 |                 snprintf(write_buf, (name_len+3)+L_SIZE, "%s%c%llu%c", buf, seps[0], clust, seps[1]);
+      |                                                               ~~~^                   ~~~~~
+      |                                                                  |                   |
+      |                                                                  |                   uint_fast64_t {aka long unsigned int}
+      |                                                                  long long unsigned int
+      |                                                               %lu
+OnDiskLP.c: In function ‘postcopy_vertexname’:
+OnDiskLP.c:382:9: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  382 |         fread(cur_elem, sizeof(msort_vertex_line), 1, orig);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OnDiskLP.c: In function ‘copy_csrfile_sig’:
+OnDiskLP.c:572:17: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  572 |                 fread(&wbuf[cachectr], sizeof(double), 1, fs);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OnDiskLP.c: In function ‘lookup_node_index’:
+OnDiskLP.c:758:25: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  758 |                         fread(&tmplen, LEN_SIZE, 1, fhash);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OnDiskLP.c:759:25: warning: ignoring return value of ‘fread’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  759 |                         fread(vname, 1, tmplen, fhash);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_synextend.c -o R_init_synextend.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SEutils.c -o SEutils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XORRand.c -o XORRand.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c calcMIR2C.c -o calcMIR2C.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dendrapply.c -o dendrapply.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o SynExtend.so CDend.o CShuffle.o HungarianAlgo.o MoranI.o NucleotideCounts.o OnDiskLP.o R_init_synextend.o SEutils.o XORRand.o calcMIR2C.o dendrapply.o -fopenmp -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-SynExtend/00new/SynExtend/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SynExtend’ as ‘SynExtend_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SynExtend)
+
+The downloaded source packages are in
+	‘/tmp/RtmpWFdmpg/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m22.017s
+user	0m16.718s
+sys	0m2.024s
