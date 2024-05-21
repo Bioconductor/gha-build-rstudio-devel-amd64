@@ -1,0 +1,58 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''OLIN'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'OLIN'
+also installing the dependency ‘convert’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/convert_1.81.0.tar.gz'
+Content type 'application/x-gzip' length 50706 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/OLIN_1.83.0.tar.gz'
+Content type 'application/x-gzip' length 2533220 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *source* package ‘convert’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘convert’ as ‘convert_1.81.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (convert)
+* installing *source* package ‘OLIN’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘OLIN’ as ‘OLIN_1.83.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OLIN)
+
+The downloaded source packages are in
+	‘/tmp/RtmpzcnzL3/downloaded_packages’
+Old packages: 'rmarkdown', 'KernSmooth'
+
+real	0m9.657s
+user	0m6.392s
+sys	0m1.987s
