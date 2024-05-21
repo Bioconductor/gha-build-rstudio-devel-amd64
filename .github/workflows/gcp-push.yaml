@@ -173,7 +173,7 @@ jobs:
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
             STARTTIME="$(cat runstarttime)" || true
-            cp /tmp/GCPPACKAGES ./"${STARTIME}-GCPPACKAGES"
+            cp /tmp/GCPPACKAGES ./"${STARTTIME}-GCPPACKAGES"
             LOGDIR="logs/$STARTTIME" || true
             echo "${{steps.variables.outputs.biocver}}/container-binaries/$(cat containername)/$(cat arch)/binaries/src/contrib" > "$LOGDIR/copied"
             mv runstarttime "$LOGDIR"/ || true
