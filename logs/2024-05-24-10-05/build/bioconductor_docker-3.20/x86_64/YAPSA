@@ -1,0 +1,382 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''YAPSA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'YAPSA'
+also installing the dependencies ‘registry’, ‘rngtools’, ‘gridBase’, ‘quadprog’, ‘lpSolve’, ‘NMF’, ‘proxy’, ‘mvtnorm’, ‘multcompView’, ‘gmp’, ‘Rmpfr’, ‘SuppDists’, ‘kSamples’, ‘BWStest’, ‘beeswarm’, ‘vipor’, ‘limSolve’, ‘SomaticSignatures’, ‘corrplot’, ‘dendextend’, ‘PMCMRplus’, ‘ggbeeswarm’, ‘pracma’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/registry_0.5-1.tar.gz'
+Content type 'binary/octet-stream' length 194528 bytes (189 KB)
+==================================================
+downloaded 189 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rngtools_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 78011 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridBase_0.4-7.tar.gz'
+Content type 'binary/octet-stream' length 162064 bytes (158 KB)
+==================================================
+downloaded 158 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/quadprog_1.5-8.tar.gz'
+Content type 'binary/octet-stream' length 30827 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lpSolve_5.6.20.tar.gz'
+Content type 'binary/octet-stream' length 373780 bytes (365 KB)
+==================================================
+downloaded 365 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/NMF_0.27.tar.gz'
+Content type 'application/x-tar' length 1679430 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 175590 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-5.tar.gz'
+Content type 'binary/octet-stream' length 774677 bytes (756 KB)
+==================================================
+downloaded 756 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/multcompView_0.1-10.tar.gz'
+Content type 'binary/octet-stream' length 115061 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gmp_0.7-4.tar.gz'
+Content type 'binary/octet-stream' length 326664 bytes (319 KB)
+==================================================
+downloaded 319 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Rmpfr_0.9-5.tar.gz'
+Content type 'binary/octet-stream' length 1226401 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/SuppDists_1.1-9.7.tar.gz'
+Content type 'binary/octet-stream' length 238504 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kSamples_1.2-10.tar.gz'
+Content type 'binary/octet-stream' length 251756 bytes (245 KB)
+==================================================
+downloaded 245 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/BWStest_0.2.3.tar.gz'
+Content type 'binary/octet-stream' length 139750 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/beeswarm_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 78309 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/vipor_0.4.7.tar.gz'
+Content type 'binary/octet-stream' length 4581354 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/limSolve_1.5.7.1.tar.gz'
+Content type 'binary/octet-stream' length 794376 bytes (775 KB)
+==================================================
+downloaded 775 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SomaticSignatures_2.41.0.tar.gz'
+Content type 'application/x-gzip' length 1949336 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/corrplot_0.92.tar.gz'
+Content type 'binary/octet-stream' length 3844589 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dendextend_1.17.1.tar.gz'
+Content type 'binary/octet-stream' length 3911750 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/PMCMRplus_1.9.10.tar.gz'
+Content type 'binary/octet-stream' length 1241377 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggbeeswarm_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 1756426 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pracma_2.4.4.tar.gz'
+Content type 'binary/octet-stream' length 1759381 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/YAPSA_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 3875658 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+* installing *binary* package ‘registry’ ...
+* ‘registry’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘registry’ as ‘registry_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (registry)
+* installing *binary* package ‘rngtools’ ...
+* ‘rngtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rngtools’ as ‘rngtools_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rngtools)
+* installing *binary* package ‘gridBase’ ...
+* ‘gridBase’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridBase’ as ‘gridBase_0.4-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridBase)
+* installing *binary* package ‘quadprog’ ...
+* ‘quadprog’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quadprog’ as ‘quadprog_1.5-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quadprog)
+* installing *binary* package ‘lpSolve’ ...
+* ‘lpSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lpSolve’ as ‘lpSolve_5.6.20_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lpSolve)
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘multcompView’ ...
+* ‘multcompView’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘multcompView’ as ‘multcompView_0.1-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (multcompView)
+* installing *binary* package ‘gmp’ ...
+* ‘gmp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gmp’ as ‘gmp_0.7-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gmp)
+* installing *binary* package ‘SuppDists’ ...
+* ‘SuppDists’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SuppDists’ as ‘SuppDists_1.1-9.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SuppDists)
+* installing *binary* package ‘BWStest’ ...
+* ‘BWStest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘BWStest’ as ‘BWStest_0.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BWStest)
+* installing *binary* package ‘beeswarm’ ...
+* ‘beeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘beeswarm’ as ‘beeswarm_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beeswarm)
+* installing *binary* package ‘vipor’ ...
+* ‘vipor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vipor’ as ‘vipor_0.4.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vipor)
+* installing *binary* package ‘corrplot’ ...
+* ‘corrplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corrplot’ as ‘corrplot_0.92_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corrplot)
+* installing *binary* package ‘dendextend’ ...
+* ‘dendextend’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.17.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *binary* package ‘pracma’ ...
+* ‘pracma’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *source* package ‘NMF’ ...
+** package ‘NMF’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c distance.cpp -o distance.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c divergence.cpp -o divergence.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c euclidean.cpp -o euclidean.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c utils.cpp -o utils.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o NMF.so distance.o divergence.o euclidean.o registerDynamicSymbol.o utils.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-NMF/00new/NMF/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Setting package specific options: package:NMF:logger (1 default option(s))
+Setting package specific options: package:NMF (10 default option(s))
+Creating a generic function for ‘plot’ from ‘graphics’ in package ‘NMF’
+    (from the saved implicit definition)
+Creating meta registry in package 'NMF' ... OK
+Creating registry 'extra_handler' in package 'NMF' ... OK
+Creating registry 'extra_action' in package 'NMF' ... OK
+Registering extra handler 'install.packages' [function] ... OK
+Creating registry 'algorithm' in package 'NMF' ... OK
+Registering NMF algorithm '.R#brunet' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'brunet' [NMFStrategyIterative] based on template '.R#brunet' ... OK
+Registering NMF algorithm 'KL' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#lee' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'lee' [NMFStrategyIterative] based on template '.R#lee' ... OK
+Registering NMF algorithm 'Frobenius' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#offset' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'offset' [NMFStrategyIterative] based on template '.R#offset' ... OK
+Registering NMF algorithm '.R#nsNMF' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'nsNMF' [NMFStrategyIterative] based on template '.R#nsNMF' ... OK
+Registering NMF algorithm 'ls-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'pe-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'snmf/r' [NMFStrategyFunction] ... OK
+Registering NMF algorithm 'snmf/l' [NMFStrategyFunction] ... OK
+Registering extra action 'bigmemory' for handler 'install.packages' ... OK
+Registering extra action 'synchronicity' for handler 'install.packages' ... OK
+Creating registry 'seed' in package 'NMF' ... OK
+Registering NMF seeding method 'none' [NMFSeed] ... OK
+Registering NMF seeding method 'random' [NMFSeed] ... OK
+Registering NMF seeding method 'ica' [NMFSeed] ... OK
+Registering NMF seeding method 'nndsvd' [NMFSeed] ... OK
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NMF’ as ‘NMF_0.27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NMF)
+* installing *binary* package ‘Rmpfr’ ...
+* ‘Rmpfr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rmpfr’ as ‘Rmpfr_0.9-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rmpfr)
+* installing *binary* package ‘kSamples’ ...
+* ‘kSamples’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kSamples’ as ‘kSamples_1.2-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kSamples)
+* installing *binary* package ‘limSolve’ ...
+* ‘limSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘limSolve’ as ‘limSolve_1.5.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (limSolve)
+* installing *binary* package ‘ggbeeswarm’ ...
+* ‘ggbeeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggbeeswarm’ as ‘ggbeeswarm_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggbeeswarm)
+* installing *source* package ‘SomaticSignatures’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SomaticSignatures’ as ‘SomaticSignatures_2.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SomaticSignatures)
+* installing *binary* package ‘PMCMRplus’ ...
+* ‘PMCMRplus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘PMCMRplus’ as ‘PMCMRplus_1.9.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PMCMRplus)
+* installing *source* package ‘YAPSA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+** testing if installed package can be loaded from final location
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by 'Rmpfr'
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘YAPSA’ as ‘YAPSA_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (YAPSA)
+
+The downloaded source packages are in
+	‘/tmp/RtmpKshVFM/downloaded_packages’
+
+real	2m5.986s
+user	1m34.932s
+sys	0m10.490s
