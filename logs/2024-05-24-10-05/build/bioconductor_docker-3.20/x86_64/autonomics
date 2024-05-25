@@ -1,0 +1,1302 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''autonomics'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'autonomics'
+Warning: dependency ‘progeny’ is not available
+also installing the dependencies ‘mitools’, ‘RcppArmadillo’, ‘sandwich’, ‘calibrate’, ‘rematch’, ‘lazyeval’, ‘modeltools’, ‘DEoptimR’, ‘survey’, ‘RSpectra’, ‘estimability’, ‘gmm’, ‘crosstalk’, ‘qqman’, ‘fractional’, ‘tweenr’, ‘polyclip’, ‘cellranger’, ‘shape’, ‘AnnotationFilter’, ‘ProtGenerics’, ‘mclust’, ‘flexmix’, ‘prabclus’, ‘diptest’, ‘robustbase’, ‘kernlab’, ‘ICS’, ‘igraph’, ‘corpcor’, ‘rARPACK’, ‘emmeans’, ‘forcats’, ‘tmvtnorm’, ‘ff’, ‘minpack.lm’, ‘plotly’, ‘MultiDataSet’, ‘httpcache’, ‘rjsoncons’, ‘codingMatrices’, ‘ggforce’, ‘readxl’, ‘AnnotationHub’, ‘apcluster’, ‘diagram’, ‘ensembldb’, ‘fpc’, ‘GenomicDataCommons’, ‘GEOquery’, ‘ICSNP’, ‘lmerTest’, ‘mixOmics’, ‘mpm’, ‘OlinkAnalyze’, ‘org.Mm.eg.db’, ‘pcaMethods’, ‘pheatmap’, ‘propagate’, ‘ropls’, ‘Rsubread’, ‘readODS’, ‘UniProt.ws’, ‘writexl’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mitools_2.4.tar.gz'
+Content type 'binary/octet-stream' length 270774 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppArmadillo_0.12.8.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1077214 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sandwich_3.1-0.tar.gz'
+Content type 'binary/octet-stream' length 1519653 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/calibrate_1.7.7.tar.gz'
+Content type 'binary/octet-stream' length 356943 bytes (348 KB)
+==================================================
+downloaded 348 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 16256 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 157817 bytes (154 KB)
+==================================================
+downloaded 154 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 224202 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/DEoptimR_1.1-3.tar.gz'
+Content type 'binary/octet-stream' length 74537 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/survey_4.4-2.tar.gz'
+Content type 'binary/octet-stream' length 3474978 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RSpectra_0.16-1.tar.gz'
+Content type 'binary/octet-stream' length 513206 bytes (501 KB)
+==================================================
+downloaded 501 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/estimability_1.5.1.tar.gz'
+Content type 'binary/octet-stream' length 49814 bytes (48 KB)
+==================================================
+downloaded 48 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gmm_1.8.tar.gz'
+Content type 'binary/octet-stream' length 1435365 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/crosstalk_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 410714 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/qqman_0.1.9.tar.gz'
+Content type 'binary/octet-stream' length 1130992 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fractional_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 160509 bytes (156 KB)
+==================================================
+downloaded 156 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 463244 bytes (452 KB)
+==================================================
+downloaded 452 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 119916 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 103690 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.1.tar.gz'
+Content type 'binary/octet-stream' length 749996 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/AnnotationFilter_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 324819 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ProtGenerics_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 10163 bytes
+==================================================
+downloaded 10163 bytes
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mclust_6.1.1.tar.gz'
+Content type 'binary/octet-stream' length 4126597 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/flexmix_2.3-19.tar.gz'
+Content type 'binary/octet-stream' length 1734692 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/prabclus_2.3-3.tar.gz'
+Content type 'binary/octet-stream' length 481495 bytes (470 KB)
+==================================================
+downloaded 470 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/diptest_0.77-1.tar.gz'
+Content type 'binary/octet-stream' length 174290 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/robustbase_0.99-2.tar.gz'
+Content type 'binary/octet-stream' length 3109310 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kernlab_0.9-32.tar.gz'
+Content type 'binary/octet-stream' length 2228679 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ICS_1.4-1.tar.gz'
+Content type 'binary/octet-stream' length 1137958 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/igraph_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 5535765 bytes (5.3 MB)
+==================================================
+downloaded 5.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 116072 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rARPACK_0.11-0.tar.gz'
+Content type 'binary/octet-stream' length 28995 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/emmeans_1.10.2.tar.gz'
+Content type 'binary/octet-stream' length 2185809 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tmvtnorm_1.6.tar.gz'
+Content type 'binary/octet-stream' length 574928 bytes (561 KB)
+==================================================
+downloaded 561 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ff_4.0.12.tar.gz'
+Content type 'binary/octet-stream' length 1039140 bytes (1014 KB)
+==================================================
+downloaded 1014 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/minpack.lm_1.2-4.tar.gz'
+Content type 'binary/octet-stream' length 94091 bytes (91 KB)
+==================================================
+downloaded 91 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/plotly_4.10.4.tar.gz'
+Content type 'binary/octet-stream' length 3174557 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MultiDataSet_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 507112 bytes (495 KB)
+==================================================
+downloaded 495 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/httpcache_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 62181 bytes (60 KB)
+==================================================
+downloaded 60 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rjsoncons_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1495788 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/codingMatrices_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 235936 bytes (230 KB)
+==================================================
+downloaded 230 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggforce_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 1853214 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 863132 bytes (842 KB)
+==================================================
+downloaded 842 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/AnnotationHub_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 998752 bytes (975 KB)
+==================================================
+downloaded 975 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/apcluster_1.4.13.tar.gz'
+Content type 'binary/octet-stream' length 1491427 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/diagram_1.6.5.tar.gz'
+Content type 'binary/octet-stream' length 682103 bytes (666 KB)
+==================================================
+downloaded 666 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ensembldb_2.29.0.tar.gz'
+Content type 'application/x-gzip' length 3363079 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fpc_2.2-12.tar.gz'
+Content type 'binary/octet-stream' length 859746 bytes (839 KB)
+==================================================
+downloaded 839 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomicDataCommons_1.29.3.tar.gz'
+Content type 'application/x-gzip' length 2439139 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GEOquery_2.73.0.tar.gz'
+Content type 'application/x-gzip' length 13695667 bytes (13.1 MB)
+==================================================
+downloaded 13.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ICSNP_1.1-2.tar.gz'
+Content type 'binary/octet-stream' length 204721 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lmerTest_3.1-3.tar.gz'
+Content type 'binary/octet-stream' length 538940 bytes (526 KB)
+==================================================
+downloaded 526 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/mixOmics_6.29.0.tar.gz'
+Content type 'application/x-gzip' length 18958228 bytes (18.1 MB)
+==================================================
+downloaded 18.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mpm_1.0-23.tar.gz'
+Content type 'binary/octet-stream' length 615096 bytes (600 KB)
+==================================================
+downloaded 600 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/OlinkAnalyze_3.7.0.tar.gz'
+Content type 'binary/octet-stream' length 2241352 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Mm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 82852299 bytes (79.0 MB)
+==================================================
+downloaded 79.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/pcaMethods_1.97.0.tar.gz'
+Content type 'application/x-gzip' length 610942 bytes (596 KB)
+==================================================
+downloaded 596 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/propagate_1.0-6.tar.gz'
+Content type 'binary/octet-stream' length 238391 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ropls_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 4071409 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Rsubread_2.19.0.tar.gz'
+Content type 'application/x-gzip' length 13430250 bytes (12.8 MB)
+==================================================
+downloaded 12.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/readODS_2.2.0.tar.gz'
+Content type 'binary/octet-stream' length 162192 bytes (158 KB)
+==================================================
+downloaded 158 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/UniProt.ws_2.45.0.tar.gz'
+Content type 'application/x-gzip' length 241961 bytes (236 KB)
+==================================================
+downloaded 236 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/writexl_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 171745 bytes (167 KB)
+==================================================
+downloaded 167 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/autonomics_1.13.3.tar.gz'
+Content type 'application/x-gzip' length 3314257 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+* installing *binary* package ‘mitools’ ...
+* ‘mitools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitools’ as ‘mitools_2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitools)
+* installing *binary* package ‘RcppArmadillo’ ...
+* ‘RcppArmadillo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppArmadillo’ as ‘RcppArmadillo_0.12.8.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppArmadillo)
+* installing *binary* package ‘sandwich’ ...
+* ‘sandwich’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sandwich’ as ‘sandwich_3.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sandwich)
+* installing *binary* package ‘calibrate’ ...
+* ‘calibrate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘calibrate’ as ‘calibrate_1.7.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (calibrate)
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘DEoptimR’ ...
+* ‘DEoptimR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DEoptimR’ as ‘DEoptimR_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEoptimR)
+* installing *binary* package ‘RSpectra’ ...
+* ‘RSpectra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSpectra’ as ‘RSpectra_0.16-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSpectra)
+* installing *binary* package ‘estimability’ ...
+* ‘estimability’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘estimability’ as ‘estimability_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (estimability)
+* installing *binary* package ‘fractional’ ...
+* ‘fractional’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fractional’ as ‘fractional_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fractional)
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *source* package ‘ProtGenerics’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘smooth’ in package ‘ProtGenerics’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ProtGenerics’ as ‘ProtGenerics_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ProtGenerics)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *binary* package ‘diptest’ ...
+* ‘diptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.77-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *binary* package ‘kernlab’ ...
+* ‘kernlab’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kernlab’ as ‘kernlab_0.9-32_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kernlab)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘ff’ ...
+* ‘ff’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ff’ as ‘ff_4.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ff)
+* installing *binary* package ‘minpack.lm’ ...
+* ‘minpack.lm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minpack.lm’ as ‘minpack.lm_1.2-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minpack.lm)
+* installing *binary* package ‘httpcache’ ...
+* ‘httpcache’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘httpcache’ as ‘httpcache_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (httpcache)
+* installing *binary* package ‘rjsoncons’ ...
+* ‘rjsoncons’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rjsoncons’ as ‘rjsoncons_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rjsoncons)
+* installing *source* package ‘AnnotationHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AnnotationHub’ as ‘AnnotationHub_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AnnotationHub)
+* installing *binary* package ‘apcluster’ ...
+* ‘apcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘apcluster’ as ‘apcluster_1.4.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (apcluster)
+* installing *source* package ‘GenomicDataCommons’ ...
+** package ‘GenomicDataCommons’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicDataCommons’ as ‘GenomicDataCommons_1.29.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicDataCommons)
+* installing *source* package ‘GEOquery’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GEOquery’ as ‘GEOquery_2.73.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GEOquery)
+* installing *binary* package ‘lmerTest’ ...
+* ‘lmerTest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmerTest’ as ‘lmerTest_3.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmerTest)
+* installing *binary* package ‘mpm’ ...
+* ‘mpm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mpm’ as ‘mpm_1.0-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mpm)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘pcaMethods’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c nipals.cpp -o nipals.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o pcaMethods.so RcppExports.o nipals.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-pcaMethods/00new/pcaMethods/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘loadings’ in package ‘pcaMethods’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pcaMethods’ as ‘pcaMethods_1.97.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pcaMethods)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *source* package ‘Rsubread’ ...
+** using staged installation
+@@@@@ The operating system is Linux.
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c HelperFunctions.c -o HelperFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMbase-index.c -o LRMbase-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMchro-event.c -o LRMchro-event.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMfile-io.c -o LRMfile-io.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMhashtable.c -o LRMhashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMhelper.c -o LRMhelper.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMseek-zlib.c -o LRMseek-zlib.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c LRMsorted-hashtable.c -o LRMsorted-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_wrapper.c -o R_wrapper.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RsimReads.c -o RsimReads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c SNPCalling.c -o SNPCalling.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c aligner.c -o aligner.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c atgcContent.c -o atgcContent.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c build-sam-index.c -o build-sam-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cell-counts.c -o cell-counts.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-bigtable.c -o core-bigtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-indel.c -o core-indel.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-interface-aligner.c -o core-interface-aligner.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-interface-subjunc.c -o core-interface-subjunc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core-junction.c -o core-junction.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c core.c -o core.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detection-calls.c -o detection-calls.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detectionCall.c -o detectionCall.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c detectionCallAnnotation.c -o detectionCallAnnotation.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-algorithms.c -o exon-algorithms.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-align-indel.c -o exon-align-indel.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c exon-align.c -o exon-align.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c flattenAnnotations.c -o flattenAnnotations.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fullscan.c -o fullscan.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fusion-align.c -o fusion-align.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gen_rand_reads.c -o gen_rand_reads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gene-algorithms.c -o gene-algorithms.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c gene-value-index.c -o gene-value-index.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hashtable.c -o hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c index-builder.c -o index-builder.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c input-blc.c -o input-blc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c input-files.c -o input-files.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c interval_merge.c -o interval_merge.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c long-hashtable.c -o long-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c longread-mapping.c -o longread-mapping.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mergeVCF.c -o mergeVCF.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c processExons.c -o processExons.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c propmapped.c -o propmapped.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c qualityScores.c -o qualityScores.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c read-repair.c -o read-repair.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c readSummary.c -o readSummary.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c removeDupReads.c -o removeDupReads.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sam2bed.c -o sam2bed.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sambam-file.c -o sambam-file.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c seek-zlib.c -o seek-zlib.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sorted-hashtable.c -o sorted-hashtable.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sublog.c -o sublog.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   -DMAKE_FOR_EXON -D SUBREAD_VERSION="\"Rsubread 2.19.0\""  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tx-unique.c -o tx-unique.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Rsubread.so HelperFunctions.o LRMbase-index.o LRMchro-event.o LRMfile-io.o LRMhashtable.o LRMhelper.o LRMseek-zlib.o LRMsorted-hashtable.o R_wrapper.o RsimReads.o SNPCalling.o aligner.o atgcContent.o build-sam-index.o cell-counts.o core-bigtable.o core-indel.o core-interface-aligner.o core-interface-subjunc.o core-junction.o core.o detection-calls.o detectionCall.o detectionCallAnnotation.o exon-algorithms.o exon-align-indel.o exon-align.o flattenAnnotations.o fullscan.o fusion-align.o gen_rand_reads.o gene-algorithms.o gene-value-index.o hashtable.o index-builder.o input-blc.o input-files.o interval_merge.o long-hashtable.o longread-mapping.o mergeVCF.o processExons.o propmapped.o qualityScores.o read-repair.o readSummary.o removeDupReads.o sam2bed.o sambam-file.o seek-zlib.o sorted-hashtable.o sublog.o tx-unique.o -lz -lpthread -DMAKE_FOR_EXON -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rsubread/00new/Rsubread/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rsubread’ as ‘Rsubread_2.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsubread)
+* installing *binary* package ‘writexl’ ...
+* ‘writexl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘writexl’ as ‘writexl_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (writexl)
+* installing *binary* package ‘survey’ ...
+* ‘survey’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘survey’ as ‘survey_4.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (survey)
+* installing *binary* package ‘gmm’ ...
+* ‘gmm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gmm’ as ‘gmm_1.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gmm)
+* installing *binary* package ‘crosstalk’ ...
+* ‘crosstalk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crosstalk’ as ‘crosstalk_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crosstalk)
+* installing *binary* package ‘qqman’ ...
+* ‘qqman’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qqman’ as ‘qqman_0.1.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qqman)
+* installing *binary* package ‘cellranger’ ...
+* ‘cellranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cellranger’ as ‘cellranger_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cellranger)
+* installing *source* package ‘AnnotationFilter’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AnnotationFilter’ as ‘AnnotationFilter_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AnnotationFilter)
+* installing *binary* package ‘flexmix’ ...
+* ‘flexmix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexmix’ as ‘flexmix_2.3-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexmix)
+* installing *binary* package ‘prabclus’ ...
+* ‘prabclus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prabclus’ as ‘prabclus_2.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prabclus)
+* installing *binary* package ‘robustbase’ ...
+* ‘robustbase’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘robustbase’ as ‘robustbase_0.99-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (robustbase)
+* installing *binary* package ‘rARPACK’ ...
+* ‘rARPACK’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rARPACK’ as ‘rARPACK_0.11-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rARPACK)
+* installing *binary* package ‘emmeans’ ...
+* ‘emmeans’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emmeans’ as ‘emmeans_1.10.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emmeans)
+* installing *binary* package ‘codingMatrices’ ...
+* ‘codingMatrices’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘codingMatrices’ as ‘codingMatrices_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (codingMatrices)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘diagram’ ...
+* ‘diagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diagram’ as ‘diagram_1.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diagram)
+* installing *source* package ‘UniProt.ws’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘UniProt.ws’ as ‘UniProt.ws_2.45.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (UniProt.ws)
+* installing *binary* package ‘ICS’ ...
+* ‘ICS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ICS’ as ‘ICS_1.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ICS)
+* installing *binary* package ‘tmvtnorm’ ...
+* ‘tmvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tmvtnorm’ as ‘tmvtnorm_1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tmvtnorm)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *source* package ‘MultiDataSet’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘add_methy’ with signature ‘"MultiDataSet","GenomicRatioSet"’: no definition for class “GenomicRatioSet”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MultiDataSet’ as ‘MultiDataSet_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MultiDataSet)
+* installing *binary* package ‘readxl’ ...
+* ‘readxl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readxl’ as ‘readxl_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readxl)
+* installing *source* package ‘ensembldb’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function from function ‘.cds_for_id2’ in package ‘ensembldb’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ensembldb’ as ‘ensembldb_2.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ensembldb)
+* installing *binary* package ‘fpc’ ...
+* ‘fpc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fpc’ as ‘fpc_2.2-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fpc)
+* installing *source* package ‘mixOmics’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mixOmics’ as ‘mixOmics_6.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mixOmics)
+* installing *binary* package ‘readODS’ ...
+* ‘readODS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readODS’ as ‘readODS_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readODS)
+* installing *binary* package ‘ICSNP’ ...
+* ‘ICSNP’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ICSNP’ as ‘ICSNP_1.1-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ICSNP)
+* installing *binary* package ‘OlinkAnalyze’ ...
+* ‘OlinkAnalyze’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘OlinkAnalyze’ as ‘OlinkAnalyze_3.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OlinkAnalyze)
+* installing *binary* package ‘propagate’ ...
+* ‘propagate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘propagate’ as ‘propagate_1.0-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (propagate)
+* installing *source* package ‘ropls’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ropls’ as ‘ropls_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ropls)
+* installing *source* package ‘autonomics’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘autonomics’ as ‘autonomics_1.13.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (autonomics)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdNQ49U/downloaded_packages’
+
+real	7m34.395s
+user	6m25.801s
+sys	0m30.070s
+* installing *binary* package ‘fastmatch’ ...
+* ‘fastmatch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastmatch’ as ‘fastmatch_1.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastmatch)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘viridis’ ...
+* ‘viridis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *binary* package ‘tidygraph’ ...
+* ‘tidygraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidygraph’ as ‘tidygraph_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidygraph)
+* installing *binary* package ‘graphlayouts’ ...
+* ‘graphlayouts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘graphlayouts’ as ‘graphlayouts_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphlayouts)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *source* package ‘HDO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HDO.db’ as ‘HDO.db_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HDO.db)
+* installing *binary* package ‘ggfun’ ...
+* ‘ggfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfun’ as ‘ggfun_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfun)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘shadowtext’ ...
+* ‘shadowtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shadowtext’ as ‘shadowtext_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shadowtext)
+* installing *binary* package ‘RcppTOML’ ...
+* ‘RcppTOML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppTOML’ as ‘RcppTOML_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppTOML)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘downloader’ ...
+* ‘downloader’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘downloader’ as ‘downloader_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (downloader)
+* installing *binary* package ‘gson’ ...
+* ‘gson’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gson’ as ‘gson_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gson)
+* installing *source* package ‘qvalue’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qvalue’ as ‘qvalue_2.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qvalue)
+* installing *binary* package ‘yulab.utils’ ...
+* ‘yulab.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘yulab.utils’ as ‘yulab.utils_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yulab.utils)
+* installing *binary* package ‘extrafontdb’ ...
+* ‘extrafontdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘extrafontdb’ as ‘extrafontdb_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (extrafontdb)
+* installing *binary* package ‘Rttf2pt1’ ...
+* ‘Rttf2pt1’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rttf2pt1’ as ‘Rttf2pt1_1.3.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rttf2pt1)
+* installing *binary* package ‘dunn.test’ ...
+* ‘dunn.test’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dunn.test’ as ‘dunn.test_1.3.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dunn.test)
+* installing *binary* package ‘lmtest’ ...
+* ‘lmtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmtest’ as ‘lmtest_0.9-40_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmtest)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘gridGraphics’ ...
+* ‘gridGraphics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridGraphics’ as ‘gridGraphics_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridGraphics)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘babelgene’ ...
+* ‘babelgene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘babelgene’ as ‘babelgene_22.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (babelgene)
+* installing *binary* package ‘ucminf’ ...
+* ‘ucminf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ucminf’ as ‘ucminf_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ucminf)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘vdiffr’ ...
+* ‘vdiffr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vdiffr’ as ‘vdiffr_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vdiffr)
+* installing *binary* package ‘OlinkAnalyze’ ...
+* ‘OlinkAnalyze’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘OlinkAnalyze’ as ‘OlinkAnalyze_3.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OlinkAnalyze)
+* installing *binary* package ‘tidytree’ ...
+* ‘tidytree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidytree’ as ‘tidytree_0.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidytree)
+* installing *source* package ‘fgsea’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ScoreCalculation.cpp -o ScoreCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ScoreRuler.cpp -o ScoreRuler.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from ScoreRuler.cpp:2:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c esCalculation.cpp -o esCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fastGSEA.cpp -o fastGSEA.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from fastGSEA.cpp:13:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fgseaMultilevel.cpp -o fgseaMultilevel.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fgseaMultilevelSupplement.cpp -o fgseaMultilevelSupplement.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from fgseaMultilevelSupplement.cpp:3:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c geseca.cpp -o geseca.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c util.cpp -o util.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from util.cpp:1:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o fgsea.so RcppExports.o ScoreCalculation.o ScoreRuler.o esCalculation.o fastGSEA.o fgseaMultilevel.o fgseaMultilevelSupplement.o geseca.o util.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-fgsea/00new/fgsea/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fgsea’ as ‘fgsea_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fgsea)
+* installing *binary* package ‘ggraph’ ...
+* ‘ggraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggraph’ as ‘ggraph_2.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggraph)
+* installing *binary* package ‘scatterpie’ ...
+* ‘scatterpie’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterpie’ as ‘scatterpie_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterpie)
+* installing *source* package ‘GOSemSim’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ICmethod.cpp -o ICmethod.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GOSemSim.so ICmethod.o RcppExports.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GOSemSim/00new/GOSemSim/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GOSemSim’ as ‘GOSemSim_2.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GOSemSim)
+* installing *binary* package ‘reticulate’ ...
+* ‘reticulate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reticulate’ as ‘reticulate_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reticulate)
+* installing *binary* package ‘arrow’ ...
+* ‘arrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘arrow’ as ‘arrow_15.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arrow)
+* installing *binary* package ‘extrafont’ ...
+* ‘extrafont’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘extrafont’ as ‘extrafont_0.19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (extrafont)
+* installing *binary* package ‘FSA’ ...
+* ‘FSA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘FSA’ as ‘FSA_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FSA)
+* installing *binary* package ‘ggplotify’ ...
+* ‘ggplotify’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggplotify’ as ‘ggplotify_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplotify)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *binary* package ‘msigdbr’ ...
+* ‘msigdbr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘msigdbr’ as ‘msigdbr_7.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msigdbr)
+* installing *binary* package ‘ordinal’ ...
+* ‘ordinal’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ordinal’ as ‘ordinal_2023.12-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ordinal)
+* installing *source* package ‘treeio’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘treeio’ as ‘treeio_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (treeio)
+* installing *binary* package ‘aplot’ ...
+* ‘aplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘aplot’ as ‘aplot_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aplot)
+* installing *source* package ‘DOSE’ ...
+** package ‘DOSE’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DOSE’ as ‘DOSE_3.31.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DOSE)
+* installing *binary* package ‘umap’ ...
+* ‘umap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘umap’ as ‘umap_0.2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (umap)
+* installing *source* package ‘ggtree’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtree’ as ‘ggtree_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtree)
+* installing *source* package ‘enrichplot’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘enrichplot’ as ‘enrichplot_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (enrichplot)
+* installing *source* package ‘clusterProfiler’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘clusterProfiler’ as ‘clusterProfiler_4.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clusterProfiler)
+* installing *binary* package ‘propagate’ ...
+* ‘propagate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘propagate’ as ‘propagate_1.0-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (propagate)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘readODS’ ...
+* ‘readODS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readODS’ as ‘readODS_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readODS)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
