@@ -1,0 +1,135 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CellScore'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'CellScore'
+also installing the dependencies ‘gtools’, ‘caTools’, ‘SnowballC’, ‘gplots’, ‘lsa’, ‘squash’, ‘hgu133plus2CellScore’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 205542 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/SnowballC_0.7.1.tar.gz'
+Content type 'binary/octet-stream' length 373085 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 600661 bytes (586 KB)
+==================================================
+downloaded 586 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lsa_0.73.3.tar.gz'
+Content type 'binary/octet-stream' length 200181 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/squash_1.0.9.tar.gz'
+Content type 'binary/octet-stream' length 149987 bytes (146 KB)
+==================================================
+downloaded 146 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/hgu133plus2CellScore_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 42985082 bytes (41.0 MB)
+==================================================
+downloaded 41.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CellScore_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 4415532 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘SnowballC’ ...
+* ‘SnowballC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SnowballC’ as ‘SnowballC_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SnowballC)
+* installing *binary* package ‘squash’ ...
+* ‘squash’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘squash’ as ‘squash_1.0.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (squash)
+* installing *source* package ‘hgu133plus2CellScore’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu133plus2CellScore’ as ‘hgu133plus2CellScore_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu133plus2CellScore)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *binary* package ‘lsa’ ...
+* ‘lsa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lsa’ as ‘lsa_0.73.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lsa)
+* installing *source* package ‘CellScore’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CellScore’ as ‘CellScore_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CellScore)
+
+The downloaded source packages are in
+	‘/tmp/Rtmps1pesU/downloaded_packages’
+
+real	0m41.380s
+user	0m33.607s
+sys	0m3.950s
+* installing *source* package ‘hgu133plus2CellScore’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘hgu133plus2CellScore’ as ‘hgu133plus2CellScore_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hgu133plus2CellScore)
