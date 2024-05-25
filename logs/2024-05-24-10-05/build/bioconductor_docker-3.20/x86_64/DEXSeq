@@ -1,0 +1,74 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''DEXSeq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'DEXSeq'
+also installing the dependencies ‘parathyroidSE’, ‘pasillaBamSubset’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/parathyroidSE_1.43.0.tar.gz'
+Content type 'application/x-gzip' length 22274707 bytes (21.2 MB)
+==================================================
+downloaded 21.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/pasillaBamSubset_0.43.0.tar.gz'
+Content type 'application/x-gzip' length 15740188 bytes (15.0 MB)
+==================================================
+downloaded 15.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DEXSeq_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 1616090 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *source* package ‘parathyroidSE’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘parathyroidSE’ as ‘parathyroidSE_1.43.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parathyroidSE)
+* installing *source* package ‘pasillaBamSubset’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pasillaBamSubset’ as ‘pasillaBamSubset_0.43.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pasillaBamSubset)
+* installing *source* package ‘DEXSeq’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEXSeq’ as ‘DEXSeq_1.51.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEXSeq)
+
+The downloaded source packages are in
+	‘/tmp/RtmpFB0OPL/downloaded_packages’
+
+real	0m41.781s
+user	0m36.859s
+sys	0m4.135s
