@@ -1,0 +1,87 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BLMA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'BLMA'
+also installing the dependencies ‘metadat’, ‘numDeriv’, ‘mathjaxr’, ‘pbapply’, ‘metafor’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/metadat_1.2-0.tar.gz'
+Content type 'binary/octet-stream' length 854124 bytes (834 KB)
+==================================================
+downloaded 834 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 114329 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mathjaxr_1.6-0.tar.gz'
+Content type 'binary/octet-stream' length 916193 bytes (894 KB)
+==================================================
+downloaded 894 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pbapply_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 100418 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/metafor_4.6-0.tar.gz'
+Content type 'binary/octet-stream' length 5032135 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BLMA_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 2804859 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘mathjaxr’ ...
+* ‘mathjaxr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mathjaxr’ as ‘mathjaxr_1.6-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mathjaxr)
+* installing *binary* package ‘pbapply’ ...
+* ‘pbapply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbapply’ as ‘pbapply_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbapply)
+* installing *binary* package ‘metadat’ ...
+* ‘metadat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘metadat’ as ‘metadat_1.2-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metadat)
+* installing *binary* package ‘metafor’ ...
+* ‘metafor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘metafor’ as ‘metafor_4.6-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metafor)
+* installing *source* package ‘BLMA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BLMA’ as ‘BLMA_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BLMA)
+
+The downloaded source packages are in
+	‘/tmp/RtmpeJDyKk/downloaded_packages’
+
+real	0m21.876s
+user	0m15.293s
+sys	0m2.604s
