@@ -1,0 +1,139 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''vidger'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'vidger'
+also installing the dependencies ‘backports’, ‘haven’, ‘broom’, ‘labelled’, ‘broom.helpers’, ‘forcats’, ‘patchwork’, ‘ggstats’, ‘GGally’, ‘ggrepel’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/backports_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 116071 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/haven_2.5.4.tar.gz'
+Content type 'binary/octet-stream' length 380808 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/broom_1.0.6.tar.gz'
+Content type 'binary/octet-stream' length 1919214 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/labelled_2.13.0.tar.gz'
+Content type 'binary/octet-stream' length 323260 bytes (315 KB)
+==================================================
+downloaded 315 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/broom.helpers_1.15.0.tar.gz'
+Content type 'binary/octet-stream' length 547993 bytes (535 KB)
+==================================================
+downloaded 535 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggstats_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 879251 bytes (858 KB)
+==================================================
+downloaded 858 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/GGally_2.2.1.tar.gz'
+Content type 'binary/octet-stream' length 1951133 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/vidger_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 7220427 bytes (6.9 MB)
+==================================================
+downloaded 6.9 MB
+
+* installing *binary* package ‘backports’ ...
+* ‘backports’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘backports’ as ‘backports_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (backports)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘labelled’ ...
+* ‘labelled’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘labelled’ as ‘labelled_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (labelled)
+* installing *binary* package ‘broom.helpers’ ...
+* ‘broom.helpers’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom.helpers’ as ‘broom.helpers_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom.helpers)
+* installing *binary* package ‘ggstats’ ...
+* ‘ggstats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggstats’ as ‘ggstats_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggstats)
+* installing *binary* package ‘GGally’ ...
+* ‘GGally’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GGally’ as ‘GGally_2.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GGally)
+* installing *source* package ‘vidger’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘vidger’ as ‘vidger_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vidger)
+
+The downloaded source packages are in
+	‘/tmp/RtmpQdrM0F/downloaded_packages’
+
+real	0m34.296s
+user	0m26.157s
+sys	0m3.989s
