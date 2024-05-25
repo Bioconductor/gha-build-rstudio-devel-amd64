@@ -1,0 +1,105 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''wateRmelon'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'wateRmelon'
+also installing the dependencies ‘ExperimentHub’, ‘RPMM’, ‘irlba’, ‘FlowSorted.Blood.EPIC’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ExperimentHub_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 500628 bytes (488 KB)
+==================================================
+downloaded 488 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RPMM_1.25.tar.gz'
+Content type 'binary/octet-stream' length 272108 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/irlba_2.3.5.1.tar.gz'
+Content type 'binary/octet-stream' length 291711 bytes (284 KB)
+==================================================
+downloaded 284 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/FlowSorted.Blood.EPIC_2.9.0.tar.gz'
+Content type 'application/x-gzip' length 98374 bytes (96 KB)
+==================================================
+downloaded 96 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/wateRmelon_2.11.0.tar.gz'
+Content type 'application/x-gzip' length 3418904 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+* installing *source* package ‘ExperimentHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHub’ as ‘ExperimentHub_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHub)
+* installing *binary* package ‘RPMM’ ...
+* ‘RPMM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RPMM’ as ‘RPMM_1.25_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RPMM)
+* installing *binary* package ‘irlba’ ...
+* ‘irlba’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘irlba’ as ‘irlba_2.3.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (irlba)
+* installing *source* package ‘wateRmelon’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+Creating a generic function from function ‘as.methylumi’ in package ‘wateRmelon’
+Creating a generic function from function ‘smokp’ in package ‘wateRmelon’
+Creating a generic function from function ‘adjustedDasen’ in package ‘wateRmelon’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘wateRmelon’ as ‘wateRmelon_2.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wateRmelon)
+* installing *source* package ‘FlowSorted.Blood.EPIC’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FlowSorted.Blood.EPIC’ as ‘FlowSorted.Blood.EPIC_2.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FlowSorted.Blood.EPIC)
+
+The downloaded source packages are in
+	‘/tmp/RtmpY6KD0T/downloaded_packages’
+
+real	1m19.919s
+user	1m11.411s
+sys	0m6.445s
