@@ -1,0 +1,102 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rmmquant'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'Rmmquant'
+also installing the dependencies ‘TBX20BamSubset’, ‘TxDb.Mmusculus.UCSC.mm9.knownGene’, ‘org.Mm.eg.db’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TBX20BamSubset_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 99230896 bytes (94.6 MB)
+==================================================
+downloaded 94.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 13520331 bytes (12.9 MB)
+==================================================
+downloaded 12.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Mm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 82852299 bytes (79.0 MB)
+==================================================
+downloaded 79.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Rmmquant_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 45973 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+* installing *source* package ‘TBX20BamSubset’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TBX20BamSubset’ as ‘TBX20BamSubset_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TBX20BamSubset)
+* installing *source* package ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ as ‘TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Mmusculus.UCSC.mm9.knownGene)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘Rmmquant’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c mmquant_wrapper.cpp -o mmquant_wrapper.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Rmmquant.so RcppExports.o mmquant_wrapper.o -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Rmmquant/00new/Rmmquant/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rmmquant’ as ‘Rmmquant_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rmmquant)
+
+The downloaded source packages are in
+	‘/tmp/RtmpJJ9PK1/downloaded_packages’
+
+real	4m26.036s
+user	4m16.314s
+sys	0m9.110s
