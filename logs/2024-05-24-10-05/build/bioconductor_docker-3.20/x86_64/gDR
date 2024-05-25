@@ -1,0 +1,82 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''gDR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'gDR'
+also installing the dependencies ‘svglite’, ‘kableExtra’, ‘markdown’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.3.tar.gz'
+Content type 'binary/octet-stream' length 201619 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2050288 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/gDR_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 283585 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘gDR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gDR’ as ‘gDR_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gDR)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYRpO7G/downloaded_packages’
+
+real	0m21.935s
+user	0m16.453s
+sys	0m2.246s
+* installing *source* package ‘gDRtestData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘gDRtestData’ as ‘gDRtestData_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gDRtestData)
