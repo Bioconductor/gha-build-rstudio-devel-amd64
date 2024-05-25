@@ -1,0 +1,62 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ChIPComp'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ChIPComp'
+also installing the dependency ‘BSgenome.Mmusculus.UCSC.mm9’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm9_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 621955864 bytes (593.1 MB)
+==================================================
+downloaded 593.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ChIPComp_1.35.0.tar.gz'
+Content type 'application/x-gzip' length 610196 bytes (595 KB)
+==================================================
+downloaded 595 KB
+
+* installing *source* package ‘BSgenome.Mmusculus.UCSC.mm9’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Mmusculus.UCSC.mm9’ as ‘BSgenome.Mmusculus.UCSC.mm9_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Mmusculus.UCSC.mm9)
+* installing *source* package ‘ChIPComp’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c mva.c -o mva.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ChIPComp.so mva.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ChIPComp/00new/ChIPComp/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ChIPComp’ as ‘ChIPComp_1.35.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ChIPComp)
+
+The downloaded source packages are in
+	‘/tmp/RtmpzH2rRz/downloaded_packages’
+
+real	1m42.252s
+user	1m32.098s
+sys	0m8.299s
