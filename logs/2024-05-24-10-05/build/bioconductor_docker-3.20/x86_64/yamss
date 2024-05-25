@@ -1,0 +1,60 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''yamss'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'yamss'
+also installing the dependency ‘mtbls2’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/mtbls2_1.35.0.tar.gz'
+Content type 'application/x-gzip' length 192024016 bytes (183.1 MB)
+==================================================
+downloaded 183.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/yamss_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 428758 bytes (418 KB)
+==================================================
+downloaded 418 KB
+
+* installing *source* package ‘mtbls2’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: namespace ‘xcms’ is not available and has been replaced
+by .GlobalEnv when processing object ‘mtbls2Set’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mtbls2’ as ‘mtbls2_1.35.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mtbls2)
+* installing *source* package ‘yamss’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘yamss’ as ‘yamss_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yamss)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpi3niXE/downloaded_packages’
+
+real	1m41.642s
+user	1m31.939s
+sys	0m5.510s
