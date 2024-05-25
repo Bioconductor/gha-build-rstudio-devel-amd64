@@ -1,0 +1,97 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''magpie'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'magpie'
+also installing the dependencies ‘svglite’, ‘aod’, ‘openxlsx’, ‘kableExtra’, ‘TBX20BamSubset’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.3.tar.gz'
+Content type 'binary/octet-stream' length 201619 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/aod_1.3.3.tar.gz'
+Content type 'binary/octet-stream' length 395993 bytes (386 KB)
+==================================================
+downloaded 386 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/openxlsx_4.2.5.2.tar.gz'
+Content type 'binary/octet-stream' length 2016647 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2050288 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TBX20BamSubset_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 99230896 bytes (94.6 MB)
+==================================================
+downloaded 94.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/magpie_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 2219058 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘aod’ ...
+* ‘aod’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘aod’ as ‘aod_1.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aod)
+* installing *binary* package ‘openxlsx’ ...
+* ‘openxlsx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *source* package ‘TBX20BamSubset’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TBX20BamSubset’ as ‘TBX20BamSubset_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TBX20BamSubset)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *source* package ‘magpie’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘magpie’ as ‘magpie_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magpie)
+
+The downloaded source packages are in
+	‘/tmp/RtmpS5sx4R/downloaded_packages’
+
+real	0m49.805s
+user	0m41.769s
+sys	0m4.898s
