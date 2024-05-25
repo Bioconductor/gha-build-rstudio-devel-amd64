@@ -1,0 +1,70 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''consensusOV'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'consensusOV'
+also installing the dependencies ‘gtools’, ‘gdata’, ‘randomForest’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gdata_3.0.0.tar.gz'
+Content type 'binary/octet-stream' length 502661 bytes (490 KB)
+==================================================
+downloaded 490 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/randomForest_4.7-1.1.tar.gz'
+Content type 'binary/octet-stream' length 218261 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/consensusOV_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 3363300 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘randomForest’ ...
+* ‘randomForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomForest’ as ‘randomForest_4.7-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomForest)
+* installing *binary* package ‘gdata’ ...
+* ‘gdata’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gdata’ as ‘gdata_3.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdata)
+* installing *source* package ‘consensusOV’ ...
+** using staged installation
+Warning in person1(given = given[[i]], family = family[[i]], middle = middle[[i]],  :
+  It is recommended to use ‘given’ instead of ‘middle’.
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘consensusOV’ as ‘consensusOV_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (consensusOV)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGfxgSe/downloaded_packages’
+
+real	0m38.868s
+user	0m32.002s
+sys	0m2.749s
