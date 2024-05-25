@@ -1,0 +1,282 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GenomicFeatures'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'GenomicFeatures'
+also installing the dependencies ‘org.Mm.eg.db’, ‘BSgenome.Celegans.UCSC.ce11’, ‘BSgenome.Dmelanogaster.UCSC.dm3’, ‘mirbase.db’, ‘FDb.UCSC.tRNAs’, ‘TxDb.Celegans.UCSC.ce11.ensGene’, ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts’, ‘TxDb.Hsapiens.UCSC.hg38.knownGene’, ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’, ‘markdown’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Mm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 82852299 bytes (79.0 MB)
+==================================================
+downloaded 79.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Celegans.UCSC.ce11_1.4.2.tar.gz'
+Content type 'application/x-gzip' length 23652392 bytes (22.6 MB)
+==================================================
+downloaded 22.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm3_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 38546795 bytes (36.8 MB)
+==================================================
+downloaded 36.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/mirbase.db_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 5485434 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/FDb.UCSC.tRNAs_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 75354 bytes (73 KB)
+==================================================
+downloaded 73 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.ensGene_3.15.0.tar.gz'
+Content type 'application/x-gzip' length 9710396 bytes (9.3 MB)
+==================================================
+downloaded 9.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 2139452 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.knownGene_3.18.0.tar.gz'
+Content type 'application/x-gzip' length 47184613 bytes (45.0 MB)
+==================================================
+downloaded 45.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.20.tar.gz'
+Content type 'application/x-gzip' length 898581361 bytes (857.0 MB)
+==================================================
+downloaded 857.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomicFeatures_1.57.0.tar.gz'
+Content type 'application/x-gzip' length 569153 bytes (555 KB)
+==================================================
+downloaded 555 KB
+
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘BSgenome.Celegans.UCSC.ce11’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Celegans.UCSC.ce11’ as ‘BSgenome.Celegans.UCSC.ce11_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Celegans.UCSC.ce11)
+* installing *source* package ‘BSgenome.Dmelanogaster.UCSC.dm3’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Dmelanogaster.UCSC.dm3’ as ‘BSgenome.Dmelanogaster.UCSC.dm3_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Dmelanogaster.UCSC.dm3)
+* installing *source* package ‘mirbase.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mirbase.db’ as ‘mirbase.db_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mirbase.db)
+* installing *source* package ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SNPlocs.Hsapiens.dbSNP144.GRCh38’ as ‘SNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.20_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SNPlocs.Hsapiens.dbSNP144.GRCh38)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘GenomicFeatures’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicFeatures’ as ‘GenomicFeatures_1.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicFeatures)
+* installing *source* package ‘FDb.UCSC.tRNAs’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FDb.UCSC.tRNAs’ as ‘FDb.UCSC.tRNAs_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FDb.UCSC.tRNAs)
+* installing *source* package ‘TxDb.Celegans.UCSC.ce11.ensGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Celegans.UCSC.ce11.ensGene’ as ‘TxDb.Celegans.UCSC.ce11.ensGene_3.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Celegans.UCSC.ce11.ensGene)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+Warning in utils::tar(filepath, curPkg, compression = "gzip", compression_level = 9L,  :
+  storing paths of more than 100 bytes is not portable:
+  ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts/extdata/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts.sqlite’
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts’ as ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg38.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg38.knownGene_3.18.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg38.knownGene)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp1PuOHZ/downloaded_packages’
+
+real	8m6.547s
+user	7m40.953s
+sys	0m26.058s
+* installing *source* package ‘BSgenome.Celegans.UCSC.ce11’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Celegans.UCSC.ce11’ as ‘BSgenome.Celegans.UCSC.ce11_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Celegans.UCSC.ce11)
+* installing *source* package ‘FDb.UCSC.tRNAs’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FDb.UCSC.tRNAs’ as ‘FDb.UCSC.tRNAs_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FDb.UCSC.tRNAs)
+* installing *source* package ‘TxDb.Celegans.UCSC.ce11.ensGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Celegans.UCSC.ce11.ensGene’ as ‘TxDb.Celegans.UCSC.ce11.ensGene_3.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Celegans.UCSC.ce11.ensGene)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+Warning in utils::tar(filepath, curPkg, compression = "gzip", compression_level = 9L,  :
+  storing paths of more than 100 bytes is not portable:
+  ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts/extdata/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts.sqlite’
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts’ as ‘TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts)
