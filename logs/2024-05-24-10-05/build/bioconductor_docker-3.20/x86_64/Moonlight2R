@@ -1,0 +1,168 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Moonlight2R'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'Moonlight2R'
+also installing the dependencies ‘rgl’, ‘geosphere’, ‘parmigene’, ‘randomForest’, ‘HiveR’, ‘RISmed’, ‘fuzzyjoin’, ‘qpdf’, ‘seqminer’, ‘tidyHeatmap’, ‘easyPubMed’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rgl_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 5691136 bytes (5.4 MB)
+==================================================
+downloaded 5.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/geosphere_1.5-18.tar.gz'
+Content type 'binary/octet-stream' length 1025533 bytes (1001 KB)
+==================================================
+downloaded 1001 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/parmigene_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 45255 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/randomForest_4.7-1.1.tar.gz'
+Content type 'binary/octet-stream' length 218261 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/HiveR_0.3.63.tar.gz'
+Content type 'binary/octet-stream' length 2975134 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RISmed_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 542199 bytes (529 KB)
+==================================================
+downloaded 529 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fuzzyjoin_0.1.6.tar.gz'
+Content type 'binary/octet-stream' length 129564 bytes (126 KB)
+==================================================
+downloaded 126 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/qpdf_1.3.3.tar.gz'
+Content type 'binary/octet-stream' length 540094 bytes (527 KB)
+==================================================
+downloaded 527 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/seqminer_9.4.tar.gz'
+Content type 'binary/octet-stream' length 2493634 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tidyHeatmap_1.8.1.tar.gz'
+Content type 'application/x-tar' length 4426761 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/easyPubMed_2.13.tar.gz'
+Content type 'binary/octet-stream' length 728194 bytes (711 KB)
+==================================================
+downloaded 711 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Moonlight2R_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 4724715 bytes (4.5 MB)
+==================================================
+downloaded 4.5 MB
+
+* installing *binary* package ‘rgl’ ...
+* ‘rgl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rgl’ as ‘rgl_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rgl)
+* installing *binary* package ‘geosphere’ ...
+* ‘geosphere’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geosphere’ as ‘geosphere_1.5-18_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geosphere)
+* installing *binary* package ‘parmigene’ ...
+* ‘parmigene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parmigene’ as ‘parmigene_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parmigene)
+* installing *binary* package ‘randomForest’ ...
+* ‘randomForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomForest’ as ‘randomForest_4.7-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomForest)
+* installing *binary* package ‘RISmed’ ...
+* ‘RISmed’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RISmed’ as ‘RISmed_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RISmed)
+* installing *binary* package ‘qpdf’ ...
+* ‘qpdf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qpdf’ as ‘qpdf_1.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qpdf)
+* installing *binary* package ‘seqminer’ ...
+* ‘seqminer’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘seqminer’ as ‘seqminer_9.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqminer)
+* installing *source* package ‘tidyHeatmap’ ...
+** package ‘tidyHeatmap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘heatmap’ in package ‘tidyHeatmap’
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tidyHeatmap’ as ‘tidyHeatmap_1.8.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyHeatmap)
+* installing *binary* package ‘easyPubMed’ ...
+* ‘easyPubMed’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘easyPubMed’ as ‘easyPubMed_2.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (easyPubMed)
+* installing *binary* package ‘HiveR’ ...
+* ‘HiveR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘HiveR’ as ‘HiveR_0.3.63_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HiveR)
+* installing *binary* package ‘fuzzyjoin’ ...
+* ‘fuzzyjoin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fuzzyjoin’ as ‘fuzzyjoin_0.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fuzzyjoin)
+* installing *source* package ‘Moonlight2R’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Moonlight2R’ as ‘Moonlight2R_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Moonlight2R)
+
+The downloaded source packages are in
+	‘/tmp/RtmpIG2C9Z/downloaded_packages’
+
+real	1m1.436s
+user	0m44.877s
+sys	0m7.368s
