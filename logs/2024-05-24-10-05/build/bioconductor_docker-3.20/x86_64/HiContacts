@@ -1,0 +1,187 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''HiContacts'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'HiContacts'
+also installing the dependencies ‘RcppGSL’, ‘dynamicTreeCut’, ‘fastcluster’, ‘GO.db’, ‘RcppZiggurat’, ‘RcppParallel’, ‘BSgenome.Scerevisiae.UCSC.sacCer3’, ‘WGCNA’, ‘Rfast’, ‘terra’, ‘patchwork’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppGSL_0.3.13.tar.gz'
+Content type 'binary/octet-stream' length 211613 bytes (206 KB)
+==================================================
+downloaded 206 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'binary/octet-stream' length 90144 bytes (88 KB)
+==================================================
+downloaded 88 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fastcluster_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 185641 bytes (181 KB)
+==================================================
+downloaded 181 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppZiggurat_0.1.6.tar.gz'
+Content type 'binary/octet-stream' length 424147 bytes (414 KB)
+==================================================
+downloaded 414 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880883 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Scerevisiae.UCSC.sacCer3_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 2966747 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/WGCNA_1.72-5.tar.gz'
+Content type 'application/x-tar' length 1174718 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Rfast_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2758800 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/terra_1.7-78.tar.gz'
+Content type 'binary/octet-stream' length 4288537 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/HiContacts_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 4456412 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *binary* package ‘RcppGSL’ ...
+* ‘RcppGSL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppGSL’ as ‘RcppGSL_0.3.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppGSL)
+* installing *binary* package ‘dynamicTreeCut’ ...
+* ‘dynamicTreeCut’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *binary* package ‘fastcluster’ ...
+* ‘fastcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *source* package ‘BSgenome.Scerevisiae.UCSC.sacCer3’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Scerevisiae.UCSC.sacCer3’ as ‘BSgenome.Scerevisiae.UCSC.sacCer3_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Scerevisiae.UCSC.sacCer3)
+* installing *binary* package ‘terra’ ...
+* ‘terra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘terra’ as ‘terra_1.7-78_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (terra)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *source* package ‘HiContacts’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HiContacts’ as ‘HiContacts_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HiContacts)
+* installing *binary* package ‘RcppZiggurat’ ...
+* ‘RcppZiggurat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppZiggurat’ as ‘RcppZiggurat_0.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppZiggurat)
+* installing *source* package ‘WGCNA’ ...
+** package ‘WGCNA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions-utils.c -o corFunctions-utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions.c -o corFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c myMatrixMultiplication.c -o myMatrixMultiplication.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c networkFunctions.c -o networkFunctions.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c parallelQuantile.cc -o parallelQuantile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pivot.c -o pivot.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o WGCNA.so corFunctions-utils.o corFunctions.o myMatrixMultiplication.o networkFunctions.o parallelQuantile.o pivot.o -lpthread -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-WGCNA/00new/WGCNA/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘WGCNA’ as ‘WGCNA_1.72-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WGCNA)
+* installing *binary* package ‘Rfast’ ...
+* ‘Rfast’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rfast’ as ‘Rfast_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rfast)
+
+The downloaded source packages are in
+	‘/tmp/RtmpXzIEja/downloaded_packages’
+
+real	2m8.374s
+user	1m53.738s
+sys	0m8.909s
