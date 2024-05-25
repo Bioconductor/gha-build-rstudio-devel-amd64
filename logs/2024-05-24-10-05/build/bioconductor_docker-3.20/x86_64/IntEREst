@@ -1,0 +1,123 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''IntEREst'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'IntEREst'
+also installing the dependencies ‘pixmap’, ‘sp’, ‘ade4’, ‘segmented’, ‘mvtnorm’, ‘seqinr’, ‘RMySQL’, ‘clinfun’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pixmap_0.4-13.tar.gz'
+Content type 'binary/octet-stream' length 213530 bytes (208 KB)
+==================================================
+downloaded 208 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sp_2.1-4.tar.gz'
+Content type 'binary/octet-stream' length 2102073 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ade4_1.7-22.tar.gz'
+Content type 'binary/octet-stream' length 5429597 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/segmented_2.1-0.tar.gz'
+Content type 'binary/octet-stream' length 1362671 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-5.tar.gz'
+Content type 'binary/octet-stream' length 774677 bytes (756 KB)
+==================================================
+downloaded 756 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/seqinr_4.2-36.tar.gz'
+Content type 'binary/octet-stream' length 4156905 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RMySQL_0.10.27.tar.gz'
+Content type 'binary/octet-stream' length 289009 bytes (282 KB)
+==================================================
+downloaded 282 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/clinfun_1.1.5.tar.gz'
+Content type 'binary/octet-stream' length 259916 bytes (253 KB)
+==================================================
+downloaded 253 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/IntEREst_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 1463617 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘pixmap’ ...
+* ‘pixmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pixmap’ as ‘pixmap_0.4-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pixmap)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘segmented’ ...
+* ‘segmented’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘segmented’ as ‘segmented_2.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (segmented)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘RMySQL’ ...
+* ‘RMySQL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RMySQL’ as ‘RMySQL_0.10.27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RMySQL)
+* installing *binary* package ‘ade4’ ...
+* ‘ade4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ade4’ as ‘ade4_1.7-22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ade4)
+* installing *binary* package ‘clinfun’ ...
+* ‘clinfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clinfun’ as ‘clinfun_1.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clinfun)
+* installing *binary* package ‘seqinr’ ...
+* ‘seqinr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘seqinr’ as ‘seqinr_4.2-36_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqinr)
+* installing *source* package ‘IntEREst’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IntEREst’ as ‘IntEREst_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IntEREst)
+
+The downloaded source packages are in
+	‘/tmp/RtmpaqBfiu/downloaded_packages’
+
+real	0m50.877s
+user	0m38.584s
+sys	0m4.062s
+* installing *binary* package ‘clinfun’ ...
+* ‘clinfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clinfun’ as ‘clinfun_1.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clinfun)
