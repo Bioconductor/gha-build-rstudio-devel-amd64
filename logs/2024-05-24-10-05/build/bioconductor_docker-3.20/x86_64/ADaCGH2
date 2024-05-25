@@ -1,0 +1,134 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ADaCGH2'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ADaCGH2'
+also installing the dependencies ‘marray’, ‘CGHbase’, ‘ff’, ‘waveslim’, ‘CGHregions’, ‘Cairo’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/marray_1.83.0.tar.gz'
+Content type 'application/x-gzip' length 5054224 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CGHbase_1.65.0.tar.gz'
+Content type 'application/x-gzip' length 868357 bytes (848 KB)
+==================================================
+downloaded 848 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ff_4.0.12.tar.gz'
+Content type 'binary/octet-stream' length 1039140 bytes (1014 KB)
+==================================================
+downloaded 1014 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/waveslim_1.8.4.tar.gz'
+Content type 'binary/octet-stream' length 780974 bytes (762 KB)
+==================================================
+downloaded 762 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CGHregions_1.63.0.tar.gz'
+Content type 'application/x-gzip' length 100615 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Cairo_1.6-2.tar.gz'
+Content type 'binary/octet-stream' length 84419 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ADaCGH2_2.45.0.tar.gz'
+Content type 'application/x-gzip' length 963717 bytes (941 KB)
+==================================================
+downloaded 941 KB
+
+* installing *source* package ‘marray’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘marray’ as ‘marray_1.83.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (marray)
+* installing *binary* package ‘ff’ ...
+* ‘ff’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ff’ as ‘ff_4.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ff)
+* installing *binary* package ‘waveslim’ ...
+* ‘waveslim’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘waveslim’ as ‘waveslim_1.8.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (waveslim)
+* installing *binary* package ‘Cairo’ ...
+* ‘Cairo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Cairo’ as ‘Cairo_1.6-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cairo)
+* installing *source* package ‘CGHbase’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CGHbase’ as ‘CGHbase_1.65.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CGHbase)
+* installing *source* package ‘ADaCGH2’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c r_haarseg.c -o r_haarseg.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ADaCGH2.so init.o r_haarseg.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ADaCGH2/00new/ADaCGH2/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ADaCGH2’ as ‘ADaCGH2_2.45.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ADaCGH2)
+* installing *source* package ‘CGHregions’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CGHregions’ as ‘CGHregions_1.63.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CGHregions)
+
+The downloaded source packages are in
+	‘/tmp/RtmpklPpm7/downloaded_packages’
+
+real	0m35.244s
+user	0m25.346s
+sys	0m4.719s
