@@ -1,0 +1,186 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''lumi'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'lumi'
+also installing the dependencies ‘hexbin’, ‘BeadDataPackR’, ‘beadarray’, ‘lumiBarnes’, ‘lumiHumanAll.db’, ‘lumiHumanIDMapping’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/hexbin_1.28.3.tar.gz'
+Content type 'binary/octet-stream' length 1601580 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BeadDataPackR_1.57.0.tar.gz'
+Content type 'application/x-gzip' length 240852 bytes (235 KB)
+==================================================
+downloaded 235 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/beadarray_2.55.0.tar.gz'
+Content type 'application/x-gzip' length 2451955 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/lumiBarnes_1.45.0.tar.gz'
+Content type 'application/x-gzip' length 5227571 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/lumiHumanAll.db_1.22.0.tar.gz'
+Content type 'application/x-gzip' length 8549754 bytes (8.2 MB)
+==================================================
+downloaded 8.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/lumiHumanIDMapping_1.10.1.tar.gz'
+Content type 'application/x-gzip' length 27559728 bytes (26.3 MB)
+==================================================
+downloaded 26.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/lumi_2.57.0.tar.gz'
+Content type 'application/x-gzip' length 8422853 bytes (8.0 MB)
+==================================================
+downloaded 8.0 MB
+
+* installing *binary* package ‘hexbin’ ...
+* ‘hexbin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hexbin’ as ‘hexbin_1.28.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hexbin)
+* installing *source* package ‘BeadDataPackR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c BeadDataPackR.c -o BeadDataPackR.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_BeadDataPackR.c -o R_init_BeadDataPackR.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BeadDataPackR.so BeadDataPackR.o R_init_BeadDataPackR.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BeadDataPackR/00new/BeadDataPackR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BeadDataPackR’ as ‘BeadDataPackR_1.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BeadDataPackR)
+* installing *source* package ‘lumiHumanAll.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumiHumanAll.db’ as ‘lumiHumanAll.db_1.22.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumiHumanAll.db)
+* installing *source* package ‘lumi’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumi’ as ‘lumi_2.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumi)
+* installing *source* package ‘beadarray’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c BASH.c -o BASH.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c HULK.c -o HULK.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c determiningGridPositions.c -o determiningGridPositions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c findAllOutliers.c -o findAllOutliers.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c imageProcessing.c -o imageProcessing.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o beadarray.so BASH.o HULK.o determiningGridPositions.o findAllOutliers.o imageProcessing.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-beadarray/00new/beadarray/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘beadarray’ as ‘beadarray_2.55.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beadarray)
+* installing *source* package ‘lumiBarnes’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumiBarnes’ as ‘lumiBarnes_1.45.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumiBarnes)
+* installing *source* package ‘lumiHumanIDMapping’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumiHumanIDMapping’ as ‘lumiHumanIDMapping_1.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumiHumanIDMapping)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9tolbh/downloaded_packages’
+
+real	2m12.090s
+user	2m0.022s
+sys	0m10.579s
+* installing *source* package ‘lumiHumanIDMapping’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package can be loaded from final location
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lumiHumanIDMapping’ as ‘lumiHumanIDMapping_1.10.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lumiHumanIDMapping)
