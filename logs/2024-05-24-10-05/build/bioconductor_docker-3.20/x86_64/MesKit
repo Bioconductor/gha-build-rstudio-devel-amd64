@@ -1,0 +1,630 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MesKit'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MesKit'
+also installing the dependencies ‘tweenr’, ‘polyclip’, ‘RcppEigen’, ‘ggplotify’, ‘patchwork’, ‘ggforce’, ‘tidygraph’, ‘graphlayouts’, ‘tidytree’, ‘treeio’, ‘HDO.db’, ‘fgsea’, ‘aplot’, ‘ggfun’, ‘ggnewscale’, ‘ggraph’, ‘scatterpie’, ‘shadowtext’, ‘ggtree’, ‘fastmatch’, ‘quadprog’, ‘downloader’, ‘DOSE’, ‘enrichplot’, ‘GO.db’, ‘GOSemSim’, ‘gson’, ‘qvalue’, ‘yulab.utils’, ‘ape’, ‘ggrepel’, ‘pracma’, ‘ggridges’, ‘cowplot’, ‘mclust’, ‘phangorn’, ‘BSgenome.Hsapiens.UCSC.hg19’, ‘org.Hs.eg.db’, ‘clusterProfiler’, ‘TxDb.Hsapiens.UCSC.hg19.knownGene’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tweenr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 463244 bytes (452 KB)
+==================================================
+downloaded 452 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 119916 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.4.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1843437 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggplotify_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 140235 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggforce_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 1853214 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tidygraph_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 561437 bytes (548 KB)
+==================================================
+downloaded 548 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/graphlayouts_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 3787110 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tidytree_0.4.6.tar.gz'
+Content type 'binary/octet-stream' length 342086 bytes (334 KB)
+==================================================
+downloaded 334 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/treeio_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 695067 bytes (678 KB)
+==================================================
+downloaded 678 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/HDO.db_0.99.1.tar.gz'
+Content type 'application/x-gzip' length 1855560 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/fgsea_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 4951022 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/aplot_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 64401 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggfun_0.1.4.tar.gz'
+Content type 'binary/octet-stream' length 198982 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggnewscale_0.4.10.tar.gz'
+Content type 'binary/octet-stream' length 344678 bytes (336 KB)
+==================================================
+downloaded 336 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggraph_2.2.1.tar.gz'
+Content type 'binary/octet-stream' length 4519048 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/scatterpie_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 139089 bytes (135 KB)
+==================================================
+downloaded 135 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shadowtext_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 216692 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ggtree_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 362603 bytes (354 KB)
+==================================================
+downloaded 354 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fastmatch_1.1-4.tar.gz'
+Content type 'binary/octet-stream' length 35356 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/quadprog_1.5-8.tar.gz'
+Content type 'binary/octet-stream' length 30827 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/downloader_0.4.tar.gz'
+Content type 'binary/octet-stream' length 22442 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DOSE_3.31.1.tar.gz'
+Content type 'application/x-gzip' length 6810165 bytes (6.5 MB)
+==================================================
+downloaded 6.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/enrichplot_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 109684 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GOSemSim_2.31.0.tar.gz'
+Content type 'application/x-gzip' length 607706 bytes (593 KB)
+==================================================
+downloaded 593 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gson_0.1.0.tar.gz'
+Content type 'binary/octet-stream' length 230549 bytes (225 KB)
+==================================================
+downloaded 225 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/qvalue_2.37.0.tar.gz'
+Content type 'application/x-gzip' length 2767841 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/yulab.utils_0.1.4.tar.gz'
+Content type 'binary/octet-stream' length 78866 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ape_5.8.tar.gz'
+Content type 'binary/octet-stream' length 3102815 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pracma_2.4.4.tar.gz'
+Content type 'binary/octet-stream' length 1759381 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggridges_0.5.6.tar.gz'
+Content type 'binary/octet-stream' length 2262833 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1380530 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mclust_6.1.1.tar.gz'
+Content type 'binary/octet-stream' length 4126597 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/phangorn_2.11.1.tar.gz'
+Content type 'binary/octet-stream' length 2599944 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 710245413 bytes (677.3 MB)
+==================================================
+downloaded 677.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Hs.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 99485212 bytes (94.9 MB)
+==================================================
+downloaded 94.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/clusterProfiler_4.13.0.tar.gz'
+Content type 'application/x-gzip' length 624918 bytes (610 KB)
+==================================================
+downloaded 610 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 18669702 bytes (17.8 MB)
+==================================================
+downloaded 17.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MesKit_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 3419394 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.4.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘tidygraph’ ...
+* ‘tidygraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidygraph’ as ‘tidygraph_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidygraph)
+* installing *binary* package ‘graphlayouts’ ...
+* ‘graphlayouts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘graphlayouts’ as ‘graphlayouts_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphlayouts)
+* installing *source* package ‘HDO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HDO.db’ as ‘HDO.db_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HDO.db)
+* installing *binary* package ‘ggfun’ ...
+* ‘ggfun’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfun’ as ‘ggfun_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfun)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘shadowtext’ ...
+* ‘shadowtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shadowtext’ as ‘shadowtext_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shadowtext)
+* installing *binary* package ‘fastmatch’ ...
+* ‘fastmatch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastmatch’ as ‘fastmatch_1.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastmatch)
+* installing *binary* package ‘quadprog’ ...
+* ‘quadprog’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quadprog’ as ‘quadprog_1.5-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quadprog)
+* installing *binary* package ‘downloader’ ...
+* ‘downloader’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘downloader’ as ‘downloader_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (downloader)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘gson’ ...
+* ‘gson’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gson’ as ‘gson_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gson)
+* installing *source* package ‘qvalue’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qvalue’ as ‘qvalue_2.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qvalue)
+* installing *binary* package ‘yulab.utils’ ...
+* ‘yulab.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘yulab.utils’ as ‘yulab.utils_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yulab.utils)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘pracma’ ...
+* ‘pracma’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *binary* package ‘ggridges’ ...
+* ‘ggridges’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggridges’ as ‘ggridges_0.5.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggridges)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg19’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg19’ as ‘BSgenome.Hsapiens.UCSC.hg19_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg19)
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.knownGene)
+* installing *binary* package ‘ggplotify’ ...
+* ‘ggplotify’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggplotify’ as ‘ggplotify_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggplotify)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘tidytree’ ...
+* ‘tidytree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidytree’ as ‘tidytree_0.4.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidytree)
+* installing *source* package ‘fgsea’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ScoreCalculation.cpp -o ScoreCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ScoreRuler.cpp -o ScoreRuler.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from ScoreRuler.cpp:2:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c esCalculation.cpp -o esCalculation.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fastGSEA.cpp -o fastGSEA.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from fastGSEA.cpp:13:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fgseaMultilevel.cpp -o fgseaMultilevel.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fgseaMultilevelSupplement.cpp -o fgseaMultilevelSupplement.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from fgseaMultilevelSupplement.cpp:3:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c geseca.cpp -o geseca.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c util.cpp -o util.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/digamma.hpp:15,
+                 from util.h:5,
+                 from util.cpp:1:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o fgsea.so RcppExports.o ScoreCalculation.o ScoreRuler.o esCalculation.o fastGSEA.o fgseaMultilevel.o fgseaMultilevelSupplement.o geseca.o util.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-fgsea/00new/fgsea/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘fgsea’ as ‘fgsea_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fgsea)
+* installing *source* package ‘GOSemSim’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ICmethod.cpp -o ICmethod.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GOSemSim.so ICmethod.o RcppExports.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GOSemSim/00new/GOSemSim/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GOSemSim’ as ‘GOSemSim_2.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GOSemSim)
+* installing *binary* package ‘phangorn’ ...
+* ‘phangorn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘phangorn’ as ‘phangorn_2.11.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phangorn)
+* installing *source* package ‘treeio’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘treeio’ as ‘treeio_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (treeio)
+* installing *binary* package ‘aplot’ ...
+* ‘aplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘aplot’ as ‘aplot_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (aplot)
+* installing *binary* package ‘ggraph’ ...
+* ‘ggraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggraph’ as ‘ggraph_2.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggraph)
+* installing *binary* package ‘scatterpie’ ...
+* ‘scatterpie’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterpie’ as ‘scatterpie_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterpie)
+* installing *source* package ‘DOSE’ ...
+** package ‘DOSE’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DOSE’ as ‘DOSE_3.31.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DOSE)
+* installing *source* package ‘MesKit’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘ape::degree’ by ‘circlize::degree’ when loading ‘MesKit’
+Warning: replacing previous import ‘ape::where’ by ‘dplyr::where’ when loading ‘MesKit’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘ape::degree’ by ‘circlize::degree’ when loading ‘MesKit’
+Warning: replacing previous import ‘ape::where’ by ‘dplyr::where’ when loading ‘MesKit’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘ape::degree’ by ‘circlize::degree’ when loading ‘MesKit’
+Warning: replacing previous import ‘ape::where’ by ‘dplyr::where’ when loading ‘MesKit’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MesKit’ as ‘MesKit_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MesKit)
+* installing *source* package ‘ggtree’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtree’ as ‘ggtree_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtree)
+* installing *source* package ‘enrichplot’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘enrichplot’ as ‘enrichplot_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (enrichplot)
+* installing *source* package ‘clusterProfiler’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘clusterProfiler’ as ‘clusterProfiler_4.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clusterProfiler)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp6nJvbV/downloaded_packages’
+
+real	8m49.766s
+user	8m7.704s
+sys	0m32.162s
