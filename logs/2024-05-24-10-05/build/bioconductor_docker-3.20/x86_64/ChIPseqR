@@ -1,0 +1,102 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ChIPseqR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ChIPseqR'
+also installing the dependencies ‘timeDate’, ‘timeSeries’, ‘gss’, ‘stabledist’, ‘fBasics’, ‘timsac’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/timeDate_4032.109.tar.gz'
+Content type 'binary/octet-stream' length 1396211 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/timeSeries_4032.109.tar.gz'
+Content type 'binary/octet-stream' length 2054078 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gss_2.2-7.tar.gz'
+Content type 'binary/octet-stream' length 1686217 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/stabledist_0.7-1.tar.gz'
+Content type 'binary/octet-stream' length 73138 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fBasics_4032.96.tar.gz'
+Content type 'binary/octet-stream' length 2506476 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/timsac_1.3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 644551 bytes (629 KB)
+==================================================
+downloaded 629 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ChIPseqR_1.59.0.tar.gz'
+Content type 'application/x-gzip' length 558885 bytes (545 KB)
+==================================================
+downloaded 545 KB
+
+* installing *binary* package ‘timeDate’ ...
+* ‘timeDate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timeDate’ as ‘timeDate_4032.109_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timeDate)
+* installing *binary* package ‘gss’ ...
+* ‘gss’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gss’ as ‘gss_2.2-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gss)
+* installing *binary* package ‘stabledist’ ...
+* ‘stabledist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘stabledist’ as ‘stabledist_0.7-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stabledist)
+* installing *binary* package ‘timsac’ ...
+* ‘timsac’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timsac’ as ‘timsac_1.3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timsac)
+* installing *binary* package ‘timeSeries’ ...
+* ‘timeSeries’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timeSeries’ as ‘timeSeries_4032.109_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timeSeries)
+* installing *binary* package ‘fBasics’ ...
+* ‘fBasics’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fBasics’ as ‘fBasics_4032.96_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fBasics)
+* installing *source* package ‘ChIPseqR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c startScore.c -o startScore.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ChIPseqR.so startScore.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ChIPseqR/00new/ChIPseqR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ChIPseqR’ as ‘ChIPseqR_1.59.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ChIPseqR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp5OkSjO/downloaded_packages’
+
+real	0m36.583s
+user	0m25.446s
+sys	0m3.100s
