@@ -1,0 +1,67 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MACSr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MACSr'
+also installing the dependency ‘MACSdata’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/MACSdata_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 2785 bytes
+==================================================
+downloaded 2785 bytes
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MACSr_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 886392 bytes (865 KB)
+==================================================
+downloaded 865 KB
+
+* installing *source* package ‘MACSdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MACSdata’ as ‘MACSdata_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MACSdata)
+* installing *source* package ‘MACSr’ ...
+** using non-staged installation via StagedInstall field
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* creating tarball
+packaged installation of ‘MACSr’ as ‘MACSr_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MACSr)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp92yQSq/downloaded_packages’
+
+real	0m14.941s
+user	0m12.010s
+sys	0m2.287s
+* installing *source* package ‘MACSdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MACSdata’ as ‘MACSdata_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MACSdata)
