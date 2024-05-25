@@ -1,0 +1,76 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''breakpointR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'breakpointR'
+also installing the dependencies ‘cowplot’, ‘breakpointRdata’, ‘gtools’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1380530 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/breakpointRdata_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 72845646 bytes (69.5 MB)
+==================================================
+downloaded 69.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/breakpointR_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 838652 bytes (818 KB)
+==================================================
+downloaded 818 KB
+
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *source* package ‘breakpointRdata’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘breakpointRdata’ as ‘breakpointRdata_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (breakpointRdata)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *source* package ‘breakpointR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘breakpointR’ as ‘breakpointR_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (breakpointR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpppWHqz/downloaded_packages’
+
+real	0m35.966s
+user	0m31.055s
+sys	0m3.521s
