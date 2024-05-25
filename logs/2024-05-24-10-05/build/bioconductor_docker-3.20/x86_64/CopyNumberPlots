@@ -1,0 +1,58 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CopyNumberPlots'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'CopyNumberPlots'
+also installing the dependency ‘panelcn.mops’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/panelcn.mops_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 580577 bytes (566 KB)
+==================================================
+downloaded 566 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CopyNumberPlots_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 1800953 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+* installing *source* package ‘panelcn.mops’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘panelcn.mops’ as ‘panelcn.mops_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (panelcn.mops)
+* installing *source* package ‘CopyNumberPlots’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CopyNumberPlots’ as ‘CopyNumberPlots_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CopyNumberPlots)
+
+The downloaded source packages are in
+	‘/tmp/RtmpC9J1HQ/downloaded_packages’
+
+real	0m42.014s
+user	0m37.543s
+sys	0m3.941s
