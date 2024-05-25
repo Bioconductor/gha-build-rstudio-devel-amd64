@@ -1,0 +1,750 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SpatialFeatureExperiment'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SpatialFeatureExperiment'
+also installing the dependencies ‘tensor’, ‘wk’, ‘proxy’, ‘beeswarm’, ‘vipor’, ‘gridExtra’, ‘Cairo’, ‘zoo’, ‘RcppTOML’, ‘here’, ‘spatstat.data’, ‘spatstat.random’, ‘spatstat.utils’, ‘spatstat.sparse’, ‘goftest’, ‘polyclip’, ‘classInt’, ‘s2’, ‘units’, ‘geometries’, ‘spData’, ‘e1071’, ‘assertthat’, ‘rJava’, ‘ggnewscale’, ‘memuse’, ‘patchwork’, ‘RSpectra’, ‘scico’, ‘ggbeeswarm’, ‘viridis’, ‘RcppML’, ‘uwot’, ‘pheatmap’, ‘ggrepel’, ‘ggrastr’, ‘cowplot’, ‘fastDummies’, ‘fitdistrplus’, ‘ggridges’, ‘ica’, ‘leiden’, ‘lmtest’, ‘pbapply’, ‘RANN’, ‘reticulate’, ‘ROCR’, ‘scattermore’, ‘sctransform’, ‘spatstat.explore’, ‘spatstat.geom’, ‘RcppProgress’, ‘sf’, ‘sfheaders’, ‘spdep’, ‘terra’, ‘zeallot’, ‘arrow’, ‘RBioFormats’, ‘sfarrow’, ‘SFEData’, ‘Voyager’, ‘scater’, ‘Seurat’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tensor_1.5.tar.gz'
+Content type 'binary/octet-stream' length 13820 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/wk_0.9.1.tar.gz'
+Content type 'binary/octet-stream' length 1734431 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 175590 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/beeswarm_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 78309 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/vipor_0.4.7.tar.gz'
+Content type 'binary/octet-stream' length 4581354 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Cairo_1.6-2.tar.gz'
+Content type 'binary/octet-stream' length 84419 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1026491 bytes (1002 KB)
+==================================================
+downloaded 1002 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppTOML_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 238371 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/here_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 53480 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.data_3.0-4.tar.gz'
+Content type 'binary/octet-stream' length 4054483 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.random_3.2-3.tar.gz'
+Content type 'binary/octet-stream' length 1169906 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.utils_3.0-4.tar.gz'
+Content type 'binary/octet-stream' length 372480 bytes (363 KB)
+==================================================
+downloaded 363 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.sparse_3.0-3.tar.gz'
+Content type 'binary/octet-stream' length 212367 bytes (207 KB)
+==================================================
+downloaded 207 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/goftest_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 58549 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 119916 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/classInt_0.4-10.tar.gz'
+Content type 'binary/octet-stream' length 499015 bytes (487 KB)
+==================================================
+downloaded 487 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/s2_1.1.6.tar.gz'
+Content type 'binary/octet-stream' length 2169198 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/units_0.8-5.tar.gz'
+Content type 'binary/octet-stream' length 359589 bytes (351 KB)
+==================================================
+downloaded 351 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/geometries_0.2.4.tar.gz'
+Content type 'binary/octet-stream' length 272755 bytes (266 KB)
+==================================================
+downloaded 266 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spData_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 3958830 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/e1071_1.7-14.tar.gz'
+Content type 'binary/octet-stream' length 596026 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rJava_1.0-11.tar.gz'
+Content type 'binary/octet-stream' length 940665 bytes (918 KB)
+==================================================
+downloaded 918 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggnewscale_0.4.10.tar.gz'
+Content type 'binary/octet-stream' length 344678 bytes (336 KB)
+==================================================
+downloaded 336 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/memuse_4.2-3.tar.gz'
+Content type 'binary/octet-stream' length 628843 bytes (614 KB)
+==================================================
+downloaded 614 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RSpectra_0.16-1.tar.gz'
+Content type 'binary/octet-stream' length 513206 bytes (501 KB)
+==================================================
+downloaded 501 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/scico_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 323616 bytes (316 KB)
+==================================================
+downloaded 316 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggbeeswarm_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 1756426 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/viridis_0.6.5.tar.gz'
+Content type 'binary/octet-stream' length 3011836 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppML_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 198952 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/uwot_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 983666 bytes (960 KB)
+==================================================
+downloaded 960 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrastr_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 2675411 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1380530 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fastDummies_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 41217 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fitdistrplus_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 1979373 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggridges_0.5.6.tar.gz'
+Content type 'binary/octet-stream' length 2262833 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ica_1.0-3.tar.gz'
+Content type 'binary/octet-stream' length 85690 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/leiden_0.4.3.1.tar.gz'
+Content type 'binary/octet-stream' length 2880028 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lmtest_0.9-40.tar.gz'
+Content type 'binary/octet-stream' length 403569 bytes (394 KB)
+==================================================
+downloaded 394 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pbapply_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 100418 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RANN_2.6.1.tar.gz'
+Content type 'binary/octet-stream' length 42308 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/reticulate_1.37.0.tar.gz'
+Content type 'binary/octet-stream' length 1850745 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ROCR_1.0-11.tar.gz'
+Content type 'binary/octet-stream' length 462493 bytes (451 KB)
+==================================================
+downloaded 451 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/scattermore_1.2.tar.gz'
+Content type 'binary/octet-stream' length 338837 bytes (330 KB)
+==================================================
+downloaded 330 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sctransform_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 554000 bytes (541 KB)
+==================================================
+downloaded 541 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.explore_3.2-7.tar.gz'
+Content type 'binary/octet-stream' length 3478774 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spatstat.geom_3.2-9.tar.gz'
+Content type 'binary/octet-stream' length 4061716 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 20170 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sf_1.0-16.tar.gz'
+Content type 'binary/octet-stream' length 3580689 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sfheaders_0.4.4.tar.gz'
+Content type 'binary/octet-stream' length 462336 bytes (451 KB)
+==================================================
+downloaded 451 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spdep_1.3-3.tar.gz'
+Content type 'binary/octet-stream' length 4616412 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/terra_1.7-78.tar.gz'
+Content type 'binary/octet-stream' length 4288537 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/zeallot_0.1.0.tar.gz'
+Content type 'binary/octet-stream' length 59168 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/arrow_15.0.1.tar.gz'
+Content type 'binary/octet-stream' length 20223396 bytes (19.3 MB)
+==================================================
+downloaded 19.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/RBioFormats_1.5.1.tar.gz'
+Content type 'application/x-gzip' length 327936 bytes (320 KB)
+==================================================
+downloaded 320 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sfarrow_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 420623 bytes (410 KB)
+==================================================
+downloaded 410 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/SFEData_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 262921 bytes (256 KB)
+==================================================
+downloaded 256 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Voyager_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 4299869 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/scater_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 4123576 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Seurat_5.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2612995 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SpatialFeatureExperiment_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 1870993 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+* installing *binary* package ‘tensor’ ...
+* ‘tensor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tensor’ as ‘tensor_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tensor)
+* installing *binary* package ‘wk’ ...
+* ‘wk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wk’ as ‘wk_0.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wk)
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘beeswarm’ ...
+* ‘beeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘beeswarm’ as ‘beeswarm_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beeswarm)
+* installing *binary* package ‘vipor’ ...
+* ‘vipor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vipor’ as ‘vipor_0.4.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vipor)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘Cairo’ ...
+* ‘Cairo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Cairo’ as ‘Cairo_1.6-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cairo)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *binary* package ‘RcppTOML’ ...
+* ‘RcppTOML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppTOML’ as ‘RcppTOML_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppTOML)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘spatstat.utils’ ...
+* ‘spatstat.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.utils’ as ‘spatstat.utils_3.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.utils)
+* installing *binary* package ‘goftest’ ...
+* ‘goftest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘goftest’ as ‘goftest_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (goftest)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘units’ ...
+* ‘units’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘units’ as ‘units_0.8-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (units)
+* installing *binary* package ‘geometries’ ...
+* ‘geometries’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geometries’ as ‘geometries_0.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geometries)
+* installing *binary* package ‘spData’ ...
+* ‘spData’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spData’ as ‘spData_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spData)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘rJava’ ...
+* ‘rJava’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rJava’ as ‘rJava_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rJava)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘memuse’ ...
+* ‘memuse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘memuse’ as ‘memuse_4.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (memuse)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘RSpectra’ ...
+* ‘RSpectra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSpectra’ as ‘RSpectra_0.16-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSpectra)
+* installing *binary* package ‘scico’ ...
+* ‘scico’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scico’ as ‘scico_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scico)
+* installing *binary* package ‘RcppML’ ...
+* ‘RcppML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppML’ as ‘RcppML_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppML)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘fastDummies’ ...
+* ‘fastDummies’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastDummies’ as ‘fastDummies_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastDummies)
+* installing *binary* package ‘fitdistrplus’ ...
+* ‘fitdistrplus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fitdistrplus’ as ‘fitdistrplus_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fitdistrplus)
+* installing *binary* package ‘ggridges’ ...
+* ‘ggridges’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggridges’ as ‘ggridges_0.5.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggridges)
+* installing *binary* package ‘ica’ ...
+* ‘ica’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ica’ as ‘ica_1.0-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ica)
+* installing *binary* package ‘pbapply’ ...
+* ‘pbapply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbapply’ as ‘pbapply_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbapply)
+* installing *binary* package ‘RANN’ ...
+* ‘RANN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RANN’ as ‘RANN_2.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RANN)
+* installing *binary* package ‘ROCR’ ...
+* ‘ROCR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ROCR’ as ‘ROCR_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ROCR)
+* installing *binary* package ‘scattermore’ ...
+* ‘scattermore’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scattermore’ as ‘scattermore_1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scattermore)
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *binary* package ‘terra’ ...
+* ‘terra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘terra’ as ‘terra_1.7-78_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (terra)
+* installing *binary* package ‘zeallot’ ...
+* ‘zeallot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zeallot’ as ‘zeallot_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zeallot)
+* installing *source* package ‘SFEData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SFEData’ as ‘SFEData_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SFEData)
+* installing *binary* package ‘spatstat.data’ ...
+* ‘spatstat.data’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.data’ as ‘spatstat.data_3.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.data)
+* installing *binary* package ‘spatstat.sparse’ ...
+* ‘spatstat.sparse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.sparse’ as ‘spatstat.sparse_3.0-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.sparse)
+* installing *binary* package ‘s2’ ...
+* ‘s2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘s2’ as ‘s2_1.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s2)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘ggbeeswarm’ ...
+* ‘ggbeeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggbeeswarm’ as ‘ggbeeswarm_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggbeeswarm)
+* installing *binary* package ‘viridis’ ...
+* ‘viridis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *binary* package ‘uwot’ ...
+* ‘uwot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uwot’ as ‘uwot_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uwot)
+* installing *binary* package ‘lmtest’ ...
+* ‘lmtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmtest’ as ‘lmtest_0.9-40_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmtest)
+* installing *binary* package ‘reticulate’ ...
+* ‘reticulate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reticulate’ as ‘reticulate_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reticulate)
+* installing *binary* package ‘sctransform’ ...
+* ‘sctransform’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sctransform’ as ‘sctransform_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sctransform)
+* installing *binary* package ‘sfheaders’ ...
+* ‘sfheaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sfheaders’ as ‘sfheaders_0.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sfheaders)
+* installing *binary* package ‘arrow’ ...
+* ‘arrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘arrow’ as ‘arrow_15.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arrow)
+* installing *source* package ‘RBioFormats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+trying URL 'https://downloads.openmicroscopy.org/bio-formats/7.3.0/artifacts/bioformats_package.jar'
+Content type 'application/x-java-archive' length 44926502 bytes (42.8 MB)
+==================================================
+downloaded 42.8 MB
+
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RBioFormats’ as ‘RBioFormats_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RBioFormats)
+* installing *binary* package ‘classInt’ ...
+* ‘classInt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘classInt’ as ‘classInt_0.4-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (classInt)
+* installing *binary* package ‘ggrastr’ ...
+* ‘ggrastr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrastr’ as ‘ggrastr_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrastr)
+* installing *binary* package ‘leiden’ ...
+* ‘leiden’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘leiden’ as ‘leiden_0.4.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (leiden)
+* installing *binary* package ‘spatstat.geom’ ...
+* ‘spatstat.geom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.geom’ as ‘spatstat.geom_3.2-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.geom)
+* installing *binary* package ‘spatstat.random’ ...
+* ‘spatstat.random’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.random’ as ‘spatstat.random_3.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.random)
+* installing *binary* package ‘sf’ ...
+* ‘sf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sf’ as ‘sf_1.0-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sf)
+* installing *source* package ‘scater’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scater’ as ‘scater_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scater)
+* installing *binary* package ‘spatstat.explore’ ...
+* ‘spatstat.explore’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.explore’ as ‘spatstat.explore_3.2-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.explore)
+* installing *binary* package ‘spdep’ ...
+* ‘spdep’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spdep’ as ‘spdep_1.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spdep)
+* installing *binary* package ‘sfarrow’ ...
+* ‘sfarrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sfarrow’ as ‘sfarrow_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sfarrow)
+* installing *binary* package ‘Seurat’ ...
+* ‘Seurat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Seurat’ as ‘Seurat_5.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Seurat)
+* installing *source* package ‘SpatialFeatureExperiment’ ...
+** package ‘SpatialFeatureExperiment’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘toSpatialFeatureExperiment’ with signature ‘"Seurat"’: no definition for class “Seurat”
+Creating a generic function for ‘NROW’ from package ‘base’ in package ‘SpatialFeatureExperiment’
+Creating a generic function for ‘NCOL’ from package ‘base’ in package ‘SpatialFeatureExperiment’
+Creating a generic function for ‘saveRDS’ from package ‘base’ in package ‘SpatialFeatureExperiment’
+Creating a generic function for ‘readRDS’ from package ‘base’ in package ‘SpatialFeatureExperiment’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SpatialFeatureExperiment’ as ‘SpatialFeatureExperiment_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SpatialFeatureExperiment)
+* installing *source* package ‘Voyager’ ...
+** package ‘Voyager’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Voyager’ as ‘Voyager_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Voyager)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp5VjhlV/downloaded_packages’
+
+real	3m12.107s
+user	2m12.697s
+sys	0m19.390s
+* installing *binary* package ‘sfarrow’ ...
+* ‘sfarrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sfarrow’ as ‘sfarrow_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sfarrow)
+* installing *source* package ‘SFEData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SFEData’ as ‘SFEData_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SFEData)
