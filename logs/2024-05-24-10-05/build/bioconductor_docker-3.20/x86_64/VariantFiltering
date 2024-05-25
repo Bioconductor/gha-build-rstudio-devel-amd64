@@ -1,0 +1,167 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''VariantFiltering'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'VariantFiltering'
+also installing the dependencies ‘GenomicScores’, ‘shinythemes’, ‘shinyjs’, ‘DT’, ‘shinyTree’, ‘BSgenome.Hsapiens.1000genomes.hs37d5’, ‘MafDb.1Kgenomes.phase1.hs37d5’, ‘phastCons100way.UCSC.hg19’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomicScores_2.17.0.tar.gz'
+Content type 'application/x-gzip' length 1691297 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shinythemes_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 964181 bytes (941 KB)
+==================================================
+downloaded 941 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1087229 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/DT_0.33.tar.gz'
+Content type 'binary/octet-stream' length 1792625 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shinyTree_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 604526 bytes (590 KB)
+==================================================
+downloaded 590 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1.tar.gz'
+Content type 'application/x-gzip' length 687514862 bytes (655.7 MB)
+==================================================
+downloaded 655.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz'
+Content type 'application/x-gzip' length 608456942 bytes (580.3 MB)
+==================================================
+downloaded 580.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/phastCons100way.UCSC.hg19_3.7.2.tar.gz'
+Content type 'application/x-gzip' length 1050647519 bytes (1002.0 MB)
+==================================================
+downloaded 1002.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/VariantFiltering_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 3753119 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *source* package ‘GenomicScores’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicScores’ as ‘GenomicScores_2.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicScores)
+* installing *binary* package ‘shinythemes’ ...
+* ‘shinythemes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinythemes’ as ‘shinythemes_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinythemes)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘DT’ ...
+* ‘DT’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DT’ as ‘DT_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DT)
+* installing *binary* package ‘shinyTree’ ...
+* ‘shinyTree’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyTree’ as ‘shinyTree_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyTree)
+* installing *source* package ‘BSgenome.Hsapiens.1000genomes.hs37d5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.1000genomes.hs37d5’ as ‘BSgenome.Hsapiens.1000genomes.hs37d5_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.1000genomes.hs37d5)
+* installing *source* package ‘MafDb.1Kgenomes.phase1.hs37d5’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.1Kgenomes.phase1.hs37d5’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.1Kgenomes.phase1.hs37d5’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.1Kgenomes.phase1.hs37d5’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MafDb.1Kgenomes.phase1.hs37d5’ as ‘MafDb.1Kgenomes.phase1.hs37d5_3.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MafDb.1Kgenomes.phase1.hs37d5)
+* installing *source* package ‘phastCons100way.UCSC.hg19’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg19’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg19’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg19’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘phastCons100way.UCSC.hg19’ as ‘phastCons100way.UCSC.hg19_3.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phastCons100way.UCSC.hg19)
+* installing *source* package ‘VariantFiltering’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_VariantFiltering.c -o R_init_VariantFiltering.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c methods-WeightMatrix.c -o methods-WeightMatrix.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o VariantFiltering.so Biostrings_stubs.o R_init_VariantFiltering.o methods-WeightMatrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-VariantFiltering/00new/VariantFiltering/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VariantFiltering’ as ‘VariantFiltering_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VariantFiltering)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpkhmpfe/downloaded_packages’
+
+real	5m54.197s
+user	5m15.624s
+sys	0m27.819s
