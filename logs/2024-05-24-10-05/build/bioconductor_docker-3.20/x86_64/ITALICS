@@ -1,0 +1,68 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ITALICS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ITALICS'
+also installing the dependency ‘ITALICSData’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/ITALICSData_2.43.0.tar.gz'
+Content type 'application/x-gzip' length 87554443 bytes (83.5 MB)
+==================================================
+downloaded 83.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ITALICS_2.65.0.tar.gz'
+Content type 'application/x-gzip' length 482674 bytes (471 KB)
+==================================================
+downloaded 471 KB
+
+* installing *source* package ‘ITALICSData’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ITALICSData’ as ‘ITALICSData_2.43.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ITALICSData)
+* installing *source* package ‘ITALICS’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ITALICS’ as ‘ITALICS_2.65.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ITALICS)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp4INipF/downloaded_packages’
+
+real	1m13.094s
+user	1m9.199s
+sys	0m3.425s
+* installing *source* package ‘pd.mapping50k.hind240’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pd.mapping50k.hind240’ as ‘pd.mapping50k.hind240_3.12.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pd.mapping50k.hind240)
