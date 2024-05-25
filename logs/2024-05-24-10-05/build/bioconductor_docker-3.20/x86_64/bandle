@@ -1,0 +1,151 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''bandle'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'bandle'
+also installing the dependencies ‘GlobalOptions’, ‘hunspell’, ‘lbfgs’, ‘ggalluvial’, ‘ggrepel’, ‘circlize’, ‘pheatmap’, ‘spelling’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/GlobalOptions_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 470007 bytes (458 KB)
+==================================================
+downloaded 458 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/hunspell_3.0.3.tar.gz'
+Content type 'binary/octet-stream' length 1174911 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lbfgs_1.2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 2242471 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggalluvial_0.12.5.tar.gz'
+Content type 'binary/octet-stream' length 1662262 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/circlize_0.4.16.tar.gz'
+Content type 'binary/octet-stream' length 3316668 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spelling_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 54619 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/bandle_1.9.0.tar.gz'
+Content type 'application/x-gzip' length 1606860 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *binary* package ‘GlobalOptions’ ...
+* ‘GlobalOptions’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GlobalOptions’ as ‘GlobalOptions_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalOptions)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘lbfgs’ ...
+* ‘lbfgs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lbfgs’ as ‘lbfgs_1.2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lbfgs)
+* installing *binary* package ‘ggalluvial’ ...
+* ‘ggalluvial’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggalluvial’ as ‘ggalluvial_0.12.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggalluvial)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘circlize’ ...
+* ‘circlize’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘circlize’ as ‘circlize_0.4.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (circlize)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *source* package ‘bandle’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include   -fopenmp  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Bessel2ndKind.cpp -o Bessel2ndKind.o
+In file included from /tmp/tmp/built/BH/include/boost/math/special_functions/detail/round_fwd.hpp:11,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/math_fwd.hpp:29,
+                 from /tmp/tmp/built/BH/include/boost/math/special_functions/bessel.hpp:19,
+                 from Bessel2ndKind.cpp:3:
+/tmp/tmp/built/BH/include/boost/math/tools/config.hpp:23:6: warning: #warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)" [-Wcpp]
+   23 | #    warning "The minimum language standard to use Boost.Math will be C++14 starting in July 2023 (Boost 1.82 release)"
+      |      ^~~~~~~
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include   -fopenmp  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include   -fopenmp  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c dmvtCpp.cpp -o dmvtCpp.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include   -fopenmp  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c leapfrogGPcpp.cpp -o leapfrogGPcpp.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I'/tmp/tmp/built/BH/include' -I/usr/local/include   -fopenmp  -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c pg_sample.cpp -o pg_sample.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bandle.so Bessel2ndKind.o RcppExports.o dmvtCpp.o leapfrogGPcpp.o pg_sample.o -fopenmp -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bandle/00new/bandle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function from function ‘posteriorEstimates’ in package ‘bandle’
+Creating a generic function from function ‘bandleJoint’ in package ‘bandle’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bandle’ as ‘bandle_1.9.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bandle)
+
+The downloaded source packages are in
+	‘/tmp/RtmpLcgu11/downloaded_packages’
+
+real	1m20.042s
+user	1m8.633s
+sys	0m6.206s
+* installing *binary* package ‘qpdf’ ...
+* ‘qpdf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qpdf’ as ‘qpdf_1.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qpdf)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *binary* package ‘pdftools’ ...
+* ‘pdftools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pdftools’ as ‘pdftools_3.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pdftools)
