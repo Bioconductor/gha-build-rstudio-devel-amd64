@@ -1,0 +1,185 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''RiboDiPA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'RiboDiPA'
+also installing the dependencies ‘numDeriv’, ‘tensorA’, ‘distributional’, ‘posterior’, ‘inline’, ‘loo’, ‘QuickJSR’, ‘rstan’, ‘rstantools’, ‘RcppParallel’, ‘StanHeaders’, ‘densEstBayes’, ‘elitism’, ‘reldist’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 114329 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tensorA_0.36.2.1.tar.gz'
+Content type 'binary/octet-stream' length 222106 bytes (216 KB)
+==================================================
+downloaded 216 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/distributional_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 429440 bytes (419 KB)
+==================================================
+downloaded 419 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/posterior_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 978708 bytes (955 KB)
+==================================================
+downloaded 955 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/inline_0.3.19.tar.gz'
+Content type 'binary/octet-stream' length 129829 bytes (126 KB)
+==================================================
+downloaded 126 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/loo_2.7.0.tar.gz'
+Content type 'binary/octet-stream' length 1858640 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/QuickJSR_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 2830260 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rstan_2.32.6.tar.gz'
+Content type 'binary/octet-stream' length 13541895 bytes (12.9 MB)
+==================================================
+downloaded 12.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rstantools_2.4.0.tar.gz'
+Content type 'binary/octet-stream' length 170075 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880883 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/StanHeaders_2.32.8.tar.gz'
+Content type 'binary/octet-stream' length 3127527 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/densEstBayes_1.0-2.2.tar.gz'
+Content type 'binary/octet-stream' length 2630071 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/elitism_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 90107 bytes (87 KB)
+==================================================
+downloaded 87 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/reldist_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 180397 bytes (176 KB)
+==================================================
+downloaded 176 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/RiboDiPA_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 1733164 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘tensorA’ ...
+* ‘tensorA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tensorA’ as ‘tensorA_0.36.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tensorA)
+* installing *binary* package ‘inline’ ...
+* ‘inline’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘inline’ as ‘inline_0.3.19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (inline)
+* installing *binary* package ‘QuickJSR’ ...
+* ‘QuickJSR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘QuickJSR’ as ‘QuickJSR_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (QuickJSR)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *binary* package ‘elitism’ ...
+* ‘elitism’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘elitism’ as ‘elitism_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (elitism)
+* installing *binary* package ‘distributional’ ...
+* ‘distributional’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘distributional’ as ‘distributional_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (distributional)
+* installing *binary* package ‘rstantools’ ...
+* ‘rstantools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstantools’ as ‘rstantools_2.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstantools)
+* installing *binary* package ‘StanHeaders’ ...
+* ‘StanHeaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘StanHeaders’ as ‘StanHeaders_2.32.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (StanHeaders)
+* installing *binary* package ‘posterior’ ...
+* ‘posterior’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘posterior’ as ‘posterior_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (posterior)
+* installing *binary* package ‘loo’ ...
+* ‘loo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘loo’ as ‘loo_2.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (loo)
+* installing *binary* package ‘rstan’ ...
+* ‘rstan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstan’ as ‘rstan_2.32.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstan)
+* installing *binary* package ‘densEstBayes’ ...
+* ‘densEstBayes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘densEstBayes’ as ‘densEstBayes_1.0-2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (densEstBayes)
+* installing *binary* package ‘reldist’ ...
+* ‘reldist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reldist’ as ‘reldist_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reldist)
+* installing *source* package ‘RiboDiPA’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c centerCPP.cpp -o centerCPP.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o RiboDiPA.so RcppExports.o centerCPP.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-RiboDiPA/00new/RiboDiPA/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RiboDiPA’ as ‘RiboDiPA_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RiboDiPA)
+
+The downloaded source packages are in
+	‘/tmp/Rtmptvb4JJ/downloaded_packages’
+
+real	1m29.126s
+user	1m11.036s
+sys	0m6.449s
