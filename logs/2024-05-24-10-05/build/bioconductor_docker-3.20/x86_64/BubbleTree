@@ -1,0 +1,79 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BubbleTree'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'BubbleTree'
+also installing the dependencies ‘proxy’, ‘WriteXLS’, ‘gtools’, ‘e1071’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 175590 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/WriteXLS_6.6.0.tar.gz'
+Content type 'binary/octet-stream' length 789106 bytes (770 KB)
+==================================================
+downloaded 770 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/e1071_1.7-14.tar.gz'
+Content type 'binary/octet-stream' length 596026 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BubbleTree_2.35.0.tar.gz'
+Content type 'application/x-gzip' length 28778609 bytes (27.4 MB)
+==================================================
+downloaded 27.4 MB
+
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘WriteXLS’ ...
+* ‘WriteXLS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘WriteXLS’ as ‘WriteXLS_6.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WriteXLS)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *source* package ‘BubbleTree’ ...
+** using staged installation
+Warning in person1(given = given[[i]], family = family[[i]], middle = middle[[i]],  :
+  It is recommended to use ‘given’ instead of ‘middle’.
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BubbleTree’ as ‘BubbleTree_2.35.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BubbleTree)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpb9aSoL/downloaded_packages’
+
+real	0m42.501s
+user	0m35.792s
+sys	0m3.453s
