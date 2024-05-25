@@ -1,0 +1,82 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''IsoformSwitchAnalyzeR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'IsoformSwitchAnalyzeR'
+also installing the dependencies ‘gridExtra’, ‘VennDiagram’, ‘BSgenome.Hsapiens.UCSC.hg19’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/VennDiagram_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 248120 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 710245413 bytes (677.3 MB)
+==================================================
+downloaded 677.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/IsoformSwitchAnalyzeR_2.5.0.tar.gz'
+Content type 'application/x-gzip' length 5884651 bytes (5.6 MB)
+==================================================
+downloaded 5.6 MB
+
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘VennDiagram’ ...
+* ‘VennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VennDiagram’ as ‘VennDiagram_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VennDiagram)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg19’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg19’ as ‘BSgenome.Hsapiens.UCSC.hg19_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg19)
+* installing *source* package ‘IsoformSwitchAnalyzeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o IsoformSwitchAnalyzeR.so utils.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-IsoformSwitchAnalyzeR/00new/IsoformSwitchAnalyzeR/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IsoformSwitchAnalyzeR’ as ‘IsoformSwitchAnalyzeR_2.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IsoformSwitchAnalyzeR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp9ZUJtf/downloaded_packages’
+
+real	2m24.664s
+user	2m7.072s
+sys	0m10.406s
