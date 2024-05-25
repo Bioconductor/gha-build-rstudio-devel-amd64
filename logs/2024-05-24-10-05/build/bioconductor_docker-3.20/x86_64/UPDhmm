@@ -1,0 +1,137 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''UPDhmm'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'UPDhmm'
+also installing the dependencies ‘bezier’, ‘bamsignals’, ‘HMM’, ‘markdown’, ‘karyoploteR’, ‘regioneR’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bezier_1.1.2.tar.gz'
+Content type 'binary/octet-stream' length 77329 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/bamsignals_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 3240032 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/HMM_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 58395 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/karyoploteR_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 2407528 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/regioneR_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 1925478 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/UPDhmm_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 294587 bytes (287 KB)
+==================================================
+downloaded 287 KB
+
+* installing *binary* package ‘bezier’ ...
+* ‘bezier’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bezier’ as ‘bezier_1.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bezier)
+* installing *source* package ‘bamsignals’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c CountSignals.cpp -o CountSignals.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c bamsignals.cpp -o bamsignals.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/Rhtslib/include' -I'/tmp/tmp/built/zlibbioc/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bamsignals_init.c -o bamsignals_init.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bamsignals.so CountSignals.o RcppExports.o bamsignals.o bamsignals_init.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -lbz2 -llzma -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-bamsignals/00new/bamsignals/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bamsignals’ as ‘bamsignals_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bamsignals)
+* installing *binary* package ‘HMM’ ...
+* ‘HMM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘HMM’ as ‘HMM_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HMM)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘regioneR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘regioneR’ as ‘regioneR_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (regioneR)
+* installing *source* package ‘karyoploteR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘karyoploteR’ as ‘karyoploteR_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (karyoploteR)
+* installing *source* package ‘UPDhmm’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘UPDhmm’ as ‘UPDhmm_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (UPDhmm)
+
+The downloaded source packages are in
+	‘/tmp/RtmpObZa7c/downloaded_packages’
+
+real	1m24.816s
+user	1m14.630s
+sys	0m8.619s
