@@ -1,0 +1,56 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TDbasedUFEadv'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'TDbasedUFEadv'
+also installing the dependencies ‘WriteXLS’, ‘enrichR’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/WriteXLS_6.6.0.tar.gz'
+Content type 'binary/octet-stream' length 789106 bytes (770 KB)
+==================================================
+downloaded 770 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/enrichR_3.2.tar.gz'
+Content type 'binary/octet-stream' length 141226 bytes (137 KB)
+==================================================
+downloaded 137 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TDbasedUFEadv_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 3676002 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+* installing *binary* package ‘WriteXLS’ ...
+* ‘WriteXLS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘WriteXLS’ as ‘WriteXLS_6.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WriteXLS)
+* installing *binary* package ‘enrichR’ ...
+* ‘enrichR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘enrichR’ as ‘enrichR_3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (enrichR)
+* installing *source* package ‘TDbasedUFEadv’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TDbasedUFEadv’ as ‘TDbasedUFEadv_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TDbasedUFEadv)
+
+The downloaded source packages are in
+	‘/tmp/RtmpMTB17e/downloaded_packages’
+
+real	0m23.899s
+user	0m19.012s
+sys	0m2.394s
