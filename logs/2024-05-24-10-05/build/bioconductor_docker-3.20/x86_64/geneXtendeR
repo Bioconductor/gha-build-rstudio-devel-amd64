@@ -1,0 +1,499 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''geneXtendeR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'geneXtendeR'
+also installing the dependencies ‘NLP’, ‘slam’, ‘GO.db’, ‘networkD3’, ‘SnowballC’, ‘tm’, ‘wordcloud’, ‘org.Rn.eg.db’, ‘org.Ag.eg.db’, ‘org.Bt.eg.db’, ‘org.Ce.eg.db’, ‘org.Cf.eg.db’, ‘org.Dm.eg.db’, ‘org.Dr.eg.db’, ‘org.Gg.eg.db’, ‘org.Mm.eg.db’, ‘org.Pt.eg.db’, ‘org.Sc.sgd.db’, ‘org.Ss.eg.db’, ‘org.Xl.eg.db’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/NLP_0.2-1.tar.gz'
+Content type 'binary/octet-stream' length 371526 bytes (362 KB)
+==================================================
+downloaded 362 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/slam_0.1-50.tar.gz'
+Content type 'binary/octet-stream' length 185613 bytes (181 KB)
+==================================================
+downloaded 181 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/networkD3_0.4.tar.gz'
+Content type 'binary/octet-stream' length 190613 bytes (186 KB)
+==================================================
+downloaded 186 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/SnowballC_0.7.1.tar.gz'
+Content type 'binary/octet-stream' length 373085 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tm_0.7-13.tar.gz'
+Content type 'binary/octet-stream' length 630846 bytes (616 KB)
+==================================================
+downloaded 616 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/wordcloud_2.6.tar.gz'
+Content type 'binary/octet-stream' length 106769 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Rn.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 60229330 bytes (57.4 MB)
+==================================================
+downloaded 57.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Ag.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 7523426 bytes (7.2 MB)
+==================================================
+downloaded 7.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Bt.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 22829440 bytes (21.8 MB)
+==================================================
+downloaded 21.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Ce.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 20537820 bytes (19.6 MB)
+==================================================
+downloaded 19.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Cf.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 26501531 bytes (25.3 MB)
+==================================================
+downloaded 25.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Dm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 31815078 bytes (30.3 MB)
+==================================================
+downloaded 30.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Dr.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 33724691 bytes (32.2 MB)
+==================================================
+downloaded 32.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Gg.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 19509143 bytes (18.6 MB)
+==================================================
+downloaded 18.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Mm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 82852299 bytes (79.0 MB)
+==================================================
+downloaded 79.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Pt.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 26340052 bytes (25.1 MB)
+==================================================
+downloaded 25.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Sc.sgd.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 20924414 bytes (20.0 MB)
+==================================================
+downloaded 20.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Ss.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 16120651 bytes (15.4 MB)
+==================================================
+downloaded 15.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Xl.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 17088375 bytes (16.3 MB)
+==================================================
+downloaded 16.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/geneXtendeR_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 12309788 bytes (11.7 MB)
+==================================================
+downloaded 11.7 MB
+
+* installing *binary* package ‘NLP’ ...
+* ‘NLP’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘NLP’ as ‘NLP_0.2-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NLP)
+* installing *binary* package ‘slam’ ...
+* ‘slam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘slam’ as ‘slam_0.1-50_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (slam)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘networkD3’ ...
+* ‘networkD3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘networkD3’ as ‘networkD3_0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (networkD3)
+* installing *binary* package ‘SnowballC’ ...
+* ‘SnowballC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SnowballC’ as ‘SnowballC_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SnowballC)
+* installing *binary* package ‘wordcloud’ ...
+* ‘wordcloud’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wordcloud’ as ‘wordcloud_2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wordcloud)
+* installing *source* package ‘org.Rn.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Rn.eg.db’ as ‘org.Rn.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Rn.eg.db)
+* installing *source* package ‘org.Ag.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Ag.eg.db’ as ‘org.Ag.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Ag.eg.db)
+* installing *source* package ‘org.Bt.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Bt.eg.db’ as ‘org.Bt.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Bt.eg.db)
+* installing *source* package ‘org.Ce.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Ce.eg.db’ as ‘org.Ce.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Ce.eg.db)
+* installing *source* package ‘org.Cf.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Cf.eg.db’ as ‘org.Cf.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Cf.eg.db)
+* installing *source* package ‘org.Dm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Dm.eg.db’ as ‘org.Dm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Dm.eg.db)
+* installing *source* package ‘org.Dr.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Dr.eg.db’ as ‘org.Dr.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Dr.eg.db)
+* installing *source* package ‘org.Gg.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Gg.eg.db’ as ‘org.Gg.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Gg.eg.db)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘org.Pt.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Pt.eg.db’ as ‘org.Pt.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Pt.eg.db)
+* installing *source* package ‘org.Sc.sgd.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Sc.sgd.db’ as ‘org.Sc.sgd.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Sc.sgd.db)
+* installing *source* package ‘org.Ss.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Ss.eg.db’ as ‘org.Ss.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Ss.eg.db)
+* installing *source* package ‘org.Xl.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Xl.eg.db’ as ‘org.Xl.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Xl.eg.db)
+* installing *binary* package ‘tm’ ...
+* ‘tm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tm’ as ‘tm_0.7-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tm)
+* installing *source* package ‘geneXtendeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c annotate.c -o annotate.o
+annotate.c: In function ‘annotate’:
+annotate.c:159:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  159 |                 Rf_error("annotate() doesn't handle output lines longer than %d characters", sizeof(Buffer));
+      |                                                                              ~^              ~~~~~~~~~~~~~~
+      |                                                                               |              |
+      |                                                                               int            long unsigned int
+      |                                                                              %ld
+annotate.c:191:87: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  191 |                         Rf_error("annotate() doesn't handle output lines longer than %d characters",sizeof(Buffer));
+      |                                                                                      ~^             ~~~~~~~~~~~~~~
+      |                                                                                       |             |
+      |                                                                                       int           long unsigned int
+      |                                                                                      %ld
+annotate.c:199:87: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  199 |                         Rf_error("annotate() doesn't handle output lines longer than %d characters",sizeof(Buffer));
+      |                                                                                      ~^             ~~~~~~~~~~~~~~
+      |                                                                                       |             |
+      |                                                                                       int           long unsigned int
+      |                                                                                      %ld
+annotate.c:208:87: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  208 |                         Rf_error("annotate() doesn't handle output lines longer than %d characters",sizeof(Buffer));
+      |                                                                                      ~^             ~~~~~~~~~~~~~~
+      |                                                                                       |             |
+      |                                                                                       int           long unsigned int
+      |                                                                                      %ld
+annotate.c:228:83: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  228 |                     Rf_error("annotate() doesn't handle output lines longer than %d characters",sizeof(Buffer));
+      |                                                                                  ~^             ~~~~~~~~~~~~~~
+      |                                                                                   |             |
+      |                                                                                   int           long unsigned int
+      |                                                                                  %ld
+annotate.c:106:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  106 |     fgets(varstr, 50000, varfp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+annotate.c:116:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  116 |     fgets(vcfstr, 10000, vcffp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extract_number.c -o extract_number.o
+extract_number.c: In function ‘extractnumber’:
+extract_number.c:98:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   98 |     fgets(varstr, 50000, varfp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract_number.c:108:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  108 |     fgets(vcfstr, 10000, vcffp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extract_peaks.c -o extract_peaks.o
+extract_peaks.c: In function ‘extractpeaks’:
+extract_peaks.c:202:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  202 |                 Rf_error("annotate() doesn't handle output lines longer than %d characters", sizeof(Buffer));
+      |                                                                              ~^              ~~~~~~~~~~~~~~
+      |                                                                               |              |
+      |                                                                               int            long unsigned int
+      |                                                                              %ld
+extract_peaks.c:107:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  107 |     fgets(varstr, 50000, varfp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+extract_peaks.c:117:5: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  117 |     fgets(vcfstr, 10000, vcffp);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o geneXtendeR.so annotate.o extract_number.o extract_peaks.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-geneXtendeR/00new/geneXtendeR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘geneXtendeR’ as ‘geneXtendeR_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geneXtendeR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpeu2zSW/downloaded_packages’
+
+real	16m32.921s
+user	16m5.633s
+sys	0m26.587s
+* installing *source* package ‘org.Ag.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Ag.eg.db’ as ‘org.Ag.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Ag.eg.db)
+* installing *source* package ‘org.Cf.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Cf.eg.db’ as ‘org.Cf.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Cf.eg.db)
+* installing *source* package ‘org.Pt.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Pt.eg.db’ as ‘org.Pt.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Pt.eg.db)
+* installing *source* package ‘org.Ss.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Ss.eg.db’ as ‘org.Ss.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Ss.eg.db)
+* installing *source* package ‘org.Xl.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Xl.eg.db’ as ‘org.Xl.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Xl.eg.db)
