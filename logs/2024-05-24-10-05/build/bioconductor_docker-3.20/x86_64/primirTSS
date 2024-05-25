@@ -1,0 +1,81 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''primirTSS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'primirTSS'
+also installing the dependencies ‘phastCons100way.UCSC.hg38’, ‘GenomicScores’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/phastCons100way.UCSC.hg38_3.7.1.tar.gz'
+Content type 'application/x-gzip' length 1073247745 bytes (1023.5 MB)
+==================================================
+downloaded 1023.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomicScores_2.17.0.tar.gz'
+Content type 'application/x-gzip' length 1691297 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/primirTSS_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 3840285 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+* installing *source* package ‘GenomicScores’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicScores’ as ‘GenomicScores_2.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicScores)
+* installing *source* package ‘phastCons100way.UCSC.hg38’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘phastCons100way.UCSC.hg38’ as ‘phastCons100way.UCSC.hg38_3.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phastCons100way.UCSC.hg38)
+* installing *source* package ‘primirTSS’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘phastCons100way.UCSC.hg38’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘primirTSS’ as ‘primirTSS_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (primirTSS)
+
+The downloaded source packages are in
+	‘/tmp/RtmpUIm6GG/downloaded_packages’
+
+real	3m0.931s
+user	2m29.797s
+sys	0m13.936s
