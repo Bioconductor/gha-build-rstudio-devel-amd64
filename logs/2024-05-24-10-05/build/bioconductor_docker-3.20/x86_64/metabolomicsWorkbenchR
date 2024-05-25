@@ -1,0 +1,158 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''metabolomicsWorkbenchR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'metabolomicsWorkbenchR'
+also installing the dependencies ‘rngtools’, ‘randomForest’, ‘itertools’, ‘doRNG’, ‘ggthemes’, ‘sp’, ‘missForest’, ‘httptest’, ‘structToolbox’, ‘pmp’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rngtools_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 78011 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/randomForest_4.7-1.1.tar.gz'
+Content type 'binary/octet-stream' length 218261 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/itertools_0.1-3.tar.gz'
+Content type 'binary/octet-stream' length 112258 bytes (109 KB)
+==================================================
+downloaded 109 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/doRNG_1.8.6.tar.gz'
+Content type 'binary/octet-stream' length 302921 bytes (295 KB)
+==================================================
+downloaded 295 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggthemes_5.1.0.tar.gz'
+Content type 'binary/octet-stream' length 454295 bytes (443 KB)
+==================================================
+downloaded 443 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sp_2.1-4.tar.gz'
+Content type 'binary/octet-stream' length 2102073 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/missForest_1.5.tar.gz'
+Content type 'binary/octet-stream' length 343351 bytes (335 KB)
+==================================================
+downloaded 335 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/httptest_4.2.2.tar.gz'
+Content type 'binary/octet-stream' length 187910 bytes (183 KB)
+==================================================
+downloaded 183 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/structToolbox_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 4780583 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/pmp_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 4834106 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/metabolomicsWorkbenchR_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 2504209 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *binary* package ‘rngtools’ ...
+* ‘rngtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rngtools’ as ‘rngtools_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rngtools)
+* installing *binary* package ‘randomForest’ ...
+* ‘randomForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomForest’ as ‘randomForest_4.7-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomForest)
+* installing *binary* package ‘itertools’ ...
+* ‘itertools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘itertools’ as ‘itertools_0.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (itertools)
+* installing *binary* package ‘ggthemes’ ...
+* ‘ggthemes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggthemes’ as ‘ggthemes_5.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggthemes)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘httptest’ ...
+* ‘httptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘httptest’ as ‘httptest_4.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (httptest)
+* installing *source* package ‘metabolomicsWorkbenchR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metabolomicsWorkbenchR’ as ‘metabolomicsWorkbenchR_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metabolomicsWorkbenchR)
+* installing *binary* package ‘doRNG’ ...
+* ‘doRNG’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘doRNG’ as ‘doRNG_1.8.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doRNG)
+* installing *source* package ‘structToolbox’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘structToolbox’ as ‘structToolbox_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (structToolbox)
+* installing *binary* package ‘missForest’ ...
+* ‘missForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘missForest’ as ‘missForest_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (missForest)
+* installing *source* package ‘pmp’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pmp’ as ‘pmp_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pmp)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdCarMN/downloaded_packages’
+
+real	1m9.535s
+user	0m57.049s
+sys	0m6.538s
