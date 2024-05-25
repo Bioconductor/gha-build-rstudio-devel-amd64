@@ -1,0 +1,152 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ChIPseeker'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ChIPseeker'
+also installing the dependencies ‘admisc’, ‘magick’, ‘venn’, ‘forcats’, ‘graphite’, ‘plotrix’, ‘ggimage’, ‘ggVennDiagram’, ‘ReactomePA’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/admisc_0.35.tar.gz'
+Content type 'binary/octet-stream' length 363103 bytes (354 KB)
+==================================================
+downloaded 354 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/magick_2.8.3.tar.gz'
+Content type 'binary/octet-stream' length 5025393 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/venn_1.12.tar.gz'
+Content type 'binary/octet-stream' length 308277 bytes (301 KB)
+==================================================
+downloaded 301 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/graphite_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 782066 bytes (763 KB)
+==================================================
+downloaded 763 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/plotrix_3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 1160235 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggimage_0.3.3.tar.gz'
+Content type 'binary/octet-stream' length 153912 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggVennDiagram_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 5271087 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ReactomePA_1.49.0.tar.gz'
+Content type 'application/x-gzip' length 58612 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ChIPseeker_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 7249451 bytes (6.9 MB)
+==================================================
+downloaded 6.9 MB
+
+* installing *binary* package ‘admisc’ ...
+* ‘admisc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘admisc’ as ‘admisc_0.35_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (admisc)
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *source* package ‘graphite’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘graphite’ as ‘graphite_1.51.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (graphite)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘venn’ ...
+* ‘venn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘venn’ as ‘venn_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (venn)
+* installing *binary* package ‘ggimage’ ...
+* ‘ggimage’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggimage’ as ‘ggimage_0.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggimage)
+* installing *source* package ‘ReactomePA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ReactomePA’ as ‘ReactomePA_1.49.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ReactomePA)
+* installing *source* package ‘ChIPseeker’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ChIPseeker’ as ‘ChIPseeker_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ChIPseeker)
+* installing *binary* package ‘ggVennDiagram’ ...
+* ‘ggVennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggVennDiagram’ as ‘ggVennDiagram_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggVennDiagram)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp1WkOMJ/downloaded_packages’
+
+real	1m12.136s
+user	0m55.576s
+sys	0m6.481s
+* installing *binary* package ‘ggVennDiagram’ ...
+* ‘ggVennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggVennDiagram’ as ‘ggVennDiagram_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggVennDiagram)
