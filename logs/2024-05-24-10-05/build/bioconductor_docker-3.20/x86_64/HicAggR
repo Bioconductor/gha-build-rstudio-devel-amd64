@@ -1,0 +1,99 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''HicAggR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'HicAggR'
+also installing the dependencies ‘rex’, ‘svglite’, ‘strawr’, ‘reshape’, ‘covr’, ‘kableExtra’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/svglite_2.1.3.tar.gz'
+Content type 'binary/octet-stream' length 201619 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/strawr_0.0.91.tar.gz'
+Content type 'binary/octet-stream' length 828197 bytes (808 KB)
+==================================================
+downloaded 808 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 169859 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kableExtra_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2050288 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/HicAggR_1.1.2.tar.gz'
+Content type 'application/x-gzip' length 3272838 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘strawr’ ...
+* ‘strawr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘strawr’ as ‘strawr_0.0.91_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (strawr)
+* installing *binary* package ‘reshape’ ...
+* ‘reshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *source* package ‘HicAggR’ ...
+** package ‘HicAggR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HicAggR’ as ‘HicAggR_1.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HicAggR)
+
+The downloaded source packages are in
+	‘/tmp/RtmppDGrHR/downloaded_packages’
+
+real	0m28.333s
+user	0m20.698s
+sys	0m3.125s
