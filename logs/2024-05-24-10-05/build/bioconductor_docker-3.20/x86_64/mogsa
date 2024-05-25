@@ -1,0 +1,57 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''mogsa'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'mogsa'
+also installing the dependencies ‘corpcor’, ‘svd’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 116072 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/svd_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 170681 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/mogsa_1.39.0.tar.gz'
+Content type 'application/x-gzip' length 791945 bytes (773 KB)
+==================================================
+downloaded 773 KB
+
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘svd’ ...
+* ‘svd’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svd’ as ‘svd_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svd)
+* installing *source* package ‘mogsa’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘mogsa’ as ‘mogsa_1.39.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mogsa)
+
+The downloaded source packages are in
+	‘/tmp/RtmpZ2OLIN/downloaded_packages’
+
+real	0m22.277s
+user	0m15.812s
+sys	0m2.075s
