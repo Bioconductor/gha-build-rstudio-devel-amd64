@@ -1,0 +1,115 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''DExMA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'DExMA'
+also installing the dependencies ‘amap’, ‘DExMAdata’, ‘pheatmap’, ‘swamp’, ‘bnstruct’, ‘qpdf’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/amap_0.8-19.tar.gz'
+Content type 'binary/octet-stream' length 177782 bytes (173 KB)
+==================================================
+downloaded 173 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/DExMAdata_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 7748261 bytes (7.4 MB)
+==================================================
+downloaded 7.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/swamp_1.5.1.tar.gz'
+Content type 'application/x-tar' length 32341 bytes (31 KB)
+==================================================
+downloaded 31 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bnstruct_1.0.15.tar.gz'
+Content type 'binary/octet-stream' length 1266416 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/qpdf_1.3.3.tar.gz'
+Content type 'binary/octet-stream' length 540094 bytes (527 KB)
+==================================================
+downloaded 527 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DExMA_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 321147 bytes (313 KB)
+==================================================
+downloaded 313 KB
+
+* installing *binary* package ‘amap’ ...
+* ‘amap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘amap’ as ‘amap_0.8-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (amap)
+* installing *source* package ‘DExMAdata’ ...
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DExMAdata’ as ‘DExMAdata_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DExMAdata)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘bnstruct’ ...
+* ‘bnstruct’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bnstruct’ as ‘bnstruct_1.0.15_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bnstruct)
+* installing *binary* package ‘qpdf’ ...
+* ‘qpdf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qpdf’ as ‘qpdf_1.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qpdf)
+* installing *source* package ‘swamp’ ...
+** package ‘swamp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘swamp’ as ‘swamp_1.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (swamp)
+* installing *source* package ‘DExMA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DExMA’ as ‘DExMA_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DExMA)
+
+The downloaded source packages are in
+	‘/tmp/RtmpSot343/downloaded_packages’
+
+real	1m7.537s
+user	0m54.647s
+sys	0m4.320s
