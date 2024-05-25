@@ -1,0 +1,107 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SurfR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SurfR'
+also installing the dependencies ‘WriteXLS’, ‘admisc’, ‘openxlsx’, ‘assertr’, ‘metaRNASeq’, ‘enrichR’, ‘venn’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/WriteXLS_6.6.0.tar.gz'
+Content type 'binary/octet-stream' length 789106 bytes (770 KB)
+==================================================
+downloaded 770 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/admisc_0.35.tar.gz'
+Content type 'binary/octet-stream' length 363103 bytes (354 KB)
+==================================================
+downloaded 354 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/openxlsx_4.2.5.2.tar.gz'
+Content type 'binary/octet-stream' length 2016647 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/assertr_3.0.1.tar.gz'
+Content type 'binary/octet-stream' length 183789 bytes (179 KB)
+==================================================
+downloaded 179 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/metaRNASeq_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 1340713 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/enrichR_3.2.tar.gz'
+Content type 'binary/octet-stream' length 141226 bytes (137 KB)
+==================================================
+downloaded 137 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/venn_1.12.tar.gz'
+Content type 'binary/octet-stream' length 308277 bytes (301 KB)
+==================================================
+downloaded 301 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SurfR_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 505620 bytes (493 KB)
+==================================================
+downloaded 493 KB
+
+* installing *binary* package ‘WriteXLS’ ...
+* ‘WriteXLS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘WriteXLS’ as ‘WriteXLS_6.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WriteXLS)
+* installing *binary* package ‘admisc’ ...
+* ‘admisc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘admisc’ as ‘admisc_0.35_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (admisc)
+* installing *binary* package ‘openxlsx’ ...
+* ‘openxlsx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *binary* package ‘assertr’ ...
+* ‘assertr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertr’ as ‘assertr_3.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertr)
+* installing *binary* package ‘metaRNASeq’ ...
+* ‘metaRNASeq’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘metaRNASeq’ as ‘metaRNASeq_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metaRNASeq)
+* installing *binary* package ‘enrichR’ ...
+* ‘enrichR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘enrichR’ as ‘enrichR_3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (enrichR)
+* installing *binary* package ‘venn’ ...
+* ‘venn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘venn’ as ‘venn_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (venn)
+* installing *source* package ‘SurfR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SurfR’ as ‘SurfR_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SurfR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpaoZNnG/downloaded_packages’
+
+real	0m38.435s
+user	0m28.799s
+sys	0m3.666s
