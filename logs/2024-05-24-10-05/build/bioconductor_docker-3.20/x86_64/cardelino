@@ -1,0 +1,117 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cardelino'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'cardelino'
+also installing the dependencies ‘permute’, ‘memuse’, ‘pinfsc50’, ‘vegan’, ‘combinat’, ‘pheatmap’, ‘vcfR’, ‘VGAM’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/permute_0.9-7.tar.gz'
+Content type 'binary/octet-stream' length 234850 bytes (229 KB)
+==================================================
+downloaded 229 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/memuse_4.2-3.tar.gz'
+Content type 'binary/octet-stream' length 628843 bytes (614 KB)
+==================================================
+downloaded 614 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pinfsc50_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 3463222 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/vegan_2.6-6.1.tar.gz'
+Content type 'binary/octet-stream' length 3129273 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/combinat_0.0-8.tar.gz'
+Content type 'binary/octet-stream' length 40876 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/vcfR_1.15.0.tar.gz'
+Content type 'binary/octet-stream' length 1764351 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 7875918 bytes (7.5 MB)
+==================================================
+downloaded 7.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/cardelino_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 3749550 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *binary* package ‘permute’ ...
+* ‘permute’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘permute’ as ‘permute_0.9-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (permute)
+* installing *binary* package ‘memuse’ ...
+* ‘memuse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘memuse’ as ‘memuse_4.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (memuse)
+* installing *binary* package ‘pinfsc50’ ...
+* ‘pinfsc50’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pinfsc50’ as ‘pinfsc50_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pinfsc50)
+* installing *binary* package ‘combinat’ ...
+* ‘combinat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘combinat’ as ‘combinat_0.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (combinat)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *binary* package ‘vegan’ ...
+* ‘vegan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vegan’ as ‘vegan_2.6-6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vegan)
+* installing *binary* package ‘vcfR’ ...
+* ‘vcfR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vcfR’ as ‘vcfR_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vcfR)
+* installing *source* package ‘cardelino’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cardelino’ as ‘cardelino_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cardelino)
+
+The downloaded source packages are in
+	‘/tmp/RtmpNJVPxZ/downloaded_packages’
+
+real	0m46.283s
+user	0m32.168s
+sys	0m3.942s
