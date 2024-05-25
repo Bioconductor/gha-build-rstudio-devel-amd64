@@ -1,0 +1,165 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''APAlyzer'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'APAlyzer'
+also installing the dependencies ‘R.methodsS3’, ‘R.oo’, ‘R.utils’, ‘R.cache’, ‘ggrepel’, ‘repmis’, ‘org.Mm.eg.db’, ‘TBX20BamSubset’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 82681 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.oo_1.26.0.tar.gz'
+Content type 'binary/octet-stream' length 996069 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.3.tar.gz'
+Content type 'binary/octet-stream' length 1441934 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.cache_0.16.0.tar.gz'
+Content type 'binary/octet-stream' length 111924 bytes (109 KB)
+==================================================
+downloaded 109 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/repmis_0.5.tar.gz'
+Content type 'binary/octet-stream' length 51642 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Mm.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 82852299 bytes (79.0 MB)
+==================================================
+downloaded 79.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TBX20BamSubset_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 99230896 bytes (94.6 MB)
+==================================================
+downloaded 94.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/APAlyzer_1.19.0.tar.gz'
+Content type 'application/x-gzip' length 4086578 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *source* package ‘org.Mm.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Mm.eg.db’ as ‘org.Mm.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Mm.eg.db)
+* installing *source* package ‘TBX20BamSubset’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TBX20BamSubset’ as ‘TBX20BamSubset_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TBX20BamSubset)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *binary* package ‘R.cache’ ...
+* ‘R.cache’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.cache’ as ‘R.cache_0.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.cache)
+* installing *binary* package ‘repmis’ ...
+* ‘repmis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘repmis’ as ‘repmis_0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (repmis)
+* installing *source* package ‘APAlyzer’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘APAlyzer’ as ‘APAlyzer_1.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (APAlyzer)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpq2Dzhw/downloaded_packages’
+
+real	3m59.003s
+user	3m46.060s
+sys	0m8.157s
+* installing *source* package ‘pasilla’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pasilla’ as ‘pasilla_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pasilla)
+* installing *source* package ‘pasillaBamSubset’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pasillaBamSubset’ as ‘pasillaBamSubset_0.43.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pasillaBamSubset)
