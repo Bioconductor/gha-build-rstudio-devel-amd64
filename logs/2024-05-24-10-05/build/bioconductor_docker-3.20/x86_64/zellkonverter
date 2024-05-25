@@ -1,0 +1,95 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''zellkonverter'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'zellkonverter'
+also installing the dependencies ‘assertthat’, ‘rex’, ‘hunspell’, ‘anndata’, ‘covr’, ‘spelling’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/hunspell_3.0.3.tar.gz'
+Content type 'binary/octet-stream' length 1174911 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/anndata_0.7.5.6.tar.gz'
+Content type 'binary/octet-stream' length 223771 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spelling_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 54619 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/zellkonverter_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 1181263 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *source* package ‘zellkonverter’ ...
+** using non-staged installation via StagedInstall field
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* creating tarball
+packaged installation of ‘zellkonverter’ as ‘zellkonverter_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zellkonverter)
+* installing *binary* package ‘anndata’ ...
+* ‘anndata’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘anndata’ as ‘anndata_0.7.5.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anndata)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+
+The downloaded source packages are in
+	‘/tmp/RtmpEJjwjh/downloaded_packages’
+
+real	0m21.221s
+user	0m14.195s
+sys	0m2.624s
