@@ -1,0 +1,110 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''srnadiff'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'srnadiff'
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/srnadiff_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 2386792 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+* installing *source* package ‘srnadiff’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_hmm.cpp -o rcpp_hmm.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_ir.cpp -o rcpp_ir.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_main.cpp -o rcpp_main.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_utils.cpp -o rcpp_utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c srnadiff_init.c -o srnadiff_init.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o srnadiff.so RcppExports.o rcpp_hmm.o rcpp_ir.o rcpp_main.o rcpp_utils.o srnadiff_init.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-srnadiff/00new/srnadiff/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import 'IRanges::window<-' by 'stats::window<-' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cor' by 'stats::cor' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cov' by 'stats::cov' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::start' by 'stats::start' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::window' by 'stats::window' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::quantile' by 'stats::quantile' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::complete.cases' by 'stats::complete.cases' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::offset' by 'stats::offset' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::end' by 'stats::end' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::IQR' by 'stats::IQR' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::var' by 'stats::var' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::xtabs' by 'stats::xtabs' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::median' by 'stats::median' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::aggregate' by 'stats::aggregate' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.omit' by 'stats::na.omit' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::sd' by 'stats::sd' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::smoothEnds' by 'stats::smoothEnds' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.exclude' by 'stats::na.exclude' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::runmed' by 'stats::runmed' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::mad' by 'stats::mad' when loading 'srnadiff'
+Warning: replacing previous import 'GenomicRanges::update' by 'stats::update' when loading 'srnadiff'
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import 'IRanges::window<-' by 'stats::window<-' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cor' by 'stats::cor' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cov' by 'stats::cov' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::start' by 'stats::start' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::window' by 'stats::window' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::quantile' by 'stats::quantile' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::complete.cases' by 'stats::complete.cases' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::offset' by 'stats::offset' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::end' by 'stats::end' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::IQR' by 'stats::IQR' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::var' by 'stats::var' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::xtabs' by 'stats::xtabs' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::median' by 'stats::median' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::aggregate' by 'stats::aggregate' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.omit' by 'stats::na.omit' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::sd' by 'stats::sd' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::smoothEnds' by 'stats::smoothEnds' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.exclude' by 'stats::na.exclude' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::runmed' by 'stats::runmed' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::mad' by 'stats::mad' when loading 'srnadiff'
+Warning: replacing previous import 'GenomicRanges::update' by 'stats::update' when loading 'srnadiff'
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Warning: replacing previous import 'IRanges::window<-' by 'stats::window<-' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cor' by 'stats::cor' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::cov' by 'stats::cov' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::start' by 'stats::start' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::window' by 'stats::window' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::quantile' by 'stats::quantile' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::complete.cases' by 'stats::complete.cases' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::offset' by 'stats::offset' when loading 'srnadiff'
+Warning: replacing previous import 'rtracklayer::end' by 'stats::end' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::IQR' by 'stats::IQR' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::var' by 'stats::var' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::xtabs' by 'stats::xtabs' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::median' by 'stats::median' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::aggregate' by 'stats::aggregate' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.omit' by 'stats::na.omit' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::sd' by 'stats::sd' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::smoothEnds' by 'stats::smoothEnds' when loading 'srnadiff'
+Warning: replacing previous import 'S4Vectors::na.exclude' by 'stats::na.exclude' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::runmed' by 'stats::runmed' when loading 'srnadiff'
+Warning: replacing previous import 'IRanges::mad' by 'stats::mad' when loading 'srnadiff'
+Warning: replacing previous import 'GenomicRanges::update' by 'stats::update' when loading 'srnadiff'
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘srnadiff’ as ‘srnadiff_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (srnadiff)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGTPsS4/downloaded_packages’
+
+real	0m58.905s
+user	0m53.559s
+sys	0m4.158s
