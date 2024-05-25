@@ -455,37 +455,37 @@ config.status: creating src/Makevars
 ** libs
 using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
 make -C zstd
-make[1]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/zstd'
+make[1]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/zstd'
 gcc -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -shared H5Zzstd.c -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" \
  -lzstd -L/usr/local/lib -o libH5Zzstd.so
-make[1]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/zstd'
+make[1]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/zstd'
 make -C blosc
-make[1]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/blosc'
+make[1]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/blosc'
 g++ -std=gnu++17 -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -shared -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" H5Zblosc.cpp \
 -L/usr/local/lib  -lblosc -lzstd -lz -o libH5Zblosc.so 
-make[1]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/blosc'
+make[1]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/blosc'
 make -C bzip2
-make[1]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/bzip2'
+make[1]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/bzip2'
 gcc -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -shared H5Zbzip2.c -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" \
  -lbz2 -L/usr/local/lib -o libH5Zbz2.so
-make[1]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/bzip2'
+make[1]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/bzip2'
 make -C lzf
-make[1]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/lzf'
+make[1]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/lzf'
 make -C lzf
-make[2]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/lzf/lzf'
+make[2]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/lzf/lzf'
 gcc -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -c lzf_c.c
 gcc -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -c lzf_d.c
 rm -f liblzf.a
 ar cq liblzf.a lzf_c.o lzf_d.o
 ranlib liblzf.a
-make[2]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/lzf/lzf'
+make[2]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/lzf/lzf'
 gcc -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -shared H5Zlzf.c -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" \
 -I./lzf/ ./lzf/liblzf.a -L/usr/local/lib -o libH5Zlzf.so
-make[1]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/lzf'
+make[1]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/lzf'
 make -C vbz
-make[1]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz'
+make[1]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz'
 make -C third_party/streamvbyte
-make[2]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz/third_party/streamvbyte'
+make[2]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz/third_party/streamvbyte'
 gcc -std=gnu99  -fpic -Iinclude -c ./src/streamvbyte_decode.c
 gcc -std=gnu99  -fpic -Iinclude -c ./src/streamvbyte_encode.c
 gcc -std=gnu99  -fpic -Iinclude -c ./src/streamvbytedelta_decode.c
@@ -496,19 +496,19 @@ gcc -std=gnu99  -fpic -Iinclude -c ./src/streamvbyte_zigzag.c
 rm -f libstreamvbyte.a
 ar cq libstreamvbyte.a streamvbyte_decode.o streamvbyte_encode.o streamvbytedelta_decode.o streamvbytedelta_encode.o streamvbyte_0124_encode.o  streamvbyte_0124_decode.o streamvbyte_zigzag.o
 ranlib libstreamvbyte.a 
-make[2]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz/third_party/streamvbyte'
+make[2]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz/third_party/streamvbyte'
 make -C vbz
-make[2]: Entering directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz/vbz'
+make[2]: Entering directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz/vbz'
 g++ -std=gnu++17 -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" -I../third_party/streamvbyte/include/ -I../third_party/ -I../../zstd/ -mssse3 -c vbz.cpp -o vbz.o
 g++ -std=gnu++17 -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" -I../third_party/streamvbyte/include/ -I../third_party/ -I../../zstd/ -mssse3 -c v0/vbz_streamvbyte.cpp -o v0/vbz_streamvbyte.o
 g++ -std=gnu++17 -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" -I../third_party/streamvbyte/include/ -I../third_party/ -I../../zstd/ -mssse3 -c v1/vbz_streamvbyte.cpp -o v1/vbz_streamvbyte.o
-make[2]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz/vbz'
+make[2]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz/vbz'
 rm -f libvbz.a
 ar cq libvbz.a vbz/vbz.o vbz/v0/vbz_streamvbyte.o vbz/v1/vbz_streamvbyte.o
 ranlib libvbz.a
 g++ -std=gnu++17 -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" -shared vbz_plugin.cpp \
 libvbz.a -L/usr/local/lib -lzstd third_party/streamvbyte/libstreamvbyte.a -o libH5Zvbz.so
-make[1]: Leaving directory '/tmp/RtmpT8ULHE/R.INSTALL28273c53ef7/rhdf5filters/src/vbz'
+make[1]: Leaving directory '/tmp/RtmpmLKhAJ/R.INSTALL28164a2c68d/rhdf5filters/src/vbz'
 mkdir -p "/tmp/tmp/built/00LOCK-rhdf5filters/00new/rhdf5filters/lib/"
 cp bzip2/libH5Zbz2.so blosc/libH5Zblosc.so lzf/libH5Zlzf.so zstd/libH5Zzstd.so vbz/libH5Zvbz.so "/tmp/tmp/built/00LOCK-rhdf5filters/00new/rhdf5filters/lib/"
 gcc -I"/usr/local/lib/R/include" -DNDEBUG -I/usr/local/include -I"/tmp/tmp/built/Rhdf5lib/include" -I'/tmp/tmp/built/Rhdf5lib/include' -I/usr/local/include   -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rhdf5filters.c -o rhdf5filters.o
@@ -9732,8 +9732,8 @@ packaged installation of ‘tximeta’ as ‘tximeta_1.23.1_R_x86_64-pc-linux-gn
 * DONE (tximeta)
 
 The downloaded source packages are in
-	‘/tmp/RtmpuJPKnt/downloaded_packages’
+	‘/tmp/RtmpUpJhZh/downloaded_packages’
 
-real	14m16.381s
-user	13m13.285s
-sys	1m3.198s
+real	14m27.872s
+user	13m22.525s
+sys	1m4.091s
