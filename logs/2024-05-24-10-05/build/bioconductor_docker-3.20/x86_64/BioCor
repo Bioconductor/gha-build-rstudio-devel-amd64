@@ -1,0 +1,227 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BioCor'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'BioCor'
+also installing the dependencies ‘yulab.utils’, ‘hunspell’, ‘dynamicTreeCut’, ‘fastcluster’, ‘airway’, ‘GOSemSim’, ‘reactome.db’, ‘spelling’, ‘targetscan.Hs.eg.db’, ‘WGCNA’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/yulab.utils_0.1.4.tar.gz'
+Content type 'binary/octet-stream' length 78866 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/hunspell_3.0.3.tar.gz'
+Content type 'binary/octet-stream' length 1174911 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'binary/octet-stream' length 90144 bytes (88 KB)
+==================================================
+downloaded 88 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fastcluster_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 185641 bytes (181 KB)
+==================================================
+downloaded 181 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/airway_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 24755634 bytes (23.6 MB)
+==================================================
+downloaded 23.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GOSemSim_2.31.0.tar.gz'
+Content type 'application/x-gzip' length 607706 bytes (593 KB)
+==================================================
+downloaded 593 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/reactome.db_1.88.0.tar.gz'
+Content type 'application/x-gzip' length 469763882 bytes (448.0 MB)
+==================================================
+downloaded 448.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spelling_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 54619 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/targetscan.Hs.eg.db_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 2041640 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/WGCNA_1.72-5.tar.gz'
+Content type 'application/x-tar' length 1174718 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BioCor_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 1442285 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘yulab.utils’ ...
+* ‘yulab.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘yulab.utils’ as ‘yulab.utils_0.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yulab.utils)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘dynamicTreeCut’ ...
+* ‘dynamicTreeCut’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *binary* package ‘fastcluster’ ...
+* ‘fastcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *source* package ‘airway’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘airway’ as ‘airway_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (airway)
+* installing *source* package ‘reactome.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘reactome.db’ as ‘reactome.db_1.88.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reactome.db)
+* installing *source* package ‘targetscan.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘targetscan.Hs.eg.db’ as ‘targetscan.Hs.eg.db_0.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (targetscan.Hs.eg.db)
+* installing *source* package ‘BioCor’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function from function ‘clusterGeneSim’ in package ‘BioCor’
+Creating a generic function from function ‘clusterSim’ in package ‘BioCor’
+Creating a generic function from function ‘geneSim’ in package ‘BioCor’
+Creating a generic function from function ‘mclusterGeneSim’ in package ‘BioCor’
+Creating a generic function from function ‘mclusterSim’ in package ‘BioCor’
+Creating a generic function from function ‘mgeneSim’ in package ‘BioCor’
+Creating a generic function from function ‘mpathSim’ in package ‘BioCor’
+Creating a generic function from function ‘pathSim’ in package ‘BioCor’
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BioCor’ as ‘BioCor_1.29.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BioCor)
+* installing *source* package ‘GOSemSim’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ICmethod.cpp -o ICmethod.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GOSemSim.so ICmethod.o RcppExports.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GOSemSim/00new/GOSemSim/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GOSemSim’ as ‘GOSemSim_2.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GOSemSim)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *source* package ‘WGCNA’ ...
+** package ‘WGCNA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions-utils.c -o corFunctions-utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions.c -o corFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c myMatrixMultiplication.c -o myMatrixMultiplication.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c networkFunctions.c -o networkFunctions.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c parallelQuantile.cc -o parallelQuantile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pivot.c -o pivot.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o WGCNA.so corFunctions-utils.o corFunctions.o myMatrixMultiplication.o networkFunctions.o parallelQuantile.o pivot.o -lpthread -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-WGCNA/00new/WGCNA/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘WGCNA’ as ‘WGCNA_1.72-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WGCNA)
+
+The downloaded source packages are in
+	‘/tmp/RtmpqGDhXb/downloaded_packages’
+
+real	11m14.730s
+user	10m52.594s
+sys	0m18.000s
+* installing *source* package ‘targetscan.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘targetscan.Hs.eg.db’ as ‘targetscan.Hs.eg.db_0.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (targetscan.Hs.eg.db)
