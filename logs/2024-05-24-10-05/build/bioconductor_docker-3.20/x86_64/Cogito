@@ -1,0 +1,77 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Cogito'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'Cogito'
+also installing the dependencies ‘entropy’, ‘TxDb.Mmusculus.UCSC.mm9.knownGene’, ‘markdown’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/entropy_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 90759 bytes (88 KB)
+==================================================
+downloaded 88 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 13520331 bytes (12.9 MB)
+==================================================
+downloaded 12.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Cogito_1.11.0.tar.gz'
+Content type 'application/x-gzip' length 889878 bytes (869 KB)
+==================================================
+downloaded 869 KB
+
+* installing *binary* package ‘entropy’ ...
+* ‘entropy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘entropy’ as ‘entropy_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (entropy)
+* installing *source* package ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Mmusculus.UCSC.mm9.knownGene’ as ‘TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Mmusculus.UCSC.mm9.knownGene)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘Cogito’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Cogito’ as ‘Cogito_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cogito)
+
+The downloaded source packages are in
+	‘/tmp/RtmpF1zQvq/downloaded_packages’
+
+real	0m59.887s
+user	0m52.020s
+sys	0m4.459s
