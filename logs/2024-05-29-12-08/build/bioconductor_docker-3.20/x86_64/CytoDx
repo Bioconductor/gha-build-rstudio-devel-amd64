@@ -1,0 +1,67 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''CytoDx'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'CytoDx'
+also installing the dependencies ‘shape’, ‘glmnet’, ‘rpart.plot’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.1.tar.gz'
+Content type 'binary/octet-stream' length 749996 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 2001229 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rpart.plot_3.1.2.tar.gz'
+Content type 'binary/octet-stream' length 1018539 bytes (994 KB)
+==================================================
+downloaded 994 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CytoDx_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 677464 bytes (661 KB)
+==================================================
+downloaded 661 KB
+
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘rpart.plot’ ...
+* ‘rpart.plot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rpart.plot’ as ‘rpart.plot_3.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rpart.plot)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *source* package ‘CytoDx’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CytoDx’ as ‘CytoDx_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CytoDx)
+
+The downloaded source packages are in
+	‘/tmp/RtmpqMOdUY/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m13.712s
+user	0m9.056s
+sys	0m2.120s
