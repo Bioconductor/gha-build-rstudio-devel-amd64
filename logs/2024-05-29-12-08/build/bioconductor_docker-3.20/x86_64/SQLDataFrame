@@ -1,0 +1,47 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SQLDataFrame'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SQLDataFrame'
+also installing the dependency ‘duckdb’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/duckdb_0.10.2.tar.gz'
+Content type 'binary/octet-stream' length 11377488 bytes (10.9 MB)
+==================================================
+downloaded 10.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SQLDataFrame_1.19.0.tar.gz'
+Content type 'application/x-gzip' length 240583 bytes (234 KB)
+==================================================
+downloaded 234 KB
+
+* installing *binary* package ‘duckdb’ ...
+* ‘duckdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘duckdb’ as ‘duckdb_0.10.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (duckdb)
+* installing *source* package ‘SQLDataFrame’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SQLDataFrame’ as ‘SQLDataFrame_1.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SQLDataFrame)
+
+The downloaded source packages are in
+	‘/tmp/RtmpFdiGLK/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m22.837s
+user	0m18.231s
+sys	0m1.832s
