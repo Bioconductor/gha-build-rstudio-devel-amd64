@@ -1,0 +1,98 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cnvGSA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'cnvGSA'
+also installing the dependencies ‘profileModel’, ‘brglm’, ‘splitstackshape’, ‘cnvGSAdata’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/profileModel_0.6.1.tar.gz'
+Content type 'binary/octet-stream' length 106664 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/brglm_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 126764 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/splitstackshape_1.4.8.tar.gz'
+Content type 'binary/octet-stream' length 123482 bytes (120 KB)
+==================================================
+downloaded 120 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/cnvGSAdata_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 6537747 bytes (6.2 MB)
+==================================================
+downloaded 6.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/cnvGSA_1.49.0.tar.gz'
+Content type 'application/x-gzip' length 266176 bytes (259 KB)
+==================================================
+downloaded 259 KB
+
+* installing *binary* package ‘profileModel’ ...
+* ‘profileModel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘profileModel’ as ‘profileModel_0.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (profileModel)
+* installing *binary* package ‘splitstackshape’ ...
+* ‘splitstackshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘splitstackshape’ as ‘splitstackshape_1.4.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (splitstackshape)
+* installing *binary* package ‘brglm’ ...
+* ‘brglm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘brglm’ as ‘brglm_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (brglm)
+* installing *source* package ‘cnvGSA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cnvGSA’ as ‘cnvGSA_1.49.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cnvGSA)
+* installing *source* package ‘cnvGSAdata’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cnvGSAdata’ as ‘cnvGSAdata_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cnvGSAdata)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp3cPqis/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m18.534s
+user	0m12.477s
+sys	0m2.787s
+* installing *source* package ‘cnvGSAdata’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cnvGSAdata’ as ‘cnvGSAdata_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cnvGSAdata)
