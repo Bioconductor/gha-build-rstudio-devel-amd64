@@ -1,0 +1,35 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''AnVILPublish'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'AnVILPublish'
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/AnVILPublish_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 241455 bytes (235 KB)
+==================================================
+downloaded 235 KB
+
+* installing *source* package ‘AnVILPublish’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AnVILPublish’ as ‘AnVILPublish_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AnVILPublish)
+
+The downloaded source packages are in
+	‘/tmp/RtmpFIKYQF/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m5.570s
+user	0m4.003s
+sys	0m1.200s
