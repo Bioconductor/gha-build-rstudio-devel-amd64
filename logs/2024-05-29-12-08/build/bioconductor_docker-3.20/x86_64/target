@@ -1,0 +1,149 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''target'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'target'
+also installing the dependencies ‘showimage’, ‘assertthat’, ‘debugme’, ‘parsedate’, ‘pingr’, ‘rematch’, ‘webdriver’, ‘rex’, ‘shinytest’, ‘shinyBS’, ‘covr’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/showimage_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 11387 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/debugme_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 41882 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/parsedate_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 42244 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pingr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 41128 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 16256 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/webdriver_1.0.6.tar.gz'
+Content type 'binary/octet-stream' length 197072 bytes (192 KB)
+==================================================
+downloaded 192 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shinytest_1.5.4.tar.gz'
+Content type 'binary/octet-stream' length 416743 bytes (406 KB)
+==================================================
+downloaded 406 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shinyBS_0.61.1.tar.gz'
+Content type 'binary/octet-stream' length 108543 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/target_1.19.0.tar.gz'
+Content type 'application/x-gzip' length 3212578 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+* installing *binary* package ‘showimage’ ...
+* ‘showimage’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showimage’ as ‘showimage_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showimage)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘debugme’ ...
+* ‘debugme’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘debugme’ as ‘debugme_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (debugme)
+* installing *binary* package ‘parsedate’ ...
+* ‘parsedate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parsedate’ as ‘parsedate_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parsedate)
+* installing *binary* package ‘pingr’ ...
+* ‘pingr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pingr’ as ‘pingr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pingr)
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘shinyBS’ ...
+* ‘shinyBS’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyBS’ as ‘shinyBS_0.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyBS)
+* installing *source* package ‘target’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘target’ as ‘target_1.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (target)
+* installing *binary* package ‘webdriver’ ...
+* ‘webdriver’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘webdriver’ as ‘webdriver_1.0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (webdriver)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘shinytest’ ...
+* ‘shinytest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinytest’ as ‘shinytest_1.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinytest)
+
+The downloaded source packages are in
+	‘/tmp/RtmphLuZH6/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m20.552s
+user	0m10.139s
+sys	0m3.097s
