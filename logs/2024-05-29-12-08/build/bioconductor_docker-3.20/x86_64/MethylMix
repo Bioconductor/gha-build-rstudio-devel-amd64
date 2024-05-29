@@ -1,0 +1,139 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MethylMix'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MethylMix'
+also installing the dependencies ‘iterators’, ‘R.methodsS3’, ‘R.oo’, ‘R.utils’, ‘foreach’, ‘RPMM’, ‘RCurl’, ‘data.table’, ‘R.matlab’, ‘doParallel’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/iterators_1.0.14.tar.gz'
+Content type 'binary/octet-stream' length 346524 bytes (338 KB)
+==================================================
+downloaded 338 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 82681 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.oo_1.26.0.tar.gz'
+Content type 'binary/octet-stream' length 996069 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.3.tar.gz'
+Content type 'binary/octet-stream' length 1441934 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/foreach_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 139803 bytes (136 KB)
+==================================================
+downloaded 136 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RPMM_1.25.tar.gz'
+Content type 'binary/octet-stream' length 272108 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RCurl_1.98-1.14.tar.gz'
+Content type 'binary/octet-stream' length 1093387 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/data.table_1.15.4.tar.gz'
+Content type 'binary/octet-stream' length 2204632 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.matlab_3.7.0.tar.gz'
+Content type 'binary/octet-stream' length 277347 bytes (270 KB)
+==================================================
+downloaded 270 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/doParallel_1.0.17.tar.gz'
+Content type 'binary/octet-stream' length 188190 bytes (183 KB)
+==================================================
+downloaded 183 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MethylMix_2.35.0.tar.gz'
+Content type 'application/x-gzip' length 2700853 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+* installing *binary* package ‘iterators’ ...
+* ‘iterators’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘iterators’ as ‘iterators_1.0.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (iterators)
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *binary* package ‘RPMM’ ...
+* ‘RPMM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RPMM’ as ‘RPMM_1.25_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RPMM)
+* installing *binary* package ‘RCurl’ ...
+* ‘RCurl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RCurl’ as ‘RCurl_1.98-1.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RCurl)
+* installing *binary* package ‘data.table’ ...
+* ‘data.table’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘data.table’ as ‘data.table_1.15.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (data.table)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *binary* package ‘foreach’ ...
+* ‘foreach’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘foreach’ as ‘foreach_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (foreach)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *binary* package ‘doParallel’ ...
+* ‘doParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘doParallel’ as ‘doParallel_1.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (doParallel)
+* installing *binary* package ‘R.matlab’ ...
+* ‘R.matlab’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.matlab’ as ‘R.matlab_3.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.matlab)
+* installing *source* package ‘MethylMix’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MethylMix’ as ‘MethylMix_2.35.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MethylMix)
+
+The downloaded source packages are in
+	‘/tmp/RtmpSzg3Xx/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m17.375s
+user	0m8.780s
+sys	0m2.811s
