@@ -1,0 +1,129 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SCFA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SCFA'
+also installing the dependencies ‘safetensors’, ‘mnormt’, ‘shape’, ‘torch’, ‘coro’, ‘igraph’, ‘psych’, ‘glmnet’, ‘RhpcBLASctl’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/safetensors_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 61736 bytes (60 KB)
+==================================================
+downloaded 60 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mnormt_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 175940 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shape_1.4.6.1.tar.gz'
+Content type 'binary/octet-stream' length 749996 bytes (732 KB)
+==================================================
+downloaded 732 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/torch_0.13.0.tar.gz'
+Content type 'binary/octet-stream' length 12245844 bytes (11.7 MB)
+==================================================
+downloaded 11.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/coro_1.0.4.tar.gz'
+Content type 'binary/octet-stream' length 143157 bytes (139 KB)
+==================================================
+downloaded 139 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/igraph_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 5535765 bytes (5.3 MB)
+==================================================
+downloaded 5.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/psych_2.4.3.tar.gz'
+Content type 'binary/octet-stream' length 3523302 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 2001229 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RhpcBLASctl_0.23-42.tar.gz'
+Content type 'binary/octet-stream' length 15210 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SCFA_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 1300751 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *binary* package ‘safetensors’ ...
+* ‘safetensors’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘safetensors’ as ‘safetensors_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (safetensors)
+* installing *binary* package ‘mnormt’ ...
+* ‘mnormt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mnormt’ as ‘mnormt_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mnormt)
+* installing *binary* package ‘shape’ ...
+* ‘shape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shape’ as ‘shape_1.4.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shape)
+* installing *binary* package ‘coro’ ...
+* ‘coro’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coro’ as ‘coro_1.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coro)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘RhpcBLASctl’ ...
+* ‘RhpcBLASctl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RhpcBLASctl’ as ‘RhpcBLASctl_0.23-42_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RhpcBLASctl)
+* installing *binary* package ‘torch’ ...
+* ‘torch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘torch’ as ‘torch_0.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (torch)
+* installing *binary* package ‘psych’ ...
+* ‘psych’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘psych’ as ‘psych_2.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (psych)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *source* package ‘SCFA’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SCFA’ as ‘SCFA_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SCFA)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2Uw99x/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m24.065s
+user	0m15.919s
+sys	0m3.171s
