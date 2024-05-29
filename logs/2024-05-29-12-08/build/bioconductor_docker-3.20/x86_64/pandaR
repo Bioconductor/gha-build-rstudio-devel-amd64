@@ -1,0 +1,59 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''pandaR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'pandaR'
+also installing the dependencies ‘reshape’, ‘hexbin’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/reshape_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 169859 bytes (165 KB)
+==================================================
+downloaded 165 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/hexbin_1.28.3.tar.gz'
+Content type 'binary/octet-stream' length 1601580 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/pandaR_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 9096545 bytes (8.7 MB)
+==================================================
+downloaded 8.7 MB
+
+* installing *binary* package ‘reshape’ ...
+* ‘reshape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape’ as ‘reshape_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape)
+* installing *binary* package ‘hexbin’ ...
+* ‘hexbin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hexbin’ as ‘hexbin_1.28.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hexbin)
+* installing *source* package ‘pandaR’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pandaR’ as ‘pandaR_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pandaR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpk50lyL/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m10.597s
+user	0m7.078s
+sys	0m1.646s
