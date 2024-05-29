@@ -1,0 +1,175 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''optimalFlow'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'optimalFlow'
+also installing the dependencies ‘RcppGSL’, ‘RcppEigen’, ‘RcppZiggurat’, ‘RcppParallel’, ‘optimalFlowData’, ‘transport’, ‘Rfast’, ‘dbscan’, ‘randomForest’, ‘rgl’, ‘ellipse’, ‘magick’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppGSL_0.3.13.tar.gz'
+Content type 'binary/octet-stream' length 211613 bytes (206 KB)
+==================================================
+downloaded 206 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.4.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1843437 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppZiggurat_0.1.6.tar.gz'
+Content type 'binary/octet-stream' length 424147 bytes (414 KB)
+==================================================
+downloaded 414 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880883 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/optimalFlowData_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 79534175 bytes (75.8 MB)
+==================================================
+downloaded 75.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/transport_0.15-2.tar.gz'
+Content type 'binary/octet-stream' length 686003 bytes (669 KB)
+==================================================
+downloaded 669 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Rfast_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2758800 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dbscan_1.1-12.tar.gz'
+Content type 'binary/octet-stream' length 2520898 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/randomForest_4.7-1.1.tar.gz'
+Content type 'binary/octet-stream' length 218261 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rgl_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 5691136 bytes (5.4 MB)
+==================================================
+downloaded 5.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ellipse_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 218456 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/magick_2.8.3.tar.gz'
+Content type 'binary/octet-stream' length 5025393 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/optimalFlow_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 1292022 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *binary* package ‘RcppGSL’ ...
+* ‘RcppGSL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppGSL’ as ‘RcppGSL_0.3.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppGSL)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.4.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *source* package ‘optimalFlowData’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘optimalFlowData’ as ‘optimalFlowData_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (optimalFlowData)
+* installing *binary* package ‘dbscan’ ...
+* ‘dbscan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbscan’ as ‘dbscan_1.1-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbscan)
+* installing *binary* package ‘randomForest’ ...
+* ‘randomForest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomForest’ as ‘randomForest_4.7-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomForest)
+* installing *binary* package ‘rgl’ ...
+* ‘rgl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rgl’ as ‘rgl_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rgl)
+* installing *binary* package ‘ellipse’ ...
+* ‘ellipse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ellipse’ as ‘ellipse_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ellipse)
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘RcppZiggurat’ ...
+* ‘RcppZiggurat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppZiggurat’ as ‘RcppZiggurat_0.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppZiggurat)
+* installing *binary* package ‘transport’ ...
+* ‘transport’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘transport’ as ‘transport_0.15-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (transport)
+* installing *binary* package ‘Rfast’ ...
+* ‘Rfast’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rfast’ as ‘Rfast_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rfast)
+* installing *source* package ‘optimalFlow’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package can be loaded from final location
+Warning: 'rgl.init' failed, running with 'rgl.useNULL = TRUE'.
+Warning: no DISPLAY variable so Tk is not available
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘optimalFlow’ as ‘optimalFlow_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (optimalFlow)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpe1uxCL/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	1m7.064s
+user	0m45.757s
+sys	0m7.193s
