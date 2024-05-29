@@ -1,0 +1,142 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''SeqArray'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'SeqArray'
+also installing the dependencies ‘SNPRelate’, ‘VariantAnnotation’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SNPRelate_1.39.0.tar.gz'
+Content type 'application/x-gzip' length 3153433 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/VariantAnnotation_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 2113536 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/SeqArray_1.45.0.tar.gz'
+Content type 'application/x-gzip' length 3583163 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *source* package ‘SNPRelate’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ConvToGDS.cpp -o ConvToGDS.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_SNPRelate.c -o R_SNPRelate.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c SNPRelate.cpp -o SNPRelate.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ThreadPool.cpp -o ThreadPool.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c dGenGWAS.cpp -o dGenGWAS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c dVect.cpp -o dVect.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genBeta.cpp -o genBeta.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genEIGMIX.cpp -o genEIGMIX.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genFst.cpp -o genFst.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genHWE.cpp -o genHWE.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genIBD.cpp -o genIBD.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genIBS.cpp -o genIBS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genKING.cpp -o genKING.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genLD.cpp -o genLD.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genPCA.cpp -o genPCA.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -DUSE_FC_LEN_T -I. -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c genSlideWin.cpp -o genSlideWin.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o SNPRelate.so ConvToGDS.o R_SNPRelate.o SNPRelate.o ThreadPool.o dGenGWAS.o dVect.o genBeta.o genEIGMIX.o genFst.o genHWE.o genIBD.o genIBS.o genKING.o genLD.o genPCA.o genSlideWin.o -lpthread -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-SNPRelate/00new/SNPRelate/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SNPRelate’ as ‘SNPRelate_1.39.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SNPRelate)
+* installing *source* package ‘VariantAnnotation’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_VariantAnnotation.c -o R_init_VariantAnnotation.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c XVector_stubs.c -o XVector_stubs.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dna_hash.c -o dna_hash.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rle.c -o rle.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c strhash.c -o strhash.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utilities.c -o utilities.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vcffile.c -o vcffile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c vcftype.c -o vcftype.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/S4Vectors/include' -I'/tmp/tmp/built/IRanges/include' -I'/tmp/tmp/built/XVector/include' -I'/tmp/tmp/built/Biostrings/include' -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c writevcf.c -o writevcf.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o VariantAnnotation.so Biostrings_stubs.o IRanges_stubs.o R_init_VariantAnnotation.o XVector_stubs.o dna_hash.o rle.o strhash.o utilities.o vcffile.o vcftype.o writevcf.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -lbz2 -llzma -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-VariantAnnotation/00new/VariantAnnotation/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘tabulate’ in package ‘VariantAnnotation’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘VariantAnnotation’ as ‘VariantAnnotation_1.51.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VariantAnnotation)
+* installing *source* package ‘SeqArray’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ConvGDS2VCF.cpp -o ConvGDS2VCF.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ConvToGDS.cpp -o ConvToGDS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ConvVCF2GDS.cpp -o ConvVCF2GDS.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c FileMerge.cpp -o FileMerge.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c GetData.cpp -o GetData.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Index.cpp -o Index.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c LinkSNPRelate.cpp -o LinkSNPRelate.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Methods.cpp -o Methods.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_SeqArray.c -o R_SeqArray.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ReadBySample.cpp -o ReadBySample.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ReadByUnit.cpp -o ReadByUnit.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c ReadByVariant.cpp -o ReadByVariant.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c SeqArray.cpp -o SeqArray.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c pkg_test.cpp -o pkg_test.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c samtools_ext.c -o samtools_ext.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DUSING_R -I'/tmp/tmp/built/gdsfmt/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vectorization.cpp -o vectorization.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o SeqArray.so ConvGDS2VCF.o ConvToGDS.o ConvVCF2GDS.o FileMerge.o GetData.o Index.o LinkSNPRelate.o Methods.o R_SeqArray.o ReadBySample.o ReadByUnit.o ReadByVariant.o SeqArray.o pkg_test.o samtools_ext.o vectorization.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-SeqArray/00new/SeqArray/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘SeqArray’ as ‘SeqArray_1.45.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SeqArray)
+
+The downloaded source packages are in
+	‘/tmp/RtmpvVfTwp/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	1m37.903s
+user	1m28.569s
+sys	0m9.829s
