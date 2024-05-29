@@ -1,0 +1,119 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''clstutils'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'clstutils'
+also installing the dependencies ‘bit’, ‘bit64’, ‘blob’, ‘DBI’, ‘plogr’, ‘rjson’, ‘ape’, ‘RSQLite’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bit_4.0.5.tar.gz'
+Content type 'binary/octet-stream' length 1146479 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bit64_4.0.5.tar.gz'
+Content type 'binary/octet-stream' length 486973 bytes (475 KB)
+==================================================
+downloaded 475 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/blob_1.2.4.tar.gz'
+Content type 'binary/octet-stream' length 47743 bytes (46 KB)
+==================================================
+downloaded 46 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/DBI_1.2.2.tar.gz'
+Content type 'binary/octet-stream' length 913643 bytes (892 KB)
+==================================================
+downloaded 892 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/plogr_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 13131 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rjson_0.2.21.tar.gz'
+Content type 'binary/octet-stream' length 150864 bytes (147 KB)
+==================================================
+downloaded 147 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ape_5.8.tar.gz'
+Content type 'binary/octet-stream' length 3102815 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RSQLite_2.3.7.tar.gz'
+Content type 'binary/octet-stream' length 1317387 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/clstutils_1.53.0.tar.gz'
+Content type 'application/x-gzip' length 2567012 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+* installing *binary* package ‘bit’ ...
+* ‘bit’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bit’ as ‘bit_4.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bit)
+* installing *binary* package ‘blob’ ...
+* ‘blob’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘blob’ as ‘blob_1.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (blob)
+* installing *binary* package ‘DBI’ ...
+* ‘DBI’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DBI’ as ‘DBI_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DBI)
+* installing *binary* package ‘plogr’ ...
+* ‘plogr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plogr’ as ‘plogr_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plogr)
+* installing *binary* package ‘rjson’ ...
+* ‘rjson’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rjson’ as ‘rjson_0.2.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rjson)
+* installing *binary* package ‘ape’ ...
+* ‘ape’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ape’ as ‘ape_5.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ape)
+* installing *binary* package ‘bit64’ ...
+* ‘bit64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bit64’ as ‘bit64_4.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bit64)
+* installing *binary* package ‘RSQLite’ ...
+* ‘RSQLite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSQLite’ as ‘RSQLite_2.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSQLite)
+* installing *source* package ‘clstutils’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘clstutils’ as ‘clstutils_1.53.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clstutils)
+
+The downloaded source packages are in
+	‘/tmp/RtmpG0qEKI/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m16.012s
+user	0m6.352s
+sys	0m2.561s
