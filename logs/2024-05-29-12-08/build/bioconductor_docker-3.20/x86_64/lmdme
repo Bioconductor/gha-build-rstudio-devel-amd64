@@ -1,0 +1,65 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''lmdme'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'lmdme'
+also installing the dependencies ‘pls’, ‘stemHypoxia’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pls_2.8-3.tar.gz'
+Content type 'binary/octet-stream' length 1191960 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/stemHypoxia_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 2907557 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/lmdme_1.47.0.tar.gz'
+Content type 'application/x-gzip' length 623608 bytes (608 KB)
+==================================================
+downloaded 608 KB
+
+* installing *binary* package ‘pls’ ...
+* ‘pls’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pls’ as ‘pls_2.8-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pls)
+* installing *source* package ‘stemHypoxia’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘stemHypoxia’ as ‘stemHypoxia_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stemHypoxia)
+* installing *source* package ‘lmdme’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘p.adjust’ in package ‘lmdme’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lmdme’ as ‘lmdme_1.47.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmdme)
+
+The downloaded source packages are in
+	‘/tmp/RtmpWN93zV/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m7.758s
+user	0m4.570s
+sys	0m1.799s
