@@ -1,0 +1,135 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TransView'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'TransView'
+also installing the dependencies ‘gtools’, ‘caTools’, ‘gplots’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 205542 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gplots_3.1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 600661 bytes (586 KB)
+==================================================
+downloaded 586 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TransView_1.49.0.tar.gz'
+Content type 'application/x-gzip' length 1947142 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘TransView’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_TransView.c -o R_init_TransView.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bam_plbuf.c -o bam_plbuf.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bin_density.c -o bin_density.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c construct_dc.c -o construct_dc.o
+In file included from /tmp/tmp/built/Rhtslib/include/htslib/hts.h:36,
+                 from /tmp/tmp/built/Rhtslib/include/htslib/sam.h:33,
+                 from /tmp/tmp/built/Rhtslib/include/samtools-1.7-compat.h:5,
+                 from parse_sam.h:4,
+                 from construct_dc.c:23:
+/tmp/tmp/built/Rhtslib/include/htslib/hts_log.h:76:1: warning: ‘Rprintf’ is an unrecognized format function type [-Wformat=]
+   76 | HTS_FORMAT(HTS_PRINTF_FMT, 3, 4);
+      | ^~~~~~~~~~
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c parse_sam.c -o parse_sam.o
+parse_sam.c: In function ‘quality_check’:
+parse_sam.c:161:75: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘hts_pos_t’ {aka ‘long int’} [-Wformat=]
+  161 |                         warning("Read length neither found in core.isize=%d, core.l_qseq=%d or cigar=%d!\n",temp_read->core.isize,temp_read->core.l_qseq,bam1_cigar(temp_read));
+      |                                                                          ~^                                 ~~~~~~~~~~~~~~~~~~~~~
+      |                                                                           |                                                |
+      |                                                                           int                                              hts_pos_t {aka long int}
+      |                                                                          %ld
+parse_sam.c:161:103: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘uint32_t *’ {aka ‘unsigned int *’} [-Wformat=]
+  161 |                         warning("Read length neither found in core.isize=%d, core.l_qseq=%d or cigar=%d!\n",temp_read->core.isize,temp_read->core.l_qseq,bam1_cigar(temp_read));
+      |                                                                                                      ~^
+      |                                                                                                       |
+      |                                                                                                       int
+      |                                                                                                      %ls
+parse_sam.c: In function ‘print_readinfo’:
+parse_sam.c:202:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘hts_pos_t’ {aka ‘long int’} [-Wformat=]
+  202 |         printf("Pos %d\n",current_read->core.pos);
+      |                     ~^    ~~~~~~~~~~~~~~~~~~~~~~
+      |                      |                      |
+      |                      int                    hts_pos_t {aka long int}
+      |                     %ld
+parse_sam.c:203:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘hts_pos_t’ {aka ‘long int’} [-Wformat=]
+  203 |         printf("Len %d -> END: %d\n",rm->read_length,rm->read_length+current_read->core.pos);
+      |                                ~^                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |                                   |
+      |                                 int                                 hts_pos_t {aka long int}
+      |                                %ld
+parse_sam.c: In function ‘seq_density’:
+parse_sam.c:314:61: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘hts_pos_t’ {aka ‘long int’} [-Wformat=]
+  314 |                         warning("BUFFER only %d\n But POS: %d cur_seq_len: %d EXTEND: %d -> %d \n GLOBAL %d\n",
+      |                                                            ~^
+      |                                                             |
+      |                                                             int
+      |                                                            %ld
+  315 |                                         BUFFERLIMIT,current_read->core.pos,rm.read_length,user_args->EXTEND,
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                       |
+      |                                                                       hts_pos_t {aka long int}
+parse_sam.c:314:94: warning: format ‘%d’ expects argument of type ‘int’, but argument 6 has type ‘hts_pos_t’ {aka ‘long int’} [-Wformat=]
+  314 |                         warning("BUFFER only %d\n But POS: %d cur_seq_len: %d EXTEND: %d -> %d \n GLOBAL %d\n",
+      |                                                                                             ~^
+      |                                                                                              |
+      |                                                                                              int
+      |                                                                                             %ld
+  315 |                                         BUFFERLIMIT,current_read->core.pos,rm.read_length,user_args->EXTEND,
+  316 |                                         current_read->core.pos+rm.read_length+user_args->EXTEND,abs_gen_end);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                              |
+      |                                                                              hts_pos_t {aka long int}
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c slice_dc.c -o slice_dc.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/tmp/tmp/built/Rhtslib/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c visuals.c -o visuals.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o TransView.so R_init_TransView.o bam_plbuf.o bin_density.o construct_dc.o parse_sam.o slice_dc.o visuals.o /tmp/tmp/built/Rhtslib/usrlib/libhts.a -lcurl -lbz2 -llzma -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-TransView/00new/TransView/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TransView’ as ‘TransView_1.49.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TransView)
+
+The downloaded source packages are in
+	‘/tmp/RtmpTQkAEZ/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m19.615s
+user	0m12.859s
+sys	0m3.409s
