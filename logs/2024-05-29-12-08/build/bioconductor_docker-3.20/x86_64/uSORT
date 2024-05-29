@@ -1,0 +1,121 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''uSORT'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'uSORT'
+also installing the dependencies ‘modeltools’, ‘mclust’, ‘flexmix’, ‘prabclus’, ‘diptest’, ‘kernlab’, ‘fpc’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 224202 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mclust_6.1.1.tar.gz'
+Content type 'binary/octet-stream' length 4126597 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/flexmix_2.3-19.tar.gz'
+Content type 'binary/octet-stream' length 1734692 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/prabclus_2.3-3.tar.gz'
+Content type 'binary/octet-stream' length 481495 bytes (470 KB)
+==================================================
+downloaded 470 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/diptest_0.77-1.tar.gz'
+Content type 'binary/octet-stream' length 174290 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/kernlab_0.9-32.tar.gz'
+Content type 'binary/octet-stream' length 2228679 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fpc_2.2-12.tar.gz'
+Content type 'binary/octet-stream' length 859746 bytes (839 KB)
+==================================================
+downloaded 839 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/uSORT_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 2950316 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *binary* package ‘diptest’ ...
+* ‘diptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.77-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *binary* package ‘kernlab’ ...
+* ‘kernlab’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kernlab’ as ‘kernlab_0.9-32_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kernlab)
+* installing *binary* package ‘flexmix’ ...
+* ‘flexmix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexmix’ as ‘flexmix_2.3-19_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexmix)
+* installing *binary* package ‘prabclus’ ...
+* ‘prabclus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘prabclus’ as ‘prabclus_2.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (prabclus)
+* installing *binary* package ‘fpc’ ...
+* ‘fpc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fpc’ as ‘fpc_2.2-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fpc)
+* installing *source* package ‘uSORT’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning message:
+no DISPLAY variable so Tk is not available 
+No methods found in package ‘BiocGenerics’ for request: ‘clusterEvalQ’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parCapply’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parRapply’ when loading ‘uSORT’
+Note: break used in wrong context: no loop is visible 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: no DISPLAY variable so Tk is not available
+No methods found in package ‘BiocGenerics’ for request: ‘clusterEvalQ’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parCapply’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parRapply’ when loading ‘uSORT’
+** testing if installed package can be loaded from final location
+Warning: no DISPLAY variable so Tk is not available
+No methods found in package ‘BiocGenerics’ for request: ‘clusterEvalQ’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parCapply’ when loading ‘uSORT’
+No methods found in package ‘BiocGenerics’ for request: ‘parRapply’ when loading ‘uSORT’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘uSORT’ as ‘uSORT_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uSORT)
+
+The downloaded source packages are in
+	‘/tmp/RtmpsR9nDj/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m26.608s
+user	0m15.857s
+sys	0m6.559s
