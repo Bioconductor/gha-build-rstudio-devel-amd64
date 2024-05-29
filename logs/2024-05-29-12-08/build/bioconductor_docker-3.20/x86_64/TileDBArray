@@ -1,0 +1,134 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TileDBArray'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'TileDBArray'
+also installing the dependencies ‘RcppCCTZ’, ‘zoo’, ‘RcppDate’, ‘RcppSpdlog’, ‘nanotime’, ‘spdl’, ‘nanoarrow’, ‘RcppInt64’, ‘tiledb’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppCCTZ_0.2.12.tar.gz'
+Content type 'binary/octet-stream' length 154605 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1026491 bytes (1002 KB)
+==================================================
+downloaded 1002 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppDate_0.0.3.tar.gz'
+Content type 'binary/octet-stream' length 88905 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppSpdlog_0.0.17.tar.gz'
+Content type 'binary/octet-stream' length 460958 bytes (450 KB)
+==================================================
+downloaded 450 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/nanotime_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 691169 bytes (674 KB)
+==================================================
+downloaded 674 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spdl_0.0.5.tar.gz'
+Content type 'binary/octet-stream' length 16651 bytes (16 KB)
+==================================================
+downloaded 16 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/nanoarrow_0.5.0.tar.gz'
+Content type 'binary/octet-stream' length 333257 bytes (325 KB)
+==================================================
+downloaded 325 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppInt64_0.0.5.tar.gz'
+Content type 'binary/octet-stream' length 51641 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tiledb_0.27.0.tar.gz'
+Content type 'binary/octet-stream' length 30000097 bytes (28.6 MB)
+==================================================
+downloaded 28.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TileDBArray_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 314622 bytes (307 KB)
+==================================================
+downloaded 307 KB
+
+* installing *binary* package ‘RcppCCTZ’ ...
+* ‘RcppCCTZ’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppCCTZ’ as ‘RcppCCTZ_0.2.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppCCTZ)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *binary* package ‘RcppDate’ ...
+* ‘RcppDate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppDate’ as ‘RcppDate_0.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppDate)
+* installing *binary* package ‘RcppSpdlog’ ...
+* ‘RcppSpdlog’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppSpdlog’ as ‘RcppSpdlog_0.0.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppSpdlog)
+* installing *binary* package ‘nanoarrow’ ...
+* ‘nanoarrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nanoarrow’ as ‘nanoarrow_0.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nanoarrow)
+* installing *binary* package ‘RcppInt64’ ...
+* ‘RcppInt64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppInt64’ as ‘RcppInt64_0.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppInt64)
+* installing *binary* package ‘nanotime’ ...
+* ‘nanotime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nanotime’ as ‘nanotime_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nanotime)
+* installing *binary* package ‘spdl’ ...
+* ‘spdl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spdl’ as ‘spdl_0.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spdl)
+* installing *binary* package ‘tiledb’ ...
+* ‘tiledb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tiledb’ as ‘tiledb_0.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tiledb)
+* installing *source* package ‘TileDBArray’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c remap_indices.cpp -o remap_indices.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o TileDBArray.so RcppExports.o remap_indices.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-TileDBArray/00new/TileDBArray/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TileDBArray’ as ‘TileDBArray_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TileDBArray)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp5SIdGt/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m50.550s
+user	0m35.909s
+sys	0m4.195s
