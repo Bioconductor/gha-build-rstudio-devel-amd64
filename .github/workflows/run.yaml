@@ -13,7 +13,7 @@ jobs:
     concurrency:
       group: dispatch
       cancel-in-progress: false
-    runs-on: [self-hosted, js2]
+    runs-on: [self-hosted]
     outputs:
       matrix: ${{ steps.matrix.outputs.pkglist }}
     steps:
@@ -98,7 +98,7 @@ jobs:
             git pull origin main || git reset --hard origin/main
             if [ ! -s /tmp/self-hosted ]; then exit 0; fi
             grep -q 'waycarbon/github-action-container-cleanup@v1$' .github/workflows/run.yaml && exit 0 || true
-            sed -i 's/runs-on: [self-hosted, js2]/runs-on: [self-hosted, js2]/g' .github/workflows/run.yaml
+            sed -i 's/runs-on: [self-hosted]/runs-on: [self-hosted]/g' .github/workflows/run.yaml
             sed -i '/steps:$/a \ \ \ \ \ \ - uses: waycarbon/github-action-container-cleanup@v1' .github/workflows/run.yaml
             cp /tmp/self-hosted lists/self-hosted
             git config user.name github-actions
@@ -161,7 +161,7 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: [self-hosted, js2]
+    runs-on: [self-hosted]
     steps:
       - uses: waycarbon/github-action-container-cleanup@v1
     
