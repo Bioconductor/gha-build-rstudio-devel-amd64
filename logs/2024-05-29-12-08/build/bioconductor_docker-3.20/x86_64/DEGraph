@@ -1,0 +1,170 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''DEGraph'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'DEGraph'
+also installing the dependencies ‘DEoptimR’, ‘dotCall64’, ‘robustbase’, ‘pcaPP’, ‘spam’, ‘maps’, ‘R.utils’, ‘mvtnorm’, ‘rrcov’, ‘corpcor’, ‘fields’, ‘marray’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/DEoptimR_1.1-3.tar.gz'
+Content type 'binary/octet-stream' length 74537 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dotCall64_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 31177 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/robustbase_0.99-2.tar.gz'
+Content type 'binary/octet-stream' length 3109310 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pcaPP_2.0-4.tar.gz'
+Content type 'binary/octet-stream' length 370065 bytes (361 KB)
+==================================================
+downloaded 361 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/spam_2.10-0.tar.gz'
+Content type 'binary/octet-stream' length 2738300 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/maps_3.4.2.tar.gz'
+Content type 'binary/octet-stream' length 3090049 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.3.tar.gz'
+Content type 'binary/octet-stream' length 1441934 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mvtnorm_1.2-5.tar.gz'
+Content type 'binary/octet-stream' length 774677 bytes (756 KB)
+==================================================
+downloaded 756 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rrcov_1.7-5.tar.gz'
+Content type 'binary/octet-stream' length 2307935 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 116072 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fields_15.2.tar.gz'
+Content type 'binary/octet-stream' length 4057241 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/marray_1.83.0.tar.gz'
+Content type 'application/x-gzip' length 5054224 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DEGraph_1.57.0.tar.gz'
+Content type 'application/x-gzip' length 1605598 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *binary* package ‘DEoptimR’ ...
+* ‘DEoptimR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DEoptimR’ as ‘DEoptimR_1.1-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEoptimR)
+* installing *binary* package ‘dotCall64’ ...
+* ‘dotCall64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dotCall64’ as ‘dotCall64_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dotCall64)
+* installing *binary* package ‘maps’ ...
+* ‘maps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘maps’ as ‘maps_3.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maps)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *source* package ‘marray’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘marray’ as ‘marray_1.83.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (marray)
+* installing *binary* package ‘robustbase’ ...
+* ‘robustbase’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘robustbase’ as ‘robustbase_0.99-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (robustbase)
+* installing *binary* package ‘pcaPP’ ...
+* ‘pcaPP’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pcaPP’ as ‘pcaPP_2.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pcaPP)
+* installing *binary* package ‘spam’ ...
+* ‘spam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spam’ as ‘spam_2.10-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spam)
+* installing *binary* package ‘rrcov’ ...
+* ‘rrcov’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rrcov’ as ‘rrcov_1.7-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rrcov)
+* installing *binary* package ‘fields’ ...
+* ‘fields’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fields’ as ‘fields_15.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fields)
+* installing *source* package ‘DEGraph’ ...
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEGraph’ as ‘DEGraph_1.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEGraph)
+
+The downloaded source packages are in
+	‘/tmp/RtmpVw3GYc/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m27.219s
+user	0m15.969s
+sys	0m4.127s
