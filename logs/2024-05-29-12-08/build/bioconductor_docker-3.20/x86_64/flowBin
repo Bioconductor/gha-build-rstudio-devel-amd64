@@ -1,0 +1,36 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''flowBin'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'flowBin'
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/flowBin_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 492464 bytes (480 KB)
+==================================================
+downloaded 480 KB
+
+* installing *source* package ‘flowBin’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flowBin’ as ‘flowBin_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flowBin)
+
+The downloaded source packages are in
+	‘/tmp/RtmpEL6yE1/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m10.350s
+user	0m7.661s
+sys	0m1.329s
