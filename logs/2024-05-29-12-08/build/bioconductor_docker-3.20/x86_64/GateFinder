@@ -1,0 +1,88 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GateFinder'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'GateFinder'
+also installing the dependencies ‘sp’, ‘sgeostat’, ‘splancs’, ‘mvoutlier’, ‘diptest’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sp_2.1-4.tar.gz'
+Content type 'binary/octet-stream' length 2102073 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sgeostat_1.0-27.tar.gz'
+Content type 'binary/octet-stream' length 143657 bytes (140 KB)
+==================================================
+downloaded 140 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/splancs_2.01-45.tar.gz'
+Content type 'binary/octet-stream' length 318047 bytes (310 KB)
+==================================================
+downloaded 310 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mvoutlier_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 800310 bytes (781 KB)
+==================================================
+downloaded 781 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/diptest_0.77-1.tar.gz'
+Content type 'binary/octet-stream' length 174290 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GateFinder_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 490926 bytes (479 KB)
+==================================================
+downloaded 479 KB
+
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘sgeostat’ ...
+* ‘sgeostat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sgeostat’ as ‘sgeostat_1.0-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sgeostat)
+* installing *binary* package ‘diptest’ ...
+* ‘diptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.77-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *binary* package ‘splancs’ ...
+* ‘splancs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘splancs’ as ‘splancs_2.01-45_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (splancs)
+* installing *binary* package ‘mvoutlier’ ...
+* ‘mvoutlier’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvoutlier’ as ‘mvoutlier_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvoutlier)
+* installing *source* package ‘GateFinder’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GateFinder’ as ‘GateFinder_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GateFinder)
+
+The downloaded source packages are in
+	‘/tmp/RtmpkjI7Hl/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m20.649s
+user	0m14.009s
+sys	0m2.368s
