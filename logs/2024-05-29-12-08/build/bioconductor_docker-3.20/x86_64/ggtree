@@ -1,0 +1,122 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ggtree'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ggtree'
+also installing the dependencies ‘showtextdb’, ‘proto’, ‘showtext’, ‘sysfonts’, ‘magick’, ‘emojifont’, ‘ggimage’, ‘shadowtext’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/showtextdb_3.0.tar.gz'
+Content type 'binary/octet-stream' length 2010867 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/proto_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 470664 bytes (459 KB)
+==================================================
+downloaded 459 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/showtext_0.9-7.tar.gz'
+Content type 'binary/octet-stream' length 278363 bytes (271 KB)
+==================================================
+downloaded 271 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/sysfonts_0.8.9.tar.gz'
+Content type 'binary/octet-stream' length 1250908 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/magick_2.8.3.tar.gz'
+Content type 'binary/octet-stream' length 5025393 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/emojifont_0.5.5.tar.gz'
+Content type 'binary/octet-stream' length 3643305 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggimage_0.3.3.tar.gz'
+Content type 'binary/octet-stream' length 153912 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/shadowtext_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 216692 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ggtree_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 362603 bytes (354 KB)
+==================================================
+downloaded 354 KB
+
+* installing *binary* package ‘proto’ ...
+* ‘proto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *binary* package ‘sysfonts’ ...
+* ‘sysfonts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sysfonts’ as ‘sysfonts_0.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sysfonts)
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘shadowtext’ ...
+* ‘shadowtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shadowtext’ as ‘shadowtext_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shadowtext)
+* installing *source* package ‘ggtree’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ggtree’ as ‘ggtree_3.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggtree)
+* installing *binary* package ‘showtextdb’ ...
+* ‘showtextdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtextdb’ as ‘showtextdb_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtextdb)
+* installing *binary* package ‘ggimage’ ...
+* ‘ggimage’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggimage’ as ‘ggimage_0.3.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggimage)
+* installing *binary* package ‘showtext’ ...
+* ‘showtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘showtext’ as ‘showtext_0.9-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (showtext)
+* installing *binary* package ‘emojifont’ ...
+* ‘emojifont’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emojifont’ as ‘emojifont_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emojifont)
+
+The downloaded source packages are in
+	‘/tmp/RtmpKNV9hf/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m25.627s
+user	0m11.905s
+sys	0m2.738s
+* installing *binary* package ‘emojifont’ ...
+* ‘emojifont’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘emojifont’ as ‘emojifont_0.5.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (emojifont)
