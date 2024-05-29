@@ -1,0 +1,894 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''orthogene'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'orthogene'
+also installing the dependencies ‘MatrixModels’, ‘minqa’, ‘nloptr’, ‘RcppEigen’, ‘backports’, ‘carData’, ‘pbkrtest’, ‘quantreg’, ‘lme4’, ‘R.oo’, ‘R.methodsS3’, ‘broom’, ‘corrplot’, ‘car’, ‘dlstats’, ‘rvcheck’, ‘timechange’, ‘jpeg’, ‘rbibutils’, ‘GO.db’, ‘SparseM’, ‘readr’, ‘R.utils’, ‘RCurl’, ‘gridExtra’, ‘ggrepel’, ‘ggsci’, ‘cowplot’, ‘ggsignif’, ‘polynom’, ‘rstatix’, ‘R.cache’, ‘here’, ‘badger’, ‘renv’, ‘lubridate’, ‘maps’, ‘clusterGeneration’, ‘coda’, ‘combinat’, ‘expm’, ‘mnormt’, ‘numDeriv’, ‘optimParallel’, ‘scatterplot3d’, ‘grImport2’, ‘rsvg’, ‘pbapply’, ‘PlotTools’, ‘Rdpack’, ‘topGO’, ‘homologene’, ‘gprofiler2’, ‘babelgene’, ‘ggpubr’, ‘grr’, ‘repmis’, ‘rworkflows’, ‘markdown’, ‘piggyback’, ‘phytools’, ‘rphylopic’, ‘TreeTools’, ‘OmaDB’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/MatrixModels_0.5-3.tar.gz'
+Content type 'binary/octet-stream' length 420643 bytes (410 KB)
+==================================================
+downloaded 410 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/minqa_1.2.7.tar.gz'
+Content type 'binary/octet-stream' length 119149 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/nloptr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 714497 bytes (697 KB)
+==================================================
+downloaded 697 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RcppEigen_0.3.4.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1843437 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/backports_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 116071 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/carData_3.0-5.tar.gz'
+Content type 'binary/octet-stream' length 1704838 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pbkrtest_0.5.2.tar.gz'
+Content type 'binary/octet-stream' length 190083 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/quantreg_5.98.tar.gz'
+Content type 'binary/octet-stream' length 1559024 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lme4_1.1-35.3.tar.gz'
+Content type 'binary/octet-stream' length 4263358 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.oo_1.26.0.tar.gz'
+Content type 'binary/octet-stream' length 996069 bytes (972 KB)
+==================================================
+downloaded 972 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+Content type 'binary/octet-stream' length 82681 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/broom_1.0.6.tar.gz'
+Content type 'binary/octet-stream' length 1919214 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/corrplot_0.92.tar.gz'
+Content type 'binary/octet-stream' length 3844589 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/car_3.1-2.tar.gz'
+Content type 'binary/octet-stream' length 1732394 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dlstats_0.1.7.tar.gz'
+Content type 'binary/octet-stream' length 365138 bytes (356 KB)
+==================================================
+downloaded 356 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rvcheck_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 30915 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 172430 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'binary/octet-stream' length 29279 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rbibutils_2.2.16.tar.gz'
+Content type 'binary/octet-stream' length 879391 bytes (858 KB)
+==================================================
+downloaded 858 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/SparseM_1.82.tar.gz'
+Content type 'binary/octet-stream' length 1030516 bytes (1006 KB)
+==================================================
+downloaded 1006 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/readr_2.1.5.tar.gz'
+Content type 'binary/octet-stream' length 839451 bytes (819 KB)
+==================================================
+downloaded 819 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.utils_2.12.3.tar.gz'
+Content type 'binary/octet-stream' length 1441934 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RCurl_1.98-1.14.tar.gz'
+Content type 'binary/octet-stream' length 1093387 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggsci_3.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2427814 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/cowplot_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1380530 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggsignif_0.6.4.tar.gz'
+Content type 'binary/octet-stream' length 602086 bytes (587 KB)
+==================================================
+downloaded 587 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/polynom_1.4-1.tar.gz'
+Content type 'binary/octet-stream' length 407352 bytes (397 KB)
+==================================================
+downloaded 397 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rstatix_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 617358 bytes (602 KB)
+==================================================
+downloaded 602 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/R.cache_0.16.0.tar.gz'
+Content type 'binary/octet-stream' length 111924 bytes (109 KB)
+==================================================
+downloaded 109 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/here_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 53480 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/badger_0.2.3.tar.gz'
+Content type 'binary/octet-stream' length 66249 bytes (64 KB)
+==================================================
+downloaded 64 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/renv_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 2119732 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 985853 bytes (962 KB)
+==================================================
+downloaded 962 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/maps_3.4.2.tar.gz'
+Content type 'binary/octet-stream' length 3090049 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/clusterGeneration_1.3.8.tar.gz'
+Content type 'binary/octet-stream' length 269719 bytes (263 KB)
+==================================================
+downloaded 263 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/coda_0.19-4.1.tar.gz'
+Content type 'binary/octet-stream' length 328771 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/combinat_0.0-8.tar.gz'
+Content type 'binary/octet-stream' length 40876 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/expm_0.999-9.tar.gz'
+Content type 'binary/octet-stream' length 207275 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mnormt_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 175940 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 114329 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/optimParallel_1.0-2.tar.gz'
+Content type 'binary/octet-stream' length 200086 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/scatterplot3d_0.3-44.tar.gz'
+Content type 'binary/octet-stream' length 348285 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/grImport2_0.3-1.tar.gz'
+Content type 'binary/octet-stream' length 246661 bytes (240 KB)
+==================================================
+downloaded 240 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rsvg_2.6.0.tar.gz'
+Content type 'binary/octet-stream' length 274424 bytes (267 KB)
+==================================================
+downloaded 267 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pbapply_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 100418 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/PlotTools_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 33794 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/Rdpack_2.6.tar.gz'
+Content type 'binary/octet-stream' length 757670 bytes (739 KB)
+==================================================
+downloaded 739 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/topGO_2.57.0.tar.gz'
+Content type 'application/x-gzip' length 1757727 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/homologene_1.4.68.19.3.27.tar.gz'
+Content type 'binary/octet-stream' length 3769299 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gprofiler2_0.2.3.tar.gz'
+Content type 'binary/octet-stream' length 1549887 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/babelgene_22.9.tar.gz'
+Content type 'binary/octet-stream' length 3651883 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggpubr_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 2086616 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/grr_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 43727 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/repmis_0.5.tar.gz'
+Content type 'binary/octet-stream' length 51642 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rworkflows_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 1760097 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/markdown_1.12.tar.gz'
+Content type 'binary/octet-stream' length 204151 bytes (199 KB)
+==================================================
+downloaded 199 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/piggyback_0.1.5.tar.gz'
+Content type 'binary/octet-stream' length 565646 bytes (552 KB)
+==================================================
+downloaded 552 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/phytools_2.1-1.tar.gz'
+Content type 'binary/octet-stream' length 2629261 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rphylopic_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2068946 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/TreeTools_1.10.0.tar.gz'
+Content type 'binary/octet-stream' length 1656899 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/OmaDB_2.21.0.tar.gz'
+Content type 'application/x-gzip' length 100481 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/orthogene_1.11.0.tar.gz'
+Content type 'application/x-gzip' length 2706749 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+* installing *binary* package ‘MatrixModels’ ...
+* ‘MatrixModels’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MatrixModels’ as ‘MatrixModels_0.5-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MatrixModels)
+* installing *binary* package ‘minqa’ ...
+* ‘minqa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘minqa’ as ‘minqa_1.2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (minqa)
+* installing *binary* package ‘nloptr’ ...
+* ‘nloptr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nloptr’ as ‘nloptr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nloptr)
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.4.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘backports’ ...
+* ‘backports’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘backports’ as ‘backports_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (backports)
+* installing *binary* package ‘carData’ ...
+* ‘carData’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘carData’ as ‘carData_3.0-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (carData)
+* installing *binary* package ‘R.methodsS3’ ...
+* ‘R.methodsS3’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.methodsS3’ as ‘R.methodsS3_1.8.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.methodsS3)
+* installing *binary* package ‘corrplot’ ...
+* ‘corrplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corrplot’ as ‘corrplot_0.92_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corrplot)
+* installing *binary* package ‘dlstats’ ...
+* ‘dlstats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dlstats’ as ‘dlstats_0.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dlstats)
+* installing *binary* package ‘rvcheck’ ...
+* ‘rvcheck’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rvcheck’ as ‘rvcheck_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rvcheck)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘jpeg’ ...
+* ‘jpeg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jpeg’ as ‘jpeg_0.1-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jpeg)
+* installing *binary* package ‘rbibutils’ ...
+* ‘rbibutils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rbibutils’ as ‘rbibutils_2.2.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rbibutils)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+* installing *binary* package ‘SparseM’ ...
+* ‘SparseM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SparseM’ as ‘SparseM_1.82_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SparseM)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *binary* package ‘RCurl’ ...
+* ‘RCurl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RCurl’ as ‘RCurl_1.98-1.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RCurl)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘ggsci’ ...
+* ‘ggsci’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggsci’ as ‘ggsci_3.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggsci)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘ggsignif’ ...
+* ‘ggsignif’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggsignif’ as ‘ggsignif_0.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggsignif)
+* installing *binary* package ‘polynom’ ...
+* ‘polynom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polynom’ as ‘polynom_1.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polynom)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘renv’ ...
+* ‘renv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘renv’ as ‘renv_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (renv)
+* installing *binary* package ‘maps’ ...
+* ‘maps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘maps’ as ‘maps_3.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (maps)
+* installing *binary* package ‘clusterGeneration’ ...
+* ‘clusterGeneration’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clusterGeneration’ as ‘clusterGeneration_1.3.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clusterGeneration)
+* installing *binary* package ‘coda’ ...
+* ‘coda’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coda’ as ‘coda_0.19-4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coda)
+* installing *binary* package ‘combinat’ ...
+* ‘combinat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘combinat’ as ‘combinat_0.0-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (combinat)
+* installing *binary* package ‘expm’ ...
+* ‘expm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘expm’ as ‘expm_0.999-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (expm)
+* installing *binary* package ‘mnormt’ ...
+* ‘mnormt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mnormt’ as ‘mnormt_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mnormt)
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘optimParallel’ ...
+* ‘optimParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘optimParallel’ as ‘optimParallel_1.0-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (optimParallel)
+* installing *binary* package ‘scatterplot3d’ ...
+* ‘scatterplot3d’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterplot3d’ as ‘scatterplot3d_0.3-44_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterplot3d)
+* installing *binary* package ‘rsvg’ ...
+* ‘rsvg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rsvg’ as ‘rsvg_2.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rsvg)
+* installing *binary* package ‘pbapply’ ...
+* ‘pbapply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbapply’ as ‘pbapply_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbapply)
+* installing *binary* package ‘PlotTools’ ...
+* ‘PlotTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘PlotTools’ as ‘PlotTools_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PlotTools)
+* installing *binary* package ‘babelgene’ ...
+* ‘babelgene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘babelgene’ as ‘babelgene_22.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (babelgene)
+* installing *binary* package ‘grr’ ...
+* ‘grr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘grr’ as ‘grr_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (grr)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘quantreg’ ...
+* ‘quantreg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quantreg’ as ‘quantreg_5.98_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quantreg)
+* installing *binary* package ‘lme4’ ...
+* ‘lme4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lme4’ as ‘lme4_1.1-35.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lme4)
+* installing *binary* package ‘R.oo’ ...
+* ‘R.oo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.oo’ as ‘R.oo_1.26.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.oo)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘badger’ ...
+* ‘badger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘badger’ as ‘badger_0.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (badger)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *binary* package ‘grImport2’ ...
+* ‘grImport2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘grImport2’ as ‘grImport2_0.3-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (grImport2)
+* installing *binary* package ‘Rdpack’ ...
+* ‘Rdpack’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rdpack’ as ‘Rdpack_2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rdpack)
+* installing *source* package ‘topGO’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+** testing if installed package can be loaded from final location
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘topGO’ as ‘topGO_2.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (topGO)
+* installing *binary* package ‘gprofiler2’ ...
+* ‘gprofiler2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gprofiler2’ as ‘gprofiler2_0.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gprofiler2)
+* installing *binary* package ‘phytools’ ...
+* ‘phytools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘phytools’ as ‘phytools_2.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (phytools)
+* installing *binary* package ‘pbkrtest’ ...
+* ‘pbkrtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbkrtest’ as ‘pbkrtest_0.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbkrtest)
+* installing *binary* package ‘R.utils’ ...
+* ‘R.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.utils’ as ‘R.utils_2.12.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.utils)
+* installing *binary* package ‘rworkflows’ ...
+* ‘rworkflows’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rworkflows’ as ‘rworkflows_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rworkflows)
+* installing *binary* package ‘piggyback’ ...
+* ‘piggyback’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘piggyback’ as ‘piggyback_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (piggyback)
+* installing *binary* package ‘rphylopic’ ...
+* ‘rphylopic’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rphylopic’ as ‘rphylopic_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rphylopic)
+* installing *source* package ‘OmaDB’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘OmaDB’ as ‘OmaDB_2.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OmaDB)
+* installing *binary* package ‘car’ ...
+* ‘car’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘car’ as ‘car_3.1-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (car)
+* installing *binary* package ‘R.cache’ ...
+* ‘R.cache’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘R.cache’ as ‘R.cache_0.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (R.cache)
+* installing *binary* package ‘homologene’ ...
+* ‘homologene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘homologene’ as ‘homologene_1.4.68.19.3.27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (homologene)
+* installing *binary* package ‘rstatix’ ...
+* ‘rstatix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rstatix’ as ‘rstatix_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rstatix)
+* installing *binary* package ‘repmis’ ...
+* ‘repmis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘repmis’ as ‘repmis_0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (repmis)
+* installing *binary* package ‘TreeTools’ ...
+* ‘TreeTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘TreeTools’ as ‘TreeTools_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TreeTools)
+* installing *binary* package ‘ggpubr’ ...
+* ‘ggpubr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggpubr’ as ‘ggpubr_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggpubr)
+* installing *source* package ‘orthogene’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘orthogene’ as ‘orthogene_1.11.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (orthogene)
+
+The downloaded source packages are in
+	‘/tmp/RtmpmXhvF0/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	2m32.219s
+user	1m34.528s
+sys	0m15.499s
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘vdiffr’ ...
+* ‘vdiffr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vdiffr’ as ‘vdiffr_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vdiffr)
+* installing *binary* package ‘PlotTools’ ...
+* ‘PlotTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘PlotTools’ as ‘PlotTools_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PlotTools)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *binary* package ‘geometries’ ...
+* ‘geometries’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geometries’ as ‘geometries_0.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geometries)
+* installing *binary* package ‘rapidjsonr’ ...
+* ‘rapidjsonr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rapidjsonr’ as ‘rapidjsonr_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rapidjsonr)
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘V8’ ...
+* ‘V8’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘V8’ as ‘V8_4.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (V8)
+* installing *binary* package ‘tweenr’ ...
+* ‘tweenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tweenr’ as ‘tweenr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweenr)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘shades’ ...
+* ‘shades’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shades’ as ‘shades_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shades)
+* installing *binary* package ‘gridtext’ ...
+* ‘gridtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridtext’ as ‘gridtext_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridtext)
+* installing *binary* package ‘wk’ ...
+* ‘wk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wk’ as ‘wk_0.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wk)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘stringdist’ ...
+* ‘stringdist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘stringdist’ as ‘stringdist_0.9.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stringdist)
+* installing *binary* package ‘geosphere’ ...
+* ‘geosphere’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geosphere’ as ‘geosphere_1.5-18_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geosphere)
+* installing *binary* package ‘ggnewscale’ ...
+* ‘ggnewscale’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggnewscale’ as ‘ggnewscale_0.4.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggnewscale)
+* installing *binary* package ‘geomtextpath’ ...
+* ‘geomtextpath’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geomtextpath’ as ‘geomtextpath_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geomtextpath)
+* installing *binary* package ‘units’ ...
+* ‘units’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘units’ as ‘units_0.8-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (units)
+* installing *binary* package ‘palmerpenguins’ ...
+* ‘palmerpenguins’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘palmerpenguins’ as ‘palmerpenguins_0.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (palmerpenguins)
+* installing *binary* package ‘rphylopic’ ...
+* ‘rphylopic’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rphylopic’ as ‘rphylopic_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rphylopic)
+* installing *binary* package ‘jsonify’ ...
+* ‘jsonify’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jsonify’ as ‘jsonify_1.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jsonify)
+* installing *binary* package ‘sfheaders’ ...
+* ‘sfheaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sfheaders’ as ‘sfheaders_0.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sfheaders)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘ggforce’ ...
+* ‘ggforce’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggforce’ as ‘ggforce_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggforce)
+* installing *binary* package ‘ggfittext’ ...
+* ‘ggfittext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfittext’ as ‘ggfittext_0.10.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfittext)
+* installing *binary* package ‘s2’ ...
+* ‘s2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘s2’ as ‘s2_1.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s2)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘geojsonsf’ ...
+* ‘geojsonsf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘geojsonsf’ as ‘geojsonsf_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geojsonsf)
+* installing *binary* package ‘classInt’ ...
+* ‘classInt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘classInt’ as ‘classInt_0.4-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (classInt)
+* installing *binary* package ‘deeptime’ ...
+* ‘deeptime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘deeptime’ as ‘deeptime_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deeptime)
+* installing *binary* package ‘sf’ ...
+* ‘sf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sf’ as ‘sf_1.0-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sf)
+* installing *binary* package ‘h3jsr’ ...
+* ‘h3jsr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘h3jsr’ as ‘h3jsr_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (h3jsr)
+* installing *binary* package ‘palaeoverse’ ...
+* ‘palaeoverse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘palaeoverse’ as ‘palaeoverse_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (palaeoverse)
+* installing *binary* package ‘TreeTools’ ...
+* ‘TreeTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘TreeTools’ as ‘TreeTools_1.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TreeTools)
