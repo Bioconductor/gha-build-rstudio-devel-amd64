@@ -13,11 +13,10 @@ jobs:
     concurrency:
       group: dispatch
       cancel-in-progress: false
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.matrix.outputs.pkglist }}
     steps:
-      - uses: waycarbon/github-action-container-cleanup@v1
       - uses: actions/checkout@v3
 
       - name: Get timestamp for list
@@ -98,7 +97,7 @@ jobs:
             git pull origin main || git reset --hard origin/main
             if [ ! -s /tmp/self-hosted ]; then exit 0; fi
             grep -q 'waycarbon/github-action-container-cleanup@v1$' .github/workflows/run.yaml && exit 0 || true
-            sed -i 's/runs-on: [self-hosted]/runs-on: [self-hosted]/g' .github/workflows/run.yaml
+            sed -i 's/runs-on: ubuntu-latest/runs-on: [self-hosted]/g' .github/workflows/run.yaml
             sed -i '/steps:$/a \ \ \ \ \ \ - uses: waycarbon/github-action-container-cleanup@v1' .github/workflows/run.yaml
             cp /tmp/self-hosted lists/self-hosted
             git config user.name github-actions
@@ -161,9 +160,8 @@ jobs:
       fail-fast: false
       matrix:
         pkg: ${{fromJson(needs.getlistformatrix.outputs.matrix)}}
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
-      - uses: waycarbon/github-action-container-cleanup@v1
     
       - name: Free root space
         uses: almahmoud/free-root-space@main
