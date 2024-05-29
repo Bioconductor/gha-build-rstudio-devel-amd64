@@ -1,0 +1,74 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MsBackendRawFileReader'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MsBackendRawFileReader'
+also installing the dependency ‘MsBackendMgf’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MsBackendMgf_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 335582 bytes (327 KB)
+==================================================
+downloaded 327 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MsBackendRawFileReader_1.11.2.tar.gz'
+Content type 'application/x-gzip' length 1488987 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *source* package ‘MsBackendMgf’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MsBackendMgf’ as ‘MsBackendMgf_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MsBackendMgf)
+* installing *source* package ‘MsBackendRawFileReader’ ...
+** package ‘MsBackendRawFileReader’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MsBackendRawFileReader’ as ‘MsBackendRawFileReader_1.11.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MsBackendRawFileReader)
+
+The downloaded source packages are in
+	‘/tmp/RtmpOkmjpL/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m15.852s
+user	0m12.687s
+sys	0m2.439s
+* installing *source* package ‘tartare’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tartare’ as ‘tartare_1.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tartare)
