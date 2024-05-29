@@ -1,0 +1,168 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BiocBook'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'BiocBook'
+also installing the dependencies ‘janeaustenr’, ‘tokenizers’, ‘clisymbols’, ‘tidytext’, ‘SnowballC’, ‘stringdist’, ‘yesno’, ‘bookdown’, ‘available’, ‘quarto’, ‘renv’, ‘BiocStyle’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/janeaustenr_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1619132 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tokenizers_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 639378 bytes (624 KB)
+==================================================
+downloaded 624 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/clisymbols_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 18017 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tidytext_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 3029493 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/SnowballC_0.7.1.tar.gz'
+Content type 'binary/octet-stream' length 373085 bytes (364 KB)
+==================================================
+downloaded 364 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/stringdist_0.9.12.tar.gz'
+Content type 'binary/octet-stream' length 589341 bytes (575 KB)
+==================================================
+downloaded 575 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/yesno_0.1.2.tar.gz'
+Content type 'binary/octet-stream' length 13053 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/bookdown_0.39.tar.gz'
+Content type 'binary/octet-stream' length 1091022 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/available_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 233219 bytes (227 KB)
+==================================================
+downloaded 227 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/quarto_1.4.tar.gz'
+Content type 'binary/octet-stream' length 141861 bytes (138 KB)
+==================================================
+downloaded 138 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/renv_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 2119732 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocStyle_2.33.0.tar.gz'
+Content type 'application/x-gzip' length 786526 bytes (768 KB)
+==================================================
+downloaded 768 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocBook_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 924576 bytes (902 KB)
+==================================================
+downloaded 902 KB
+
+* installing *binary* package ‘janeaustenr’ ...
+* ‘janeaustenr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘janeaustenr’ as ‘janeaustenr_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (janeaustenr)
+* installing *binary* package ‘clisymbols’ ...
+* ‘clisymbols’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘clisymbols’ as ‘clisymbols_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (clisymbols)
+* installing *binary* package ‘SnowballC’ ...
+* ‘SnowballC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SnowballC’ as ‘SnowballC_0.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SnowballC)
+* installing *binary* package ‘stringdist’ ...
+* ‘stringdist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘stringdist’ as ‘stringdist_0.9.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stringdist)
+* installing *binary* package ‘yesno’ ...
+* ‘yesno’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘yesno’ as ‘yesno_0.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (yesno)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.39_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘quarto’ ...
+* ‘quarto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘quarto’ as ‘quarto_1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (quarto)
+* installing *binary* package ‘renv’ ...
+* ‘renv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘renv’ as ‘renv_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (renv)
+* installing *binary* package ‘tokenizers’ ...
+* ‘tokenizers’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tokenizers’ as ‘tokenizers_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tokenizers)
+* installing *source* package ‘BiocStyle’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘tidytext’ ...
+* ‘tidytext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidytext’ as ‘tidytext_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidytext)
+* installing *binary* package ‘available’ ...
+* ‘available’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘available’ as ‘available_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (available)
+* installing *source* package ‘BiocBook’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocBook’ as ‘BiocBook_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocBook)
+
+The downloaded source packages are in
+	‘/tmp/RtmpquPrH6/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m21.023s
+user	0m9.795s
+sys	0m3.735s
