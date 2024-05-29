@@ -1,0 +1,201 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''Rtpca'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'Rtpca'
+also installing the dependencies ‘backports’, ‘proto’, ‘biobroom’, ‘broom’, ‘gridExtra’, ‘mefa’, ‘nls2’, ‘openxlsx’, ‘RCurl’, ‘VennDiagram’, ‘VGAM’, ‘pROC’, ‘fdrtool’, ‘TPP’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/backports_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 116071 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/proto_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 470664 bytes (459 KB)
+==================================================
+downloaded 459 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/biobroom_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 507363 bytes (495 KB)
+==================================================
+downloaded 495 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/broom_1.0.6.tar.gz'
+Content type 'binary/octet-stream' length 1919214 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/mefa_3.2-9.tar.gz'
+Content type 'binary/octet-stream' length 255744 bytes (249 KB)
+==================================================
+downloaded 249 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/nls2_0.3-3.tar.gz'
+Content type 'binary/octet-stream' length 67061 bytes (65 KB)
+==================================================
+downloaded 65 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/openxlsx_4.2.5.2.tar.gz'
+Content type 'binary/octet-stream' length 2016647 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/RCurl_1.98-1.14.tar.gz'
+Content type 'binary/octet-stream' length 1093387 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/VennDiagram_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 248120 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/VGAM_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 7875918 bytes (7.5 MB)
+==================================================
+downloaded 7.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/pROC_1.18.5.tar.gz'
+Content type 'binary/octet-stream' length 848775 bytes (828 KB)
+==================================================
+downloaded 828 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/fdrtool_1.2.17.tar.gz'
+Content type 'binary/octet-stream' length 139067 bytes (135 KB)
+==================================================
+downloaded 135 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TPP_3.33.0.tar.gz'
+Content type 'application/x-gzip' length 8838763 bytes (8.4 MB)
+==================================================
+downloaded 8.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Rtpca_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 2200534 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+* installing *binary* package ‘backports’ ...
+* ‘backports’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘backports’ as ‘backports_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (backports)
+* installing *binary* package ‘proto’ ...
+* ‘proto’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proto’ as ‘proto_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proto)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘mefa’ ...
+* ‘mefa’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mefa’ as ‘mefa_3.2-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mefa)
+* installing *binary* package ‘openxlsx’ ...
+* ‘openxlsx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘openxlsx’ as ‘openxlsx_4.2.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (openxlsx)
+* installing *binary* package ‘RCurl’ ...
+* ‘RCurl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RCurl’ as ‘RCurl_1.98-1.14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RCurl)
+* installing *binary* package ‘VennDiagram’ ...
+* ‘VennDiagram’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VennDiagram’ as ‘VennDiagram_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VennDiagram)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *binary* package ‘pROC’ ...
+* ‘pROC’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pROC’ as ‘pROC_1.18.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pROC)
+* installing *binary* package ‘fdrtool’ ...
+* ‘fdrtool’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fdrtool’ as ‘fdrtool_1.2.17_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fdrtool)
+* installing *binary* package ‘broom’ ...
+* ‘broom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘broom’ as ‘broom_1.0.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (broom)
+* installing *binary* package ‘nls2’ ...
+* ‘nls2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nls2’ as ‘nls2_0.3-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nls2)
+* installing *source* package ‘Rtpca’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Rtpca’ as ‘Rtpca_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rtpca)
+* installing *source* package ‘biobroom’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biobroom’ as ‘biobroom_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biobroom)
+* installing *source* package ‘TPP’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TPP’ as ‘TPP_3.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TPP)
+
+The downloaded source packages are in
+	‘/tmp/RtmpFBW2lS/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m34.702s
+user	0m22.611s
+sys	0m5.140s
