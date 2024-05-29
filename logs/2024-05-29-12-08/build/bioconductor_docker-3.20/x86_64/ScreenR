@@ -1,0 +1,109 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ScreenR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ScreenR'
+also installing the dependencies ‘lazyeval’, ‘rex’, ‘patchwork’, ‘ggvenn’, ‘tidyr’, ‘dplyr’, ‘covr’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 157817 bytes (154 KB)
+==================================================
+downloaded 154 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/ggvenn_0.1.10.tar.gz'
+Content type 'binary/octet-stream' length 74064 bytes (72 KB)
+==================================================
+downloaded 72 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/tidyr_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 1172166 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/dplyr_1.1.4.tar.gz'
+Content type 'binary/octet-stream' length 1494662 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ScreenR_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 1895226 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘dplyr’ ...
+* ‘dplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dplyr’ as ‘dplyr_1.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dplyr)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘ggvenn’ ...
+* ‘ggvenn’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggvenn’ as ‘ggvenn_0.1.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggvenn)
+* installing *binary* package ‘tidyr’ ...
+* ‘tidyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyr’ as ‘tidyr_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyr)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *source* package ‘ScreenR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ScreenR’ as ‘ScreenR_1.7.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ScreenR)
+
+The downloaded source packages are in
+	‘/tmp/RtmpTzexMH/downloaded_packages’
+Old packages: 'highr', 'textshaping'
+
+real	0m13.954s
+user	0m7.103s
+sys	0m2.406s
