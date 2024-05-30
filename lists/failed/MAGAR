@@ -1,0 +1,142 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''MAGAR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/latest
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/latest/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'MAGAR'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/latest/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/PACKAGES'
+Warning: dependencies ‘bigstatsr’, ‘UpSetR’, ‘VennDiagram’, ‘qqman’, ‘rmutil’, ‘TFMPvalue’, ‘poweRlaw’ are not available
+also installing the dependencies ‘CNEr’, ‘DirichletMultinomial’, ‘LOLA’, ‘JASPAR2018’, ‘TFBSTools’, ‘seqLogo’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CNEr_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 9935511 bytes (9.5 MB)
+==================================================
+downloaded 9.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DirichletMultinomial_1.47.0.tar.gz'
+Content type 'application/x-gzip' length 438580 bytes (428 KB)
+==================================================
+downloaded 428 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/LOLA_1.35.0.tar.gz'
+Content type 'application/x-gzip' length 1163525 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 14253704 bytes (13.6 MB)
+==================================================
+downloaded 13.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TFBSTools_1.43.0.tar.gz'
+Content type 'application/x-gzip' length 587215 bytes (573 KB)
+==================================================
+downloaded 573 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/seqLogo_1.71.0.tar.gz'
+Content type 'application/x-gzip' length 919633 bytes (898 KB)
+==================================================
+downloaded 898 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/MAGAR_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 966476 bytes (943 KB)
+==================================================
+downloaded 943 KB
+
+ERROR: dependency ‘poweRlaw’ is not available for package ‘CNEr’
+* removing ‘/tmp/tmp/built/CNEr’
+* installing *source* package ‘DirichletMultinomial’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c R_init_DirichletMultinomial.c -o R_init_DirichletMultinomial.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit.c -o dirichlet_fit.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags` -DR_DIRICHLETMULTINOMIAL -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dirichlet_fit_main.c -o dirichlet_fit_main.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o DirichletMultinomial.so R_init_DirichletMultinomial.o dirichlet_fit.o dirichlet_fit_main.o -L/usr/lib/x86_64-linux-gnu -lgsl -lgslcblas -lm -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-DirichletMultinomial/00new/DirichletMultinomial/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DirichletMultinomial’ as ‘DirichletMultinomial_1.47.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DirichletMultinomial)
+* installing *source* package ‘LOLA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘LOLA’ as ‘LOLA_1.35.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (LOLA)
+* installing *source* package ‘JASPAR2018’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘JASPAR2018’ as ‘JASPAR2018_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (JASPAR2018)
+* installing *source* package ‘seqLogo’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘seqLogo’ as ‘seqLogo_1.71.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (seqLogo)
+ERROR: dependencies ‘bigstatsr’, ‘UpSetR’ are not available for package ‘MAGAR’
+* removing ‘/tmp/tmp/built/MAGAR’
+ERROR: dependencies ‘CNEr’, ‘TFMPvalue’ are not available for package ‘TFBSTools’
+* removing ‘/tmp/tmp/built/TFBSTools’
+
+The downloaded source packages are in
+	‘/tmp/RtmpYU2tDg/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/latest/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/latest/src/contrib/PACKAGES'
+Old packages: 'MultiAssayExperiment'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘CNEr’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘MAGAR’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘TFBSTools’ had non-zero exit status
+
+real	18m42.986s
+user	0m31.534s
+sys	0m8.392s
