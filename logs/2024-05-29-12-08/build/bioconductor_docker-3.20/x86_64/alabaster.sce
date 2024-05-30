@@ -28,9 +28,9 @@ packaged installation of ‘alabaster.sce’ as ‘alabaster.sce_1.5.1_R_x86_64-
 * DONE (alabaster.sce)
 
 The downloaded source packages are in
-	‘/tmp/RtmpG3WI4F/downloaded_packages’
+	‘/tmp/RtmpJLn6aN/downloaded_packages’
 Old packages: 'highr', 'textshaping'
 
-real	0m20.784s
-user	0m17.988s
-sys	0m2.058s
+real	0m22.203s
+user	0m18.937s
+sys	0m2.151s
