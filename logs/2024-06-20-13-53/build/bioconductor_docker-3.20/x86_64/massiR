@@ -1,0 +1,159 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''massiR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'massiR'
+also installing the dependencies ‘hms’, ‘dbplyr’, ‘filelock’, ‘gtools’, ‘caTools’, ‘progress’, ‘BiocFileCache’, ‘gplots’, ‘diptest’, ‘biomaRt’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/hms_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 100190 bytes (97 KB)
+==================================================
+downloaded 97 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dbplyr_2.5.0.tar.gz'
+Content type 'binary/octet-stream' length 1248394 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/filelock_1.0.3.tar.gz'
+Content type 'binary/octet-stream' length 24754 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 205542 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/progress_1.2.3.tar.gz'
+Content type 'binary/octet-stream' length 86380 bytes (84 KB)
+==================================================
+downloaded 84 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocFileCache_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 299496 bytes (292 KB)
+==================================================
+downloaded 292 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gplots_3.1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 600661 bytes (586 KB)
+==================================================
+downloaded 586 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/diptest_0.77-1.tar.gz'
+Content type 'binary/octet-stream' length 174290 bytes (170 KB)
+==================================================
+downloaded 170 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/biomaRt_2.61.1.tar.gz'
+Content type 'application/x-gzip' length 865728 bytes (845 KB)
+==================================================
+downloaded 845 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/massiR_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 1072093 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+* installing *binary* package ‘hms’ ...
+* ‘hms’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hms’ as ‘hms_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hms)
+* installing *binary* package ‘dbplyr’ ...
+* ‘dbplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbplyr’ as ‘dbplyr_2.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbplyr)
+* installing *binary* package ‘filelock’ ...
+* ‘filelock’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘filelock’ as ‘filelock_1.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (filelock)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *binary* package ‘diptest’ ...
+* ‘diptest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘diptest’ as ‘diptest_0.77-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (diptest)
+* installing *binary* package ‘progress’ ...
+* ‘progress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progress’ as ‘progress_1.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progress)
+* installing *source* package ‘BiocFileCache’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocFileCache’ as ‘BiocFileCache_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocFileCache)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘biomaRt’ ...
+** package ‘biomaRt’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biomaRt’ as ‘biomaRt_2.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biomaRt)
+* installing *source* package ‘massiR’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘massiR’ as ‘massiR_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (massiR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpz8Op8v/downloaded_packages’
+
+real	0m27.726s
+user	0m19.935s
+sys	0m4.333s
