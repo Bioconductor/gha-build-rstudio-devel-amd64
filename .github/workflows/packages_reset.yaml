@@ -68,6 +68,7 @@ jobs:
             git pull origin main || git reset --hard origin/main
             STARTTIME="$(cat runstarttime)" || true
             LOGDIR="logs/$(cat runstarttime)" || true
+            mv README.md "$LOGDIR"/ || true
             mv runstarttime "$LOGDIR"/ || true
             mv uniquedeps.json "$LOGDIR"/ || true
             mv packages.json "$LOGDIR"/ || true
