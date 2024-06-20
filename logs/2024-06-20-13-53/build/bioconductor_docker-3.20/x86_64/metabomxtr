@@ -1,0 +1,87 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''metabomxtr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'metabomxtr'
+also installing the dependencies ‘numDeriv’, ‘nloptr’, ‘pracma’, ‘optimx’, ‘Formula’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/numDeriv_2016.8-1.1.tar.gz'
+Content type 'binary/octet-stream' length 114329 bytes (111 KB)
+==================================================
+downloaded 111 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/nloptr_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 714497 bytes (697 KB)
+==================================================
+downloaded 697 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pracma_2.4.4.tar.gz'
+Content type 'binary/octet-stream' length 1759381 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/optimx_2023-10.21.tar.gz'
+Content type 'binary/octet-stream' length 4117368 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Formula_1.2-5.tar.gz'
+Content type 'binary/octet-stream' length 159277 bytes (155 KB)
+==================================================
+downloaded 155 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/metabomxtr_1.39.0.tar.gz'
+Content type 'application/x-gzip' length 345746 bytes (337 KB)
+==================================================
+downloaded 337 KB
+
+* installing *binary* package ‘numDeriv’ ...
+* ‘numDeriv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘numDeriv’ as ‘numDeriv_2016.8-1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (numDeriv)
+* installing *binary* package ‘nloptr’ ...
+* ‘nloptr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nloptr’ as ‘nloptr_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nloptr)
+* installing *binary* package ‘pracma’ ...
+* ‘pracma’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *binary* package ‘Formula’ ...
+* ‘Formula’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Formula’ as ‘Formula_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Formula)
+* installing *binary* package ‘optimx’ ...
+* ‘optimx’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘optimx’ as ‘optimx_2023-10.21_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (optimx)
+* installing *source* package ‘metabomxtr’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘metabomxtr’ as ‘metabomxtr_1.39.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metabomxtr)
+
+The downloaded source packages are in
+	‘/tmp/RtmpL7MCKM/downloaded_packages’
+
+real	0m13.911s
+user	0m8.551s
+sys	0m2.288s
