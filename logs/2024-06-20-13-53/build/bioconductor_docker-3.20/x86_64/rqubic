@@ -1,0 +1,86 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''rqubic'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'rqubic'
+also installing the dependencies ‘modeltools’, ‘flexclust’, ‘additivityTests’, ‘biclust’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/modeltools_0.2-23.tar.gz'
+Content type 'binary/octet-stream' length 224202 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/flexclust_1.4-2.tar.gz'
+Content type 'binary/octet-stream' length 670771 bytes (655 KB)
+==================================================
+downloaded 655 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/additivityTests_1.1-4.2.tar.gz'
+Content type 'binary/octet-stream' length 51060 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/biclust_2.0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 1313578 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/rqubic_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 194643 bytes (190 KB)
+==================================================
+downloaded 190 KB
+
+* installing *binary* package ‘modeltools’ ...
+* ‘modeltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modeltools’ as ‘modeltools_0.2-23_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modeltools)
+* installing *binary* package ‘additivityTests’ ...
+* ‘additivityTests’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘additivityTests’ as ‘additivityTests_1.1-4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (additivityTests)
+* installing *binary* package ‘flexclust’ ...
+* ‘flexclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flexclust’ as ‘flexclust_1.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flexclust)
+* installing *binary* package ‘biclust’ ...
+* ‘biclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘biclust’ as ‘biclust_2.0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biclust)
+* installing *source* package ‘rqubic’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bicluster.c -o bicluster.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c discretize.c -o discretize.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c fib.c -o fib.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c graph.c -o graph.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rqubic.c -o rqubic.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o rqubic.so bicluster.o discretize.o fib.o graph.o rqubic.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-rqubic/00new/rqubic/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘rqubic’ as ‘rqubic_1.51.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rqubic)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpz4mCYR/downloaded_packages’
+
+real	0m12.797s
+user	0m7.221s
+sys	0m1.984s
