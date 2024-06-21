@@ -1,0 +1,69 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''zinbwave'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'zinbwave'
+also installing the dependencies ‘softImpute’, ‘biomaRt’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/softImpute_1.4-1.tar.gz'
+Content type 'binary/octet-stream' length 324012 bytes (316 KB)
+==================================================
+downloaded 316 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/biomaRt_2.61.1.tar.gz'
+Content type 'application/x-gzip' length 865728 bytes (845 KB)
+==================================================
+downloaded 845 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/zinbwave_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 475968 bytes (464 KB)
+==================================================
+downloaded 464 KB
+
+* installing *binary* package ‘softImpute’ ...
+* ‘softImpute’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘softImpute’ as ‘softImpute_1.4-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (softImpute)
+* installing *source* package ‘biomaRt’ ...
+** package ‘biomaRt’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biomaRt’ as ‘biomaRt_2.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biomaRt)
+* installing *source* package ‘zinbwave’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘zinbwave’ as ‘zinbwave_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zinbwave)
+
+The downloaded source packages are in
+	‘/tmp/RtmpdXs3Jq/downloaded_packages’
+
+real	0m39.914s
+user	0m33.814s
+sys	0m3.637s
