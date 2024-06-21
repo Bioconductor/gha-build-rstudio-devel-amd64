@@ -1,0 +1,34 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''VariantExperiment'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'VariantExperiment'
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/VariantExperiment_1.19.2.tar.gz'
+Content type 'application/x-gzip' length 336089 bytes (328 KB)
+==================================================
+downloaded 328 KB
+
+* installing *source* package ‘VariantExperiment’ ...
+** package ‘VariantExperiment’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Error in setMethod("gdsfile", "VariantExperiment", function(object) gdsfile(assays(object)[[1]])) : 
+  no existing definition for function ‘gdsfile’
+Error: unable to load R code in package ‘VariantExperiment’
+Execution halted
+ERROR: lazy loading failed for package ‘VariantExperiment’
+* removing ‘/tmp/tmp/built/VariantExperiment’
+
+The downloaded source packages are in
+	‘/tmp/Rtmp46IGjg/downloaded_packages’
+Warning message:
+In install.packages(...) :
+  installation of package ‘VariantExperiment’ had non-zero exit status
+
+real	0m9.270s
+user	0m6.761s
+sys	0m0.943s
