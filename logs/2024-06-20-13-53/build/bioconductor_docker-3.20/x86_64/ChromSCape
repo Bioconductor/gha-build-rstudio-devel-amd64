@@ -1,0 +1,577 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ChromSCape'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ChromSCape'
+also installing the dependencies ‘dotCall64’, ‘shades’, ‘gridtext’, ‘RcppParallel’, ‘RcppTOML’, ‘here’, ‘sp’, ‘progressr’, ‘spam’, ‘anytime’, ‘fresh’, ‘waiter’, ‘svglite’, ‘ggfittext’, ‘RApiSerialize’, ‘stringfish’, ‘reticulate’, ‘babelgene’, ‘SeuratObject’, ‘future.apply’, ‘pbapply’, ‘patchwork’, ‘fastmatch’, ‘RcppRoll’, ‘globals’, ‘listenv’, ‘parallelly’, ‘colourpicker’, ‘shinyjs’, ‘shinyFiles’, ‘shinyhelper’, ‘shinyWidgets’, ‘shinydashboardPlus’, ‘shinycssloaders’, ‘shinydashboard’, ‘colorRamps’, ‘kableExtra’, ‘gggenes’, ‘qualV’, ‘stringdist’, ‘qs’, ‘DT’, ‘rlist’, ‘umap’, ‘msigdbr’, ‘forcats’, ‘coop’, ‘matrixTests’, ‘markdown’, ‘Signac’, ‘future’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dotCall64_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 31177 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shades_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 87404 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gridtext_0.1.5.tar.gz'
+Content type 'binary/octet-stream' length 354355 bytes (346 KB)
+==================================================
+downloaded 346 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppParallel_5.1.7.tar.gz'
+Content type 'binary/octet-stream' length 1880883 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppTOML_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 238371 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/here_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 53480 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sp_2.1-4.tar.gz'
+Content type 'binary/octet-stream' length 2102073 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/progressr_0.14.0.tar.gz'
+Content type 'binary/octet-stream' length 385025 bytes (376 KB)
+==================================================
+downloaded 376 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spam_2.10-0.tar.gz'
+Content type 'binary/octet-stream' length 2738300 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'binary/octet-stream' length 406781 bytes (397 KB)
+==================================================
+downloaded 397 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fresh_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 1500548 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/waiter_0.2.5.tar.gz'
+Content type 'binary/octet-stream' length 470150 bytes (459 KB)
+==================================================
+downloaded 459 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/svglite_2.1.3.tar.gz'
+Content type 'binary/octet-stream' length 201619 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggfittext_0.10.2.tar.gz'
+Content type 'binary/octet-stream' length 853140 bytes (833 KB)
+==================================================
+downloaded 833 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RApiSerialize_0.1.3.tar.gz'
+Content type 'binary/octet-stream' length 14910 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/stringfish_0.16.0.tar.gz'
+Content type 'binary/octet-stream' length 420855 bytes (410 KB)
+==================================================
+downloaded 410 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/reticulate_1.37.0.tar.gz'
+Content type 'binary/octet-stream' length 1850745 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/babelgene_22.9.tar.gz'
+Content type 'binary/octet-stream' length 3651883 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/SeuratObject_5.0.2.tar.gz'
+Content type 'binary/octet-stream' length 2064001 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/future.apply_1.11.2.tar.gz'
+Content type 'binary/octet-stream' length 156906 bytes (153 KB)
+==================================================
+downloaded 153 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pbapply_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 100418 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fastmatch_1.1-4.tar.gz'
+Content type 'binary/octet-stream' length 35356 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppRoll_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 94304 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/globals_0.16.3.tar.gz'
+Content type 'binary/octet-stream' length 108405 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/listenv_0.9.1.tar.gz'
+Content type 'binary/octet-stream' length 106238 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/parallelly_1.37.1.tar.gz'
+Content type 'binary/octet-stream' length 361300 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/colourpicker_1.3.0.tar.gz'
+Content type 'binary/octet-stream' length 1335908 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1087229 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyFiles_0.9.3.tar.gz'
+Content type 'binary/octet-stream' length 406126 bytes (396 KB)
+==================================================
+downloaded 396 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyhelper_0.3.2.tar.gz'
+Content type 'binary/octet-stream' length 91662 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyWidgets_0.8.6.tar.gz'
+Content type 'binary/octet-stream' length 1291118 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinydashboardPlus_2.0.4.tar.gz'
+Content type 'binary/octet-stream' length 916527 bytes (895 KB)
+==================================================
+downloaded 895 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinycssloaders_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 134552 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 325184 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/colorRamps_2.3.4.tar.gz'
+Content type 'binary/octet-stream' length 27965 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/kableExtra_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2050288 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gggenes_0.5.1.tar.gz'
+Content type 'binary/octet-stream' length 1238161 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/qualV_0.3-5.tar.gz'
+Content type 'binary/octet-stream' length 133133 bytes (130 KB)
+==================================================
+downloaded 130 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/stringdist_0.9.12.tar.gz'
+Content type 'binary/octet-stream' length 589341 bytes (575 KB)
+==================================================
+downloaded 575 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/qs_0.26.3.tar.gz'
+Content type 'binary/octet-stream' length 1475743 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/DT_0.33.tar.gz'
+Content type 'binary/octet-stream' length 1792625 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rlist_0.4.6.2.tar.gz'
+Content type 'binary/octet-stream' length 247938 bytes (242 KB)
+==================================================
+downloaded 242 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/umap_0.2.10.0.tar.gz'
+Content type 'binary/octet-stream' length 181334 bytes (177 KB)
+==================================================
+downloaded 177 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/msigdbr_7.5.1.tar.gz'
+Content type 'binary/octet-stream' length 6152551 bytes (5.9 MB)
+==================================================
+downloaded 5.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/coop_0.6-3.tar.gz'
+Content type 'binary/octet-stream' length 486277 bytes (474 KB)
+==================================================
+downloaded 474 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/matrixTests_0.2.3.tar.gz'
+Content type 'binary/octet-stream' length 193272 bytes (188 KB)
+==================================================
+downloaded 188 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/markdown_1.13.tar.gz'
+Content type 'binary/octet-stream' length 146608 bytes (143 KB)
+==================================================
+downloaded 143 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Signac_1.13.0.tar.gz'
+Content type 'binary/octet-stream' length 827393 bytes (808 KB)
+==================================================
+downloaded 808 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/future_1.33.2.tar.gz'
+Content type 'binary/octet-stream' length 656257 bytes (640 KB)
+==================================================
+downloaded 640 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ChromSCape_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 5560173 bytes (5.3 MB)
+==================================================
+downloaded 5.3 MB
+
+* installing *binary* package ‘dotCall64’ ...
+* ‘dotCall64’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dotCall64’ as ‘dotCall64_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dotCall64)
+* installing *binary* package ‘shades’ ...
+* ‘shades’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shades’ as ‘shades_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shades)
+* installing *binary* package ‘RcppParallel’ ...
+* ‘RcppParallel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppParallel’ as ‘RcppParallel_5.1.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppParallel)
+* installing *binary* package ‘RcppTOML’ ...
+* ‘RcppTOML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppTOML’ as ‘RcppTOML_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppTOML)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘sp’ ...
+* ‘sp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sp’ as ‘sp_2.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sp)
+* installing *binary* package ‘progressr’ ...
+* ‘progressr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘progressr’ as ‘progressr_0.14.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (progressr)
+* installing *binary* package ‘anytime’ ...
+* ‘anytime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *binary* package ‘fresh’ ...
+* ‘fresh’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fresh’ as ‘fresh_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fresh)
+* installing *binary* package ‘waiter’ ...
+* ‘waiter’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘waiter’ as ‘waiter_0.2.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (waiter)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘RApiSerialize’ ...
+* ‘RApiSerialize’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RApiSerialize’ as ‘RApiSerialize_0.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RApiSerialize)
+* installing *binary* package ‘babelgene’ ...
+* ‘babelgene’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘babelgene’ as ‘babelgene_22.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (babelgene)
+* installing *binary* package ‘pbapply’ ...
+* ‘pbapply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbapply’ as ‘pbapply_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbapply)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘fastmatch’ ...
+* ‘fastmatch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastmatch’ as ‘fastmatch_1.1-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastmatch)
+* installing *binary* package ‘RcppRoll’ ...
+* ‘RcppRoll’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppRoll’ as ‘RcppRoll_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppRoll)
+* installing *binary* package ‘globals’ ...
+* ‘globals’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘globals’ as ‘globals_0.16.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (globals)
+* installing *binary* package ‘listenv’ ...
+* ‘listenv’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘listenv’ as ‘listenv_0.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (listenv)
+* installing *binary* package ‘parallelly’ ...
+* ‘parallelly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘parallelly’ as ‘parallelly_1.37.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (parallelly)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘shinyFiles’ ...
+* ‘shinyFiles’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyFiles’ as ‘shinyFiles_0.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyFiles)
+* installing *binary* package ‘shinycssloaders’ ...
+* ‘shinycssloaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinycssloaders’ as ‘shinycssloaders_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinycssloaders)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘colorRamps’ ...
+* ‘colorRamps’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘colorRamps’ as ‘colorRamps_2.3.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (colorRamps)
+* installing *binary* package ‘qualV’ ...
+* ‘qualV’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qualV’ as ‘qualV_0.3-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qualV)
+* installing *binary* package ‘stringdist’ ...
+* ‘stringdist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘stringdist’ as ‘stringdist_0.9.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stringdist)
+* installing *binary* package ‘DT’ ...
+* ‘DT’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DT’ as ‘DT_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DT)
+* installing *binary* package ‘rlist’ ...
+* ‘rlist’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rlist’ as ‘rlist_0.4.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rlist)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘coop’ ...
+* ‘coop’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘coop’ as ‘coop_0.6-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (coop)
+* installing *binary* package ‘matrixTests’ ...
+* ‘matrixTests’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘matrixTests’ as ‘matrixTests_0.2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (matrixTests)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘gridtext’ ...
+* ‘gridtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridtext’ as ‘gridtext_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridtext)
+* installing *binary* package ‘spam’ ...
+* ‘spam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spam’ as ‘spam_2.10-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spam)
+* installing *binary* package ‘stringfish’ ...
+* ‘stringfish’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘stringfish’ as ‘stringfish_0.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (stringfish)
+* installing *binary* package ‘reticulate’ ...
+* ‘reticulate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reticulate’ as ‘reticulate_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reticulate)
+* installing *binary* package ‘colourpicker’ ...
+* ‘colourpicker’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘colourpicker’ as ‘colourpicker_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (colourpicker)
+* installing *binary* package ‘shinyhelper’ ...
+* ‘shinyhelper’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyhelper’ as ‘shinyhelper_0.3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyhelper)
+* installing *binary* package ‘shinyWidgets’ ...
+* ‘shinyWidgets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.8.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *binary* package ‘shinydashboardPlus’ ...
+* ‘shinydashboardPlus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboardPlus’ as ‘shinydashboardPlus_2.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboardPlus)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *binary* package ‘msigdbr’ ...
+* ‘msigdbr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘msigdbr’ as ‘msigdbr_7.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (msigdbr)
+* installing *binary* package ‘future’ ...
+* ‘future’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future’ as ‘future_1.33.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future)
+* installing *binary* package ‘ggfittext’ ...
+* ‘ggfittext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggfittext’ as ‘ggfittext_0.10.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggfittext)
+* installing *binary* package ‘future.apply’ ...
+* ‘future.apply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘future.apply’ as ‘future.apply_1.11.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (future.apply)
+* installing *binary* package ‘qs’ ...
+* ‘qs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘qs’ as ‘qs_0.26.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qs)
+* installing *binary* package ‘umap’ ...
+* ‘umap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘umap’ as ‘umap_0.2.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (umap)
+* installing *binary* package ‘SeuratObject’ ...
+* ‘SeuratObject’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SeuratObject’ as ‘SeuratObject_5.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SeuratObject)
+* installing *binary* package ‘gggenes’ ...
+* ‘gggenes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gggenes’ as ‘gggenes_0.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gggenes)
+* installing *source* package ‘Signac’ ...
+** package ‘Signac’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filter.cpp -o filter.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c group.cpp -o group.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c split.cpp -o split.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c validate.cpp -o validate.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Signac.so RcppExports.o filter.o group.o split.o validate.o -lz -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-Signac/00new/Signac/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Signac’ as ‘Signac_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Signac)
+* installing *source* package ‘ChromSCape’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c as_dist.cpp -o as_dist.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o ChromSCape.so RcppExports.o as_dist.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-ChromSCape/00new/ChromSCape/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ChromSCape’ as ‘ChromSCape_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ChromSCape)
+
+The downloaded source packages are in
+	‘/tmp/RtmpMW0JF4/downloaded_packages’
+
+real	2m12.318s
+user	1m32.303s
+sys	0m14.842s
