@@ -1,0 +1,98 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''pairedGSEA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'pairedGSEA'
+also installing the dependencies ‘rematch’, ‘cellranger’, ‘rex’, ‘writexl’, ‘readxl’, ‘covr’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 16256 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 103690 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rex_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 126863 bytes (123 KB)
+==================================================
+downloaded 123 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/writexl_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 171745 bytes (167 KB)
+==================================================
+downloaded 167 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 863132 bytes (842 KB)
+==================================================
+downloaded 842 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/covr_3.6.4.tar.gz'
+Content type 'binary/octet-stream' length 328819 bytes (321 KB)
+==================================================
+downloaded 321 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/pairedGSEA_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 603450 bytes (589 KB)
+==================================================
+downloaded 589 KB
+
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘rex’ ...
+* ‘rex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rex’ as ‘rex_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rex)
+* installing *binary* package ‘writexl’ ...
+* ‘writexl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘writexl’ as ‘writexl_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (writexl)
+* installing *source* package ‘pairedGSEA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘pairedGSEA’ as ‘pairedGSEA_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pairedGSEA)
+* installing *binary* package ‘cellranger’ ...
+* ‘cellranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cellranger’ as ‘cellranger_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cellranger)
+* installing *binary* package ‘covr’ ...
+* ‘covr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘covr’ as ‘covr_3.6.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (covr)
+* installing *binary* package ‘readxl’ ...
+* ‘readxl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readxl’ as ‘readxl_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readxl)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp53t3fM/downloaded_packages’
+
+real	0m32.115s
+user	0m25.111s
+sys	0m3.237s
