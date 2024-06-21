@@ -1,0 +1,35 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''IdeoViz'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'IdeoViz'
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/IdeoViz_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 421644 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+* installing *source* package ‘IdeoViz’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘IdeoViz’ as ‘IdeoViz_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (IdeoViz)
+
+The downloaded source packages are in
+	‘/tmp/RtmpNUXgVz/downloaded_packages’
+
+real	0m24.266s
+user	0m20.104s
+sys	0m2.042s
