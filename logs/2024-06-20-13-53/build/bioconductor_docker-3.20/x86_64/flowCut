@@ -1,0 +1,77 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''flowCut'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'flowCut'
+also installing the dependencies ‘proxy’, ‘Cairo’, ‘e1071’, ‘markdown’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 175590 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Cairo_1.6-2.tar.gz'
+Content type 'binary/octet-stream' length 84419 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/e1071_1.7-14.tar.gz'
+Content type 'binary/octet-stream' length 596026 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/markdown_1.13.tar.gz'
+Content type 'binary/octet-stream' length 146608 bytes (143 KB)
+==================================================
+downloaded 143 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/flowCut_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 7726744 bytes (7.4 MB)
+==================================================
+downloaded 7.4 MB
+
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘Cairo’ ...
+* ‘Cairo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Cairo’ as ‘Cairo_1.6-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cairo)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *source* package ‘flowCut’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘flowCut’ as ‘flowCut_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flowCut)
+
+The downloaded source packages are in
+	‘/tmp/RtmpbNeWOU/downloaded_packages’
+
+real	0m13.961s
+user	0m7.857s
+sys	0m2.051s
