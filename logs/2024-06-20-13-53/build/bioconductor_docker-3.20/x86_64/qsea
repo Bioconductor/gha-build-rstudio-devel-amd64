@@ -1,0 +1,113 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''qsea'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'qsea'
+also installing the dependencies ‘gtools’, ‘zoo’, ‘BSgenome.Hsapiens.UCSC.hg19’, ‘MEDIPSData’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1026491 bytes (1002 KB)
+==================================================
+downloaded 1002 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg19_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 710245413 bytes (677.3 MB)
+==================================================
+downloaded 677.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/MEDIPSData_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 166163950 bytes (158.5 MB)
+==================================================
+downloaded 158.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/qsea_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 795822 bytes (777 KB)
+==================================================
+downloaded 777 KB
+
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *source* package ‘BSgenome.Hsapiens.UCSC.hg19’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BSgenome.Hsapiens.UCSC.hg19’ as ‘BSgenome.Hsapiens.UCSC.hg19_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BSgenome.Hsapiens.UCSC.hg19)
+* installing *source* package ‘MEDIPSData’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MEDIPSData’ as ‘MEDIPSData_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MEDIPSData)
+* installing *source* package ‘qsea’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lm.c -o lm.o
+In file included from lm.c:30:
+lm.c: In function ‘Cdqrls’:
+lm.c:63:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘R_xlen_t’ {aka ‘long int’} [-Wformat=]
+   63 |     error(_("dimensions of 'x' (%d,%d) and 'y' (%d) do not match"),
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+lm.c:63:11: note: in expansion of macro ‘_’
+   63 |     error(_("dimensions of 'x' (%d,%d) and 'y' (%d) do not match"),
+      |           ^
+lm.c:63:50: note: format string is defined here
+   63 |     error(_("dimensions of 'x' (%d,%d) and 'y' (%d) do not match"),
+      |                                                 ~^
+      |                                                  |
+      |                                                  int
+      |                                                 %ld
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o qsea.so lm.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-qsea/00new/qsea/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qsea’ as ‘qsea_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qsea)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2a6OhI/downloaded_packages’
+
+real	2m18.077s
+user	2m0.529s
+sys	0m11.377s
