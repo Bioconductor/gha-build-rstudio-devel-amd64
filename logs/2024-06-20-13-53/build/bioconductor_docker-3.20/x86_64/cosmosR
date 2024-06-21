@@ -1,0 +1,193 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cosmosR'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'cosmosR'
+also installing the dependencies ‘slam’, ‘sets’, ‘bcellViper’, ‘relations’, ‘marray’, ‘DT’, ‘shinyjs’, ‘shinydashboard’, ‘dorothea’, ‘visNetwork’, ‘piano’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/slam_0.1-50.tar.gz'
+Content type 'binary/octet-stream' length 185613 bytes (181 KB)
+==================================================
+downloaded 181 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sets_1.0-25.tar.gz'
+Content type 'binary/octet-stream' length 645932 bytes (630 KB)
+==================================================
+downloaded 630 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/bcellViper_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 11785626 bytes (11.2 MB)
+==================================================
+downloaded 11.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/relations_0.6-13.tar.gz'
+Content type 'binary/octet-stream' length 773419 bytes (755 KB)
+==================================================
+downloaded 755 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/marray_1.83.0.tar.gz'
+Content type 'application/x-gzip' length 5054224 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/DT_0.33.tar.gz'
+Content type 'binary/octet-stream' length 1792625 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1087229 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 325184 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/dorothea_1.17.0.tar.gz'
+Content type 'application/x-gzip' length 34631571 bytes (33.0 MB)
+==================================================
+downloaded 33.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 4654529 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/piano_2.21.0.tar.gz'
+Content type 'application/x-gzip' length 1606067 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/cosmosR_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 3532465 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *binary* package ‘slam’ ...
+* ‘slam’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘slam’ as ‘slam_0.1-50_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (slam)
+* installing *binary* package ‘sets’ ...
+* ‘sets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sets’ as ‘sets_1.0-25_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sets)
+* installing *source* package ‘bcellViper’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘bcellViper’ as ‘bcellViper_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bcellViper)
+* installing *source* package ‘marray’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘marray’ as ‘marray_1.83.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (marray)
+* installing *binary* package ‘DT’ ...
+* ‘DT’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DT’ as ‘DT_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DT)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘visNetwork’ ...
+* ‘visNetwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘visNetwork’ as ‘visNetwork_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (visNetwork)
+* installing *binary* package ‘relations’ ...
+* ‘relations’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘relations’ as ‘relations_0.6-13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (relations)
+* installing *source* package ‘dorothea’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘dorothea’ as ‘dorothea_1.17.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dorothea)
+* installing *source* package ‘piano’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘piano’ as ‘piano_2.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (piano)
+* installing *source* package ‘cosmosR’ ...
+** package ‘cosmosR’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘cosmosR’ as ‘cosmosR_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cosmosR)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpu8QhfR/downloaded_packages’
+
+real	1m6.609s
+user	0m56.485s
+sys	0m6.476s
