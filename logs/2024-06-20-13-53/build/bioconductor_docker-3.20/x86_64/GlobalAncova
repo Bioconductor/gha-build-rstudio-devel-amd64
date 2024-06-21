@@ -1,0 +1,239 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GlobalAncova'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'GlobalAncova'
+also installing the dependencies ‘corpcor’, ‘dendextend’, ‘VGAM’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/corpcor_1.6.10.tar.gz'
+Content type 'binary/octet-stream' length 116072 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dendextend_1.17.1.tar.gz'
+Content type 'binary/octet-stream' length 3911750 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/VGAM_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 7875918 bytes (7.5 MB)
+==================================================
+downloaded 7.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GlobalAncova_4.23.0.tar.gz'
+Content type 'application/x-gzip' length 979259 bytes (956 KB)
+==================================================
+downloaded 956 KB
+
+* installing *binary* package ‘corpcor’ ...
+* ‘corpcor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘corpcor’ as ‘corpcor_1.6.10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (corpcor)
+* installing *binary* package ‘dendextend’ ...
+* ‘dendextend’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.17.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *binary* package ‘VGAM’ ...
+* ‘VGAM’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘VGAM’ as ‘VGAM_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (VGAM)
+* installing *source* package ‘GlobalAncova’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GlobalAncova.c -o GlobalAncova.o
+GlobalAncova.c: In function ‘row_orth2d’:
+GlobalAncova.c:33:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   33 |    { error("Warning in row_orth2d: Memory block of %d bytes unavailable",
+      |                                                    ~^
+      |                                                     |
+      |                                                     int
+      |                                                    %ld
+   34 |       (*sD)*(*sD)*sizeof(double));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~                     
+      |                  |
+      |                  long unsigned int
+GlobalAncova.c:38:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   38 |    { error("Warning in row_orth2d: Memory block of %d bytes unavailable",
+      |                                                    ~^
+      |                                                     |
+      |                                                     int
+      |                                                    %ld
+   39 |       (*sD)*(*sD)*sizeof(double) );
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~                     
+      |                  |
+      |                  long unsigned int
+GlobalAncova.c:43:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   43 |    { error("Warning in row_orth2d: Memory block of %d bytes unavailable",
+      |                                                    ~^
+      |                                                     |
+      |                                                     int
+      |                                                    %ld
+   44 |       (*zD)*(*sD)*sizeof(double)  );
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~                     
+      |                  |
+      |                  long unsigned int
+GlobalAncova.c:48:53: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   48 |    { error("Warning in row_orth2d: Memory block of %d bytes unavailable",
+      |                                                    ~^
+      |                                                     |
+      |                                                     int
+      |                                                    %ld
+   49 |       (*zD)*(*zD)*sizeof(double) );
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~                     
+      |                  |
+      |                  long unsigned int
+GlobalAncova.c: In function ‘genewiseGA’:
+GlobalAncova.c:88:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   88 |     { error("Warning in genewiseGA: Memory block of %d bytes unavailable",
+      |                                                     ~^
+      |                                                      |
+      |                                                      int
+      |                                                     %ld
+   89 |       (*zxx)*(*zD_full) * sizeof(double) );
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+      |                         |
+      |                         long unsigned int
+GlobalAncova.c:100:56: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  100 |       { error("Warning in genewiseGA: Memory block of %d bytes unavailable",
+      |                                                       ~^
+      |                                                        |
+      |                                                        int
+      |                                                       %ld
+  101 |         (*zxx)*(*zD_red) * sizeof(double) );
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~               
+      |                          |
+      |                          long unsigned int
+GlobalAncova.c: In function ‘permut_withFperm’:
+GlobalAncova.c:148:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  148 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  149 |      (*zrr) * sizeof(double) );
+      |      ~~~~~~~~~~~~~~~~~~~~~~~                    
+      |             |
+      |             long unsigned int
+GlobalAncova.c:153:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  153 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  154 |     (*zrr) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~                     
+      |            |
+      |            long unsigned int
+GlobalAncova.c:158:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  158 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  159 |     (*n_test_genes) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            
+      |                     |
+      |                     long unsigned int
+GlobalAncova.c:163:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  163 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  164 |     (*sD_full)*(*sD_full) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      
+      |                           |
+      |                           long unsigned int
+GlobalAncova.c:170:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  170 |     { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                                 ~^
+      |                                                  |
+      |                                                  int
+      |                                                 %ld
+  171 |       (*N_Subjects) * sizeof(int));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~                 
+      |                     |
+      |                     long unsigned int
+GlobalAncova.c: In function ‘permut’:
+GlobalAncova.c:250:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  250 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  251 |      (*zrr) * sizeof(double) );
+      |      ~~~~~~~~~~~~~~~~~~~~~~~                    
+      |             |
+      |             long unsigned int
+GlobalAncova.c:255:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  255 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  256 |     (*zrr) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~                     
+      |            |
+      |            long unsigned int
+GlobalAncova.c:260:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  260 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  261 |     (*n_test_genes) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            
+      |                     |
+      |                     long unsigned int
+GlobalAncova.c:265:48: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  265 |   { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                               ~^
+      |                                                |
+      |                                                int
+      |                                               %ld
+  266 |     (*sD_full)*(*sD_full) * sizeof(double));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      
+      |                           |
+      |                           long unsigned int
+GlobalAncova.c:272:50: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  272 |     { error("Warning in permut: Memory block of %d bytes unavailable",
+      |                                                 ~^
+      |                                                  |
+      |                                                  int
+      |                                                 %ld
+  273 |       (*N_Subjects) * sizeof(int));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~                 
+      |                     |
+      |                     long unsigned int
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ludcmp.c -o ludcmp.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c matrix.c -o matrix.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GlobalAncova.so GlobalAncova.o ludcmp.o matrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GlobalAncova/00new/GlobalAncova/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GlobalAncova’ as ‘GlobalAncova_4.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GlobalAncova)
+
+The downloaded source packages are in
+	‘/tmp/RtmpyWmhJa/downloaded_packages’
+
+real	0m25.787s
+user	0m19.510s
+sys	0m2.498s
