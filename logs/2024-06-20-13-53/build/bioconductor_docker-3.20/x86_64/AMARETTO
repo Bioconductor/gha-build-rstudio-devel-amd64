@@ -1,0 +1,108 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''AMARETTO'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'AMARETTO'
+also installing the dependencies ‘RcppEigen’, ‘vroom’, ‘tzdb’, ‘curatedTCGAData’, ‘glmnet’, ‘readr’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppEigen_0.3.4.0.0.tar.gz'
+Content type 'binary/octet-stream' length 1843437 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/vroom_1.6.5.tar.gz'
+Content type 'binary/octet-stream' length 937984 bytes (916 KB)
+==================================================
+downloaded 916 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/tzdb_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 641584 bytes (626 KB)
+==================================================
+downloaded 626 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/curatedTCGAData_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 426606 bytes (416 KB)
+==================================================
+downloaded 416 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 2001229 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/readr_2.1.5.tar.gz'
+Content type 'binary/octet-stream' length 839451 bytes (819 KB)
+==================================================
+downloaded 819 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/AMARETTO_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 3390366 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+* installing *binary* package ‘RcppEigen’ ...
+* ‘RcppEigen’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppEigen’ as ‘RcppEigen_0.3.4.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppEigen)
+* installing *binary* package ‘tzdb’ ...
+* ‘tzdb’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tzdb’ as ‘tzdb_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tzdb)
+* installing *source* package ‘curatedTCGAData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘curatedTCGAData’ as ‘curatedTCGAData_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (curatedTCGAData)
+* installing *binary* package ‘vroom’ ...
+* ‘vroom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vroom’ as ‘vroom_1.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vroom)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *binary* package ‘readr’ ...
+* ‘readr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readr’ as ‘readr_2.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readr)
+* installing *source* package ‘AMARETTO’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘AMARETTO’ as ‘AMARETTO_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (AMARETTO)
+
+The downloaded source packages are in
+	‘/tmp/RtmpRnSau7/downloaded_packages’
+
+real	0m52.470s
+user	0m44.693s
+sys	0m5.004s
