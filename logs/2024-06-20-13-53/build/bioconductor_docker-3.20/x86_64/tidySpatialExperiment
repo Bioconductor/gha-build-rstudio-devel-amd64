@@ -1,0 +1,71 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''tidySpatialExperiment'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'tidySpatialExperiment'
+also installing the dependencies ‘markdown’, ‘tidySummarizedExperiment’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/markdown_1.13.tar.gz'
+Content type 'binary/octet-stream' length 146608 bytes (143 KB)
+==================================================
+downloaded 143 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/tidySummarizedExperiment_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 365860 bytes (357 KB)
+==================================================
+downloaded 357 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/tidySpatialExperiment_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 862981 bytes (842 KB)
+==================================================
+downloaded 842 KB
+
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *source* package ‘tidySummarizedExperiment’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Note: wrong number of arguments to '>' 
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tidySummarizedExperiment’ as ‘tidySummarizedExperiment_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidySummarizedExperiment)
+* installing *source* package ‘tidySpatialExperiment’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tidySpatialExperiment’ as ‘tidySpatialExperiment_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidySpatialExperiment)
+
+The downloaded source packages are in
+	‘/tmp/RtmpnzHyZa/downloaded_packages’
+
+real	0m41.942s
+user	0m36.193s
+sys	0m4.079s
