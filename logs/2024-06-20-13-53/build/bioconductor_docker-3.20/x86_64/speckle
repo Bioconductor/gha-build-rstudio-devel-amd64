@@ -1,0 +1,837 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''speckle'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'speckle'
+also installing the dependencies ‘plyr’, ‘tensor’, ‘sitmo’, ‘data.table’, ‘zoo’, ‘crosstalk’, ‘RcppTOML’, ‘here’, ‘reshape2’, ‘gridExtra’, ‘RcppArmadillo’, ‘spatstat.data’, ‘spatstat.random’, ‘spatstat.utils’, ‘spatstat.sparse’, ‘goftest’, ‘deldir’, ‘polyclip’, ‘FNN’, ‘dqrng’, ‘timechange’, ‘ScaledMatrix’, ‘rsvd’, ‘beeswarm’, ‘vipor’, ‘Cairo’, ‘cowplot’, ‘fastDummies’, ‘fitdistrplus’, ‘ggrepel’, ‘ggridges’, ‘ica’, ‘igraph’, ‘irlba’, ‘leiden’, ‘lmtest’, ‘pbapply’, ‘plotly’, ‘RANN’, ‘RcppAnnoy’, ‘RcppHNSW’, ‘reticulate’, ‘ROCR’, ‘RSpectra’, ‘scattermore’, ‘sctransform’, ‘spatstat.explore’, ‘spatstat.geom’, ‘uwot’, ‘RcppProgress’, ‘assertthat’, ‘lubridate’, ‘scuttle’, ‘beachmat’, ‘BiocNeighbors’, ‘BiocSingular’, ‘ggbeeswarm’, ‘viridis’, ‘RcppML’, ‘pheatmap’, ‘ggrastr’, ‘Seurat’, ‘CellBench’, ‘scater’, ‘patchwork’, ‘vdiffr’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/plyr_1.8.9.tar.gz'
+Content type 'binary/octet-stream' length 786451 bytes (768 KB)
+==================================================
+downloaded 768 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/tensor_1.5.tar.gz'
+Content type 'binary/octet-stream' length 13820 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sitmo_2.0.2.tar.gz'
+Content type 'binary/octet-stream' length 170333 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/data.table_1.15.4.tar.gz'
+Content type 'binary/octet-stream' length 2225626 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/zoo_1.8-12.tar.gz'
+Content type 'binary/octet-stream' length 1026491 bytes (1002 KB)
+==================================================
+downloaded 1002 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/crosstalk_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 410714 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppTOML_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 238371 bytes (232 KB)
+==================================================
+downloaded 232 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/here_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 53480 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/reshape2_1.4.4.tar.gz'
+Content type 'binary/octet-stream' length 116937 bytes (114 KB)
+==================================================
+downloaded 114 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gridExtra_2.3.tar.gz'
+Content type 'binary/octet-stream' length 1106855 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppArmadillo_0.12.8.4.0.tar.gz'
+Content type 'binary/octet-stream' length 1149308 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.data_3.0-4.tar.gz'
+Content type 'binary/octet-stream' length 4054483 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.random_3.2-3.tar.gz'
+Content type 'binary/octet-stream' length 1169906 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.utils_3.0-4.tar.gz'
+Content type 'binary/octet-stream' length 372480 bytes (363 KB)
+==================================================
+downloaded 363 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.sparse_3.0-3.tar.gz'
+Content type 'binary/octet-stream' length 212367 bytes (207 KB)
+==================================================
+downloaded 207 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/goftest_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 58549 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/deldir_2.0-4.tar.gz'
+Content type 'binary/octet-stream' length 278843 bytes (272 KB)
+==================================================
+downloaded 272 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/polyclip_1.10-6.tar.gz'
+Content type 'binary/octet-stream' length 119916 bytes (117 KB)
+==================================================
+downloaded 117 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/FNN_1.1.4.tar.gz'
+Content type 'binary/octet-stream' length 127954 bytes (124 KB)
+==================================================
+downloaded 124 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dqrng_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 210080 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 172430 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ScaledMatrix_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 313484 bytes (306 KB)
+==================================================
+downloaded 306 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rsvd_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 3587464 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/beeswarm_0.4.0.tar.gz'
+Content type 'binary/octet-stream' length 78309 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/vipor_0.4.7.tar.gz'
+Content type 'binary/octet-stream' length 4581354 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Cairo_1.6-2.tar.gz'
+Content type 'binary/octet-stream' length 84419 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/cowplot_1.1.3.tar.gz'
+Content type 'binary/octet-stream' length 1380530 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fastDummies_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 41217 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fitdistrplus_1.1-11.tar.gz'
+Content type 'binary/octet-stream' length 1979373 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggrepel_0.9.5.tar.gz'
+Content type 'binary/octet-stream' length 282808 bytes (276 KB)
+==================================================
+downloaded 276 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggridges_0.5.6.tar.gz'
+Content type 'binary/octet-stream' length 2262833 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ica_1.0-3.tar.gz'
+Content type 'binary/octet-stream' length 85690 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/igraph_2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 5535765 bytes (5.3 MB)
+==================================================
+downloaded 5.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/irlba_2.3.5.1.tar.gz'
+Content type 'binary/octet-stream' length 291711 bytes (284 KB)
+==================================================
+downloaded 284 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/leiden_0.4.3.1.tar.gz'
+Content type 'binary/octet-stream' length 2880028 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lmtest_0.9-40.tar.gz'
+Content type 'binary/octet-stream' length 403569 bytes (394 KB)
+==================================================
+downloaded 394 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pbapply_1.7-2.tar.gz'
+Content type 'binary/octet-stream' length 100418 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/plotly_4.10.4.tar.gz'
+Content type 'binary/octet-stream' length 3174557 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RANN_2.6.1.tar.gz'
+Content type 'binary/octet-stream' length 42308 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppAnnoy_0.0.22.tar.gz'
+Content type 'binary/octet-stream' length 265221 bytes (259 KB)
+==================================================
+downloaded 259 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppHNSW_0.6.0.tar.gz'
+Content type 'binary/octet-stream' length 208709 bytes (203 KB)
+==================================================
+downloaded 203 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/reticulate_1.37.0.tar.gz'
+Content type 'binary/octet-stream' length 1850745 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ROCR_1.0-11.tar.gz'
+Content type 'binary/octet-stream' length 462493 bytes (451 KB)
+==================================================
+downloaded 451 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RSpectra_0.16-1.tar.gz'
+Content type 'binary/octet-stream' length 513206 bytes (501 KB)
+==================================================
+downloaded 501 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/scattermore_1.2.tar.gz'
+Content type 'binary/octet-stream' length 338837 bytes (330 KB)
+==================================================
+downloaded 330 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sctransform_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 551291 bytes (538 KB)
+==================================================
+downloaded 538 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.explore_3.2-7.tar.gz'
+Content type 'binary/octet-stream' length 3478774 bytes (3.3 MB)
+==================================================
+downloaded 3.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spatstat.geom_3.2-9.tar.gz'
+Content type 'binary/octet-stream' length 4061716 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/uwot_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 983643 bytes (960 KB)
+==================================================
+downloaded 960 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppProgress_0.4.2.tar.gz'
+Content type 'binary/octet-stream' length 20170 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 985853 bytes (962 KB)
+==================================================
+downloaded 962 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/scuttle_1.15.0.tar.gz'
+Content type 'application/x-gzip' length 1029515 bytes (1005 KB)
+==================================================
+downloaded 1005 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/beachmat_2.21.3.tar.gz'
+Content type 'application/x-gzip' length 544181 bytes (531 KB)
+==================================================
+downloaded 531 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocNeighbors_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 1039780 bytes (1015 KB)
+==================================================
+downloaded 1015 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocSingular_1.21.1.tar.gz'
+Content type 'application/x-gzip' length 617693 bytes (603 KB)
+==================================================
+downloaded 603 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggbeeswarm_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 1756426 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/viridis_0.6.5.tar.gz'
+Content type 'binary/octet-stream' length 3011836 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppML_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 198952 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pheatmap_1.0.12.tar.gz'
+Content type 'binary/octet-stream' length 77437 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggrastr_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 2675411 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Seurat_5.1.0.tar.gz'
+Content type 'binary/octet-stream' length 2612995 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/CellBench_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 3138321 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/scater_1.33.1.tar.gz'
+Content type 'application/x-gzip' length 4124954 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/patchwork_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 3297572 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/vdiffr_1.0.7.tar.gz'
+Content type 'binary/octet-stream' length 153104 bytes (149 KB)
+==================================================
+downloaded 149 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/speckle_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1335596 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+* installing *binary* package ‘plyr’ ...
+* ‘plyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plyr’ as ‘plyr_1.8.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plyr)
+* installing *binary* package ‘tensor’ ...
+* ‘tensor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tensor’ as ‘tensor_1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tensor)
+* installing *binary* package ‘sitmo’ ...
+* ‘sitmo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sitmo’ as ‘sitmo_2.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sitmo)
+* installing *binary* package ‘data.table’ ...
+* ‘data.table’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘data.table’ as ‘data.table_1.15.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (data.table)
+* installing *binary* package ‘zoo’ ...
+* ‘zoo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘zoo’ as ‘zoo_1.8-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (zoo)
+* installing *binary* package ‘crosstalk’ ...
+* ‘crosstalk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crosstalk’ as ‘crosstalk_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crosstalk)
+* installing *binary* package ‘RcppTOML’ ...
+* ‘RcppTOML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppTOML’ as ‘RcppTOML_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppTOML)
+* installing *binary* package ‘here’ ...
+* ‘here’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘here’ as ‘here_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (here)
+* installing *binary* package ‘gridExtra’ ...
+* ‘gridExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridExtra’ as ‘gridExtra_2.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridExtra)
+* installing *binary* package ‘RcppArmadillo’ ...
+* ‘RcppArmadillo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppArmadillo’ as ‘RcppArmadillo_0.12.8.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppArmadillo)
+* installing *binary* package ‘spatstat.utils’ ...
+* ‘spatstat.utils’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.utils’ as ‘spatstat.utils_3.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.utils)
+* installing *binary* package ‘goftest’ ...
+* ‘goftest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘goftest’ as ‘goftest_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (goftest)
+* installing *binary* package ‘deldir’ ...
+* ‘deldir’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘deldir’ as ‘deldir_2.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (deldir)
+* installing *binary* package ‘polyclip’ ...
+* ‘polyclip’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘polyclip’ as ‘polyclip_1.10-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (polyclip)
+* installing *binary* package ‘FNN’ ...
+* ‘FNN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘FNN’ as ‘FNN_1.1.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FNN)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *source* package ‘ScaledMatrix’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ScaledMatrix’ as ‘ScaledMatrix_1.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ScaledMatrix)
+* installing *binary* package ‘rsvd’ ...
+* ‘rsvd’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rsvd’ as ‘rsvd_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rsvd)
+* installing *binary* package ‘beeswarm’ ...
+* ‘beeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘beeswarm’ as ‘beeswarm_0.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beeswarm)
+* installing *binary* package ‘vipor’ ...
+* ‘vipor’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vipor’ as ‘vipor_0.4.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vipor)
+* installing *binary* package ‘Cairo’ ...
+* ‘Cairo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Cairo’ as ‘Cairo_1.6-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Cairo)
+* installing *binary* package ‘cowplot’ ...
+* ‘cowplot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cowplot’ as ‘cowplot_1.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cowplot)
+* installing *binary* package ‘fitdistrplus’ ...
+* ‘fitdistrplus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fitdistrplus’ as ‘fitdistrplus_1.1-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fitdistrplus)
+* installing *binary* package ‘ggrepel’ ...
+* ‘ggrepel’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrepel’ as ‘ggrepel_0.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrepel)
+* installing *binary* package ‘ggridges’ ...
+* ‘ggridges’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggridges’ as ‘ggridges_0.5.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggridges)
+* installing *binary* package ‘ica’ ...
+* ‘ica’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ica’ as ‘ica_1.0-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ica)
+* installing *binary* package ‘igraph’ ...
+* ‘igraph’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘igraph’ as ‘igraph_2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (igraph)
+* installing *binary* package ‘irlba’ ...
+* ‘irlba’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘irlba’ as ‘irlba_2.3.5.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (irlba)
+* installing *binary* package ‘pbapply’ ...
+* ‘pbapply’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pbapply’ as ‘pbapply_1.7-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pbapply)
+* installing *binary* package ‘RANN’ ...
+* ‘RANN’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RANN’ as ‘RANN_2.6.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RANN)
+* installing *binary* package ‘RcppAnnoy’ ...
+* ‘RcppAnnoy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppAnnoy’ as ‘RcppAnnoy_0.0.22_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppAnnoy)
+* installing *binary* package ‘RcppHNSW’ ...
+* ‘RcppHNSW’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppHNSW’ as ‘RcppHNSW_0.6.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppHNSW)
+* installing *binary* package ‘ROCR’ ...
+* ‘ROCR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ROCR’ as ‘ROCR_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ROCR)
+* installing *binary* package ‘RSpectra’ ...
+* ‘RSpectra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RSpectra’ as ‘RSpectra_0.16-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RSpectra)
+* installing *binary* package ‘scattermore’ ...
+* ‘scattermore’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scattermore’ as ‘scattermore_1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scattermore)
+* installing *binary* package ‘RcppProgress’ ...
+* ‘RcppProgress’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppProgress’ as ‘RcppProgress_0.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppProgress)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *source* package ‘beachmat’ ...
+** package ‘beachmat’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++17
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_binary.cpp -o delayed_isometric_binary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_math.cpp -o delayed_isometric_math.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_unary.cpp -o delayed_isometric_unary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_other.cpp -o delayed_other.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c dense_matrix.cpp -o dense_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fragment_sparse_rows.cpp -o fragment_sparse_rows.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c sparse_matrix.cpp -o sparse_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c tatami_utils.cpp -o tatami_utils.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c unknown_matrix.cpp -o unknown_matrix.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o beachmat.so RcppExports.o delayed_isometric_binary.o delayed_isometric_math.o delayed_isometric_unary.o delayed_other.o dense_matrix.o fragment_sparse_rows.o sparse_matrix.o tatami_utils.o unknown_matrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-beachmat/00new/beachmat/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘beachmat’ as ‘beachmat_2.21.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beachmat)
+* installing *binary* package ‘RcppML’ ...
+* ‘RcppML’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppML’ as ‘RcppML_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppML)
+* installing *binary* package ‘pheatmap’ ...
+* ‘pheatmap’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pheatmap’ as ‘pheatmap_1.0.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pheatmap)
+* installing *binary* package ‘patchwork’ ...
+* ‘patchwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘patchwork’ as ‘patchwork_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (patchwork)
+* installing *binary* package ‘vdiffr’ ...
+* ‘vdiffr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘vdiffr’ as ‘vdiffr_1.0.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (vdiffr)
+* installing *binary* package ‘reshape2’ ...
+* ‘reshape2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reshape2’ as ‘reshape2_1.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reshape2)
+* installing *binary* package ‘spatstat.data’ ...
+* ‘spatstat.data’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.data’ as ‘spatstat.data_3.0-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.data)
+* installing *binary* package ‘spatstat.sparse’ ...
+* ‘spatstat.sparse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.sparse’ as ‘spatstat.sparse_3.0-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.sparse)
+* installing *binary* package ‘dqrng’ ...
+* ‘dqrng’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dqrng’ as ‘dqrng_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dqrng)
+* installing *binary* package ‘fastDummies’ ...
+* ‘fastDummies’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastDummies’ as ‘fastDummies_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastDummies)
+* installing *binary* package ‘lmtest’ ...
+* ‘lmtest’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmtest’ as ‘lmtest_0.9-40_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmtest)
+* installing *binary* package ‘plotly’ ...
+* ‘plotly’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotly’ as ‘plotly_4.10.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotly)
+* installing *binary* package ‘reticulate’ ...
+* ‘reticulate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reticulate’ as ‘reticulate_1.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reticulate)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *source* package ‘scuttle’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cumulative_prop.cpp -o cumulative_prop.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c downsample_counts.cpp -o downsample_counts.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fit_linear_model.cpp -o fit_linear_model.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c pool_size_factors.cpp -o pool_size_factors.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c sparse_summarize.cpp -o sparse_summarize.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c sum_counts.cpp -o sum_counts.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c utils.cpp -o utils.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o scuttle.so RcppExports.o cumulative_prop.o downsample_counts.o fit_linear_model.o pool_size_factors.o sparse_summarize.o sum_counts.o utils.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-scuttle/00new/scuttle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scuttle’ as ‘scuttle_1.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scuttle)
+* installing *source* package ‘BiocNeighbors’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c annoy.cpp -o annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c build_annoy.cpp -o build_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c build_hnsw.cpp -o build_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c build_vptree.cpp -o build_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c distances.cpp -o distances.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c exhaustive.cpp -o exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_annoy.cpp -o find_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_exhaustive.cpp -o find_exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_hnsw.cpp -o find_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_kmknn.cpp -o find_kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_mutual_nns.cpp -o find_mutual_nns.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c find_vptree.cpp -o find_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c hnsw.cpp -o hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c kmknn.cpp -o kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c query_annoy.cpp -o query_annoy.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c query_exhaustive.cpp -o query_exhaustive.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c query_hnsw.cpp -o query_hnsw.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c query_kmknn.cpp -o query_kmknn.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c query_vptree.cpp -o query_vptree.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c utils.cpp -o utils.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppHNSW/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vptree.cpp -o vptree.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BiocNeighbors.so RcppExports.o annoy.o build_annoy.o build_hnsw.o build_vptree.o distances.o exhaustive.o find_annoy.o find_exhaustive.o find_hnsw.o find_kmknn.o find_mutual_nns.o find_vptree.o hnsw.o kmknn.o query_annoy.o query_exhaustive.o query_hnsw.o query_kmknn.o query_vptree.o utils.o vptree.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BiocNeighbors/00new/BiocNeighbors/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocNeighbors’ as ‘BiocNeighbors_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocNeighbors)
+* installing *source* package ‘BiocSingular’ ...
+** package ‘BiocSingular’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++17
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/beachmat/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c compute_scale.cpp -o compute_scale.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BiocSingular.so RcppExports.o compute_scale.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BiocSingular/00new/BiocSingular/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocSingular’ as ‘BiocSingular_1.21.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocSingular)
+* installing *binary* package ‘ggbeeswarm’ ...
+* ‘ggbeeswarm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggbeeswarm’ as ‘ggbeeswarm_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggbeeswarm)
+* installing *binary* package ‘viridis’ ...
+* ‘viridis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘viridis’ as ‘viridis_0.6.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (viridis)
+* installing *binary* package ‘leiden’ ...
+* ‘leiden’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘leiden’ as ‘leiden_0.4.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (leiden)
+* installing *binary* package ‘sctransform’ ...
+* ‘sctransform’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sctransform’ as ‘sctransform_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sctransform)
+* installing *binary* package ‘spatstat.geom’ ...
+* ‘spatstat.geom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.geom’ as ‘spatstat.geom_3.2-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.geom)
+* installing *binary* package ‘uwot’ ...
+* ‘uwot’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uwot’ as ‘uwot_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uwot)
+* installing *binary* package ‘ggrastr’ ...
+* ‘ggrastr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggrastr’ as ‘ggrastr_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggrastr)
+* installing *source* package ‘CellBench’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘CellBench’ as ‘CellBench_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (CellBench)
+* installing *binary* package ‘spatstat.random’ ...
+* ‘spatstat.random’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.random’ as ‘spatstat.random_3.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.random)
+* installing *source* package ‘scater’ ...
+** package ‘scater’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘scater’ as ‘scater_1.33.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scater)
+* installing *binary* package ‘spatstat.explore’ ...
+* ‘spatstat.explore’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spatstat.explore’ as ‘spatstat.explore_3.2-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spatstat.explore)
+* installing *binary* package ‘Seurat’ ...
+* ‘Seurat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Seurat’ as ‘Seurat_5.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Seurat)
+* installing *source* package ‘speckle’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘speckle’ as ‘speckle_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (speckle)
+
+The downloaded source packages are in
+	‘/tmp/RtmpQ6TQaA/downloaded_packages’
+
+real	8m7.786s
+user	7m9.252s
+sys	0m39.651s
