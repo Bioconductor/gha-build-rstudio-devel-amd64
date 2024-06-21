@@ -1,0 +1,138 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''lipidr'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'lipidr'
+also installing the dependencies ‘sandwich’, ‘mvtnorm’, ‘gmm’, ‘tmvtnorm’, ‘norm’, ‘hunspell’, ‘forcats’, ‘imputeLCMD’, ‘spelling’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sandwich_3.1-0.tar.gz'
+Content type 'binary/octet-stream' length 1519653 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/mvtnorm_1.2-5.tar.gz'
+Content type 'binary/octet-stream' length 774677 bytes (756 KB)
+==================================================
+downloaded 756 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gmm_1.8.tar.gz'
+Content type 'binary/octet-stream' length 1435365 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/tmvtnorm_1.6.tar.gz'
+Content type 'binary/octet-stream' length 574928 bytes (561 KB)
+==================================================
+downloaded 561 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/norm_1.0-11.1.tar.gz'
+Content type 'binary/octet-stream' length 85863 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/hunspell_3.0.3.tar.gz'
+Content type 'binary/octet-stream' length 1174911 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/imputeLCMD_2.1.tar.gz'
+Content type 'application/x-tar' length 589790 bytes (575 KB)
+==================================================
+downloaded 575 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/spelling_2.3.0.tar.gz'
+Content type 'binary/octet-stream' length 54619 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/lipidr_2.19.0.tar.gz'
+Content type 'application/x-gzip' length 3100075 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *binary* package ‘sandwich’ ...
+* ‘sandwich’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sandwich’ as ‘sandwich_3.1-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sandwich)
+* installing *binary* package ‘mvtnorm’ ...
+* ‘mvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mvtnorm’ as ‘mvtnorm_1.2-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mvtnorm)
+* installing *binary* package ‘norm’ ...
+* ‘norm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘norm’ as ‘norm_1.0-11.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (norm)
+* installing *binary* package ‘hunspell’ ...
+* ‘hunspell’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘hunspell’ as ‘hunspell_3.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (hunspell)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘gmm’ ...
+* ‘gmm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gmm’ as ‘gmm_1.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gmm)
+* installing *binary* package ‘spelling’ ...
+* ‘spelling’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘spelling’ as ‘spelling_2.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (spelling)
+* installing *binary* package ‘tmvtnorm’ ...
+* ‘tmvtnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tmvtnorm’ as ‘tmvtnorm_1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tmvtnorm)
+* installing *source* package ‘imputeLCMD’ ...
+** package ‘imputeLCMD’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘imputeLCMD’ as ‘imputeLCMD_2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (imputeLCMD)
+* installing *source* package ‘lipidr’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lipidr’ as ‘lipidr_2.19.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lipidr)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpr4D5Nj/downloaded_packages’
+
+real	0m40.188s
+user	0m29.258s
+sys	0m4.690s
