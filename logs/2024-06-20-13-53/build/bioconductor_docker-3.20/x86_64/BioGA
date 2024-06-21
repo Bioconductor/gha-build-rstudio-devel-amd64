@@ -1,0 +1,70 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''BioGA'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'BioGA'
+also installing the dependencies ‘magick’, ‘animation’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/magick_2.8.3.tar.gz'
+Content type 'binary/octet-stream' length 5025393 bytes (4.8 MB)
+==================================================
+downloaded 4.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/animation_2.7.tar.gz'
+Content type 'binary/octet-stream' length 551722 bytes (538 KB)
+==================================================
+downloaded 538 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BioGA_0.99.6.tar.gz'
+Content type 'application/x-gzip' length 317203 bytes (309 KB)
+==================================================
+downloaded 309 KB
+
+* installing *binary* package ‘magick’ ...
+* ‘magick’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘magick’ as ‘magick_2.8.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (magick)
+* installing *binary* package ‘animation’ ...
+* ‘animation’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘animation’ as ‘animation_2.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (animation)
+* installing *source* package ‘BioGA’ ...
+** package ‘BioGA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c crossover.cpp -o crossover.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c evaluate_fitness.cpp -o evaluate_fitness.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c initialize_population.cpp -o initialize_population.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c mutation.cpp -o mutation.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c replacement.cpp -o replacement.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c selection.cpp -o selection.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o BioGA.so RcppExports.o crossover.o evaluate_fitness.o initialize_population.o mutation.o replacement.o selection.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-BioGA/00new/BioGA/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BioGA’ as ‘BioGA_0.99.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BioGA)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpwek4nE/downloaded_packages’
+
+real	0m40.332s
+user	0m34.179s
+sys	0m3.615s
