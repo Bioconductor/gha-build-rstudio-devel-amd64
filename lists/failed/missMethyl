@@ -1,0 +1,222 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''missMethyl'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'missMethyl'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘BiasedUrn’, ‘ruv’, ‘beanplot’, ‘nor1mix’, ‘mclust’, ‘reshape’, ‘quadprog’, ‘scrime’, ‘readr’, ‘R.utils’, ‘gtools’, ‘permute’ are not available
+also installing the dependencies ‘beachmat’, ‘FDb.InfiniumMethylation.hg19’, ‘siggenes’, ‘GEOquery’, ‘bsseq’, ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’, ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’, ‘IlluminaHumanMethylationEPICv2anno.20a1.hg38’, ‘IlluminaHumanMethylation450kmanifest’, ‘IlluminaHumanMethylationEPICmanifest’, ‘IlluminaHumanMethylationEPICv2manifest’, ‘methylumi’, ‘minfi’, ‘minfiData’, ‘tweeDEseqCountData’, ‘DMRcate’, ‘ExperimentHub’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/beachmat_2.21.3.tar.gz'
+Content type 'application/x-gzip' length 544181 bytes (531 KB)
+==================================================
+downloaded 531 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/FDb.InfiniumMethylation.hg19_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 38996322 bytes (37.2 MB)
+==================================================
+downloaded 37.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/siggenes_1.79.0.tar.gz'
+Content type 'application/x-gzip' length 525801 bytes (513 KB)
+==================================================
+downloaded 513 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GEOquery_2.73.0.tar.gz'
+Content type 'application/x-gzip' length 13695667 bytes (13.1 MB)
+==================================================
+downloaded 13.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/bsseq_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 2886953 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 57892521 bytes (55.2 MB)
+==================================================
+downloaded 55.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylationEPICanno.ilm10b4.hg19_0.6.0.tar.gz'
+Content type 'application/x-gzip' length 158431882 bytes (151.1 MB)
+==================================================
+downloaded 151.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylationEPICv2anno.20a1.hg38_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 156309587 bytes (149.1 MB)
+==================================================
+downloaded 149.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylation450kmanifest_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 8726870 bytes (8.3 MB)
+==================================================
+downloaded 8.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylationEPICmanifest_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 17449851 bytes (16.6 MB)
+==================================================
+downloaded 16.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/IlluminaHumanMethylationEPICv2manifest_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 18294048 bytes (17.4 MB)
+==================================================
+downloaded 17.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/methylumi_2.51.0.tar.gz'
+Content type 'application/x-gzip' length 7687338 bytes (7.3 MB)
+==================================================
+downloaded 7.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/minfi_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 517412 bytes (505 KB)
+==================================================
+downloaded 505 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/minfiData_0.51.0.tar.gz'
+Content type 'application/x-gzip' length 78181920 bytes (74.6 MB)
+==================================================
+downloaded 74.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/tweeDEseqCountData_1.43.0.tar.gz'
+Content type 'application/x-gzip' length 42809306 bytes (40.8 MB)
+==================================================
+downloaded 40.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DMRcate_3.1.2.tar.gz'
+Content type 'application/x-gzip' length 818056 bytes (798 KB)
+==================================================
+downloaded 798 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ExperimentHub_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 500628 bytes (488 KB)
+==================================================
+downloaded 488 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/missMethyl_1.39.13.tar.gz'
+Content type 'application/x-gzip' length 1386550 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+* installing *source* package ‘beachmat’ ...
+** package ‘beachmat’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++17
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_binary.cpp -o delayed_isometric_binary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_math.cpp -o delayed_isometric_math.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_isometric_unary.cpp -o delayed_isometric_unary.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delayed_other.cpp -o delayed_other.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c dense_matrix.cpp -o dense_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fragment_sparse_rows.cpp -o fragment_sparse_rows.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c sparse_matrix.cpp -o sparse_matrix.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c tatami_utils.cpp -o tatami_utils.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -I../inst/include -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c unknown_matrix.cpp -o unknown_matrix.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o beachmat.so RcppExports.o delayed_isometric_binary.o delayed_isometric_math.o delayed_isometric_unary.o delayed_other.o dense_matrix.o fragment_sparse_rows.o sparse_matrix.o tatami_utils.o unknown_matrix.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-beachmat/00new/beachmat/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘beachmat’ as ‘beachmat_2.21.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (beachmat)
+* installing *source* package ‘FDb.InfiniumMethylation.hg19’ ...
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘FDb.InfiniumMethylation.hg19’ as ‘FDb.InfiniumMethylation.hg19_2.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (FDb.InfiniumMethylation.hg19)
+ERROR: dependency ‘scrime’ is not available for package ‘siggenes’
+* removing ‘/tmp/tmp/built/siggenes’
+ERROR: dependencies ‘readr’, ‘R.utils’ are not available for package ‘GEOquery’
+* removing ‘/tmp/tmp/built/GEOquery’
+* installing *source* package ‘tweeDEseqCountData’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tweeDEseqCountData’ as ‘tweeDEseqCountData_1.43.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tweeDEseqCountData)
+* installing *source* package ‘ExperimentHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHub’ as ‘ExperimentHub_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHub)
+ERROR: dependencies ‘gtools’, ‘R.utils’, ‘permute’ are not available for package ‘bsseq’
+* removing ‘/tmp/tmp/built/bsseq’
+ERROR: dependencies ‘beanplot’, ‘nor1mix’, ‘siggenes’, ‘mclust’, ‘reshape’, ‘quadprog’, ‘GEOquery’ are not available for package ‘minfi’
+* removing ‘/tmp/tmp/built/minfi’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylation450kanno.ilmn12.hg19’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylationEPICanno.ilm10b4.hg19’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylationEPICv2anno.20a1.hg38’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylationEPICv2anno.20a1.hg38’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylation450kmanifest’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylation450kmanifest’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylationEPICmanifest’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylationEPICmanifest’
+ERROR: dependency ‘minfi’ is not available for package ‘IlluminaHumanMethylationEPICv2manifest’
+* removing ‘/tmp/tmp/built/IlluminaHumanMethylationEPICv2manifest’
+ERROR: dependency ‘minfi’ is not available for package ‘methylumi’
+* removing ‘/tmp/tmp/built/methylumi’
+ERROR: dependencies ‘minfi’, ‘IlluminaHumanMethylation450kmanifest’, ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’ are not available for package ‘minfiData’
+* removing ‘/tmp/tmp/built/minfiData’
+ERROR: dependencies ‘IlluminaHumanMethylation450kanno.ilmn12.hg19’, ‘IlluminaHumanMethylationEPICanno.ilm10b4.hg19’, ‘IlluminaHumanMethylationEPICv2anno.20a1.hg38’, ‘BiasedUrn’, ‘IlluminaHumanMethylation450kmanifest’, ‘IlluminaHumanMethylationEPICmanifest’, ‘IlluminaHumanMethylationEPICv2manifest’, ‘methylumi’, ‘minfi’, ‘ruv’ are not available for package ‘missMethyl’
+* removing ‘/tmp/tmp/built/missMethyl’
+ERROR: dependencies ‘bsseq’, ‘minfi’, ‘missMethyl’ are not available for package ‘DMRcate’
+* removing ‘/tmp/tmp/built/DMRcate’
+
+The downloaded source packages are in
+	‘/tmp/RtmpNG7z7U/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'DelayedArray', 'HDF5Array', 'SparseArray', 'txdbmaker'
+There were 14 warnings (use warnings() to see them)
+
+real	26m6.293s
+user	6m10.595s
+sys	0m32.653s
