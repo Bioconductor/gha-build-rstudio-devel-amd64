@@ -1,0 +1,228 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TDbasedUFEadv'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'TDbasedUFEadv'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘rTensor’, ‘enrichR’, ‘hash’, ‘readr’, ‘RCurl’, ‘assertthat’, ‘rvest’, ‘survminer’, ‘ggthemes’, ‘viridis’, ‘aplot’, ‘ggfun’, ‘ggnewscale’, ‘ggraph’, ‘scatterpie’, ‘shadowtext’, ‘yulab.utils’, ‘sqldf’, ‘gplots’, ‘plotrix’, ‘ape’, ‘tidytree’, ‘cowplot’, ‘fastmatch’ are not available
+also installing the dependencies ‘GO.db’, ‘treeio’, ‘tximport’, ‘tximportData’, ‘GOSemSim’, ‘ggtree’, ‘HDO.db’, ‘fgsea’, ‘qvalue’, ‘TDbasedUFE’, ‘RTCGA’, ‘enrichplot’, ‘DOSE’, ‘STRINGdb’, ‘RTCGA.rnaseq’, ‘RTCGA.clinical’, ‘MOFAdata’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/treeio_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 695067 bytes (678 KB)
+==================================================
+downloaded 678 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/tximport_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 315724 bytes (308 KB)
+==================================================
+downloaded 308 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/tximportData_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 316744029 bytes (302.1 MB)
+==================================================
+downloaded 302.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GOSemSim_2.31.0.tar.gz'
+Content type 'application/x-gzip' length 607706 bytes (593 KB)
+==================================================
+downloaded 593 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ggtree_3.13.0.tar.gz'
+Content type 'application/x-gzip' length 362603 bytes (354 KB)
+==================================================
+downloaded 354 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/HDO.db_0.99.1.tar.gz'
+Content type 'application/x-gzip' length 1855560 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/fgsea_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 4951022 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/qvalue_2.37.0.tar.gz'
+Content type 'application/x-gzip' length 2767841 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TDbasedUFE_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1257835 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/RTCGA_1.35.0.tar.gz'
+Content type 'application/x-gzip' length 2450118 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/enrichplot_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 109684 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DOSE_3.31.2.tar.gz'
+Content type 'application/x-gzip' length 6810421 bytes (6.5 MB)
+==================================================
+downloaded 6.5 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/STRINGdb_2.17.3.tar.gz'
+Content type 'application/x-gzip' length 10349858 bytes (9.9 MB)
+==================================================
+downloaded 9.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/RTCGA.rnaseq_20151101.35.0.tar.gz'
+Content type 'application/x-gzip' length 642336311 bytes (612.6 MB)
+==================================================
+downloaded 612.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/RTCGA.clinical_20151101.35.0.tar.gz'
+Content type 'application/x-gzip' length 14652914 bytes (14.0 MB)
+==================================================
+downloaded 14.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/MOFAdata_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 46373684 bytes (44.2 MB)
+==================================================
+downloaded 44.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TDbasedUFEadv_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 3676002 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+ERROR: dependencies ‘ape’, ‘tidytree’, ‘yulab.utils’ are not available for package ‘treeio’
+* removing ‘/tmp/tmp/built/treeio’
+* installing *source* package ‘tximport’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tximport’ as ‘tximport_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tximport)
+* installing *source* package ‘tximportData’ ...
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘tximportData’ 
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tximportData’ as ‘tximportData_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tximportData)
+* installing *source* package ‘HDO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘HDO.db’ as ‘HDO.db_0.99.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HDO.db)
+ERROR: dependencies ‘cowplot’, ‘fastmatch’ are not available for package ‘fgsea’
+* removing ‘/tmp/tmp/built/fgsea’
+* installing *source* package ‘qvalue’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘qvalue’ as ‘qvalue_2.37.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (qvalue)
+ERROR: dependencies ‘RCurl’, ‘assertthat’, ‘rvest’, ‘survminer’, ‘ggthemes’, ‘viridis’ are not available for package ‘RTCGA’
+* removing ‘/tmp/tmp/built/RTCGA’
+ERROR: dependencies ‘sqldf’, ‘gplots’, ‘hash’, ‘plotrix’ are not available for package ‘STRINGdb’
+* removing ‘/tmp/tmp/built/STRINGdb’
+* installing *source* package ‘MOFAdata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MOFAdata’ as ‘MOFAdata_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MOFAdata)
+ERROR: dependency ‘yulab.utils’ is not available for package ‘GOSemSim’
+* removing ‘/tmp/tmp/built/GOSemSim’
+ERROR: dependencies ‘ape’, ‘aplot’, ‘ggfun’, ‘yulab.utils’, ‘tidytree’, ‘treeio’ are not available for package ‘ggtree’
+* removing ‘/tmp/tmp/built/ggtree’
+ERROR: dependencies ‘rTensor’, ‘readr’ are not available for package ‘TDbasedUFE’
+* removing ‘/tmp/tmp/built/TDbasedUFE’
+ERROR: dependency ‘RTCGA’ is not available for package ‘RTCGA.rnaseq’
+* removing ‘/tmp/tmp/built/RTCGA.rnaseq’
+ERROR: dependency ‘RTCGA’ is not available for package ‘RTCGA.clinical’
+* removing ‘/tmp/tmp/built/RTCGA.clinical’
+ERROR: dependencies ‘fgsea’, ‘GOSemSim’, ‘yulab.utils’ are not available for package ‘DOSE’
+* removing ‘/tmp/tmp/built/DOSE’
+ERROR: dependencies ‘aplot’, ‘DOSE’, ‘ggfun’, ‘ggnewscale’, ‘ggraph’, ‘scatterpie’, ‘shadowtext’, ‘GOSemSim’, ‘ggtree’, ‘yulab.utils’ are not available for package ‘enrichplot’
+* removing ‘/tmp/tmp/built/enrichplot’
+ERROR: dependencies ‘TDbasedUFE’, ‘rTensor’, ‘RTCGA’, ‘enrichplot’, ‘DOSE’, ‘STRINGdb’, ‘enrichR’, ‘hash’ are not available for package ‘TDbasedUFEadv’
+* removing ‘/tmp/tmp/built/TDbasedUFEadv’
+
+The downloaded source packages are in
+	‘/tmp/RtmpPMDWW3/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+There were 12 warnings (use warnings() to see them)
+
+real	22m54.524s
+user	4m23.016s
+sys	0m18.707s
