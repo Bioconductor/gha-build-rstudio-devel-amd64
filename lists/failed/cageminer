@@ -1,0 +1,105 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cageminer'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'cageminer'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘ggtext’, ‘covr’, ‘GGally’, ‘WGCNA’, ‘dynamicTreeCut’, ‘ggdendro’, ‘ggrepel’, ‘patchwork’, ‘ggnetwork’, ‘intergraph’, ‘NetRep’ are not available
+also installing the dependencies ‘sva’, ‘GENIE3’, ‘ggbio’, ‘BioNERO’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/sva_3.53.0.tar.gz'
+Content type 'application/x-gzip' length 453035 bytes (442 KB)
+==================================================
+downloaded 442 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GENIE3_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 247120 bytes (241 KB)
+==================================================
+downloaded 241 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ggbio_1.53.0.tar.gz'
+Content type 'application/x-gzip' length 3247167 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BioNERO_1.13.0.tar.gz'
+Content type 'application/x-gzip' length 4800267 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/cageminer_1.11.0.tar.gz'
+Content type 'application/x-gzip' length 1252936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘sva’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sva.c -o sva.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sva.so sva.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-sva/00new/sva/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sva’ as ‘sva_3.53.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sva)
+* installing *source* package ‘GENIE3’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c GENIE3.c -o GENIE3.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o GENIE3.so GENIE3.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-GENIE3/00new/GENIE3/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘GENIE3’ with signature ‘"SummarizedExperiment"’: no definition for class “SummarizedExperiment”
+in method for ‘GENIE3’ with signature ‘"ExpressionSet"’: no definition for class “ExpressionSet”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GENIE3’ as ‘GENIE3_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GENIE3)
+ERROR: dependency ‘GGally’ is not available for package ‘ggbio’
+* removing ‘/tmp/tmp/built/ggbio’
+ERROR: dependencies ‘WGCNA’, ‘dynamicTreeCut’, ‘ggdendro’, ‘ggrepel’, ‘patchwork’, ‘ggnetwork’, ‘intergraph’, ‘NetRep’ are not available for package ‘BioNERO’
+* removing ‘/tmp/tmp/built/BioNERO’
+ERROR: dependencies ‘ggbio’, ‘ggtext’, ‘BioNERO’ are not available for package ‘cageminer’
+* removing ‘/tmp/tmp/built/cageminer’
+
+The downloaded source packages are in
+	‘/tmp/RtmpKSySDM/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘ggbio’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘BioNERO’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘cageminer’ had non-zero exit status
+
+real	18m36.126s
+user	0m24.648s
+sys	0m5.834s
