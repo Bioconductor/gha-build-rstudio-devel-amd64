@@ -1,0 +1,116 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''rgsepd'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'rgsepd'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘gplots’, ‘BiasedUrn’, ‘progress’, ‘dbplyr’, ‘filelock’ are not available
+also installing the dependencies ‘txdbmaker’, ‘geneLenDataBase’, ‘BiocFileCache’, ‘goseq’, ‘biomaRt’, ‘org.Hs.eg.db’, ‘GO.db’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/txdbmaker_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 1035559 bytes (1011 KB)
+==================================================
+downloaded 1011 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/geneLenDataBase_1.41.2.tar.gz'
+Content type 'application/x-gzip' length 100440651 bytes (95.8 MB)
+==================================================
+downloaded 95.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocFileCache_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 299496 bytes (292 KB)
+==================================================
+downloaded 292 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/goseq_1.57.2.tar.gz'
+Content type 'application/x-gzip' length 1780262 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/biomaRt_2.61.1.tar.gz'
+Content type 'application/x-gzip' length 865728 bytes (845 KB)
+==================================================
+downloaded 845 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/org.Hs.eg.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 99485212 bytes (94.9 MB)
+==================================================
+downloaded 94.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/GO.db_3.19.1.tar.gz'
+Content type 'application/x-gzip' length 28531609 bytes (27.2 MB)
+==================================================
+downloaded 27.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/rgsepd_1.37.0.tar.gz'
+Content type 'application/x-gzip' length 1243280 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+ERROR: dependencies ‘dbplyr’, ‘filelock’ are not available for package ‘BiocFileCache’
+* removing ‘/tmp/tmp/built/BiocFileCache’
+* installing *source* package ‘org.Hs.eg.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘org.Hs.eg.db’ as ‘org.Hs.eg.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (org.Hs.eg.db)
+* installing *source* package ‘GO.db’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GO.db’ as ‘GO.db_3.19.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GO.db)
+ERROR: dependencies ‘progress’, ‘BiocFileCache’ are not available for package ‘biomaRt’
+* removing ‘/tmp/tmp/built/biomaRt’
+ERROR: dependency ‘biomaRt’ is not available for package ‘txdbmaker’
+* removing ‘/tmp/tmp/built/txdbmaker’
+ERROR: dependency ‘txdbmaker’ is not available for package ‘geneLenDataBase’
+* removing ‘/tmp/tmp/built/geneLenDataBase’
+ERROR: dependencies ‘BiasedUrn’, ‘geneLenDataBase’ are not available for package ‘goseq’
+* removing ‘/tmp/tmp/built/goseq’
+ERROR: dependencies ‘goseq’, ‘gplots’, ‘biomaRt’ are not available for package ‘rgsepd’
+* removing ‘/tmp/tmp/built/rgsepd’
+
+The downloaded source packages are in
+	‘/tmp/RtmpOiMtZH/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘BiocFileCache’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘biomaRt’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘txdbmaker’ had non-zero exit status
+4: In install.packages(...) :
+  installation of package ‘geneLenDataBase’ had non-zero exit status
+5: In install.packages(...) :
+  installation of package ‘goseq’ had non-zero exit status
+6: In install.packages(...) :
+  installation of package ‘rgsepd’ had non-zero exit status
+
+real	23m18.866s
+user	4m59.615s
+sys	0m10.135s
