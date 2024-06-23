@@ -1,0 +1,103 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''iNETgrate'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'iNETgrate'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘glmnet’, ‘caret’, ‘Rfast’, ‘rvest’ are not available
+also installing the dependencies ‘ExperimentHub’, ‘TCGAbiolinksGUI.data’, ‘sesameData’, ‘TCGAbiolinks’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ExperimentHub_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 500628 bytes (488 KB)
+==================================================
+downloaded 488 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TCGAbiolinksGUI.data_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 22921649 bytes (21.9 MB)
+==================================================
+downloaded 21.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/sesameData_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 1973939 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TCGAbiolinks_2.33.0.tar.gz'
+Content type 'application/x-gzip' length 65649628 bytes (62.6 MB)
+==================================================
+downloaded 62.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/iNETgrate_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 4160612 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+* installing *source* package ‘ExperimentHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHub’ as ‘ExperimentHub_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHub)
+* installing *source* package ‘TCGAbiolinksGUI.data’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TCGAbiolinksGUI.data’ as ‘TCGAbiolinksGUI.data_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TCGAbiolinksGUI.data)
+ERROR: dependencies ‘glmnet’, ‘caret’, ‘Rfast’ are not available for package ‘iNETgrate’
+* removing ‘/tmp/tmp/built/iNETgrate’
+* installing *source* package ‘sesameData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sesameData’ as ‘sesameData_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sesameData)
+ERROR: dependency ‘rvest’ is not available for package ‘TCGAbiolinks’
+* removing ‘/tmp/tmp/built/TCGAbiolinks’
+
+The downloaded source packages are in
+	‘/tmp/RtmpLiDG9o/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘iNETgrate’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘TCGAbiolinks’ had non-zero exit status
+
+real	18m56.213s
+user	0m37.709s
+sys	0m8.126s
