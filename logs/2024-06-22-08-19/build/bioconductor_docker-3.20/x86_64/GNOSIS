@@ -1,0 +1,756 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''GNOSIS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'GNOSIS'
+also installing the dependencies ‘ucminf’, ‘triebeard’, ‘ordinal’, ‘urltools’, ‘httpcode’, ‘pan’, ‘jomo’, ‘crul’, ‘fontBitstreamVera’, ‘fontLiberation’, ‘rematch’, ‘glmnet’, ‘mitml’, ‘truncnorm’, ‘gfonts’, ‘fontquiver’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘ids’, ‘timechange’, ‘mice’, ‘Rsolnp’, ‘svglite’, ‘gdtools’, ‘rootSolve’, ‘lmom’, ‘RcppCCTZ’, ‘RcppDate’, ‘fresh’, ‘waiter’, ‘anytime’, ‘styler’, ‘conflicted’, ‘dtplyr’, ‘forcats’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘lubridate’, ‘modelr’, ‘readxl’, ‘reprex’, ‘HardyWeinberg’, ‘kableExtra’, ‘chron’, ‘writexl’, ‘flextable’, ‘officer’, ‘libcoin’, ‘inum’, ‘expm’, ‘Exact’, ‘gld’, ‘nanotime’, ‘shinydashboard’, ‘shinydashboardPlus’, ‘dashboardthemes’, ‘shinyWidgets’, ‘shinymeta’, ‘tidyverse’, ‘operator.tools’, ‘shinycssloaders’, ‘shinyjs’, ‘compareGroups’, ‘partykit’, ‘DescTools’, ‘fabricatr’, ‘shinylogs’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ucminf_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 34888 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/triebeard_0.4.1.tar.gz'
+Content type 'binary/octet-stream' length 189588 bytes (185 KB)
+==================================================
+downloaded 185 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ordinal_2023.12-4.tar.gz'
+Content type 'binary/octet-stream' length 1262402 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/urltools_1.7.3.tar.gz'
+Content type 'binary/octet-stream' length 295311 bytes (288 KB)
+==================================================
+downloaded 288 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/httpcode_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 32620 bytes (31 KB)
+==================================================
+downloaded 31 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pan_1.9.tar.gz'
+Content type 'binary/octet-stream' length 548989 bytes (536 KB)
+==================================================
+downloaded 536 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/jomo_2.7-6.tar.gz'
+Content type 'binary/octet-stream' length 2049350 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/crul_1.4.2.tar.gz'
+Content type 'binary/octet-stream' length 654711 bytes (639 KB)
+==================================================
+downloaded 639 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fontBitstreamVera_0.1.1.tar.gz'
+Content type 'binary/octet-stream' length 699466 bytes (683 KB)
+==================================================
+downloaded 683 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fontLiberation_0.1.0.tar.gz'
+Content type 'binary/octet-stream' length 4539067 bytes (4.3 MB)
+==================================================
+downloaded 4.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rematch_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 16256 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/glmnet_4.1-8.tar.gz'
+Content type 'binary/octet-stream' length 2001229 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/mitml_0.4-5.tar.gz'
+Content type 'binary/octet-stream' length 531754 bytes (519 KB)
+==================================================
+downloaded 519 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/truncnorm_1.0-9.tar.gz'
+Content type 'binary/octet-stream' length 21975 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gfonts_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 2920494 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fontquiver_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 2279888 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gargle_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 773737 bytes (755 KB)
+==================================================
+downloaded 755 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/uuid_1.2-0.tar.gz'
+Content type 'binary/octet-stream' length 48391 bytes (47 KB)
+==================================================
+downloaded 47 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/cellranger_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 103690 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ids_1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 122712 bytes (119 KB)
+==================================================
+downloaded 119 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 172430 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/mice_3.16.0.tar.gz'
+Content type 'binary/octet-stream' length 1557005 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Rsolnp_1.16.tar.gz'
+Content type 'binary/octet-stream' length 249015 bytes (243 KB)
+==================================================
+downloaded 243 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/svglite_2.1.3.tar.gz'
+Content type 'binary/octet-stream' length 201619 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gdtools_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 198833 bytes (194 KB)
+==================================================
+downloaded 194 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rootSolve_1.8.2.4.tar.gz'
+Content type 'binary/octet-stream' length 685042 bytes (668 KB)
+==================================================
+downloaded 668 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lmom_3.0.tar.gz'
+Content type 'binary/octet-stream' length 572347 bytes (558 KB)
+==================================================
+downloaded 558 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppCCTZ_0.2.12.tar.gz'
+Content type 'binary/octet-stream' length 154605 bytes (150 KB)
+==================================================
+downloaded 150 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/RcppDate_0.0.3.tar.gz'
+Content type 'binary/octet-stream' length 88905 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fresh_0.2.0.tar.gz'
+Content type 'binary/octet-stream' length 1500548 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/waiter_0.2.5.tar.gz'
+Content type 'binary/octet-stream' length 470150 bytes (459 KB)
+==================================================
+downloaded 459 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/anytime_0.3.9.tar.gz'
+Content type 'binary/octet-stream' length 406781 bytes (397 KB)
+==================================================
+downloaded 397 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/styler_1.10.3.tar.gz'
+Content type 'binary/octet-stream' length 830074 bytes (810 KB)
+==================================================
+downloaded 810 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/conflicted_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 55150 bytes (53 KB)
+==================================================
+downloaded 53 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dtplyr_1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 357833 bytes (349 KB)
+==================================================
+downloaded 349 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/forcats_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 421536 bytes (411 KB)
+==================================================
+downloaded 411 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/googledrive_2.1.1.tar.gz'
+Content type 'binary/octet-stream' length 1900023 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/googlesheets4_1.1.1.tar.gz'
+Content type 'binary/octet-stream' length 517252 bytes (505 KB)
+==================================================
+downloaded 505 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/haven_2.5.4.tar.gz'
+Content type 'binary/octet-stream' length 380808 bytes (371 KB)
+==================================================
+downloaded 371 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 985853 bytes (962 KB)
+==================================================
+downloaded 962 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/modelr_0.1.11.tar.gz'
+Content type 'binary/octet-stream' length 200644 bytes (195 KB)
+==================================================
+downloaded 195 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/readxl_1.4.3.tar.gz'
+Content type 'binary/octet-stream' length 863132 bytes (842 KB)
+==================================================
+downloaded 842 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/reprex_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 494922 bytes (483 KB)
+==================================================
+downloaded 483 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/HardyWeinberg_1.7.8.tar.gz'
+Content type 'binary/octet-stream' length 1274545 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/kableExtra_1.4.0.tar.gz'
+Content type 'binary/octet-stream' length 2050288 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/chron_2.3-61.tar.gz'
+Content type 'binary/octet-stream' length 189096 bytes (184 KB)
+==================================================
+downloaded 184 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/writexl_1.5.0.tar.gz'
+Content type 'binary/octet-stream' length 171745 bytes (167 KB)
+==================================================
+downloaded 167 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/flextable_0.9.6.tar.gz'
+Content type 'binary/octet-stream' length 3219769 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/officer_0.6.6.tar.gz'
+Content type 'binary/octet-stream' length 1738451 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/libcoin_1.0-10.tar.gz'
+Content type 'binary/octet-stream' length 809800 bytes (790 KB)
+==================================================
+downloaded 790 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/inum_1.0-5.tar.gz'
+Content type 'binary/octet-stream' length 37321 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/expm_0.999-9.tar.gz'
+Content type 'binary/octet-stream' length 207275 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/Exact_3.2.tar.gz'
+Content type 'binary/octet-stream' length 202434 bytes (197 KB)
+==================================================
+downloaded 197 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gld_2.6.6.tar.gz'
+Content type 'binary/octet-stream' length 237455 bytes (231 KB)
+==================================================
+downloaded 231 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/nanotime_0.3.7.tar.gz'
+Content type 'binary/octet-stream' length 691169 bytes (674 KB)
+==================================================
+downloaded 674 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinydashboard_0.7.2.tar.gz'
+Content type 'binary/octet-stream' length 325184 bytes (317 KB)
+==================================================
+downloaded 317 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinydashboardPlus_2.0.4.tar.gz'
+Content type 'binary/octet-stream' length 916527 bytes (895 KB)
+==================================================
+downloaded 895 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dashboardthemes_1.1.6.tar.gz'
+Content type 'binary/octet-stream' length 94279 bytes (92 KB)
+==================================================
+downloaded 92 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyWidgets_0.8.6.tar.gz'
+Content type 'binary/octet-stream' length 1291118 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinymeta_0.2.0.3.tar.gz'
+Content type 'binary/octet-stream' length 132000 bytes (128 KB)
+==================================================
+downloaded 128 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/tidyverse_2.0.0.tar.gz'
+Content type 'binary/octet-stream' length 425824 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/operator.tools_1.6.3.tar.gz'
+Content type 'binary/octet-stream' length 52906 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinycssloaders_1.0.0.tar.gz'
+Content type 'binary/octet-stream' length 134552 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinyjs_2.1.0.tar.gz'
+Content type 'binary/octet-stream' length 1087229 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/compareGroups_4.8.0.tar.gz'
+Content type 'binary/octet-stream' length 3364162 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/partykit_1.2-20.tar.gz'
+Content type 'binary/octet-stream' length 2420947 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/DescTools_0.99.54.tar.gz'
+Content type 'binary/octet-stream' length 5434706 bytes (5.2 MB)
+==================================================
+downloaded 5.2 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fabricatr_1.0.2.tar.gz'
+Content type 'binary/octet-stream' length 147224 bytes (143 KB)
+==================================================
+downloaded 143 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/shinylogs_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 122285 bytes (119 KB)
+==================================================
+downloaded 119 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GNOSIS_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 3537606 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *binary* package ‘ucminf’ ...
+* ‘ucminf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ucminf’ as ‘ucminf_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ucminf)
+* installing *binary* package ‘triebeard’ ...
+* ‘triebeard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘triebeard’ as ‘triebeard_0.4.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (triebeard)
+* installing *binary* package ‘httpcode’ ...
+* ‘httpcode’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘httpcode’ as ‘httpcode_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (httpcode)
+* installing *binary* package ‘pan’ ...
+* ‘pan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pan’ as ‘pan_1.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pan)
+* installing *binary* package ‘fontBitstreamVera’ ...
+* ‘fontBitstreamVera’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fontBitstreamVera’ as ‘fontBitstreamVera_0.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontBitstreamVera)
+* installing *binary* package ‘fontLiberation’ ...
+* ‘fontLiberation’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fontLiberation’ as ‘fontLiberation_0.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontLiberation)
+* installing *binary* package ‘rematch’ ...
+* ‘rematch’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rematch’ as ‘rematch_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rematch)
+* installing *binary* package ‘glmnet’ ...
+* ‘glmnet’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘glmnet’ as ‘glmnet_4.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (glmnet)
+* installing *binary* package ‘truncnorm’ ...
+* ‘truncnorm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘truncnorm’ as ‘truncnorm_1.0-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (truncnorm)
+* installing *binary* package ‘gargle’ ...
+* ‘gargle’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gargle’ as ‘gargle_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gargle)
+* installing *binary* package ‘uuid’ ...
+* ‘uuid’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘uuid’ as ‘uuid_1.2-0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (uuid)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘svglite’ ...
+* ‘svglite’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘svglite’ as ‘svglite_2.1.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (svglite)
+* installing *binary* package ‘rootSolve’ ...
+* ‘rootSolve’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rootSolve’ as ‘rootSolve_1.8.2.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rootSolve)
+* installing *binary* package ‘lmom’ ...
+* ‘lmom’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lmom’ as ‘lmom_3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lmom)
+* installing *binary* package ‘RcppCCTZ’ ...
+* ‘RcppCCTZ’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppCCTZ’ as ‘RcppCCTZ_0.2.12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppCCTZ)
+* installing *binary* package ‘RcppDate’ ...
+* ‘RcppDate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘RcppDate’ as ‘RcppDate_0.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcppDate)
+* installing *binary* package ‘fresh’ ...
+* ‘fresh’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fresh’ as ‘fresh_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fresh)
+* installing *binary* package ‘waiter’ ...
+* ‘waiter’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘waiter’ as ‘waiter_0.2.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (waiter)
+* installing *binary* package ‘anytime’ ...
+* ‘anytime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘anytime’ as ‘anytime_0.3.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (anytime)
+* installing *binary* package ‘styler’ ...
+* ‘styler’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘styler’ as ‘styler_1.10.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (styler)
+* installing *binary* package ‘conflicted’ ...
+* ‘conflicted’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘conflicted’ as ‘conflicted_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (conflicted)
+* installing *binary* package ‘dtplyr’ ...
+* ‘dtplyr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dtplyr’ as ‘dtplyr_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dtplyr)
+* installing *binary* package ‘forcats’ ...
+* ‘forcats’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘forcats’ as ‘forcats_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (forcats)
+* installing *binary* package ‘modelr’ ...
+* ‘modelr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘modelr’ as ‘modelr_0.1.11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (modelr)
+* installing *binary* package ‘reprex’ ...
+* ‘reprex’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘reprex’ as ‘reprex_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (reprex)
+* installing *binary* package ‘chron’ ...
+* ‘chron’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘chron’ as ‘chron_2.3-61_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (chron)
+* installing *binary* package ‘writexl’ ...
+* ‘writexl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘writexl’ as ‘writexl_1.5.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (writexl)
+* installing *binary* package ‘libcoin’ ...
+* ‘libcoin’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘libcoin’ as ‘libcoin_1.0-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (libcoin)
+* installing *binary* package ‘expm’ ...
+* ‘expm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘expm’ as ‘expm_0.999-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (expm)
+* installing *binary* package ‘shinydashboard’ ...
+* ‘shinydashboard’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboard’ as ‘shinydashboard_0.7.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboard)
+* installing *binary* package ‘dashboardthemes’ ...
+* ‘dashboardthemes’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dashboardthemes’ as ‘dashboardthemes_1.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dashboardthemes)
+* installing *binary* package ‘operator.tools’ ...
+* ‘operator.tools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘operator.tools’ as ‘operator.tools_1.6.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (operator.tools)
+* installing *binary* package ‘shinycssloaders’ ...
+* ‘shinycssloaders’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinycssloaders’ as ‘shinycssloaders_1.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinycssloaders)
+* installing *binary* package ‘shinyjs’ ...
+* ‘shinyjs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyjs’ as ‘shinyjs_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyjs)
+* installing *binary* package ‘fabricatr’ ...
+* ‘fabricatr’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fabricatr’ as ‘fabricatr_1.0.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fabricatr)
+* installing *binary* package ‘ordinal’ ...
+* ‘ordinal’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ordinal’ as ‘ordinal_2023.12-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ordinal)
+* installing *binary* package ‘urltools’ ...
+* ‘urltools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘urltools’ as ‘urltools_1.7.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (urltools)
+* installing *binary* package ‘fontquiver’ ...
+* ‘fontquiver’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fontquiver’ as ‘fontquiver_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fontquiver)
+* installing *binary* package ‘cellranger’ ...
+* ‘cellranger’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘cellranger’ as ‘cellranger_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (cellranger)
+* installing *binary* package ‘ids’ ...
+* ‘ids’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ids’ as ‘ids_1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ids)
+* installing *binary* package ‘Rsolnp’ ...
+* ‘Rsolnp’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Rsolnp’ as ‘Rsolnp_1.16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Rsolnp)
+* installing *binary* package ‘googledrive’ ...
+* ‘googledrive’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googledrive’ as ‘googledrive_2.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googledrive)
+* installing *binary* package ‘haven’ ...
+* ‘haven’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘haven’ as ‘haven_2.5.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (haven)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *binary* package ‘kableExtra’ ...
+* ‘kableExtra’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kableExtra’ as ‘kableExtra_1.4.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kableExtra)
+* installing *binary* package ‘officer’ ...
+* ‘officer’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘officer’ as ‘officer_0.6.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (officer)
+* installing *binary* package ‘inum’ ...
+* ‘inum’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘inum’ as ‘inum_1.0-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (inum)
+* installing *binary* package ‘Exact’ ...
+* ‘Exact’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘Exact’ as ‘Exact_3.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Exact)
+* installing *binary* package ‘gld’ ...
+* ‘gld’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gld’ as ‘gld_2.6.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gld)
+* installing *binary* package ‘nanotime’ ...
+* ‘nanotime’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘nanotime’ as ‘nanotime_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (nanotime)
+* installing *binary* package ‘shinydashboardPlus’ ...
+* ‘shinydashboardPlus’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinydashboardPlus’ as ‘shinydashboardPlus_2.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinydashboardPlus)
+* installing *binary* package ‘shinyWidgets’ ...
+* ‘shinyWidgets’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinyWidgets’ as ‘shinyWidgets_0.8.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinyWidgets)
+* installing *binary* package ‘shinymeta’ ...
+* ‘shinymeta’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinymeta’ as ‘shinymeta_0.2.0.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinymeta)
+* installing *binary* package ‘jomo’ ...
+* ‘jomo’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘jomo’ as ‘jomo_2.7-6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (jomo)
+* installing *binary* package ‘crul’ ...
+* ‘crul’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crul’ as ‘crul_1.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crul)
+* installing *binary* package ‘googlesheets4’ ...
+* ‘googlesheets4’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘googlesheets4’ as ‘googlesheets4_1.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (googlesheets4)
+* installing *binary* package ‘readxl’ ...
+* ‘readxl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘readxl’ as ‘readxl_1.4.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (readxl)
+* installing *binary* package ‘partykit’ ...
+* ‘partykit’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘partykit’ as ‘partykit_1.2-20_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (partykit)
+* installing *binary* package ‘shinylogs’ ...
+* ‘shinylogs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘shinylogs’ as ‘shinylogs_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (shinylogs)
+* installing *binary* package ‘mitml’ ...
+* ‘mitml’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mitml’ as ‘mitml_0.4-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mitml)
+* installing *binary* package ‘gfonts’ ...
+* ‘gfonts’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gfonts’ as ‘gfonts_0.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gfonts)
+* installing *binary* package ‘tidyverse’ ...
+* ‘tidyverse’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘tidyverse’ as ‘tidyverse_2.0.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tidyverse)
+* installing *binary* package ‘DescTools’ ...
+* ‘DescTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DescTools’ as ‘DescTools_0.99.54_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DescTools)
+* installing *binary* package ‘mice’ ...
+* ‘mice’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mice’ as ‘mice_3.16.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mice)
+* installing *binary* package ‘gdtools’ ...
+* ‘gdtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gdtools’ as ‘gdtools_0.3.7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gdtools)
+* installing *binary* package ‘HardyWeinberg’ ...
+* ‘HardyWeinberg’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘HardyWeinberg’ as ‘HardyWeinberg_1.7.8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (HardyWeinberg)
+* installing *binary* package ‘flextable’ ...
+* ‘flextable’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flextable’ as ‘flextable_0.9.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flextable)
+* installing *binary* package ‘compareGroups’ ...
+* ‘compareGroups’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘compareGroups’ as ‘compareGroups_4.8.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (compareGroups)
+* installing *source* package ‘GNOSIS’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Warning: replacing previous import ‘shinydashboard::taskItem’ by ‘shinydashboardPlus::taskItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardHeader’ by ‘shinydashboardPlus::dashboardHeader’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::box’ by ‘shinydashboardPlus::box’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::messageItem’ by ‘shinydashboardPlus::messageItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardSidebar’ by ‘shinydashboardPlus::dashboardSidebar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardPage’ by ‘shinydashboardPlus::dashboardPage’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinyWidgets::progressBar’ by ‘shinydashboardPlus::progressBar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::notificationItem’ by ‘shinydashboardPlus::notificationItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::dataTableOutput’ by ‘DT::dataTableOutput’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::renderDataTable’ by ‘DT::renderDataTable’ when loading ‘GNOSIS’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: replacing previous import ‘shinydashboard::taskItem’ by ‘shinydashboardPlus::taskItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardHeader’ by ‘shinydashboardPlus::dashboardHeader’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::box’ by ‘shinydashboardPlus::box’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::messageItem’ by ‘shinydashboardPlus::messageItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardSidebar’ by ‘shinydashboardPlus::dashboardSidebar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardPage’ by ‘shinydashboardPlus::dashboardPage’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinyWidgets::progressBar’ by ‘shinydashboardPlus::progressBar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::notificationItem’ by ‘shinydashboardPlus::notificationItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::dataTableOutput’ by ‘DT::dataTableOutput’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::renderDataTable’ by ‘DT::renderDataTable’ when loading ‘GNOSIS’
+** testing if installed package can be loaded from final location
+Warning: replacing previous import ‘shinydashboard::taskItem’ by ‘shinydashboardPlus::taskItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardHeader’ by ‘shinydashboardPlus::dashboardHeader’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::box’ by ‘shinydashboardPlus::box’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::messageItem’ by ‘shinydashboardPlus::messageItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardSidebar’ by ‘shinydashboardPlus::dashboardSidebar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::dashboardPage’ by ‘shinydashboardPlus::dashboardPage’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinyWidgets::progressBar’ by ‘shinydashboardPlus::progressBar’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shinydashboard::notificationItem’ by ‘shinydashboardPlus::notificationItem’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::dataTableOutput’ by ‘DT::dataTableOutput’ when loading ‘GNOSIS’
+Warning: replacing previous import ‘shiny::renderDataTable’ by ‘DT::renderDataTable’ when loading ‘GNOSIS’
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GNOSIS’ as ‘GNOSIS_1.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GNOSIS)
+
+The downloaded source packages are in
+	‘/tmp/RtmpjBZ2zx/downloaded_packages’
+
+real	1m55.771s
+user	1m1.121s
+sys	0m14.741s
