@@ -1,0 +1,143 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ideal'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ideal'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘heatmaply’, ‘pheatmap’, ‘gplots’, ‘UpSetR’, ‘shinydashboard’, ‘shinyBS’, ‘DT’, ‘rentrez’, ‘rintrojs’, ‘ggrepel’, ‘shinyAce’, ‘NMF’, ‘threejs’, ‘slam’, ‘fdrtool’ are not available
+also installing the dependencies ‘lpsymphony’, ‘topGO’, ‘pcaExplorer’, ‘IHW’, ‘airway’, ‘DEFormats’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/lpsymphony_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 12417428 bytes (11.8 MB)
+==================================================
+downloaded 11.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/topGO_2.57.0.tar.gz'
+Content type 'application/x-gzip' length 1757727 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/pcaExplorer_2.31.0.tar.gz'
+Content type 'application/x-gzip' length 10631067 bytes (10.1 MB)
+==================================================
+downloaded 10.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/IHW_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 3777173 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/airway_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 24755634 bytes (23.6 MB)
+==================================================
+downloaded 23.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/DEFormats_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 231936 bytes (226 KB)
+==================================================
+downloaded 226 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ideal_1.29.0.tar.gz'
+Content type 'application/x-gzip' length 3237244 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+* installing *source* package ‘lpsymphony’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c lp_symphony.cc -o lp_symphony.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o lpsymphony.so lp_symphony.o -lSym -lCgl -lOsiClp -lClp -lOsi -lCoinUtils -llapack -lblas -lgfortran -lm -lquadmath -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-lpsymphony/00new/lpsymphony/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘lpsymphony’ as ‘lpsymphony_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lpsymphony)
+* installing *source* package ‘topGO’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+** testing if installed package can be loaded from final location
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘topGO’ as ‘topGO_2.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (topGO)
+* installing *source* package ‘airway’ ...
+** using staged installation
+** data
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘airway’ as ‘airway_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (airway)
+* installing *source* package ‘DEFormats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘DGEList’ from ‘edgeR’ in package ‘DEFormats’
+    (from the saved implicit definition)
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘DEFormats’ as ‘DEFormats_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DEFormats)
+ERROR: dependencies ‘heatmaply’, ‘NMF’, ‘shinydashboard’, ‘shinyBS’, ‘ggrepel’, ‘DT’, ‘shinyAce’, ‘threejs’, ‘pheatmap’ are not available for package ‘pcaExplorer’
+* removing ‘/tmp/tmp/built/pcaExplorer’
+ERROR: dependencies ‘slam’, ‘fdrtool’ are not available for package ‘IHW’
+* removing ‘/tmp/tmp/built/IHW’
+ERROR: dependencies ‘heatmaply’, ‘pheatmap’, ‘pcaExplorer’, ‘IHW’, ‘gplots’, ‘UpSetR’, ‘shinydashboard’, ‘shinyBS’, ‘DT’, ‘rentrez’, ‘rintrojs’, ‘ggrepel’, ‘shinyAce’ are not available for package ‘ideal’
+* removing ‘/tmp/tmp/built/ideal’
+
+The downloaded source packages are in
+	‘/tmp/Rtmps9ltJ5/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘pcaExplorer’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘IHW’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘ideal’ had non-zero exit status
+
+real	19m21.674s
+user	1m2.871s
+sys	0m9.837s
