@@ -1,0 +1,99 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ssrch'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ssrch'
+also installing the dependencies ‘lazyeval’, ‘crosstalk’, ‘bookdown’, ‘DT’, ‘BiocStyle’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lazyeval_0.2.2.tar.gz'
+Content type 'binary/octet-stream' length 157817 bytes (154 KB)
+==================================================
+downloaded 154 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/crosstalk_1.2.1.tar.gz'
+Content type 'binary/octet-stream' length 410714 bytes (401 KB)
+==================================================
+downloaded 401 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/bookdown_0.39.tar.gz'
+Content type 'binary/octet-stream' length 1091022 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/DT_0.33.tar.gz'
+Content type 'binary/octet-stream' length 1792625 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/BiocStyle_2.33.1.tar.gz'
+Content type 'application/x-gzip' length 790653 bytes (772 KB)
+==================================================
+downloaded 772 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ssrch_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 1513791 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+* installing *binary* package ‘lazyeval’ ...
+* ‘lazyeval’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lazyeval’ as ‘lazyeval_0.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lazyeval)
+* installing *binary* package ‘bookdown’ ...
+* ‘bookdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘bookdown’ as ‘bookdown_0.39_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (bookdown)
+* installing *binary* package ‘crosstalk’ ...
+* ‘crosstalk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘crosstalk’ as ‘crosstalk_1.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (crosstalk)
+* installing *source* package ‘BiocStyle’ ...
+** package ‘BiocStyle’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘BiocStyle’ as ‘BiocStyle_2.33.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiocStyle)
+* installing *binary* package ‘DT’ ...
+* ‘DT’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘DT’ as ‘DT_0.33_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (DT)
+* installing *source* package ‘ssrch’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ssrch’ as ‘ssrch_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ssrch)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpf0dJQO/downloaded_packages’
+
+real	0m14.247s
+user	0m7.252s
+sys	0m2.853s
