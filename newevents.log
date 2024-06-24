@@ -1,0 +1,37 @@
+ SEEN TYPE REASON OBJECT MESSAGE
+ Normal SuccessfulCreate daemonset/static-local-static-provisioner Created pod: static-local-static-provisioner-l4qg7
+ Normal Scheduled pod/static-local-static-provisioner-l4qg7 Successfully assigned rclone/static-local-static-provisioner-l4qg7 to fv-az1756-422
+ Normal Pulling pod/static-local-static-provisioner-l4qg7 Pulling image "registry.k8s.io/sig-storage/local-volume-provisioner:v2.6.0"
+ Normal SuccessfulCreate daemonset/csi-nodeplugin-rclone Created pod: csi-nodeplugin-rclone-hhvjb
+ Normal Scheduled pod/csi-nodeplugin-rclone-hhvjb Successfully assigned rclone/csi-nodeplugin-rclone-hhvjb to fv-az1756-422
+ Normal SuccessfulCreate statefulset/csi-controller-rclone create Pod csi-controller-rclone-0 in StatefulSet csi-controller-rclone successful
+ Normal Scheduled pod/csi-controller-rclone-0 Successfully assigned rclone/csi-controller-rclone-0 to fv-az1756-422
+ Normal Pulling pod/csi-nodeplugin-rclone-hhvjb Pulling image "k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.4.0"
+ Normal Pulling pod/csi-controller-rclone-0 Pulling image "k8s.gcr.io/sig-storage/csi-attacher:v3.4.0"
+ Normal Pulled pod/static-local-static-provisioner-l4qg7 Successfully pulled image "registry.k8s.io/sig-storage/local-volume-provisioner:v2.6.0" in 2.074s (2.074s including waiting). Image size: 62862469 bytes.
+ Normal Created pod/static-local-static-provisioner-l4qg7 Created container provisioner
+ Normal Started pod/static-local-static-provisioner-l4qg7 Started container provisioner
+ Normal Pulled pod/csi-nodeplugin-rclone-hhvjb Successfully pulled image "k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.4.0" in 910ms (910ms including waiting). Image size: 9016297 bytes.
+ Normal Created pod/csi-nodeplugin-rclone-hhvjb Created container node-driver-registrar
+ Normal Started pod/csi-nodeplugin-rclone-hhvjb Started container node-driver-registrar
+ Normal Pulling pod/csi-nodeplugin-rclone-hhvjb Pulling image "wunderio/csi-rclone:v1.3.0"
+ Normal Pulled pod/csi-controller-rclone-0 Successfully pulled image "k8s.gcr.io/sig-storage/csi-attacher:v3.4.0" in 1.971s (1.971s including waiting). Image size: 22085298 bytes.
+ Normal Created pod/csi-controller-rclone-0 Created container csi-attacher
+ Normal Started pod/csi-controller-rclone-0 Started container csi-attacher
+ Normal Pulling pod/csi-controller-rclone-0 Pulling image "wunderio/csi-rclone:v1.3.0"
+ Normal Pulled pod/csi-nodeplugin-rclone-hhvjb Successfully pulled image "wunderio/csi-rclone:v1.3.0" in 3.02s (3.02s including waiting). Image size: 67392807 bytes.
+ Normal Pulled pod/csi-controller-rclone-0 Successfully pulled image "wunderio/csi-rclone:v1.3.0" in 1.742s (1.742s including waiting). Image size: 67392807 bytes.
+ Normal Created pod/csi-nodeplugin-rclone-hhvjb Created container rclone
+ Normal Created pod/csi-controller-rclone-0 Created container rclone
+ Normal Started pod/csi-controller-rclone-0 Started container rclone
+ Normal Started pod/csi-nodeplugin-rclone-hhvjb Started container rclone
+ Normal LeaderElection lease/external-attacher-leader-csi-rclone csi-controller-rclone-0 became leader
+ Warning ProvisioningFailed persistentvolumeclaim/data-rclone no volume plugin matched name: kubernetes.io/no-provisioner
+ Warning FailedScheduling pod/package-file 0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+ Warning FailedScheduling pod/package-file 0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+ Normal Scheduled pod/package-file Successfully assigned rclone/package-file to fv-az1756-422
+ Normal SuccessfulAttachVolume pod/package-file AttachVolume.Attach succeeded for volume "data-rclone"
+ Normal Pulling pod/package-file Pulling image "ghcr.io/bioconductor/bioconductor:devel"
+ Normal Pulled pod/package-file Successfully pulled image "ghcr.io/bioconductor/bioconductor:devel" in 35.945s (35.945s including waiting). Image size: 1513874234 bytes.
+ Normal Created pod/package-file Created container copy-packages
+ Normal Started pod/package-file Started container copy-packages

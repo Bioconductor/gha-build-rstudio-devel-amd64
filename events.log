@@ -1,0 +1,37 @@
+LAST SEEN   TYPE      REASON                   OBJECT                                      MESSAGE
+56m         Normal    SuccessfulCreate         daemonset/static-local-static-provisioner   Created pod: static-local-static-provisioner-l4qg7
+56m         Normal    Scheduled                pod/static-local-static-provisioner-l4qg7   Successfully assigned rclone/static-local-static-provisioner-l4qg7 to fv-az1756-422
+56m         Normal    Pulling                  pod/static-local-static-provisioner-l4qg7   Pulling image "registry.k8s.io/sig-storage/local-volume-provisioner:v2.6.0"
+56m         Normal    SuccessfulCreate         daemonset/csi-nodeplugin-rclone             Created pod: csi-nodeplugin-rclone-hhvjb
+56m         Normal    Scheduled                pod/csi-nodeplugin-rclone-hhvjb             Successfully assigned rclone/csi-nodeplugin-rclone-hhvjb to fv-az1756-422
+56m         Normal    SuccessfulCreate         statefulset/csi-controller-rclone           create Pod csi-controller-rclone-0 in StatefulSet csi-controller-rclone successful
+56m         Normal    Scheduled                pod/csi-controller-rclone-0                 Successfully assigned rclone/csi-controller-rclone-0 to fv-az1756-422
+56m         Normal    Pulling                  pod/csi-nodeplugin-rclone-hhvjb             Pulling image "k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.4.0"
+56m         Normal    Pulling                  pod/csi-controller-rclone-0                 Pulling image "k8s.gcr.io/sig-storage/csi-attacher:v3.4.0"
+56m         Normal    Pulled                   pod/static-local-static-provisioner-l4qg7   Successfully pulled image "registry.k8s.io/sig-storage/local-volume-provisioner:v2.6.0" in 2.074s (2.074s including waiting). Image size: 62862469 bytes.
+56m         Normal    Created                  pod/static-local-static-provisioner-l4qg7   Created container provisioner
+56m         Normal    Started                  pod/static-local-static-provisioner-l4qg7   Started container provisioner
+56m         Normal    Pulled                   pod/csi-nodeplugin-rclone-hhvjb             Successfully pulled image "k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.4.0" in 910ms (910ms including waiting). Image size: 9016297 bytes.
+56m         Normal    Created                  pod/csi-nodeplugin-rclone-hhvjb             Created container node-driver-registrar
+56m         Normal    Started                  pod/csi-nodeplugin-rclone-hhvjb             Started container node-driver-registrar
+56m         Normal    Pulling                  pod/csi-nodeplugin-rclone-hhvjb             Pulling image "wunderio/csi-rclone:v1.3.0"
+55m         Normal    Pulled                   pod/csi-controller-rclone-0                 Successfully pulled image "k8s.gcr.io/sig-storage/csi-attacher:v3.4.0" in 1.971s (1.971s including waiting). Image size: 22085298 bytes.
+55m         Normal    Created                  pod/csi-controller-rclone-0                 Created container csi-attacher
+55m         Normal    Started                  pod/csi-controller-rclone-0                 Started container csi-attacher
+55m         Normal    Pulling                  pod/csi-controller-rclone-0                 Pulling image "wunderio/csi-rclone:v1.3.0"
+55m         Normal    Pulled                   pod/csi-nodeplugin-rclone-hhvjb             Successfully pulled image "wunderio/csi-rclone:v1.3.0" in 3.02s (3.02s including waiting). Image size: 67392807 bytes.
+55m         Normal    Pulled                   pod/csi-controller-rclone-0                 Successfully pulled image "wunderio/csi-rclone:v1.3.0" in 1.742s (1.742s including waiting). Image size: 67392807 bytes.
+55m         Normal    Created                  pod/csi-nodeplugin-rclone-hhvjb             Created container rclone
+55m         Normal    Created                  pod/csi-controller-rclone-0                 Created container rclone
+55m         Normal    Started                  pod/csi-controller-rclone-0                 Started container rclone
+55m         Normal    Started                  pod/csi-nodeplugin-rclone-hhvjb             Started container rclone
+55m         Normal    LeaderElection           lease/external-attacher-leader-csi-rclone   csi-controller-rclone-0 became leader
+55m         Warning   ProvisioningFailed       persistentvolumeclaim/data-rclone           no volume plugin matched name: kubernetes.io/no-provisioner
+55m         Warning   FailedScheduling         pod/package-file                            0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+55m         Warning   FailedScheduling         pod/package-file                            0/1 nodes are available: pod has unbound immediate PersistentVolumeClaims. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling.
+55m         Normal    Scheduled                pod/package-file                            Successfully assigned rclone/package-file to fv-az1756-422
+55m         Normal    SuccessfulAttachVolume   pod/package-file                            AttachVolume.Attach succeeded for volume "data-rclone"
+55m         Normal    Pulling                  pod/package-file                            Pulling image "ghcr.io/bioconductor/bioconductor:devel"
+54m         Normal    Pulled                   pod/package-file                            Successfully pulled image "ghcr.io/bioconductor/bioconductor:devel" in 35.945s (35.945s including waiting). Image size: 1513874234 bytes.
+54m         Normal    Created                  pod/package-file                            Created container copy-packages
+54m         Normal    Started                  pod/package-file                            Started container copy-packages
