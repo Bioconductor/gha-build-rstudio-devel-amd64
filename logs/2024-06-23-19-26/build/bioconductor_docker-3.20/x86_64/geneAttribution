@@ -1,0 +1,55 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''geneAttribution'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'geneAttribution'
+also installing the dependency ‘TxDb.Hsapiens.UCSC.hg19.knownGene’
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2.tar.gz'
+Content type 'application/x-gzip' length 18669702 bytes (17.8 MB)
+==================================================
+downloaded 17.8 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/geneAttribution_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 40123 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+* installing *source* package ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TxDb.Hsapiens.UCSC.hg19.knownGene’ as ‘TxDb.Hsapiens.UCSC.hg19.knownGene_3.2.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TxDb.Hsapiens.UCSC.hg19.knownGene)
+* installing *source* package ‘geneAttribution’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘geneAttribution’ as ‘geneAttribution_1.31.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (geneAttribution)
+
+The downloaded source packages are in
+	‘/tmp/RtmpURwg0N/downloaded_packages’
+
+real	0m57.277s
+user	0m52.325s
+sys	0m3.750s
