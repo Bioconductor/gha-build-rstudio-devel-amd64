@@ -1,0 +1,633 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''miRSM'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'miRSM'
+also installing the dependencies ‘proxy’, ‘e1071’, ‘wk’, ‘operator.tools’, ‘classInt’, ‘s2’, ‘units’, ‘timechange’, ‘V8’, ‘assertthat’, ‘gridtext’, ‘formula.tools’, ‘sf’, ‘lubridate’, ‘kpeaks’, ‘lhs’, ‘fastcluster’, ‘expm’, ‘registry’, ‘rngtools’, ‘gridBase’, ‘dendextend’, ‘randomcoloR’, ‘ggvis’, ‘rJava’, ‘markdown’, ‘scatterplot3d’, ‘ggwordcloud’, ‘metR’, ‘inaparc’, ‘plotrix’, ‘pracma’, ‘gsl’, ‘WGCNA’, ‘flashClust’, ‘dynamicTreeCut’, ‘GFA’, ‘linkcomm’, ‘MCL’, ‘NMF’, ‘isa2’, ‘s4vd’, ‘BiBitR’, ‘PMA’, ‘dbscan’, ‘subspace’, ‘mclust’, ‘SOMbrero’, ‘ppclust’, ‘MatrixCorrelation’, ‘energy’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/proxy_0.4-27.tar.gz'
+Content type 'binary/octet-stream' length 175590 bytes (171 KB)
+==================================================
+downloaded 171 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/e1071_1.7-14.tar.gz'
+Content type 'binary/octet-stream' length 596026 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/wk_0.9.1.tar.gz'
+Content type 'binary/octet-stream' length 1734431 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/operator.tools_1.6.3.tar.gz'
+Content type 'binary/octet-stream' length 52906 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/classInt_0.4-10.tar.gz'
+Content type 'binary/octet-stream' length 499015 bytes (487 KB)
+==================================================
+downloaded 487 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/s2_1.1.6.tar.gz'
+Content type 'binary/octet-stream' length 2169198 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/units_0.8-5.tar.gz'
+Content type 'binary/octet-stream' length 359589 bytes (351 KB)
+==================================================
+downloaded 351 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/timechange_0.3.0.tar.gz'
+Content type 'binary/octet-stream' length 172430 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/V8_4.4.2.tar.gz'
+Content type 'binary/octet-stream' length 7965010 bytes (7.6 MB)
+==================================================
+downloaded 7.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gridtext_0.1.5.tar.gz'
+Content type 'binary/octet-stream' length 354355 bytes (346 KB)
+==================================================
+downloaded 346 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/formula.tools_1.7.1.tar.gz'
+Content type 'binary/octet-stream' length 87626 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/sf_1.0-16.tar.gz'
+Content type 'binary/octet-stream' length 3580689 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lubridate_1.9.3.tar.gz'
+Content type 'binary/octet-stream' length 985853 bytes (962 KB)
+==================================================
+downloaded 962 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/kpeaks_1.1.0.tar.gz'
+Content type 'binary/octet-stream' length 78173 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/lhs_1.1.6.tar.gz'
+Content type 'binary/octet-stream' length 395437 bytes (386 KB)
+==================================================
+downloaded 386 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/fastcluster_1.2.6.tar.gz'
+Content type 'binary/octet-stream' length 185641 bytes (181 KB)
+==================================================
+downloaded 181 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/expm_0.999-9.tar.gz'
+Content type 'binary/octet-stream' length 207275 bytes (202 KB)
+==================================================
+downloaded 202 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/registry_0.5-1.tar.gz'
+Content type 'binary/octet-stream' length 194528 bytes (189 KB)
+==================================================
+downloaded 189 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rngtools_1.5.2.tar.gz'
+Content type 'binary/octet-stream' length 78011 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gridBase_0.4-7.tar.gz'
+Content type 'binary/octet-stream' length 162064 bytes (158 KB)
+==================================================
+downloaded 158 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dendextend_1.17.1.tar.gz'
+Content type 'binary/octet-stream' length 3911750 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/randomcoloR_1.1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 25285 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggvis_0.4.9.tar.gz'
+Content type 'binary/octet-stream' length 1160014 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/rJava_1.0-11.tar.gz'
+Content type 'binary/octet-stream' length 940665 bytes (918 KB)
+==================================================
+downloaded 918 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/markdown_1.13.tar.gz'
+Content type 'binary/octet-stream' length 146608 bytes (143 KB)
+==================================================
+downloaded 143 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/scatterplot3d_0.3-44.tar.gz'
+Content type 'binary/octet-stream' length 348285 bytes (340 KB)
+==================================================
+downloaded 340 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ggwordcloud_0.6.2.tar.gz'
+Content type 'binary/octet-stream' length 1874149 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/metR_0.15.0.tar.gz'
+Content type 'binary/octet-stream' length 3783486 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/inaparc_1.2.0.tar.gz'
+Content type 'binary/octet-stream' length 271264 bytes (264 KB)
+==================================================
+downloaded 264 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/plotrix_3.8-4.tar.gz'
+Content type 'binary/octet-stream' length 1160235 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/pracma_2.4.4.tar.gz'
+Content type 'binary/octet-stream' length 1759381 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gsl_2.1-8.tar.gz'
+Content type 'binary/octet-stream' length 528870 bytes (516 KB)
+==================================================
+downloaded 516 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/WGCNA_1.72-5.tar.gz'
+Content type 'application/x-tar' length 1174718 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/flashClust_1.01-2.tar.gz'
+Content type 'binary/octet-stream' length 20898 bytes (20 KB)
+==================================================
+downloaded 20 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dynamicTreeCut_1.63-1.tar.gz'
+Content type 'binary/octet-stream' length 90144 bytes (88 KB)
+==================================================
+downloaded 88 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/GFA_1.0.5.tar.gz'
+Content type 'binary/octet-stream' length 152030 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/linkcomm_1.0-14.tar.gz'
+Content type 'binary/octet-stream' length 884448 bytes (863 KB)
+==================================================
+downloaded 863 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/MCL_1.0.tar.gz'
+Content type 'binary/octet-stream' length 17752 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/NMF_0.27.tar.gz'
+Content type 'application/x-tar' length 1679430 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/isa2_0.3.6.tar.gz'
+Content type 'binary/octet-stream' length 210501 bytes (205 KB)
+==================================================
+downloaded 205 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/s4vd_1.1-1.tar.gz'
+Content type 'binary/octet-stream' length 172251 bytes (168 KB)
+==================================================
+downloaded 168 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/BiBitR_0.3.1.tar.gz'
+Content type 'binary/octet-stream' length 785106 bytes (766 KB)
+==================================================
+downloaded 766 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PMA_1.2-3.tar.gz'
+Content type 'binary/octet-stream' length 271544 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/dbscan_1.1-12.tar.gz'
+Content type 'binary/octet-stream' length 2520898 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/subspace_1.0.4.tar.gz'
+Content type 'binary/octet-stream' length 4262836 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/mclust_6.1.1.tar.gz'
+Content type 'binary/octet-stream' length 4126597 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/SOMbrero_1.4-2.tar.gz'
+Content type 'binary/octet-stream' length 795640 bytes (776 KB)
+==================================================
+downloaded 776 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/ppclust_1.1.0.1.tar.gz'
+Content type 'binary/octet-stream' length 4274813 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/MatrixCorrelation_0.10.0.tar.gz'
+Content type 'binary/octet-stream' length 142391 bytes (139 KB)
+==================================================
+downloaded 139 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/energy_1.7-11.tar.gz'
+Content type 'binary/octet-stream' length 304246 bytes (297 KB)
+==================================================
+downloaded 297 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/miRSM_2.1.0.tar.gz'
+Content type 'application/x-gzip' length 933700 bytes (911 KB)
+==================================================
+downloaded 911 KB
+
+* installing *binary* package ‘proxy’ ...
+* ‘proxy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘proxy’ as ‘proxy_0.4-27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (proxy)
+* installing *binary* package ‘wk’ ...
+* ‘wk’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘wk’ as ‘wk_0.9.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (wk)
+* installing *binary* package ‘operator.tools’ ...
+* ‘operator.tools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘operator.tools’ as ‘operator.tools_1.6.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (operator.tools)
+* installing *binary* package ‘units’ ...
+* ‘units’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘units’ as ‘units_0.8-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (units)
+* installing *binary* package ‘timechange’ ...
+* ‘timechange’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘timechange’ as ‘timechange_0.3.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (timechange)
+* installing *binary* package ‘V8’ ...
+* ‘V8’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘V8’ as ‘V8_4.4.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (V8)
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘kpeaks’ ...
+* ‘kpeaks’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘kpeaks’ as ‘kpeaks_1.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (kpeaks)
+* installing *binary* package ‘lhs’ ...
+* ‘lhs’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lhs’ as ‘lhs_1.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lhs)
+* installing *binary* package ‘fastcluster’ ...
+* ‘fastcluster’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘fastcluster’ as ‘fastcluster_1.2.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (fastcluster)
+* installing *binary* package ‘expm’ ...
+* ‘expm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘expm’ as ‘expm_0.999-9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (expm)
+* installing *binary* package ‘registry’ ...
+* ‘registry’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘registry’ as ‘registry_0.5-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (registry)
+* installing *binary* package ‘rngtools’ ...
+* ‘rngtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rngtools’ as ‘rngtools_1.5.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rngtools)
+* installing *binary* package ‘gridBase’ ...
+* ‘gridBase’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridBase’ as ‘gridBase_0.4-7_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridBase)
+* installing *binary* package ‘dendextend’ ...
+* ‘dendextend’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dendextend’ as ‘dendextend_1.17.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dendextend)
+* installing *binary* package ‘rJava’ ...
+* ‘rJava’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘rJava’ as ‘rJava_1.0-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (rJava)
+* installing *binary* package ‘markdown’ ...
+* ‘markdown’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘markdown’ as ‘markdown_1.13_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (markdown)
+* installing *binary* package ‘scatterplot3d’ ...
+* ‘scatterplot3d’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘scatterplot3d’ as ‘scatterplot3d_0.3-44_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (scatterplot3d)
+* installing *binary* package ‘plotrix’ ...
+* ‘plotrix’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘plotrix’ as ‘plotrix_3.8-4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (plotrix)
+* installing *binary* package ‘pracma’ ...
+* ‘pracma’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘pracma’ as ‘pracma_2.4.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (pracma)
+* installing *binary* package ‘gsl’ ...
+* ‘gsl’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gsl’ as ‘gsl_2.1-8_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gsl)
+* installing *binary* package ‘flashClust’ ...
+* ‘flashClust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘flashClust’ as ‘flashClust_1.01-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (flashClust)
+* installing *binary* package ‘dynamicTreeCut’ ...
+* ‘dynamicTreeCut’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dynamicTreeCut’ as ‘dynamicTreeCut_1.63-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dynamicTreeCut)
+* installing *binary* package ‘GFA’ ...
+* ‘GFA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘GFA’ as ‘GFA_1.0.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GFA)
+* installing *binary* package ‘isa2’ ...
+* ‘isa2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘isa2’ as ‘isa2_0.3.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (isa2)
+* installing *binary* package ‘s4vd’ ...
+* ‘s4vd’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘s4vd’ as ‘s4vd_1.1-1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s4vd)
+* installing *binary* package ‘PMA’ ...
+* ‘PMA’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘PMA’ as ‘PMA_1.2-3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (PMA)
+* installing *binary* package ‘dbscan’ ...
+* ‘dbscan’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘dbscan’ as ‘dbscan_1.1-12_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (dbscan)
+* installing *binary* package ‘mclust’ ...
+* ‘mclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘mclust’ as ‘mclust_6.1.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (mclust)
+* installing *binary* package ‘e1071’ ...
+* ‘e1071’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘e1071’ as ‘e1071_1.7-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (e1071)
+* installing *binary* package ‘s2’ ...
+* ‘s2’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘s2’ as ‘s2_1.1.6_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (s2)
+* installing *binary* package ‘gridtext’ ...
+* ‘gridtext’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gridtext’ as ‘gridtext_0.1.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gridtext)
+* installing *binary* package ‘formula.tools’ ...
+* ‘formula.tools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘formula.tools’ as ‘formula.tools_1.7.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (formula.tools)
+* installing *binary* package ‘lubridate’ ...
+* ‘lubridate’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘lubridate’ as ‘lubridate_1.9.3_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (lubridate)
+* installing *binary* package ‘randomcoloR’ ...
+* ‘randomcoloR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘randomcoloR’ as ‘randomcoloR_1.1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (randomcoloR)
+* installing *binary* package ‘ggvis’ ...
+* ‘ggvis’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggvis’ as ‘ggvis_0.4.9_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggvis)
+* installing *binary* package ‘inaparc’ ...
+* ‘inaparc’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘inaparc’ as ‘inaparc_1.2.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (inaparc)
+* installing *source* package ‘WGCNA’ ...
+** package ‘WGCNA’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions-utils.c -o corFunctions-utils.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c corFunctions.c -o corFunctions.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c myMatrixMultiplication.c -o myMatrixMultiplication.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c networkFunctions.c -o networkFunctions.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c parallelQuantile.cc -o parallelQuantile.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG -DWITH_THREADS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pivot.c -o pivot.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o WGCNA.so corFunctions-utils.o corFunctions.o myMatrixMultiplication.o networkFunctions.o parallelQuantile.o pivot.o -lpthread -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-WGCNA/00new/WGCNA/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘WGCNA’ as ‘WGCNA_1.72-5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (WGCNA)
+* installing *binary* package ‘linkcomm’ ...
+* ‘linkcomm’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘linkcomm’ as ‘linkcomm_1.0-14_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (linkcomm)
+* installing *binary* package ‘MCL’ ...
+* ‘MCL’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MCL’ as ‘MCL_1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MCL)
+* installing *source* package ‘NMF’ ...
+** package ‘NMF’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c distance.cpp -o distance.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c divergence.cpp -o divergence.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c euclidean.cpp -o euclidean.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+g++ -std=gnu++17 -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c utils.cpp -o utils.o
+g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o NMF.so distance.o divergence.o euclidean.o registerDynamicSymbol.o utils.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-NMF/00new/NMF/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Setting package specific options: package:NMF:logger (1 default option(s))
+Setting package specific options: package:NMF (10 default option(s))
+Creating a generic function for ‘plot’ from ‘graphics’ in package ‘NMF’
+    (from the saved implicit definition)
+Creating meta registry in package 'NMF' ... OK
+Creating registry 'extra_handler' in package 'NMF' ... OK
+Creating registry 'extra_action' in package 'NMF' ... OK
+Registering extra handler 'install.packages' [function] ... OK
+Creating registry 'algorithm' in package 'NMF' ... OK
+Registering NMF algorithm '.R#brunet' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'brunet' [NMFStrategyIterative] based on template '.R#brunet' ... OK
+Registering NMF algorithm 'KL' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#lee' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'lee' [NMFStrategyIterative] based on template '.R#lee' ... OK
+Registering NMF algorithm 'Frobenius' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.R#offset' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'offset' [NMFStrategyIterative] based on template '.R#offset' ... OK
+Registering NMF algorithm '.R#nsNMF' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'nsNMF' [NMFStrategyIterative] based on template '.R#nsNMF' ... OK
+Registering NMF algorithm 'ls-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm 'pe-nmf' [NMFStrategyIterative] ... OK
+Registering NMF algorithm '.siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'siNMF' [NMFStrategyIterative] based on template 'lee' ... OK
+Registering NMF algorithm 'snmf/r' [NMFStrategyFunction] ... OK
+Registering NMF algorithm 'snmf/l' [NMFStrategyFunction] ... OK
+Registering extra action 'bigmemory' for handler 'install.packages' ... OK
+Registering extra action 'synchronicity' for handler 'install.packages' ... OK
+Creating registry 'seed' in package 'NMF' ... OK
+Registering NMF seeding method 'none' [NMFSeed] ... OK
+Registering NMF seeding method 'random' [NMFSeed] ... OK
+Registering NMF seeding method 'ica' [NMFSeed] ... OK
+Registering NMF seeding method 'nndsvd' [NMFSeed] ... OK
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘NMF’ as ‘NMF_0.27_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (NMF)
+* installing *binary* package ‘MatrixCorrelation’ ...
+* ‘MatrixCorrelation’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘MatrixCorrelation’ as ‘MatrixCorrelation_0.10.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MatrixCorrelation)
+* installing *binary* package ‘energy’ ...
+* ‘energy’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘energy’ as ‘energy_1.7-11_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (energy)
+* installing *binary* package ‘classInt’ ...
+* ‘classInt’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘classInt’ as ‘classInt_0.4-10_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (classInt)
+* installing *binary* package ‘ggwordcloud’ ...
+* ‘ggwordcloud’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ggwordcloud’ as ‘ggwordcloud_0.6.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ggwordcloud)
+* installing *binary* package ‘BiBitR’ ...
+* ‘BiBitR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘BiBitR’ as ‘BiBitR_0.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (BiBitR)
+* installing *binary* package ‘subspace’ ...
+* ‘subspace’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘subspace’ as ‘subspace_1.0.4_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (subspace)
+* installing *binary* package ‘ppclust’ ...
+* ‘ppclust’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘ppclust’ as ‘ppclust_1.1.0.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ppclust)
+* installing *binary* package ‘sf’ ...
+* ‘sf’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘sf’ as ‘sf_1.0-16_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sf)
+* installing *binary* package ‘metR’ ...
+* ‘metR’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘metR’ as ‘metR_0.15.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (metR)
+* installing *binary* package ‘SOMbrero’ ...
+* ‘SOMbrero’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘SOMbrero’ as ‘SOMbrero_1.4-2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (SOMbrero)
+* installing *source* package ‘miRSM’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c complex.c -o complex.o
+gcc -I"/usr/local/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c registerDynamicSymbol.c -o registerDynamicSymbol.o
+gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o miRSM.so complex.o registerDynamicSymbol.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-miRSM/00new/miRSM/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘miRSM’ as ‘miRSM_2.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (miRSM)
+
+The downloaded source packages are in
+	‘/tmp/RtmpTRENbw/downloaded_packages’
+
+real	2m23.410s
+user	1m36.399s
+sys	0m14.307s
