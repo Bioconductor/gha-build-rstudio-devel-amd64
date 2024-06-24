@@ -1,0 +1,126 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''RcisTarget'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'RcisTarget'
+also installing the dependencies ‘assertthat’, ‘gtools’, ‘caTools’, ‘arrow’, ‘gplots’, ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp’, ‘visNetwork’
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/assertthat_0.2.1.tar.gz'
+Content type 'binary/octet-stream' length 53323 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gtools_3.9.5.tar.gz'
+Content type 'binary/octet-stream' length 361302 bytes (352 KB)
+==================================================
+downloaded 352 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/caTools_1.18.2.tar.gz'
+Content type 'binary/octet-stream' length 205542 bytes (200 KB)
+==================================================
+downloaded 200 KB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/arrow_16.1.0.tar.gz'
+Content type 'binary/octet-stream' length 20361999 bytes (19.4 MB)
+==================================================
+downloaded 19.4 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/gplots_3.1.3.1.tar.gz'
+Content type 'binary/octet-stream' length 600661 bytes (586 KB)
+==================================================
+downloaded 586 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 56081659 bytes (53.5 MB)
+==================================================
+downloaded 53.5 MB
+
+trying URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/visNetwork_2.1.2.tar.gz'
+Content type 'binary/octet-stream' length 4654529 bytes (4.4 MB)
+==================================================
+downloaded 4.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/RcisTarget_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 13383657 bytes (12.8 MB)
+==================================================
+downloaded 12.8 MB
+
+* installing *binary* package ‘assertthat’ ...
+* ‘assertthat’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘assertthat’ as ‘assertthat_0.2.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (assertthat)
+* installing *binary* package ‘gtools’ ...
+* ‘gtools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gtools’ as ‘gtools_3.9.5_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gtools)
+* installing *binary* package ‘caTools’ ...
+* ‘caTools’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘caTools’ as ‘caTools_1.18.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (caTools)
+* installing *source* package ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp’ as ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcisTarget.hg19.motifDBs.cisbpOnly.500bp)
+* installing *binary* package ‘visNetwork’ ...
+* ‘visNetwork’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘visNetwork’ as ‘visNetwork_2.1.2_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (visNetwork)
+* installing *binary* package ‘arrow’ ...
+* ‘arrow’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘arrow’ as ‘arrow_16.1.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (arrow)
+* installing *binary* package ‘gplots’ ...
+* ‘gplots’ was already a binary package and will not be rebuilt
+* creating tarball
+packaged installation of ‘gplots’ as ‘gplots_3.1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (gplots)
+* installing *source* package ‘RcisTarget’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RcisTarget’ as ‘RcisTarget_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcisTarget)
+
+The downloaded source packages are in
+	‘/tmp/RtmpwD44Sw/downloaded_packages’
+
+real	0m48.189s
+user	0m39.622s
+sys	0m4.546s
+* installing *source* package ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp’ ...
+** using staged installation
+** data
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp’ as ‘RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (RcisTarget.hg19.motifDBs.cisbpOnly.500bp)
