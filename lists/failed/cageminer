@@ -1,0 +1,63 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''cageminer'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'cageminer'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘ggtext’, ‘GGally’ are not available
+also installing the dependencies ‘OrganismDbi’, ‘ggbio’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/OrganismDbi_1.47.0.tar.gz'
+Content type 'application/x-gzip' length 396610 bytes (387 KB)
+==================================================
+downloaded 387 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ggbio_1.53.0.tar.gz'
+Content type 'application/x-gzip' length 3247167 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/cageminer_1.11.0.tar.gz'
+Content type 'application/x-gzip' length 1252936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+* installing *source* package ‘OrganismDbi’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘OrganismDbi’ as ‘OrganismDbi_1.47.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OrganismDbi)
+ERROR: dependency ‘GGally’ is not available for package ‘ggbio’
+* removing ‘/tmp/tmp/built/ggbio’
+ERROR: dependencies ‘ggbio’, ‘ggtext’ are not available for package ‘cageminer’
+* removing ‘/tmp/tmp/built/cageminer’
+
+The downloaded source packages are in
+	‘/tmp/RtmpBqRzpx/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'SparseArray'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘ggbio’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘cageminer’ had non-zero exit status
+
+real	28m10.173s
+user	0m43.120s
+sys	0m6.238s
