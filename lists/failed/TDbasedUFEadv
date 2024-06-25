@@ -1,0 +1,112 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''TDbasedUFEadv'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'TDbasedUFEadv'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘rTensor’, ‘enrichR’, ‘hash’, ‘sqldf’, ‘plotrix’ are not available
+also installing the dependencies ‘tximport’, ‘tximportData’, ‘TDbasedUFE’, ‘STRINGdb’, ‘MOFAdata’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/tximport_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 315724 bytes (308 KB)
+==================================================
+downloaded 308 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/tximportData_1.33.0.tar.gz'
+Content type 'application/x-gzip' length 316744029 bytes (302.1 MB)
+==================================================
+downloaded 302.1 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TDbasedUFE_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1257835 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/STRINGdb_2.17.3.tar.gz'
+Content type 'application/x-gzip' length 10349858 bytes (9.9 MB)
+==================================================
+downloaded 9.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/MOFAdata_1.21.0.tar.gz'
+Content type 'application/x-gzip' length 46373684 bytes (44.2 MB)
+==================================================
+downloaded 44.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TDbasedUFEadv_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 3676002 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+* installing *source* package ‘tximport’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tximport’ as ‘tximport_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tximport)
+* installing *source* package ‘tximportData’ ...
+** using staged installation
+** inst
+** help
+No man pages found in package  ‘tximportData’ 
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘tximportData’ as ‘tximportData_1.33.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (tximportData)
+ERROR: dependencies ‘sqldf’, ‘hash’, ‘plotrix’ are not available for package ‘STRINGdb’
+* removing ‘/tmp/tmp/built/STRINGdb’
+* installing *source* package ‘MOFAdata’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘MOFAdata’ as ‘MOFAdata_1.21.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (MOFAdata)
+ERROR: dependency ‘rTensor’ is not available for package ‘TDbasedUFE’
+* removing ‘/tmp/tmp/built/TDbasedUFE’
+ERROR: dependencies ‘TDbasedUFE’, ‘rTensor’, ‘STRINGdb’, ‘enrichR’, ‘hash’ are not available for package ‘TDbasedUFEadv’
+* removing ‘/tmp/tmp/built/TDbasedUFEadv’
+
+The downloaded source packages are in
+	‘/tmp/RtmpJXp67s/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'SparseArray'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘STRINGdb’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘TDbasedUFE’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘TDbasedUFEadv’ had non-zero exit status
+
+real	21m22.176s
+user	2m56.716s
+sys	0m10.773s
