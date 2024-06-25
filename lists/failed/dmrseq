@@ -1,0 +1,32 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''dmrseq'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'dmrseq'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependency ‘outliers’ is not available
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/dmrseq_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 2933260 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+ERROR: dependency ‘outliers’ is not available for package ‘dmrseq’
+* removing ‘/tmp/tmp/built/dmrseq’
+
+The downloaded source packages are in
+	‘/tmp/Rtmp0tEDPm/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'SparseArray'
+Warning message:
+In install.packages(...) :
+  installation of package ‘dmrseq’ had non-zero exit status
+
+real	27m26.394s
+user	0m3.222s
+sys	0m1.890s
