@@ -1,0 +1,160 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''ATACCoGAPS'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'ATACCoGAPS'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘tidyverse’, ‘nabor’ are not available
+also installing the dependencies ‘OrganismDbi’, ‘GeneOverlap’, ‘motifmatchr’, ‘chromVAR’, ‘Homo.sapiens’, ‘Mus.musculus’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/OrganismDbi_1.47.0.tar.gz'
+Content type 'application/x-gzip' length 396610 bytes (387 KB)
+==================================================
+downloaded 387 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GeneOverlap_1.41.0.tar.gz'
+Content type 'application/x-gzip' length 368532 bytes (359 KB)
+==================================================
+downloaded 359 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/motifmatchr_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 53344 bytes (52 KB)
+==================================================
+downloaded 52 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/chromVAR_1.27.0.tar.gz'
+Content type 'application/x-gzip' length 472729 bytes (461 KB)
+==================================================
+downloaded 461 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/Homo.sapiens_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1617 bytes
+==================================================
+downloaded 1617 bytes
+
+trying URL 'https://bioconductor.org/packages/3.20/data/annotation/src/contrib/Mus.musculus_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 1618 bytes
+==================================================
+downloaded 1618 bytes
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ATACCoGAPS_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 2912052 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+* installing *source* package ‘OrganismDbi’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘OrganismDbi’ as ‘OrganismDbi_1.47.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (OrganismDbi)
+* installing *source* package ‘GeneOverlap’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GeneOverlap’ as ‘GeneOverlap_1.41.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GeneOverlap)
+* installing *source* package ‘motifmatchr’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+using C++11
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c r_interface.cpp -o r_interface.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/scanner.cpp -o MOODS/scanner.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/motif_h.cpp -o MOODS/motif_h.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/motif_0.cpp -o MOODS/motif_0.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/moods_tools.cpp -o MOODS/moods_tools.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/moods_scan.cpp -o MOODS/moods_scan.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/moods_parsers.cpp -o MOODS/moods_parsers.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/moods_misc.cpp -o MOODS/moods_misc.o
+g++ -std=gnu++11 -I"/usr/local/lib/R/include" -DNDEBUG -I. -I./MOODS/ -I'/usr/local/lib/R/site-library/Rcpp/include' -I'/tmp/tmp/built/RcppArmadillo/include' -I/usr/local/include    -fpic  -g -O2 -fstack-protector-strong -Wformat -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c MOODS/match_types.cpp -o MOODS/match_types.o
+g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o motifmatchr.so ./RcppExports.o ./r_interface.o ./MOODS/scanner.o ./MOODS/motif_h.o ./MOODS/motif_0.o ./MOODS/moods_tools.o ./MOODS/moods_scan.o ./MOODS/moods_parsers.o ./MOODS/moods_misc.o ./MOODS/match_types.o -L/usr/local/lib/R/lib -lR
+installing to /tmp/tmp/built/00LOCK-motifmatchr/00new/motifmatchr/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘motifmatchr’ as ‘motifmatchr_1.27.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (motifmatchr)
+ERROR: dependency ‘nabor’ is not available for package ‘chromVAR’
+* removing ‘/tmp/tmp/built/chromVAR’
+* installing *source* package ‘Homo.sapiens’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Homo.sapiens’ as ‘Homo.sapiens_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Homo.sapiens)
+* installing *source* package ‘Mus.musculus’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘Mus.musculus’ as ‘Mus.musculus_1.3.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (Mus.musculus)
+ERROR: dependencies ‘tidyverse’, ‘chromVAR’ are not available for package ‘ATACCoGAPS’
+* removing ‘/tmp/tmp/built/ATACCoGAPS’
+
+The downloaded source packages are in
+	‘/tmp/RtmpDowy7x/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'alabaster.base', 'alabaster.matrix', 'alabaster.ranges',
+  'gypsum', 'SparseArray'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘chromVAR’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘ATACCoGAPS’ had non-zero exit status
+
+real	31m2.967s
+user	3m10.576s
+sys	0m22.420s
