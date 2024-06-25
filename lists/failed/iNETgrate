@@ -1,0 +1,133 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''iNETgrate'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'iNETgrate'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘WGCNA’, ‘glmnet’, ‘caret’, ‘Rfast’, ‘bnlearn’, ‘C50’, ‘partykit’, ‘pheatmap’, ‘gdata’, ‘openxlsx’, ‘rvest’ are not available
+also installing the dependencies ‘ReactomePA’, ‘ExperimentHub’, ‘TCGAbiolinksGUI.data’, ‘Pigengene’, ‘sesameData’, ‘TCGAbiolinks’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ReactomePA_1.49.0.tar.gz'
+Content type 'application/x-gzip' length 58612 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/ExperimentHub_2.13.0.tar.gz'
+Content type 'application/x-gzip' length 500628 bytes (488 KB)
+==================================================
+downloaded 488 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/TCGAbiolinksGUI.data_1.25.0.tar.gz'
+Content type 'application/x-gzip' length 22921649 bytes (21.9 MB)
+==================================================
+downloaded 21.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/Pigengene_1.31.2.tar.gz'
+Content type 'application/x-gzip' length 2833105 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/data/experiment/src/contrib/sesameData_1.23.0.tar.gz'
+Content type 'application/x-gzip' length 1973939 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/TCGAbiolinks_2.33.0.tar.gz'
+Content type 'application/x-gzip' length 65649628 bytes (62.6 MB)
+==================================================
+downloaded 62.6 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/iNETgrate_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 4160612 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+* installing *source* package ‘ReactomePA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ReactomePA’ as ‘ReactomePA_1.49.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ReactomePA)
+* installing *source* package ‘ExperimentHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘ExperimentHub’ as ‘ExperimentHub_2.13.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (ExperimentHub)
+* installing *source* package ‘TCGAbiolinksGUI.data’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘TCGAbiolinksGUI.data’ as ‘TCGAbiolinksGUI.data_1.25.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (TCGAbiolinksGUI.data)
+ERROR: dependencies ‘bnlearn’, ‘C50’, ‘partykit’, ‘WGCNA’, ‘pheatmap’, ‘gdata’, ‘openxlsx’ are not available for package ‘Pigengene’
+* removing ‘/tmp/tmp/built/Pigengene’
+* installing *source* package ‘sesameData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘sesameData’ as ‘sesameData_1.23.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (sesameData)
+ERROR: dependency ‘rvest’ is not available for package ‘TCGAbiolinks’
+* removing ‘/tmp/tmp/built/TCGAbiolinks’
+ERROR: dependencies ‘WGCNA’, ‘Pigengene’, ‘glmnet’, ‘caret’, ‘Rfast’ are not available for package ‘iNETgrate’
+* removing ‘/tmp/tmp/built/iNETgrate’
+
+The downloaded source packages are in
+	‘/tmp/RtmppaJC9a/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'SparseArray'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘Pigengene’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘TCGAbiolinks’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘iNETgrate’ had non-zero exit status
+
+real	23m29.779s
+user	1m0.240s
+sys	0m10.562s
