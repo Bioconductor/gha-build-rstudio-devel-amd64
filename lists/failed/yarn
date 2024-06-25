@@ -1,0 +1,102 @@
++ Rscript -e 'Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE); p <- .libPaths(); p <- c('\''/tmp/tmp/built'\'', p); .libPaths(p); if(BiocManager::install('\''yarn'\'', INSTALL_opts = '\''--build'\'', update = TRUE, quiet = FALSE, dependencies=TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://p3m.dev/cran/__linux__/jammy/2024-06-13
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Bioconductor version 3.20 (BiocManager 1.30.23), R 4.4.0 (2024-04-24)
+Installing package(s) 'yarn'
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Warning: dependencies ‘downloader’, ‘beanplot’, ‘nor1mix’, ‘mclust’, ‘reshape’, ‘quadprog’, ‘doRNG’ are not available
+also installing the dependencies ‘GenomicFeatures’, ‘bumphunter’, ‘minfi’, ‘biomaRt’, ‘quantro’
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/GenomicFeatures_1.57.0.tar.gz'
+Content type 'application/x-gzip' length 569153 bytes (555 KB)
+==================================================
+downloaded 555 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/bumphunter_1.47.0.tar.gz'
+Content type 'application/x-gzip' length 2481576 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/minfi_1.51.0.tar.gz'
+Content type 'application/x-gzip' length 517412 bytes (505 KB)
+==================================================
+downloaded 505 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/biomaRt_2.61.1.tar.gz'
+Content type 'application/x-gzip' length 865728 bytes (845 KB)
+==================================================
+downloaded 845 KB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/quantro_1.39.0.tar.gz'
+Content type 'application/x-gzip' length 2881798 bytes (2.7 MB)
+==================================================
+downloaded 2.7 MB
+
+trying URL 'https://bioconductor.org/packages/3.20/bioc/src/contrib/yarn_1.31.0.tar.gz'
+Content type 'application/x-gzip' length 3118107 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *source* package ‘GenomicFeatures’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘GenomicFeatures’ as ‘GenomicFeatures_1.57.0_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (GenomicFeatures)
+* installing *source* package ‘biomaRt’ ...
+** package ‘biomaRt’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of ‘biomaRt’ as ‘biomaRt_2.61.1_R_x86_64-pc-linux-gnu.tar.gz’
+* DONE (biomaRt)
+ERROR: dependency ‘doRNG’ is not available for package ‘bumphunter’
+* removing ‘/tmp/tmp/built/bumphunter’
+ERROR: dependencies ‘bumphunter’, ‘beanplot’, ‘nor1mix’, ‘mclust’, ‘reshape’, ‘quadprog’ are not available for package ‘minfi’
+* removing ‘/tmp/tmp/built/minfi’
+ERROR: dependency ‘minfi’ is not available for package ‘quantro’
+* removing ‘/tmp/tmp/built/quantro’
+ERROR: dependencies ‘downloader’, ‘quantro’ are not available for package ‘yarn’
+* removing ‘/tmp/tmp/built/yarn’
+
+The downloaded source packages are in
+	‘/tmp/RtmpIbjKyq/downloaded_packages’
+Warning: unable to access index for repository https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib:
+  cannot open URL 'https://p3m.dev/cran/__linux__/jammy/2024-06-13/src/contrib/PACKAGES'
+Old packages: 'SparseArray'
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘bumphunter’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘minfi’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘quantro’ had non-zero exit status
+4: In install.packages(...) :
+  installation of package ‘yarn’ had non-zero exit status
+
+real	19m11.017s
+user	0m56.700s
+sys	0m7.566s
