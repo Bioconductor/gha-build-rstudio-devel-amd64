@@ -14,7 +14,7 @@ jobs:
         with:
           verbose: true
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT }}
           persist-credentials: true
@@ -67,7 +67,7 @@ jobs:
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git pull origin main || git reset --hard origin/main
             STARTTIME="$(cat runstarttime)" || true
-            LOGDIR="logs/$(cat runstarttime)" || true
+            LOGDIR="logs/$STARTTIME" || true
             mv README.md "$LOGDIR"/ || true
             mv runstarttime "$LOGDIR"/ || true
             mv uniquedeps.json "$LOGDIR"/ || true
@@ -87,7 +87,22 @@ jobs:
             cp bioc_build/containername containername
             cp bioc_build/arch arch
 
-            bash .github/scripts/reset_packages.sh
+            python3 -c """
+            import json
+            with open('packages.json', 'r') as f:
+                pkgs = json.load(f)
+            for pkg in pkgs:
+                pkglist = pkgs.get(pkg)
+                pkglist = [] if not pkglist else pkglist
+                if pkg in pkglist:
+                    pkglist.remove(pkg)
+                pkglist.sort()
+                pkgs[pkg] = pkglist
+            with open('packages.json', 'w') as f:
+                f.write(json.dumps(pkgs, indent=4))
+            """
+            echo "$(TZ=EST date '+%Y-%m-%d-%H-%M')" > runstarttime
+
             git config --global --add safe.directory "$GITHUB_WORKSPACE"
             git config user.email "action@github.com"
             git config user.name "GitHub Action"

@@ -1,4 +1,4 @@
-FROM ghcr.io/bioconductor/bioconductor:devel as initial
+FROM &bioc.CONTAINER_BASE_IMAGE as initial
 USER root
 COPY .github/scripts/deps_json.R /tmp/bioc_build/deps_json.R
 COPY .github/scripts/get_container_name.sh /tmp/bioc_build/get_container_name.sh

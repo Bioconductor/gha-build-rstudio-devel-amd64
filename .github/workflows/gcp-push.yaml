@@ -12,7 +12,7 @@ jobs:
         with:
           verbose: true
  
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT }}
           persist-credentials: true
@@ -176,6 +176,7 @@ jobs:
             cp /tmp/GCPPACKAGES ./"${STARTTIME}-GCPPACKAGES"
             LOGDIR="logs/$STARTTIME" || true
             echo "${{steps.variables.outputs.biocver}}/container-binaries/$(cat containername)/$(cat arch)/binaries/src/contrib" > "$LOGDIR/copied"
+            mv ./"${STARTTIME}-GCPPACKAGES" "$LOGDIR"/GCPPACKAGES
             mv runstarttime "$LOGDIR"/ || true
             mv uniquedeps.json "$LOGDIR"/ || true
             mv packages.json "$LOGDIR"/ || true
