@@ -293,7 +293,7 @@ jobs:
             -e LIBRARY=${{ steps.versions.outputs.library }} \
             -e PKG=${{ matrix.pkg }} \
             -e PLATFORM=${{ steps.versions.outputs.platform }} \
-            &bioc.CONTAINER_BASE_IMAGE bash -c "mkdir -p ./$LIBRARY && mkdir -p /tmp/$LIBRARY && ls ./$LIBRARY && ls ./$LIBRARY | xargs -i mv ./$LIBRARY/{} /tmp/$LIBRARY/{} && bash .github/scripts/build_package.sh /tmp/$LIBRARY $PKG $PLATFORM && rm -rf /home/ubuntu/*
+            ghcr.io/bioconductor/bioconductor:devel bash -c "mkdir -p ./$LIBRARY && mkdir -p /tmp/$LIBRARY && ls ./$LIBRARY && ls ./$LIBRARY | xargs -i mv ./$LIBRARY/{} /tmp/$LIBRARY/{} && bash .github/scripts/build_package.sh /tmp/$LIBRARY $PKG $PLATFORM && rm -rf /home/ubuntu/*
 
       - name: Free space check
         run: |
